@@ -2,6 +2,12 @@ Slwebsite::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+
+  get "home" => "static_page#home"
+  get "faq" => "static_page#faq"
+  get "about" => "static_page#about"
+
+  root 'static_page#home'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
@@ -39,7 +45,7 @@ Slwebsite::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
