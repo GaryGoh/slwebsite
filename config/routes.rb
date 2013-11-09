@@ -5,6 +5,7 @@ Slwebsite::Application.routes.draw do
     resources :issues
   end
 
+  resources :sessions, only: [:new, :create, :destroy]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -14,7 +15,10 @@ Slwebsite::Application.routes.draw do
   get "home" => "static_page#home"
   get "faq" => "static_page#faq"
   get "about" => "static_page#about"
-  get "signup" => "users#signup"
+
+  match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
 
   root 'static_page#home'
   # You can have the root of your site routed with "root"
