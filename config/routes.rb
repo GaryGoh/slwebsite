@@ -1,4 +1,6 @@
 Slwebsite::Application.routes.draw do
+
+
   resources :users do
     resources :issues
   end
@@ -12,6 +14,7 @@ Slwebsite::Application.routes.draw do
   get "home" => "static_page#home"
   get "faq" => "static_page#faq"
   get "about" => "static_page#about"
+  get "signup" => "users#signup"
 
   root 'static_page#home'
   # You can have the root of your site routed with "root"

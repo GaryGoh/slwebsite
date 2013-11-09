@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Provider:</strong>
-  <%= @user.provider %>
+  <strong>Stuid:</strong>
+  <%= @user.stuid %>
 </p>
 
 <p>
-  <strong>Uid:</strong>
-  <%= @user.uid %>
+  <strong>Email:</strong>
+  <%= @user.email %>
 </p>
 
 <p>
-  <strong>Username:</strong>
-  <%= @user.username %>
+  <strong>Password digest:</strong>
+  <%= @user.password_digest %>
 </p>
 
 <p>
@@ -40,6 +40,11 @@
   <%= @user.proverb %>
 </p>
 
+<p>
+  <strong>Admin:</strong>
+  <%= @user.admin %>
+</p>
+
 
 <h3>Issues</h3>
 <table>
@@ -53,7 +58,6 @@
         <td><%= issue.date %></td>
       </tr>
   <% end %> </table>
-
-<td><%= link_to 'Edit', edit_user_path(@user) %> </td>|
+<%= link_to 'Edit', edit_user_path(@user) %> |
 <td><%= link_to 'Issues', user_issues_path(@user) %></td> |
-<td><%= link_to 'Back', users_path %></td>
+<%= link_to 'Back', users_path %>
