@@ -1,11 +1,10 @@
 Slwebsite::Application.routes.draw do
 
-
   resources :users do
     resources :issues
   end
-
   resources :sessions, only: [:new, :create, :destroy]
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

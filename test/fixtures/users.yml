@@ -1,23 +1,40 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+<<<<<<< HEAD
   stuid: 1
   email: MyString
   password_digest: MyString
+=======
+  provider: MyString
+  uid: MyString
+  username: MyString
+>>>>>>> 5ca2571934df2e2f1f78f1ccbea7d6db10dbbed3
   name: MyString
   gender: MyString
   contact: MyString
   department: MyString
   proverb: MyText
+<<<<<<< HEAD
   admin: false
 
 two:
   stuid: 1
   email: MyString
   password_digest: MyString
+=======
+
+two:
+  provider: MyString
+  uid: MyString
+  username: MyString
+>>>>>>> 5ca2571934df2e2f1f78f1ccbea7d6db10dbbed3
   name: MyString
   gender: MyString
   contact: MyString
   department: MyString
   proverb: MyText
+<<<<<<< HEAD
   admin: false
+=======
+>>>>>>> 5ca2571934df2e2f1f78f1ccbea7d6db10dbbed3

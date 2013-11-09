@@ -17,7 +17,11 @@
 
 <p>
   <strong>User:</strong>
+<<<<<<< HEAD
   <%= @issue.user.name %>
+=======
+  <%= @issue.user.get_name %>
+>>>>>>> 5ca2571934df2e2f1f78f1ccbea7d6db10dbbed3
 </p>
 
 <%= link_to 'Edit', edit_user_issue_path(@user,@issue) %> |

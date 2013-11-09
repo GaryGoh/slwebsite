@@ -20,6 +20,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
+
         <td><%= user.stuid %></td>
         <td><%= user.email %></td>
         <td><%= user.name %></td>
@@ -40,3 +41,4 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+

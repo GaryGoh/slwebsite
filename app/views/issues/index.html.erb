@@ -19,7 +19,11 @@
         <td><%= issue.title %></td>
         <td><%= issue.content %></td>
         <td><%= issue.date %></td>
+<<<<<<< HEAD
         <td><%= issue.user.name %></td>
+=======
+        <td><%= issue.user.get_name %></td>
+>>>>>>> 5ca2571934df2e2f1f78f1ccbea7d6db10dbbed3
         <td><%= link_to 'Show', [@user, issue] %></td>
         <td><%= link_to 'Edit', edit_user_issue_path(@user, issue) %></td>
         <td><%= link_to 'Destroy', [@user, issue], method: :delete, data: {confirm: 'Are you sure?'} %></td>

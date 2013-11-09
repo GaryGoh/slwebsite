@@ -17,9 +17,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def signup
-    @user = User.new(params[:user])
-  end
 
   # GET /users/1/edit
   def edit
@@ -32,7 +29,6 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        flash[:success] = "Welcome to the Sample App!"
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -67,13 +63,13 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user
+    @user = User.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:stuid, :email, :password, :password_confirmation, :name, :gender, :contact, :department, :proverb, :admin)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def user_params
+    params.require(:user).permit(:stuid, :email, :password, :password_confirmation, :name, :gender, :contact, :department, :proverb, :admin)
+  end
 end
