@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Provider:</strong>
+  <%= @user.provider %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @user.uid %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @user.contact %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @user.department %>
+</p>
+
+<p>
+  <strong>Proverb:</strong>
+  <%= @user.proverb %>
+</p>
+
+
+<h3>Issues</h3>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>date</th>
+  </tr>
+  <% for issue in @user.issues %>
+      <tr>
+        <td><%= issue.title %></td>
+        <td><%= issue.date %></td>
+      </tr>
+  <% end %> </table>
+
+<td><%= link_to 'Edit', edit_user_path(@user) %> </td>|
+<td><%= link_to 'Issues', user_issues_path(@user) %></td> |
+<td><%= link_to 'Back', users_path %></td>
