@@ -11,7 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20131109211549) do
 
   create_table "issues", force: true do |t|
@@ -40,7 +39,4 @@ ActiveRecord::Schema.define(version: 20131109211549) do
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
+end
