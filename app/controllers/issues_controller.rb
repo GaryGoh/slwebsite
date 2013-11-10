@@ -80,7 +80,11 @@ class IssuesController < ApplicationController
 
   # To get a user
   def get_user
-    @user = User.find(params[:user_id])
+    if ((params[:user_id]).nil?)
+      redirect_to access_error_url  :notice => "user id is null"
+    else
+      @user = User.find(params[:user_id])
+    end
   end
 
 end

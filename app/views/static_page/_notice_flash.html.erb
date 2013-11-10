@@ -1,0 +1,8 @@
+<% if notice != nil %>
+    <div class="alert alert-success" id="index_alert">
+      <%= notice %>
+    </div>
+    <script type="text/javascript">
+        $('#index_alert').fadeOut(3000)
+    </script>
+<% end %>

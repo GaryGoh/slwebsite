@@ -1,44 +1,51 @@
-<h1>Listing users</h1>
+<% if (current_user.admin) %>
 
-<table>
-  <thead>
-  <tr>
-    <th>Stuid</th>
-    <th>Name</th>
-    <th>Gender</th>
-    <th>Contact</th>
-    <th>Department</th>
-    <th>Admin</th>
-    <th>count</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  </thead>
+    <h1>Listing users</h1>
 
-  <tbody>
-  <% @users.each do |user| %>
+    <table>
+      <thead>
       <tr>
+        <th>Stuid</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Contact</th>
+        <th>Department</th>
+        <th>Admin</th>
+        <th>count</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
 
-        <td><%= user.stuid %></td>
-        <td><%= user.name %></td>
-        <td><%= user.gender %></td>
-        <td><%= user.contact %></td>
-        <td><%= user.department %></td>
-        <td><%= user.admin %></td>
-        <td><%= user.issues.count %></td>
-        <td><%= link_to 'Show', user %></td>
-        <% unless user.admin? %>
+      <tbody>
+      <% @users.each do |user| %>
+          <tr>
+
+            <td><%= user.stuid %></td>
+            <td><%= user.name %></td>
+            <td><%= user.gender %></td>
+            <td><%= user.contact %></td>
+            <td><%= user.department %></td>
+            <td><%= user.admin %></td>
+            <td><%= user.issues.count %></td>
+            <td><%= link_to 'Show', user %></td>
             <td><%= link_to 'Edit', edit_user_path(user) %></td>
             <td><%= link_to 'Issues', user_issues_path(user) %></td>
-            <td><%= link_to 'Destroy', user, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-        <% end %>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
+            <% unless user.admin? %>
 
-<br>
 
-<%= link_to 'New User', new_user_path %>
+                <td><%= link_to 'Destroy', user, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+            <% end %>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
 
+    <br>
+
+    <%= link_to 'New User', new_user_path %>
+
+<% else %>
+    <%= render 'static_page/access_error' %>
+<% end %>

@@ -1,6 +1,11 @@
-<h1>Editing issue</h1>
+<% if (session[:user_id] == @user.id) || @user.id == nil %>
 
-<%= render 'form' %>
+    <h1>Editing issue</h1>
 
-<%= link_to 'Show', [@user,@issue] %> |
-<%= link_to 'Back', user_issues_path(@user) %>
+    <%= render 'form' %>
+
+    <%= link_to 'Show', [@user, @issue] %> |
+    <%= link_to 'Back', user_issues_path(@user) %>
+<% else %>
+    <%= render "static_page/access_error" %>
+<% end %>

@@ -1,6 +1,10 @@
+<% if @current_user.id == @user.id %>
 <h1>Editing user</h1>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
+<% else %>
+    <%= render "static_page/access_error"%>
+<% end %>
