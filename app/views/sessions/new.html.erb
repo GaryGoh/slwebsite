@@ -1,28 +1,16 @@
-<% provide(:title, "Sign in") %>
-<h1>Sign in</h1>
-<%= notice %>
+<div class="container">
+  <div class="form-signin">
+  <%= render "static_page/notice_danger" %>
 
-<div class="row">
-  <div class="span6 offset3">
-    <% if notice != nil %>
-        <div class="alert alert-success" id="index_alert">
-          <%= notice %>
-        </div>
-        <script type="text/javascript">
-            $('#index_alert').fadeOut(3000)
-        </script>
-    <% end %>
-    <%= form_for(:session, url: sessions_path) do |f| %>
+  <%= form_for(:session, url: sessions_path, :class => "form-signin") do |f| %>
+      <h2 class="form-signin-heading">登录</h2>
 
-        <%= f.label :email %>
-        <%= f.text_field :email %>
+      <%= f.text_field :email, :class => "form-control", :placeholder => "Email address", :autofocus => "true" %>
 
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+      <%= f.password_field :password, :class => "form-control", :placeholder => "Password" %>
 
-        <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-    <% end %>
+      <%= f.submit "Sign in", class: "btn btn-lg btn-primary btn-block" %>
+  <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-  </div>
+</div>
 </div>

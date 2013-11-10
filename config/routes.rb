@@ -19,6 +19,7 @@ Slwebsite::Application.routes.draw do
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
+  match '/failure', to: 'sessions#failure',     via: 'delete'
 
   root 'static_page#home'
   # You can have the root of your site routed with "root"

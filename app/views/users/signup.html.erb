@@ -1,9 +1,8 @@
-<% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
 
-<div class="row">
-  <div class="span6 offset3">
+<div class="container">
+  <div class="form-signin">
     <%= form_for(@user) do |f| %>
+        <h2 class="form-signin-heading">注册</h2>
 
         <%= f.label :name %>
         <%= f.text_field :name %>
