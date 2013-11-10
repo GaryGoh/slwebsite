@@ -15,14 +15,16 @@
 
       <%= f.label :stuid %>
       <br>
-      <%= f.number_field :stuid %>
+      <%= @user.stuid %>
     </div>
+
+
     <div class="field">
       <%= f.label :email %>
       <br>
-      <%= f.text_field :email %>
+      <%= @user.email %>
     </div>
-    </div>
+
     <div class="field">
       <%= f.label :name %>
       <br>
@@ -31,7 +33,7 @@
     <div class="field">
       <%= f.label :gender %>
       <br>
-      <%= f.text_field :gender %>
+      <%= f.select :gender, [['男', '男'], ['女', '女'], ['其他', '其他']] %>
     </div>
     <div class="field">
       <%= f.label :contact %>
