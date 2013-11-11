@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131110133335) do
+ActiveRecord::Schema.define(version: 20131111102547) do
+
+  create_table "editable_areas", force: true do |t|
+    t.string   "title",      null: false
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "editable_areas", ["title"], name: "index_editable_areas_on_title"
 
   create_table "infos", force: true do |t|
     t.string   "name"
