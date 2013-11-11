@@ -22,6 +22,8 @@ Slwebsite::Application.routes.draw do
   match '/failure', to: 'sessions#failure',     via: 'delete'
 
   root 'static_page#home'
+
+  get '/news',  to: 'public_news#allnews'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

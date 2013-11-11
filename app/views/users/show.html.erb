@@ -1,6 +1,6 @@
 <%= render "static_page/notice_flash" %>
 
-<% if @current_user.id == @user.id %>
+<% if @current_user.id == @user.id || @current_user.admin %>
 
 
     <div class="panel panel-default">
@@ -63,7 +63,7 @@
                   </tr>
                   <tr>
                     <td><strong>个人简介:</strong></td>
-                    <td><%= @user.proverb %></td>
+                    <td><pre id="user_pre" ><%= @user.proverb %></pre></td>
                   </tr>
                   </tbody>
                 </table>
@@ -115,13 +115,13 @@
     <!-- End of panel-->
 
 
-
+    <td><%= link_to raw('<button type="button" class="btn btn-primary">更改信息</button>'), edit_user_path(@user) %></td>
+    <td><%= link_to raw('<button type="button" class="btn btn-primary">发布新闻</button>'), new_user_issue_path(@user, @issue) %></td>
+    <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), users_path %></td
 <% else %>
     <%= render "static_page/access_error", :notice => "asdfasdf" %>
 <% end %>
-<td><%= link_to raw('<button type="button" class="btn btn-primary">更改信息</button>'), edit_user_path(@user) %></td>
-<td><%= link_to raw('<button type="button" class="btn btn-primary">发布新闻</button>'), user_issues_path(@user) %></td>
-<td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), users_path %></td>
+>
 
 
 

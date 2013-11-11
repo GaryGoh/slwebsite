@@ -8,6 +8,10 @@ class StaticPageController < ApplicationController
 
   def about
   end
+
+  def news
+    @issues = Issue.all
+  end
 end
 
 

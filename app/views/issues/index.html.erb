@@ -2,7 +2,7 @@
 
     <div class="panel panel-default">
       <!-- Default panel contents -->
-      <div class="panel-heading"><h3><%= @user.name%>的新闻列表</h3>
+      <div class="panel-heading"><h3>新闻列表</h3>
       </div>
       <div class="panel-body">
 
@@ -13,7 +13,7 @@
           <tr>
             <th>标题</th>
             <th>日期</th>
-            <th>发布人</th>
+            <!--<th>发布人</th>-->
             <th></th>
             <th></th>
             <th></th>
@@ -26,8 +26,6 @@
 
                 <td><%= issue.title %></td>
                 <td><%= issue.date %></td>
-                <td><%= issue.user.name %></td>
-                <td><%= link_to '详细', [@user, issue] %></td>
                 <td><%= link_to '编辑', edit_user_issue_path(@user, issue) %></td>
                 <td><%= link_to '删除', [@user, issue], method: :delete, data: {confirm: 'Are you sure?'} %></td>
               </tr>
@@ -37,8 +35,7 @@
       </div>
     </div>
 
-    <td><%= link_to raw('<button type="button" class="btn btn-primary">发布新闻</button>'), new_user_issue_path(@user) %></td>
-    <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), @user %></td>
+    <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), root_url %></td>
 
 <% else %>
     <%= render "static_page/access_error" %>

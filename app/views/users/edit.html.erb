@@ -1,10 +1,19 @@
-<% if @current_user.id == @user.id %>
-<h1>Editing user</h1>
+<% if (session[:user_id] == @user.id) || @user.id == nil %>
 
-<%= render 'form' %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">个人资料</h3>
+      </div>
+      <div class="panel-body">
+        <%= render 'form' %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+      </div>
+
+    </div>
+    <td><%= link_to raw('<button type="button" class="btn btn-primary">查看</button>'), @user %></td>
+
+    <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), root_url %></td>
+
 <% else %>
-    <%= render "static_page/access_error"%>
+    <%= render "static_page/access_error" %>
 <% end %>
