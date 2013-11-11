@@ -37,6 +37,7 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+gem 'wysihtml5-rails'
 
 #gem 'protected_attributes'
 

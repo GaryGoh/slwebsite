@@ -1,11 +1,18 @@
 <% if session[:user_id] == @user.id %>
 
-    <h1>New issue</h1>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">发布新闻</h3>
+      </div>
+      <div class="panel-body">
+        <%= render 'form' %>
 
-    <%= render 'form' %>
-
-    <%= link_to 'Back', user_issues_path(@user) %>
+        <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), user_issues_path(@user) %></td>
+      </div>
+    </div>
 
 <% else %>
     <%= render "static_page/access_error" %>
+
 <% end %>
+

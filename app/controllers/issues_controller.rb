@@ -2,6 +2,8 @@ class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
   before_filter :get_user
 
+  respond_to :html
+
   # GET /issues
   # GET /issues.json
   def index
@@ -22,7 +24,7 @@ class IssuesController < ApplicationController
 
   # GET /issues/1/edit
   def edit
-    @issue = @user.issues.build(params[:issue])
+    @issue = @user.issues.find(params[:id])
   end
 
   # POST /issues

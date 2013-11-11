@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
+      session[:admin] = user.admin
       sign_in user
       redirect_to user, :notice => "成功登录"
     else

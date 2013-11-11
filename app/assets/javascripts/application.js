@@ -18,6 +18,9 @@
 // Include all twitter's javascripts
 //= require twitter/bootstrap
 
+//= require wysihtml5
+//= require parser_rules/advanced
+
 //$(function(){
 //    $("#global_left_nav").hover(function(){
 //        $(this).find("span").show();
@@ -32,4 +35,7 @@
 //    // 动画完成，所有浏览器下有效
 //});
 
-$("#span1").css({ opacity: .4 });
+//$("#span1").css({ opacity: .4 });
+
+
+
