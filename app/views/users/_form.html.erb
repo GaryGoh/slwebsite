@@ -1,58 +1,82 @@
 <%= form_for(@user) do |f| %>
     <% if @user.errors.any? %>
         <div id="error_explanation">
-            <% @user.errors.full_messages.each do |msg| %>
-                <div class="alert alert-warning"><%= msg %></div>
-            <% end %>
+          <% @user.errors.full_messages.each do |msg| %>
+              <div class="alert alert-warning"><%= msg %></div>
+          <% end %>
           </ul>
         </div>
     <% end %>
 
-    <div class="field">
+    <form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="server_name">学号</label>
 
-      <%= f.label :stuid %>
-      <br>
-      <%= @user.stuid %>
+    <div class="controls">
+      <%= f.text_field :stuid, readonly: true, :class => "form-control"%>
     </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label">Email</label>
 
+    <div class="controls">
+      <%= f.text_field :email, readonly: true, :class => "form-control"%>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="Name">姓名</label>
 
-    <div class="field">
-      <%= f.label :email %>
-      <br>
-      <%= @user.email %>
+    <div class="controls">
+      <%= f.text_field :name, id: "Name", placeholder: "Name", :class => "form-control" %>
     </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="Contact">联系方式</label>
 
-    <div class="field">
-      <%= f.label :name %>
-      <br>
-      <%= f.text_field :name %>
+    <div class="controls">
+      <%= f.text_field :contact, id: "Contact", placeholder: "Contact",:class => "form-control" %>
     </div>
-    <div class="field">
-      <%= f.label :gender %>
-      <br>
-      <%= f.select :gender, [['男', '男'], ['女', '女'], ['其他', '其他']] %>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="Gender">性别</label>
+
+    <div class="controls">
+      <%= f.select :gender, [['男', '男'], ['女', '女'], ['其他', '其他']], :class => "form-control" %>
     </div>
-    <div class="field">
-      <%= f.label :contact %>
-      <br>
-      <%= f.text_field :contact %>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="Department">部门</label>
+
+    <div class="controls">
+      <%= f.select :department, [['主席团', '主席团'], ['公益实践中心', '公益实践中心'], ['文娱兴趣中心', '文娱兴趣中心'], ['体育竞技中心', '体育竞技中心'], ['文娱兴趣中心', '文娱兴趣中心'], ['微博中心', '微博中心'], ['办公室', '办公室'], ['网络部', '网络部'], ['外联部', '外联部'], ['财务部', '财务部'], ['新闻部', '新闻部'], ['组织部', '组织部']], :class => "form-control" %>
     </div>
-    <div class="field">
-      <%= f.label :department %>
-      <br>
-      <%= f.select :department, [['主席团', '主席团'], ['公益实践中心', '公益实践中心'], ['文娱兴趣中心', '文娱兴趣中心'], ['体育竞技中心', '体育竞技中心'], ['文娱兴趣中心', '文娱兴趣中心'], ['微博中心', '微博中心'], ['办公室', '办公室'], ['网络部', '网络部'], ['外联部', '外联部'], ['财务部', '财务部'], ['新闻部', '新闻部'], ['组织部', '组织部']] %>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="Proverb">个人签名</label>
+
+    <div class="controls">
+      <%= f.text_area :proverb, :rows => "3", :class => "form-control", :id =>"inputProverb", :placeholder => "个人简介" %>
     </div>
-    <div class="field">
-      <%= f.label :proverb %>
-      <br>
-      <%= f.text_area :proverb %>
-    </div>
-    <div class="field">
-      <%= f.label :admin %>
-      <br>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="Admin">管理员</label>
+
+    <div class="controls">
       <%= f.check_box :admin %>
     </div>
-    <div class="actions">
-      <%= f.submit %>
-    </div>
+  </div>
+
+
+  <!--<div class="actions">-->
+  <%= f.submit class: 'btn btn-primary' %>
+  <!--</div>-->
+</form>
+
 <% end %>
+
+
+

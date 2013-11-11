@@ -1,66 +1,127 @@
-<%= render "static_page/notice_flash"%>
+<%= render "static_page/notice_flash" %>
 
 <% if @current_user.id == @user.id %>
 
-    <strong>Stuid:</strong>
-    <%= @user.stuid %>
-    </p>
 
-    <p>
-      <strong>Email:</strong>
-      <%= @user.email %>
-    </p>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><h3><%= @user.name %></h3>
+      </div>
+      <div class="panel-body">
 
-    <p>
-      <strong>Name:</strong>
-      <%= @user.name %>
-    </p>
+        <!-- Collapse -->
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" id="coll_a1"> 用户资料
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
 
-    <p>
-      <strong>Gender:</strong>
-      <%= @user.gender %>
-    </p>
+                <!-- Table -->
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
 
-    <p>
-      <strong>Contact:</strong>
-      <%= @user.contact %>
-    </p>
+                  </tr>
+                  </thead>
 
-    <p>
-      <strong>Department:</strong>
-      <%= @user.department %>
-    </p>
+                  <tbody>
+                  <tr>
 
-    <p>
-      <strong>Proverb:</strong>
-      <%= @user.proverb %>
-    </p>
+                    <td><strong>学号: </strong></td>
+                    <td><%= @user.stuid %></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><%= @user.email %></td>
+                  </tr>
+                  <tr>
+                    <td><strong>姓名: </strong></td>
+                    <td><%= @user.name %></td>
+                  </tr>
+                  <tr>
+                    <td><strong>性别: </strong></td>
+                    <td><%= @user.gender %></td>
+                  </tr>
+                  <tr>
+                    <td><strong>联系方式: </strong></td>
+                    <td><%= @user.contact %></td>
+                  </tr>
+                  <tr>
+                    <td><strong>部门: </strong></td>
+                    <td><%= @user.department %></td>
+                  </tr>
+                  <tr>
+                    <td><strong>管理员: </strong></td>
+                    <td><%= @user.admin %></td>
+                  </tr>
+                  <tr>
+                    <td><strong>个人简介:</strong></td>
+                    <td><%= @user.proverb %></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-    <% if @current_user.admin? %>
-        <p>
-          <strong>Admin:</strong>
-          <%= @user.admin %>
-        </p>
-    <% end %>
 
-    <h3>Issues</h3>
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>date</th>
-      </tr>
-      <% for issue in @user.issues %>
-          <tr>
-            <td><%= issue.title %></td>
-            <td><%= issue.date %></td>
-          </tr>
-      <% end %> </table>
+            <!-- End of Collapse -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" id="coll_a2">
+                    发布的新闻 </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <table class="table">
+                    <thead>
+                    <tr>
+                      <th>标题</th>
+                      <th>日期</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <% for issue in @user.issues %>
+                        <tr>
+
+                          <td><%= issue.title %></td>
+                          <td><%= issue.date %></td>
+                          <td><%= link_to '详细', [@user, issue] %></td>
+                          <td><%= link_to '修改', edit_user_issue_path(@user, issue) %></td>
+                          <td><%= link_to '删除', [@user, issue], method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                        </tr>
+                    <% end %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of panel-->
 
 
-    <td><%= link_to 'Edit', edit_user_path(@user) %> </td>|
-    <td><%= link_to 'Issues', user_issues_path(@user) %></td> |
-    <td><%= link_to 'Back', users_path %></td>
 
 <% else %>
     <%= render "static_page/access_error", :notice => "asdfasdf" %>
 <% end %>
+<td><%= link_to 'Edit', edit_user_path(@user) %> </td>
+|
+<td><%= link_to 'Issues', user_issues_path(@user) %></td>
+|
+<td><%= link_to 'Back', users_path %></td>
+

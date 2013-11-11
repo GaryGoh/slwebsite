@@ -1,10 +1,8 @@
 // change colors
 //$link-color: red;
 
-
 // import original bootstrap
 @import "twitter/bootstrap";
-
 
 html {
   overflow-y: scroll;
@@ -30,40 +28,28 @@ textarea {
   margin-bottom: 10px;
 }
 
-
-
-
-
 // Header CSS
-#search_header
-{
+#search_header {
   position: relative;
   left: 200px;
 }
 
-#search_header_form
-{
+#search_header_form {
   width: 300px;
 }
 
-
 // Footer CSS
-#footer
-{
+#footer {
   margin-top: 200px;
   padding-top: 15px;
   border-top: 1px solid #eaeaea;
   color: #999;
 }
 
-#footer_div
-{
-  text-align:center;
+#footer_div {
+  text-align: center;
 
 }
-
-
-
 
 // Signin form
 .form-signin {
@@ -71,13 +57,16 @@ textarea {
   padding: 15px;
   margin: 0 auto;
 }
+
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
 }
+
 .form-signin .checkbox {
   font-weight: normal;
 }
+
 .form-signin .form-control {
   position: relative;
   font-size: 16px;
@@ -87,14 +76,17 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
 .form-signin input[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
@@ -105,4 +97,30 @@ textarea {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+#new_user_in_users {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#new_user_in_users:hover {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+// Cancel underline and bolder font when hovering
+a:hover {
+  position: relative;
+  font: bold;
+  text-decoration: none;
+}
+
+// Collapse effect
+#coll_a1:hover {
+font-size: large;
+}
+
+#coll_a2:hover {
+  font-size: large;
 }

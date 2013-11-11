@@ -16,15 +16,15 @@ class User < ActiveRecord::Base
   VALID_STUID_REGEX = /^[0-9]{9,10}$/
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-  validates :stuid, presence: true,
-            format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
-            uniqueness: {case_sensitive: false}
 
   validates :email, presence: true,
             format: {with: VALID_EMAIL_REGEX, :message => "请输入正确的email格式"},
             uniqueness: {case_sensitive: false}
 
   if !(:signed_in)
+    validates :stuid, presence: true,
+              format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
+              uniqueness: {case_sensitive: false}
     validates :password, length: {in: 6..20, :message => "密码长度在6 - 20 之间"}
   end
 
