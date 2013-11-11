@@ -118,9 +118,40 @@ a:hover {
 
 // Collapse effect
 #coll_a1:hover {
-font-size: large;
+  font-size: large;
 }
 
 #coll_a2:hover {
   font-size: large;
+}
+
+#global_left_nav {
+  //float:right;
+  //opacity: .7;
+  background: #ffffff;
+}
+
+#global_left_nav.hover {
+  //float:right;
+  //opacity: 1.0;
+}
+
+#span1 {
+  font-size: 32px;
+  position: relative;
+  left: 10px;
+  //opacity: .7;
+}
+
+#span2 {
+  font-size: 20px;
+  left: -10px;
+  //opacity: .7;
+}
+
+#span1.hover {
+  font-size: 32px;
+  position: relative;
+  left: 10px;
+  //opacity: 1.0;
 }

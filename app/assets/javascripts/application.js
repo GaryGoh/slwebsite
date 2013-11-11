@@ -17,3 +17,19 @@
 
 // Include all twitter's javascripts
 //= require twitter/bootstrap
+
+//$(function(){
+//    $("#global_left_nav").hover(function(){
+//        $(this).find("span").show();
+//    },function(){
+//        $(this).find("span").hide();
+//    });
+//});
+
+//$("#span1").animate({
+//    opacity: .4
+//}, 1000, function() {
+//    // 动画完成，所有浏览器下有效
+//});
+
+$("#span1").css({ opacity: .4 });
