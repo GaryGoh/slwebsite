@@ -4,9 +4,6 @@
 // import original bootstrap
 @import "twitter/bootstrap";
 
-
-
-
 html {
   overflow-y: scroll;
 }
@@ -43,7 +40,7 @@ textarea {
 
 // Footer CSS
 #footer {
-  margin-top: 200px;
+  margin-top: 10px;
   padding-top: 15px;
   border-top: 1px solid #eaeaea;
   color: #999;
@@ -112,7 +109,6 @@ textarea {
   text-decoration: none;
 }
 
-
 a:hover {
   // -- Cancel underline and bolder font when hovering -- //
   position: relative;
@@ -165,7 +161,6 @@ a:hover {
   //opacity: 1.0;
 }
 
-
 // To modify the background that shows in textarea
 #user_pre {
   background-color: #ffffff;
@@ -182,11 +177,24 @@ a:hover {
   //border-left: 0px;
   border-right: 0px;
 }
+
 // End of pre
 
-
-.controls{
+.controls {
   // -- To modify user profile form -- //
   position: inherit;
   width: 800px;
+}
+
+#home_carousel {
+  z-index: 0;
+}
+
+#home_panel1 {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  z-index: 1;
+  width: 1000px;
+  opacity: 0.93;
 }

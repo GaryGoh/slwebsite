@@ -1,1 +1,87 @@
-For example, <code><p>section </p></code> should be wrapped as inline.
+<div id="home_carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag "/images/home/DSC_0458.jpg", size: "1600x1200" %>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag "/images/home/DSC_0673.jpg", size: "1600x1200" %>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag "/images/home/DSC_0677.jpg", size: "1600x1200" %>
+
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!--<div class="container">-->
+
+<div class="row" id="home_panel1">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><%= link_to "学校新闻", "/news" %></div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default" id="home_pane2">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><%= link_to "社团新闻", "/news" %></div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default" id="home_pane3">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><%= link_to "活动通知", "/news" %></div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--</div>-->
