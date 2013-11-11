@@ -112,8 +112,9 @@ textarea {
   text-decoration: none;
 }
 
-// Cancel underline and bolder font when hovering
+
 a:hover {
+  // -- Cancel underline and bolder font when hovering -- //
   position: relative;
   font: bold;
   text-decoration: none;
@@ -125,21 +126,25 @@ a:hover {
 }
 
 #coll_a2:hover {
+  // --  in User profile -> -- //
   font-size: large;
 }
 
 #global_left_nav {
+  // -- leff side nav -- //
   //float:right;
   //opacity: .7;
   background: #ffffff;
 }
 
 #global_left_nav.hover {
+  // -- leff side nav -- //
   //float:right;
   //opacity: 1.0;
 }
 
 #span1 {
+  // -- left side nav icon -- //
   font-size: 32px;
   position: relative;
   left: 10px;
@@ -153,12 +158,15 @@ a:hover {
 }
 
 #span1.hover {
+  // -- Try to achieve hiden effect -- //
   font-size: 32px;
   position: relative;
   left: 10px;
   //opacity: 1.0;
 }
 
+
+// To modify the background that shows in textarea
 #user_pre {
   background-color: #ffffff;
   border-bottom: 0px;
@@ -167,7 +175,18 @@ a:hover {
   border-right: 0px;
 }
 
+#issue_pre {
+  background-color: #ffffff;
+  border-bottom: 0px;
+  //border-top: 0px;
+  //border-left: 0px;
+  border-right: 0px;
+}
+// End of pre
+
+
 .controls{
+  // -- To modify user profile form -- //
   position: inherit;
   width: 800px;
 }

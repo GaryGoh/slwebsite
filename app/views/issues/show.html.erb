@@ -6,13 +6,13 @@
     <h3 class="panel-title">发布时间：<%= @issue.date %></h3>
   </div>
   <div class="panel-body">
-    <pre><%= "#{@issue.content}" %></pre>
+    <pre id="issue_pre"><%= "#{@issue.content}" %></pre>
   </div>
   <div class="panel-footer">发布人：<%= @issue.user.name %></div>
 </div>
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), user_issues_path %></td>
 
-<% if session[:user_id] == @issue.user.id && $user_admin || true%>
+<% if session[:user_id] == @issue.user.id && $user_admin %>
     <td><%= link_to raw('<button type="button" class="btn btn-primary">编辑</button>'), edit_user_issue_path(@user, @issue) %></td>
 
 <% end %>

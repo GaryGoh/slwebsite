@@ -30,11 +30,11 @@ class IssuesController < ApplicationController
   # POST /issues
   # POST /issues.json
   def create
-    @issue = Issue.new(issue_params)
+    @issue = @user.issues.build(issue_params)
 
     respond_to do |format|
       if @issue.save
-        format.html { redirect_to user_issues_url(@user), notice: 'Issue was successfully created.' }
+        format.html { redirect_to user_url(@user), notice: '成功发布新闻.' }
         format.json { render action: 'show', status: :created, location: @issue }
       else
         format.html { render action: 'new' }
@@ -49,7 +49,7 @@ class IssuesController < ApplicationController
     @issue = @user.issues.find(params[:id])
     respond_to do |format|
       if @issue.update(issue_params)
-        format.html { redirect_to user_issues_url(@user), notice: 'Issue was successfully updated.' }
+        format.html { redirect_to user_url(@user), notice: '成功编辑新闻.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -64,7 +64,7 @@ class IssuesController < ApplicationController
     @issue = @user.issues.find(params[:id])
     @issue.destroy
     respond_to do |format|
-      format.html { redirect_to user_issues_url(@user) }
+      format.html { redirect_to user_url(@user) }
       format.json { head :no_content }
     end
   end

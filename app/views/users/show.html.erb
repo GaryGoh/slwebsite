@@ -63,7 +63,9 @@
                   </tr>
                   <tr>
                     <td><strong>个人简介:</strong></td>
-                    <td><pre id="user_pre" ><%= @user.proverb %></pre></td>
+                    <td>
+                      <pre id="user_pre"><%= @user.proverb %></pre>
+                    </td>
                   </tr>
                   </tbody>
                 </table>
@@ -93,7 +95,6 @@
                     </thead>
 
                     <tbody>
-                    <%= @current_user%>
                     <% for issue in @user.issues %>
                         <tr>
 
