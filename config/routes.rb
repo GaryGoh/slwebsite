@@ -26,6 +26,8 @@ Slwebsite::Application.routes.draw do
   root 'static_page#home'
 
   get '/news',  to: 'public_news#allnews'
+  #get '/news',  to: 'public_news#allnews'
+  get 'shownews/:id', to: 'public_news#shownews', as: :shownews
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

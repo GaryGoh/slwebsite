@@ -1,1 +1,19 @@
-Here is particular_news page
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title" align="center"><%= @issue.title %></h3>
+  </div>
+  <div class="panel-heading">
+    <h3 class="panel-title">发布时间：<%= @issue.date %></h3>
+  </div>
+  <div class="panel-body">
+    <pre id="issue_pre"><%= "#{@issue.content}" %></pre>
+  </div>
+
+</div>
+<td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), news_path %></td>
+
+
+
+
+
+

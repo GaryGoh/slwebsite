@@ -9,8 +9,7 @@
     <table class="table">
       <thead>
       <tr>
-        <th>标题</th>
-        <th>日期</th>
+
         <!--<th>发布人</th>-->
         <th></th>
         <th></th>
@@ -22,8 +21,20 @@
       <% @issues.each do |issue| %>
           <tr>
 
-            <td><%= issue.title %></td>
-            <td><%= issue.date %></td>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img data-src="holder.js/300x200" alt="...">
+                  <div class="caption">
+                    <h3><%= issue.title%></h3>
+                    <p><%= issue.date %></p>
+                    <p><a href=<%= shownews_url(issue)%>, class="btn btn-primary" role="button">查看</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </tr>
       <% end %>
       </tbody>
@@ -33,18 +44,6 @@
 
 
 
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img data-src="holder.js/300x200" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), root_url %></td>
 
