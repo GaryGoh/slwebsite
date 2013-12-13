@@ -1,5 +1,9 @@
 ActiveAdmin.register User do
 
+  menu :label => "公共用户"
+  actions :all
+
+
   controller do
     def permitted_params
       params.permit user: [:stuid, :email, :password, :password_confirmation, :name, :gender, :contact, :department, :proverb, :admin]
@@ -17,8 +21,24 @@ ActiveAdmin.register User do
     default_actions
   end
 
+
+
+
+  #edit do
+  #  column :stuid
+  #  column :email
+  #  column :name
+  #  column :gender
+  #  column :contact
+  #  column :department
+  #  default_actions
+  #end
+
+
+
   # The form is to create public student user info
   form do |f|
+    f.semantic_errors *f.object.errors.keys
     f.inputs "学生信息" do
       f.input :stuid
       f.input :email

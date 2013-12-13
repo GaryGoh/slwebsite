@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :issues
+  has_many :issues, :dependent => :destroy
   has_secure_password
 
   def get_admin?

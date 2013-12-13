@@ -1,5 +1,7 @@
 ActiveAdmin.register Issue do
 
+  menu :label => "新闻"
+
   controller do
     def permitted_params
       params.permit issue: [:title, :content, :date, :user_id]
