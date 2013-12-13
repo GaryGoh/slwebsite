@@ -39,6 +39,8 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'wysihtml5-rails'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 #gem 'protected_attributes'
 
 # Use unicorn as the app server

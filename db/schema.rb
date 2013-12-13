@@ -22,14 +22,6 @@ ActiveRecord::Schema.define(version: 20131111102547) do
 
   add_index "editable_areas", ["title"], name: "index_editable_areas_on_title"
 
-  create_table "infos", force: true do |t|
-    t.string   "name"
-    t.string   "department"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
-  end
-
   create_table "issues", force: true do |t|
     t.string   "title"
     t.text     "content"
