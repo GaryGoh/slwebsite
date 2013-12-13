@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
   def destroy
     $user_admin = false
-    sign_out
+    sign_out_stu
     redirect_to root_url :notice => "成功登出"
   end
 

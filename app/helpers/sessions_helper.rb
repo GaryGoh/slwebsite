@@ -11,7 +11,7 @@ module SessionsHelper
   end
 
   def check_login
-    unless sign_in_stu?
+    unless signed_in_stu?
       redirect_to "/signin"
     end
   end
