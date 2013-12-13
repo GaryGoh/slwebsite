@@ -4,10 +4,11 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by(email: params[:session][:email].downcase)
+    #user = AdminUser.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
-      sign_in user
-      $user_admin = @current_user
+      sign_in_stu user
+      $user_admin = @current_user_stu
       redirect_to user, :notice => "成功登录"
     else
       render "new", :notice => "email或password不正确"
