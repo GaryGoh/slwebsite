@@ -119,9 +119,9 @@
 
     <td><%= link_to raw('<button type="button" class="btn btn-primary">更改信息</button>'), edit_user_path(@user) %></td>
     <td><%= link_to raw('<button type="button" class="btn btn-primary">发布新闻</button>'), new_user_issue_path(@user, @issue) %></td>
-    <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), users_path %></td
+    <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), root_path %></td
 <% else %>
-    <%= render "static_page/access_error", :notice => "asdfasdf" %>
+    <%= render "static_page/access_error", :notice => "用户错误" %>
 <% end %>
 >
 
