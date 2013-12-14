@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       $user_admin = @current_user_stu
       redirect_to user, :notice => "成功登录"
     else
-      render "new", :notice => "email或password不正确"
+      redirect_to signin_url, :notice => "email或password不正确"
     end
 
   end

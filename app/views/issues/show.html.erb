@@ -10,7 +10,7 @@
   </div>
   <div class="panel-footer">修改时间：<%= @issue.updated_at %></div>
 </div>
-<td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), user_issues_path %></td>
+<td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), @user %></td>
 
 <% if session[:user_id] == @issue.user.id && $user_admin %>
     <td><%= link_to raw('<button type="button" class="btn btn-primary">编辑</button>'), edit_user_issue_path(@user, @issue) %></td>

@@ -2,16 +2,22 @@ class User < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
   has_secure_password
 
-  def get_admin?
-    @user.admin
+
+  def self.sweep(time = 1.hour)
+    if time.is_a?(String)
+      time = time.split.inject { |count, unit| count.to_i.send(unit) }
+    end
+
+    delete_all "updated_at < '#{time.ago.to_s(:db)}'"
   end
+
 
 
   ## TO PROTECT vicious sign up from unknown user##
 
   ## if being login model that using following
   before_save { self.email = email.downcase }
-  before_create :create_remember_token
+  #before_create :create_remember_token
 
   VALID_STUID_REGEX = /^[0-9]{9,10}$/
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
