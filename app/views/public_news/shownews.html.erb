@@ -1,18 +1,16 @@
-<div class="panel panel-default">
+<div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title" align="center"><%= @issue.title %></h3>
+    <h2 align="center"><%= @issue.title %></h2>
   </div>
   <div class="panel-heading">
-    <h3 class="panel-title">发布时间：<%= @issue.date %></h3>
+    <div>发表于： <%= @issue.created_at.strftime("%m-%e-%Y  %H:%M")%> | 作者： <%= @issue.author%> </div>
   </div>
   <div class="panel-body">
-    <pre id="issue_pre"><%= "#{@issue.content}" %></pre>
+    <pre id="issue_pre"><h5><%= "#{@issue.content}" %></h5></pre>
   </div>
 
 </div>
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), news_path %></td>
-
-
 
 
 

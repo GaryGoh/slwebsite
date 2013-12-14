@@ -1,14 +1,14 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title" align="center"><%= @issue.title %></h3>
+    <h2 class="panel-title" align="center"><%= @issue.title %></h2>
   </div>
   <div class="panel-heading">
-    <h3 class="panel-title">发布时间：<%= @issue.date %></h3>
+    <h3 class="panel-title">发布时间：<%= @issue.created_at %></h3>
   </div>
   <div class="panel-body">
     <pre id="issue_pre"><%= "#{@issue.content}" %></pre>
   </div>
-  <div class="panel-footer">发布人：<%= @issue.user.name %></div>
+  <div class="panel-footer">修改时间：<%= @issue.updated_at %></div>
 </div>
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), user_issues_path %></td>
 
