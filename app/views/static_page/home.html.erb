@@ -42,7 +42,7 @@
       <div class="panel-heading"><%= link_to "学校新闻", "/news" %></div>
       <div class="panel-body">
         <ul class="list-group">
-          <% @issues.each do |issue| %>
+          <% @issues_school.each do |issue| %>
               <li class="list-group-item"><%= link_to truncate(issue.title, :length => 12), shownews_url(issue) %>
                 <div align="right" id="home_div">
                   <small><%= issue.created_at.strftime("%m-%e-%Y") %></small>
@@ -60,11 +60,13 @@
       <div class="panel-heading"><%= link_to "社团新闻", "/news" %></div>
       <div class="panel-body">
         <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <% @issues_sl.each do |issue| %>
+              <li class="list-group-item"><%= link_to truncate(issue.title, :length => 12), shownews_url(issue) %>
+                <div align="right" id="home_div">
+                  <small><%= issue.created_at.strftime("%m-%e-%Y") %></small>
+                </div>
+              </li>
+          <% end %>
         </ul>
       </div>
     </div>
@@ -76,11 +78,13 @@
       <div class="panel-heading"><%= link_to "活动通知", "/news" %></div>
       <div class="panel-body">
         <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <% @issues_notice.each do |issue| %>
+              <li class="list-group-item"><%= link_to truncate(issue.title, :length => 12), shownews_url(issue) %>
+                <div align="right" id="home_div">
+                  <small><%= issue.created_at.strftime("%m-%e-%Y") %></small>
+                </div>
+              </li>
+          <% end %>
         </ul>
       </div>
     </div>

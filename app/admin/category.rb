@@ -1,21 +1,11 @@
-ActiveAdmin.register Issue do
+ActiveAdmin.register Category do
 
-  menu :label => "新闻"
+  menu :label => "新闻总类"
 
   controller do
     def permitted_params
-      params.permit issue: [:title, :content, :date, :author, :user_id, :category_id]
+      params.permit category: [:category_name]
     end
-  end
-
-  index do
-    column :id
-    column :title
-    column :category_id
-    column :author
-    column :created_at
-    column :updated_at
-    default_actions
   end
   
   # See permitted parameters documentation:

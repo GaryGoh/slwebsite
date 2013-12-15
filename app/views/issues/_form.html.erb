@@ -46,9 +46,9 @@
 
             <div class="col-sm-10">
               <% if @user.name == "" || @user.name == nil %>
-              <%= f.text_field :author, :class => "form-control", :value => @user.stuid, :readonly => "true" %>
+                  <%= f.text_field :author, :class => "form-control", :value => @user.stuid, :readonly => "true" %>
               <% else %>
-              <%= f.text_field :author, :class => "form-control", :value => @user.name, :readonly => "true" %>
+                  <%= f.text_field :author, :class => "form-control", :value => @user.name, :readonly => "true" %>
               <% end %>
             </div>
           </div>
@@ -73,6 +73,8 @@
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">所属中心</label>
+            <%= f.select :category_id, Category.find(:all).collect { |s|
+              [(s.category_name), s.id] } %>
 
             <div class="col-sm-10">
 
