@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
+  belongs_to :members
+
   has_secure_password
 
 
@@ -10,7 +12,6 @@ class User < ActiveRecord::Base
 
     delete_all "updated_at < '#{time.ago.to_s(:db)}'"
   end
-
 
 
   ## TO PROTECT vicious sign up from unknown user##
@@ -26,13 +27,33 @@ class User < ActiveRecord::Base
   validates :email, presence: true,
             format: {with: VALID_EMAIL_REGEX, :message => "请输入正确的email格式"},
             uniqueness: {case_sensitive: false}
+  validates :stuid, presence: true,
+            format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
+            uniqueness: {case_sensitive: false}
+  validate :member_id_exists
 
-  if !(:signed_in)
-    validates :stuid, presence: true,
-              format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
-              uniqueness: {case_sensitive: false}
-    validates :password, length: {in: 6..20, :message => "密码长度在6 - 20 之间"}
+  #unless $user_login
+  #  validates :password, length: {in: 6..20, :message => "密码长度在6 - 20 之间"}
+  #end
+
+  #
+  #def check_signin?
+  #  $user_login
+  #end
+
+  private
+  def member_id_exists
+    errors.add(:stuid, " 此学号不能注册社联网站") unless Members.exists?(:memid => self.stuid)
   end
+
+  #def member_id_exists
+  #  if Members.where(:memid => self.stuid).blank?
+  #    return true
+  #  else
+  #    return false
+  #  end
+  #
+  #end
 
 
   def User.new_remember_token

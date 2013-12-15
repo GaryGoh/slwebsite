@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_filter :check_login
+  before_filter :check_login , only: [:index, :show, :edit, :update, :destroy]
 
   # GET /users
   # GET /users.json
@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
+    @members = Members.all
     @user = User.new
   end
 
@@ -31,7 +32,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: '成功创建新用户.' }
+        format.html { redirect_to signin_url, notice: '成功创建新用户.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
         format.html { render action: 'new' }

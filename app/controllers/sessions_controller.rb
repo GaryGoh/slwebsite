@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
       sign_in_stu user
-      $user_admin = @current_user_stu
+      $user_login = true
       redirect_to user, :notice => "成功登录"
     else
       redirect_to signin_url, :notice => "email或password不正确"
@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    $user_admin = false
+    $user_login = false
     sign_out_stu
     redirect_to root_url :notice => "成功登出"
   end
