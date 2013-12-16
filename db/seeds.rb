@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+AdminPermission.create([
+                           {:permission_name => "超级管理员"},
+                           {:permission_name => "社联委员"},
+                           {:permission_name => "社团主席"}
+                       ])

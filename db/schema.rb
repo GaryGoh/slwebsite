@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131216183504) do
+ActiveRecord::Schema.define(version: 20131216204520) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(version: 20131216183504) do
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
 
+  create_table "admin_permissions", force: true do |t|
+    t.string   "permission_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "admin_users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -41,8 +47,10 @@ ActiveRecord::Schema.define(version: 20131216183504) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "admin_permission_id"
   end
 
+  add_index "admin_users", ["admin_permission_id"], name: "index_admin_users_on_admin_permission_id"
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
