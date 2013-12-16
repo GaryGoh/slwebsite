@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
-  belongs_to :members
+  belongs_to :member
 
   has_secure_password
 
@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
 
   private
   def member_id_exists
-    errors.add(:stuid, " 此学号不能注册社联网站") unless Members.exists?(:memid => self.stuid)
+    errors.add(:stuid, " 此学号不能注册社联网站") unless Member.exists?(:memid => self.stuid)
   end
 
   #def member_id_exists

@@ -1,12 +1,4 @@
-ActiveAdmin.register Members do
-
-  menu :label => "会员学号"
-
-  controller do
-    def permitted_params
-      params.permit members: [:memid, :user_id]
-    end
-  end
+ActiveAdmin.register Member do
 
   
   # See permitted parameters documentation:
