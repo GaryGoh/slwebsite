@@ -12,6 +12,7 @@ ActiveAdmin.register_page "Dashboard" do
 
 
     columns do
+      #最近新闻
       column do
         panel "最近新闻" do
           ul do
@@ -24,33 +25,45 @@ ActiveAdmin.register_page "Dashboard" do
             end
           end
         end
-      end
-      column do
+
+        #统计表
         panel "新闻发布统计表" do
           render "issues"
         end
       end
-    end
 
+      #新注册用户
+      column do
+        h3 "新注册用户"
+        table class: "index_table index" do
 
-    # Here is an example of a simple dashboard with columns and panels.
-    #
-    # columns do
-    #   column do
-    #     panel "Recent Posts" do
-    #       ul do
-    #         Post.recent(5).map do |post|
-    #           li link_to(post.title, admin_post_path(post))
-    #         end
-    #       end
-    #     end
-    #   end
+          tr do
+            th "学号"
+            th "注册时间"
+            th "姓名"
+            th "社团"
+            th "联系方式"
+          end
+          odd = true
+          User.limit(20).find(:all, :order => "created_at DESC").each do |c|
+            tr class: odd ? "odd" : "even" do
+              td link_to c.stuid, admin_user_path(c.id)
+              td c.created_at.strftime("%B #{c.created_at.day.ordinalize} %Y - %H:%M")
+              td link_to {
+                if (c.name.nil?) then
+                  ""
+                else
+                  c.name
+                end }, admin_user_path(c.id)
+              td c.department
+              td c.contact
+            end
+            odd = !odd
+          end
+        end
+      end
 
-    #   column do
-    #     panel "Info" do
-    #       para "Welcome to ActiveAdmin."
-    #     end
-    #   end
-    # end
+    end # columns
+
   end # content
 end
