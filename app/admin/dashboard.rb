@@ -1,6 +1,6 @@
 ActiveAdmin.register_page "Dashboard" do
 
-  menu :priority => 1, :label => proc { I18n.t("active_admin.dashboard") }, :if => proc{ can?(:manage, User) }
+  menu :priority => 1, :label => proc { I18n.t("active_admin.dashboard") }, :if => proc { can?(:manage, User) }
   #menu :priority => 1, :if => proc{ can?(:manage, Teacher) },
   #:if => proc{ can?(:manage, User) }
 
@@ -61,13 +61,12 @@ ActiveAdmin.register_page "Dashboard" do
             tr class: odd ? "odd" : "even" do
               td link_to c.stuid, admin_user_path(c.id)
               td c.created_at.strftime("%B #{c.created_at.day.ordinalize} %Y - %H:%M")
-              td link_to {
-                if (c.name.nil?) then
-                  ""
-                else
-                  c.name
-                end }, admin_user_path(c.id)
-              td c.department
+              if (c.name.nil?) then
+                td "N/A"
+              else
+                td link_to c.name, admin_user_path(c.id)
+              end
+              td c.society.to_s
               td c.contact
             end
             odd = !odd

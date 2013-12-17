@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
   belongs_to :member
   belongs_to :society
+  belongs_to :gender
 
   has_secure_password
 

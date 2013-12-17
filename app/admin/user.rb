@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
   permit_params :stuid, :email, :password, :password_confirmation, :name,
-                :gender, :contact, :society_id, :proverb, :member_id
+                :gender_id, :contact, :society_id, :proverb, :member_id
 
   menu :label => "公共用户",
        :if => proc{ can?(:manage, User) }

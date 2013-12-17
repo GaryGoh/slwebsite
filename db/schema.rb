@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131217135953) do
+ActiveRecord::Schema.define(version: 20131217221125) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -119,7 +119,6 @@ ActiveRecord::Schema.define(version: 20131217135953) do
     t.string   "email"
     t.string   "password_digest"
     t.string   "name"
-    t.string   "gender"
     t.string   "contact"
     t.text     "proverb"
     t.boolean  "admin"

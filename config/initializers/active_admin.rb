@@ -140,8 +140,8 @@ ActiveAdmin.setup do |config|
   # Active Admin resources and pages from here.
   #
   # config.before_filter :do_something_awesome
-  
-  
+
+
   # == Setting a Favicon
   #
   # config.favicon = '/assets/favicon.ico'
@@ -178,16 +178,16 @@ ActiveAdmin.setup do |config|
   #
   # To change the default utility navigation to show a link to your website & a logout btn
   #
-  #   config.namespace :admin do |admin|
-  #     admin.build_menu :utility_navigation do |menu|
-  #       menu.add label: :current_admin_user, url: main_app.admin_admin_user_path(), html_options: { target: :blank }
-  #       admin.add_logout_button_to_menu menu
-  #     end
-  #   end
-  #
-  #def main_app
-  #  Rails.application.class.routes.url_helpers
-  #end
+     config.namespace :admin do |admin|
+       admin.build_menu :utility_navigation do |menu|
+         menu.add label: :current_admin_user
+         admin.add_logout_button_to_menu menu
+       end
+     end
+
+  def main_app
+    Rails.application.class.routes.url_helpers
+  end
     #def get_url
     #  admin_admin_user_path(:current_admin_user)
     #end
@@ -228,7 +228,7 @@ ActiveAdmin.setup do |config|
   # Pagination is enabled by default for all resources.
   # You can control the default per page count for all resources here.
   #
-  # config.default_per_page = 30
+  config.default_per_page = 20
 
 
   # == Filters
@@ -238,5 +238,6 @@ ActiveAdmin.setup do |config|
   # You can enable or disable them for all resources here.
   #
   # config.filters = true
+  #Formtastic::FormBuilder.escape_html_entities_in_hints_and_labels = false
 
 end
