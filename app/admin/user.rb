@@ -30,17 +30,6 @@ ActiveAdmin.register User do
   end
 
 
-  #edit do
-  #  column :stuid
-  #  column :email
-  #  column :name
-  #  column :gender
-  #  column :contact
-  #  column :department
-  #  default_actions
-  #end
-
-
   # The form is to create public student user info
   form do |f|
     f.semantic_errors *f.object.errors.keys
@@ -52,6 +41,16 @@ ActiveAdmin.register User do
     end
     f.actions
   end
+
+
+  filter :stuid
+  filter :name
+  filter :email
+  filter :gender
+  filter :contact
+  filter :department
+  filter :created_at
+
 
 
   # See permitted parameters documentation:

@@ -2,6 +2,8 @@ ActiveAdmin.register Category do
   permit_params :category_name
   menu :label => "新闻总类"
 
+  filter :category_name
+
 
   
   # See permitted parameters documentation:

@@ -12,3 +12,10 @@ AdminPermission.create([
                            {:permission_name => "社联委员"},
                            {:permission_name => "社团主席"}
                        ])
+
+Category.create([
+                    {:category_name => "学校新闻"},
+                    {:category_name => "社团新闻"},
+                    {:category_name => "活动新闻"}
+
+                ])
