@@ -1,5 +1,5 @@
 class Department < ActiveRecord::Base
-  has_many :users
+  has_many :societies
 
   def to_s
     self.dep_name

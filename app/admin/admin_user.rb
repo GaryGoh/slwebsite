@@ -1,5 +1,6 @@
 ActiveAdmin.register AdminUser do
-  permit_params :email, :password, :password_confirm, :admin_permission_id
+  permit_params :email, :password, :password_confirm, :admin_permission_id,
+                :gender_id, :society_id, :sl_department_id
   menu :label => "管理员", :priority => 1
 
 
@@ -23,7 +24,15 @@ ActiveAdmin.register AdminUser do
       end
     end
 
-    f.inputs "Permission" do
+    f.inputs "用户信息" do
+      f.input :name
+      f.input :gender
+      f.input :society
+      f.input :contact
+      f.input :proverb
+    end
+
+    f.inputs "权限级别" do
       f.input :admin_permission
     end
     f.actions

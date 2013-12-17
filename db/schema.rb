@@ -11,22 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131217130408) do
-
-  create_table "active_admin_comments", force: true do |t|
-    t.string   "namespace"
-    t.text     "body"
-    t.string   "resource_id",   null: false
-    t.string   "resource_type", null: false
-    t.integer  "author_id"
-    t.string   "author_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
-  add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
-  add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
+ActiveRecord::Schema.define(version: 20131217135953) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -35,6 +20,7 @@ ActiveRecord::Schema.define(version: 20131217130408) do
   end
 
   create_table "admin_users", force: true do |t|
+    t.integer  "stuid"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -48,11 +34,21 @@ ActiveRecord::Schema.define(version: 20131217130408) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "admin_permission_id"
+    t.integer  "gender_id"
+    t.integer  "society_id"
+    t.integer  "sl_department_id"
+    t.string   "icon_url"
+    t.text     "proverb"
+    t.string   "contact"
+    t.string   "name"
   end
 
   add_index "admin_users", ["admin_permission_id"], name: "index_admin_users_on_admin_permission_id"
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
+  add_index "admin_users", ["gender_id"], name: "index_admin_users_on_gender_id"
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  add_index "admin_users", ["sl_department_id"], name: "index_admin_users_on_sl_department_id"
+  add_index "admin_users", ["society_id"], name: "index_admin_users_on_society_id"
 
   create_table "categories", force: true do |t|
     t.string   "category_name"
@@ -64,6 +60,7 @@ ActiveRecord::Schema.define(version: 20131217130408) do
     t.string   "dep_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "num_society"
   end
 
   create_table "editable_areas", force: true do |t|
@@ -74,6 +71,12 @@ ActiveRecord::Schema.define(version: 20131217130408) do
   end
 
   add_index "editable_areas", ["title"], name: "index_editable_areas_on_title"
+
+  create_table "genders", force: true do |t|
+    t.string   "gender_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "issues", force: true do |t|
     t.string   "title"
@@ -94,6 +97,23 @@ ActiveRecord::Schema.define(version: 20131217130408) do
     t.datetime "updated_at"
   end
 
+  create_table "sl_departments", force: true do |t|
+    t.string   "sl_dep_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "societies", force: true do |t|
+    t.string   "society_name"
+    t.integer  "department_id"
+    t.integer  "num_member"
+    t.integer  "num_registered_member"
+    t.string   "home_url"
+    t.boolean  "is_outstanding"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.integer  "stuid"
     t.string   "email"
@@ -101,7 +121,6 @@ ActiveRecord::Schema.define(version: 20131217130408) do
     t.string   "name"
     t.string   "gender"
     t.string   "contact"
-    t.string   "department"
     t.text     "proverb"
     t.boolean  "admin"
     t.datetime "created_at"
@@ -109,11 +128,13 @@ ActiveRecord::Schema.define(version: 20131217130408) do
     t.string   "remember_token"
     t.integer  "member_id"
     t.boolean  "is_active",       default: true, null: false
-    t.integer  "department_id"
+    t.integer  "society_id"
+    t.integer  "gender_id"
   end
 
-  add_index "users", ["department_id"], name: "index_users_on_department_id"
+  add_index "users", ["gender_id"], name: "index_users_on_gender_id"
   add_index "users", ["member_id"], name: "index_users_on_member_id"
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+  add_index "users", ["society_id"], name: "index_users_on_society_id"
 
 end

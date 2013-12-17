@@ -8,6 +8,7 @@ class DeviseCreateAdminUsers < ActiveRecord::Migration
   def change
     create_table(:admin_users) do |t|
       ## Database authenticatable
+      t.integer :stuid
       t.string :email,              :null => false, :default => ""
       t.string :encrypted_password, :null => false, :default => ""
 

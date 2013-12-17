@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
   permit_params :stuid, :email, :password, :password_confirmation, :name,
-                :gender, :contact, :department_id, :proverb, :member_id
+                :gender, :contact, :society_id, :proverb, :member_id
 
   menu :label => "公共用户"
   actions :all
@@ -21,7 +21,7 @@ ActiveAdmin.register User do
     column :name
     column :gender
     column :contact
-    column :department
+    column :society
     default_actions
   end
 
@@ -29,12 +29,20 @@ ActiveAdmin.register User do
   # The form is to create public student user info
   form do |f|
     f.semantic_errors *f.object.errors.keys
+    if f.object.new_record?
+      f.inputs "基本信息" do
+        f.input :stuid
+        f.input :email
+        f.input :password
+        f.input :password_confirmation
+      end
+    end
     f.inputs "学生信息" do
-      f.input :stuid
-      f.input :email
-      f.input :department
-      f.input :password
-      f.input :password_confirmation
+      f.input :name
+      f.input :gender
+      f.input :society
+      f.input :contact
+      f.input :proverb
     end
     f.actions
   end
@@ -44,8 +52,7 @@ ActiveAdmin.register User do
   filter :name
   filter :email
   filter :gender
-  filter :contact
-  filter :department
+  filter :society
   filter :created_at
 
 

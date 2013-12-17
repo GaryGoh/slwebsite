@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  society_name: MyString
+  department_id: 1
+  num_member: 1
+  num_registered_member: 1
+  home_url: MyString
+  is_outstanding: false
+
+two:
+  society_name: MyString
+  department_id: 1
+  num_member: 1
+  num_registered_member: 1
+  home_url: MyString
+  is_outstanding: false
