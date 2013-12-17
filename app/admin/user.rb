@@ -1,14 +1,10 @@
 ActiveAdmin.register User do
+  permit_params :stuid, :email, :password, :password_confirmation, :name,
+                :gender, :contact, :department_id, :proverb, :member_id
 
   menu :label => "公共用户"
   actions :all
 
-
-  controller do
-    def permitted_params
-      params.permit user: [:stuid, :email, :password, :password_confirmation, :name, :gender, :contact, :department, :proverb, :member_id]
-    end
-  end
 
   # Index page form
   index do
@@ -36,6 +32,7 @@ ActiveAdmin.register User do
     f.inputs "学生信息" do
       f.input :stuid
       f.input :email
+      f.input :department
       f.input :password
       f.input :password_confirmation
     end
@@ -50,7 +47,6 @@ ActiveAdmin.register User do
   filter :contact
   filter :department
   filter :created_at
-
 
 
   # See permitted parameters documentation:

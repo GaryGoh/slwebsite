@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131216204520) do
+ActiveRecord::Schema.define(version: 20131217130408) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -60,6 +60,12 @@ ActiveRecord::Schema.define(version: 20131216204520) do
     t.datetime "updated_at"
   end
 
+  create_table "departments", force: true do |t|
+    t.string   "dep_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "editable_areas", force: true do |t|
     t.string   "title",      null: false
     t.text     "content"
@@ -103,8 +109,10 @@ ActiveRecord::Schema.define(version: 20131216204520) do
     t.string   "remember_token"
     t.integer  "member_id"
     t.boolean  "is_active",       default: true, null: false
+    t.integer  "department_id"
   end
 
+  add_index "users", ["department_id"], name: "index_users_on_department_id"
   add_index "users", ["member_id"], name: "index_users_on_member_id"
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 

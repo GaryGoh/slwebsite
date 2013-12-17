@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
   belongs_to :member
+  belongs_to :department
 
   has_secure_password
 
