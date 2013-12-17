@@ -1,7 +1,8 @@
 ActiveAdmin.register Society do
   permit_params :society_name, :department_id, :num_member, :home_url, :is_outstanding
   actions :all
-  menu :label => "社团"
+  menu :label => "社团",
+       :if => proc{ can?(:manage, Society) }
 
 
   index do

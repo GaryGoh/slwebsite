@@ -1,7 +1,8 @@
 ActiveAdmin.register SlDepartment do
   permit_params :sl_dep_name
   actions :all, :except => [:edit, :show]
-  menu :label => "社联机构"
+  menu :label => "社联机构",
+       :if => proc{ can?(:manage, SlDepartment) }
 
 
   index do

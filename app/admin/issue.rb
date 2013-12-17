@@ -1,6 +1,7 @@
 ActiveAdmin.register Issue do
 
-  menu :label => "新闻"
+  menu :label => "新闻",
+  :if => proc{ can?(:manage, Issue) }
 
   controller do
     def permitted_params

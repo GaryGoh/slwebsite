@@ -1,6 +1,7 @@
 ActiveAdmin.register Category do
   permit_params :category_name
-  menu :label => "新闻总类"
+  menu :label => "新闻总类",
+  :if => proc{ can?(:manage, Category) }
 
   filter :category_name
 
