@@ -5,13 +5,13 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     #user = AdminUser.find_by(email: params[:session][:email].downcase)
-    if user && user.authenticate(params[:session][:password])
+    if user && user.authenticate(params[:session][:password]) && user.is_active
       session[:user_id] = user.id
       sign_in_stu user
       $user_login = true
       redirect_to user, :notice => "成功登录"
     else
-      redirect_to signin_url, :notice => "email或password不正确"
+      redirect_to signin_url, :notice => "email或password不正确 / 该账号已被注销,详细请联系社团联合会"
     end
 
   end

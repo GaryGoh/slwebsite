@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
   permit_params :stuid, :email, :password, :password_confirmation, :name,
-                :gender_id, :contact, :society_id, :proverb, :member_id
+                :gender_id, :contact, :society_id, :proverb, :member_id, :is_active
 
   menu :label => "公共用户",
        :if => proc{ can?(:manage, User) }
@@ -32,18 +32,21 @@ ActiveAdmin.register User do
     f.semantic_errors *f.object.errors.keys
     if f.object.new_record?
       f.inputs "基本信息" do
-        f.input :stuid
+        f.input :stuid, :label => "学号"
         f.input :email
         f.input :password
         f.input :password_confirmation
       end
     end
     f.inputs "学生信息" do
-      f.input :name
-      f.input :gender
-      f.input :society
-      f.input :contact
-      f.input :proverb
+      f.input :name, :label => "姓名"
+      f.input :gender, :label => "性别"
+      f.input :society, :label => "所属社团"
+      f.input :contact, :label => "联系方式"
+      f.input :proverb, :label => "个人简介"
+    end
+    f.inputs "账号状态" do
+      f.input :is_active, :label => "激活"
     end
     f.actions
   end

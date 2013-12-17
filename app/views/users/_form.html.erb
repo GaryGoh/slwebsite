@@ -43,7 +43,8 @@
           <label class="control-label" for="Gender">性别</label>
 
           <div class="controls">
-            <%= f.select :gender, [['男', '男'], ['女', '女'], ['其他', '其他']], :class => "form-control" %>
+            <%= f.select :gender_id, Gender.find(:all, :order => "gender_name DESC").collect { |s|
+              [(s.gender_name), s.id] } %>
           </div>
         </div>
 
@@ -51,7 +52,8 @@
           <label class="control-label" for="Department">部门</label>
 
           <div class="controls">
-            <%= f.select :department, [['主席团', '主席团'], ['公益实践中心', '公益实践中心'], ['文娱兴趣中心', '文娱兴趣中心'], ['体育竞技中心', '体育竞技中心'], ['文娱兴趣中心', '文娱兴趣中心'], ['微博中心', '微博中心'], ['办公室', '办公室'], ['网络部', '网络部'], ['外联部', '外联部'], ['财务部', '财务部'], ['新闻部', '新闻部'], ['组织部', '组织部']], :class => "form-control" %>
+            <%= f.select :society_id, Society.find(:all, :order => "society_name").collect { |s|
+              [(s.society_name), s.id] } %>
           </div>
         </div>
 

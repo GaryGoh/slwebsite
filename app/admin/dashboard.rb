@@ -28,7 +28,7 @@ ActiveAdmin.register_page "Dashboard" do
       column do
         panel "最近新闻" do
           ul do
-            Issue.limit(10).map do |e|
+            Issue.limit(10).reverse.map do |e|
               li link_to(if (e.user.name.nil?) then
                            e.user.stuid
                          else

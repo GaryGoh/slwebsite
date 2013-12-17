@@ -47,19 +47,15 @@
                   </tr>
                   <tr>
                     <td><strong>性别: </strong></td>
-                    <td><%= @user.gender %></td>
+                    <td><%= @user.gender.to_s %></td>
                   </tr>
                   <tr>
                     <td><strong>联系方式: </strong></td>
                     <td><%= @user.contact %></td>
                   </tr>
                   <tr>
-                    <td><strong>部门: </strong></td>
-                    <td><%= @user.department %></td>
-                  </tr>
-                  <tr>
-                    <td><strong>管理员: </strong></td>
-                    <td><%= @user.admin %></td>
+                    <td><strong>所属社团: </strong></td>
+                    <td><%= @user.society.to_s %></td>
                   </tr>
                   <tr>
                     <td><strong>个人简介:</strong></td>
