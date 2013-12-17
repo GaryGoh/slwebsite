@@ -1,8 +1,10 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirm, :admin_permission_id
-  controller.authorize_resource
+  menu :label => "管理员", :priority => 1
+
 
   index do
+    selectable_column
     column :email
     column :current_sign_in_at
     column :last_sign_in_at
@@ -13,15 +15,19 @@ ActiveAdmin.register AdminUser do
   filter :email
 
   form do |f|
-    f.inputs "Admin Details" do
-      f.input :email
+    if f.object.new_record?
+      f.inputs "登录信息" do
+        f.input :email
+        f.input :password
+        f.input :password_confirmation
+      end
     end
+
     f.inputs "Permission" do
       f.input :admin_permission
     end
     f.actions
   end
-
 
 
   # See permitted parameters documentation:
@@ -36,5 +42,5 @@ ActiveAdmin.register AdminUser do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  
+
 end

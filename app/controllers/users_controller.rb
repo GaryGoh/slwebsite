@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    @members = Members.all
+    @members = Member.all
     @user = User.new
   end
 

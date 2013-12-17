@@ -6,22 +6,28 @@ ActiveAdmin.register User do
 
   controller do
     def permitted_params
-      params.permit user: [:stuid, :email, :password, :password_confirmation, :name, :gender, :contact, :department, :proverb, :admin]
+      params.permit user: [:stuid, :email, :password, :password_confirmation, :name, :gender, :contact, :department, :proverb, :member_id]
     end
   end
 
   # Index page form
   index do
+    selectable_column
+    column :state do |t|
+      if t.is_active == true
+        status_tag 'active', :ok
+      else
+        status_tag 'inactive'
+      end
+
+    end
     column :stuid
-    column :email
     column :name
     column :gender
     column :contact
     column :department
     default_actions
   end
-
-
 
 
   #edit do
@@ -35,7 +41,6 @@ ActiveAdmin.register User do
   #end
 
 
-
   # The form is to create public student user info
   form do |f|
     f.semantic_errors *f.object.errors.keys
@@ -47,6 +52,7 @@ ActiveAdmin.register User do
     end
     f.actions
   end
+
 
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

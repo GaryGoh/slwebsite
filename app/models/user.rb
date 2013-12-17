@@ -47,7 +47,7 @@ class User < ActiveRecord::Base
   end
 
   #def member_id_exists
-  #  if Members.where(:memid => self.stuid).blank?
+  #  if Member.where(:memid => self.stuid).blank?
   #    return true
   #  else
   #    return false

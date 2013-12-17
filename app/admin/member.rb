@@ -1,6 +1,20 @@
 ActiveAdmin.register Member do
+  permit_params :memid
+  actions :all, :except => [:edit, :show]
+  menu :label => "会员学号"
 
-  
+
+  index do
+    selectable_column
+    column :memid
+    column :created_at
+    default_actions
+  end
+
+  filter :memid
+  filter :created_at
+
+  #Member.exists?(:memid => self.stuid)
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -13,5 +27,5 @@ ActiveAdmin.register Member do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  
+
 end

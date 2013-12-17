@@ -9,6 +9,7 @@ ActiveAdmin.register Issue do
   end
 
   index do
+    selectable_column
     column :id
     column :title
     column :category_id
