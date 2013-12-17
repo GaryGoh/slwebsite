@@ -28,4 +28,12 @@ class AdminUser < ActiveRecord::Base
     new_record? ? false : super
   end
 
+
+  def to_s
+    if self.name.nil?
+      self.email
+    else
+      self.name
+    end
+  end
 end

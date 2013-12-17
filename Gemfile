@@ -46,6 +46,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 #authorisation
 gem "cancan"
 
+gem 'pry-rails'
+
 #gem 'protected_attributes'
 
 # Use unicorn as the app server

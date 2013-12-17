@@ -34,7 +34,7 @@ ActiveAdmin.setup do |config|
   #   config.default_namespace = false
   #
   # Default:
-  # config.default_namespace = :admin
+  #config.default_namespace = :current_admin_user
   #
   # You can customize the settings for each namespace by using
   # a namespace block. For example, to change the site title
@@ -180,10 +180,17 @@ ActiveAdmin.setup do |config|
   #
   #   config.namespace :admin do |admin|
   #     admin.build_menu :utility_navigation do |menu|
-  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
+  #       menu.add label: :current_admin_user, url: main_app.admin_admin_user_path(), html_options: { target: :blank }
   #       admin.add_logout_button_to_menu menu
   #     end
   #   end
+  #
+  #def main_app
+  #  Rails.application.class.routes.url_helpers
+  #end
+    #def get_url
+    #  admin_admin_user_path(:current_admin_user)
+    #end
   #
   # If you wanted to add a static menu item to the default menu provided:
   #
