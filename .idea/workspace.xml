@@ -4,17 +4,9 @@
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/admin/admin_permission.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/admin/department.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131213120950_create_active_admin_comments.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131215035157_create_members.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/members_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131213120948_devise_create_admin_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20131213120948_devise_create_admin_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/admin_user.rb" afterPath="$PROJECT_DIR$/app/admin/admin_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin_user.rb" afterPath="$PROJECT_DIR$/app/models/admin_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/department.rb" afterPath="$PROJECT_DIR$/app/models/department.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/user.rb" afterPath="$PROJECT_DIR$/app/admin/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
@@ -100,9 +92,10 @@
     <file path="/20131217133806_del_column_users.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387287497959" ignored="false" />
     <file path="/gender.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387287998230" ignored="false" />
     <file path="/20131217134738_add_fk_2.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387288189780" ignored="false" />
-    <file path="/sl_department.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387288709199" ignored="false" />
+    <file path="/sl_department.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387291066747" ignored="false" />
     <file path="/20131217135953_add_more_info.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387289582218" ignored="false" />
     <file path="/20131213120948_devise_create_admin_users.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387290374840" ignored="false" />
+    <file path="/Gemfile" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387291319766" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,16 +118,43 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="1" selection-start="851" selection-end="960" vertical-scroll-proportion="0.0">
+            <state line="38" column="31" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin_user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="22" selection-start="697" selection-end="697" vertical-scroll-proportion="0.7288401">
+            <state line="3" column="24" selection-start="193" selection-end="207" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="14" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sl_department.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/sl_department.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="8" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="12" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.7106825">
               <folding />
             </state>
           </provider>
@@ -153,15 +173,6 @@
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="24" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131217134738_add_fk_2.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131217134738_add_fk_2.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="52" selection-end="253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,24 +205,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="31" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -230,22 +223,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/department.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/society.rb" />
         <option value="$PROJECT_DIR$/app/admin/department.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131217133806_del_column_users.rb" />
         <option value="$PROJECT_DIR$/app/models/gender.rb" />
         <option value="$PROJECT_DIR$/app/models/sl_department.rb" />
         <option value="$PROJECT_DIR$/app/admin/society.rb" />
-        <option value="$PROJECT_DIR$/app/admin/sl_department.rb" />
         <option value="$PROJECT_DIR$/app/admin/user.rb" />
-        <option value="$PROJECT_DIR$/app/admin/admin_user.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131217134738_add_fk_2.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131213120948_devise_create_admin_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131217135953_add_more_info.rb" />
         <option value="$PROJECT_DIR$/app/models/admin_user.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/admin/admin_user.rb" />
+        <option value="$PROJECT_DIR$/app/admin/dashboard.rb" />
+        <option value="$PROJECT_DIR$/app/admin/sl_department.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -981,30 +974,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/admin/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/member.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="70" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/society.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="14" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/sl_department.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1019,13 +991,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20131217134601_create_genders.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="851" selection-end="960" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1086,9 +1051,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="31" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="697" selection-end="697" vertical-scroll-proportion="0.7288401">
+        <state line="3" column="24" selection-start="193" selection-end="207" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/sl_department.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="12" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.7106825">
           <folding />
         </state>
       </provider>

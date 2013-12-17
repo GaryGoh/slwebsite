@@ -37,9 +37,14 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+# news editor
 gem 'wysihtml5-rails'
 
+# Back-end
 gem 'activeadmin', github: 'gregbell/active_admin'
+
+#authorisation
+gem "cancan"
 
 #gem 'protected_attributes'
 
