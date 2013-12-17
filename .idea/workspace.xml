@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admin/admin_permission.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/members.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131215035157_create_members.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/members_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/admin_user.rb" afterPath="$PROJECT_DIR$/app/admin/admin_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/category.rb" afterPath="$PROJECT_DIR$/app/admin/category.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/issue.rb" afterPath="$PROJECT_DIR$/app/admin/issue.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/member.rb" afterPath="$PROJECT_DIR$/app/admin/member.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/member.rb" afterPath="$PROJECT_DIR$/app/models/member.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/user.rb" afterPath="$PROJECT_DIR$/app/admin/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,6 +74,10 @@
     <file path="/production.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387249264828" ignored="false" />
     <file path="/category.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387250103146" ignored="false" />
     <file path="/temp.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387251318741" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387254263044" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387254263044" ignored="false" />
+    <file path="$PROJECT_DIR$/app/mailers/system_mailer.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387254263044" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387254263045" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,10 +115,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin_user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="4" selection-start="503" selection-end="503" vertical-scroll-proportion="0.54462934">
+            <state line="24" column="4" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_permission.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/admin/admin_permission.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,15 +164,6 @@
         <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="121" column="25" selection-start="3788" selection-end="3788" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="member.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/member.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="76" selection-end="107" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -897,13 +886,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="74" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1004,7 +986,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="503" selection-end="503" vertical-scroll-proportion="0.54462934">
+        <state line="24" column="4" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/admin_permission.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
