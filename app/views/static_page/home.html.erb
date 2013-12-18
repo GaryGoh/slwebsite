@@ -7,30 +7,25 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag "/images/home/DSC_0458.jpg", size: "1600x1200" %>
-      <div class="carousel-caption">
 
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag @background_active.ava_pic.url(:medium) %>
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+
+        <% @backgrounds_standby.each do |bg| %>
+        <div class="item">
+          <%= image_tag bg.ava_pic.url(:medium) %>
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <% end %>
       </div>
-    </div>
 
-    <div class="item">
-      <%= image_tag "/images/home/DSC_0673.jpg", size: "1600x1200" %>
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag "/images/home/DSC_0677.jpg", size: "1600x1200" %>
-
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-
-  </div>
 
 </div>
 <!--<div class="container">-->

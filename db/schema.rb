@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131218002144) do
+ActiveRecord::Schema.define(version: 20131218012148) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -76,6 +76,16 @@ ActiveRecord::Schema.define(version: 20131218002144) do
     t.string   "gender_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "home_backgrounds", force: true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "ava_pic_file_name"
+    t.string   "ava_pic_content_type"
+    t.integer  "ava_pic_file_size"
+    t.datetime "ava_pic_updated_at"
   end
 
   create_table "issues", force: true do |t|
