@@ -32,6 +32,15 @@ ActiveAdmin.register HomeBackground do
     end
     f.actions
   end
+  #
+  #controller do
+  #  def destroy
+  #    @home_background = HomeBackground.find(params[:id])
+  #    @home_background.ava_pic = nil
+  #    @home_background.save
+  #    @home_background.destroy
+  #  end
+  #end
 
 
   filter :description

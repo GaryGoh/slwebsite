@@ -15,16 +15,39 @@
 <body>
 <%= render 'layouts/header' %>
 <div class="row">
-  <div class="col-md-11 col-md-push-1">
+  <div class="col-md-10 col-md-push-2" id="global_right_contents">
 
     <%= yield %>
   </div>
-  <div class="col-md-1 col-md-pull-11">
+  <div class="col-md-2 col-md-pull-10">
     <ul class="nav nav-pills nav-stacked nav-fixed-top" id="global_left_nav">
-      <li><%= link_to_function raw('<span class="glyphicon glyphicon-circle-arrow-left" id="span1"></span>'), "history.go(-1)" %> </li>
-      <li><%= link_to_function raw('<span class="glyphicon glyphicon-circle-arrow-right" id="span1"></span>'), "history.go(+1)" %> </li>
-      <li><%= link_to raw('<span class="glyphicon glyphicon-cog" id="span1"></span>'), user_url(session[:user_id]) %> </li>
-      <li><%= link_to raw('<span class="glyphicon glyphicon-off" id="span1"></span>'), signout_path, method: "delete" %> </li>
+      <!--<li><%= link_to_function raw('<span class="glyphicon glyphicon-circle-arrow-left" id="span1"></span>'), "history.go(-1)" %> </li>-->
+      <!--<li><%= link_to_function raw('<span class="glyphicon glyphicon-circle-arrow-right" id="span1"></span>'), "history.go(+1)" %> </li>-->
+      <li><a href=<%= root_url %>>
+        <div id="homenav">
+          <span class="glyphicon glyphicon-home" id="span2"> <strong style="font-family:FZShuTi">社联主页</strong></span>
+        </div>
+      </a></li>
+      <li><a href=<%= news_url %>>
+        <div id="homenav">
+          <span class="glyphicon glyphicon-th" id="span2"> <strong style="font-family:FZShuTi">新闻部落</strong></span>
+        </div>
+      </a></li>
+
+      <li><a href=<%= user_url(session[:user_id]) %>>
+        <div id="homenav">
+          <span class="glyphicon glyphicon-cog" id="span2"> <strong style="font-family:FZShuTi">用户设置</strong></span>
+        </div>
+      </a></li>
+
+      <li><a href=<%= signout_path %>>
+        <div id="homenav">
+          <span class="glyphicon glyphicon-off" id="span2"> <strong style="font-family:FZShuTi">登出</strong></span>
+        </div>
+      </a></li>
+
+
+      <!--<li> </li>-->
 
     </ul>
   </div>

@@ -130,6 +130,10 @@ a:hover {
   // -- leff side nav -- //
   //float:right;
   //opacity: .7;
+  position: relative;
+  left: 15px;
+  width: 190px;
+  //margin-right: -200%;
   background: #ffffff;
 }
 
@@ -138,6 +142,12 @@ a:hover {
   //float:right;
   //opacity: 1.0;
 }
+
+
+#global_right_contents {
+  position: relative;
+}
+
 
 #span1 {
   // -- left side nav icon -- //
@@ -213,4 +223,13 @@ a:hover {
   position: relative;
   top: -10px;
   margin-bottom: -20px;
+}
+
+#span2{
+  font-size: 18px;
+}
+
+#navword{
+  //font-size: 24px;
+  //font-variant: inherit;
 }
