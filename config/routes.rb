@@ -23,7 +23,7 @@ Slwebsite::Application.routes.draw do
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/failure', to: 'sessions#failure',     via: 'delete'
 
-  root 'static_page#home'
+  root 'static_page#index'
 
   get '/news',  to: 'public_news#allnews'
   #get '/news',  to: 'public_news#allnews'

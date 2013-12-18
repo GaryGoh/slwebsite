@@ -51,6 +51,11 @@ gem 'pry-rails'
 # Pic upload midware
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
+# icon midware
+gem "font-awesome-rails"
+gem 'font-awesome-sass'
+
+
 
 #gem 'protected_attributes'
 
