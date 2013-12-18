@@ -57,6 +57,12 @@
                     <td><strong>所属社团: </strong></td>
                     <td><%= @user.society.to_s %></td>
                   </tr>
+
+                  <tr>
+                    <td><strong>照片: </strong></td>
+                    <td><%= image_tag @user.avatar.url(:thumb) %></td>
+                  </tr>
+
                   <tr>
                     <td><strong>个人简介:</strong></td>
                     <td>

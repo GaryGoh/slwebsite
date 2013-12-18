@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   belongs_to :gender
 
   has_secure_password
+  has_attached_file :avatar, :styles => {:medium => "300x300>", :thumb => "100x100>"}, :default_url => "/images/:style/missing.png"
 
 
   def self.sweep(time = 1.hour)

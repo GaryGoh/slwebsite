@@ -1,9 +1,9 @@
 ActiveAdmin.register User do
   permit_params :stuid, :email, :password, :password_confirmation, :name,
-                :gender_id, :contact, :society_id, :proverb, :member_id, :is_active
+                :gender_id, :contact, :society_id, :proverb, :member_id, :is_active, :avatar
 
   menu :label => "公共用户",
-       :if => proc{ can?(:manage, User) }
+       :if => proc { can?(:manage, User) }
   actions :all
 
 
@@ -43,6 +43,11 @@ ActiveAdmin.register User do
       f.input :gender, :label => "性别"
       f.input :society, :label => "所属社团"
       f.input :contact, :label => "联系方式"
+      if f.object.avatar.nil?
+        f.input :avatar, :as => :file, :label => "个人头像"
+      else
+        f.input :avatar, :as => :file, :hint => f.template.image_tag(f.object.avatar.url(:thumb)), :label => "个人头像"
+      end
       f.input :proverb, :label => "个人简介"
     end
     f.inputs "账号状态" do
@@ -50,6 +55,11 @@ ActiveAdmin.register User do
     end
     f.actions
   end
+
+
+  #show do
+  #
+  #end
 
 
   filter :stuid
