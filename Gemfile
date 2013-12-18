@@ -48,6 +48,10 @@ gem "cancan"
 
 gem 'pry-rails'
 
+# Pic upload midware
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+
+
 #gem 'protected_attributes'
 
 # Use unicorn as the app server
