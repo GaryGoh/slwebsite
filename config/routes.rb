@@ -26,7 +26,7 @@ Slwebsite::Application.routes.draw do
   root 'static_page#index'
 
   get '/news',  to: 'public_news#allnews'
-  #get '/news',  to: 'public_news#allnews'
+  get '/download',  to: 'material#download'
   get 'shownews/:id', to: 'public_news#shownews', as: :shownews
 
   #default_url_options :host => "0.0.0.0:3000"

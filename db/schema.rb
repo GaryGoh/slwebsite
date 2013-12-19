@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131218012148) do
+ActiveRecord::Schema.define(version: 20131219214914) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -100,6 +100,16 @@ ActiveRecord::Schema.define(version: 20131218012148) do
   end
 
   add_index "issues", ["category_id"], name: "index_issues_on_category_id"
+
+  create_table "materials", force: true do |t|
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "document_file_name"
+    t.string   "document_content_type"
+    t.integer  "document_file_size"
+    t.datetime "document_updated_at"
+  end
 
   create_table "members", force: true do |t|
     t.integer  "memid"

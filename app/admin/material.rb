@@ -1,17 +1,15 @@
-ActiveAdmin.register HomeBackground do
+ActiveAdmin.register Material do
 
-  permit_params :description, :ava_pic
+  permit_params :description, :document, :document_file_name
   actions :all, :except => [:edit, :show]
-  menu :label => "背景图片",
-       :if => proc { can?(:manage, HomeBackground) }
+  menu :label => "资料上传",
+       :if => proc { can?(:manage, Material) }
 
 
   index do
     selectable_column
     column :description
-    column "预览" do |image|
-      link_to(image_tag(image.ava_pic.url(:thumb), :height => '100'), image.ava_pic.url(:medium))
-    end
+    column :document_file_name
     column :created_at
     default_actions
   end
@@ -26,34 +24,25 @@ ActiveAdmin.register HomeBackground do
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
-    f.inputs "背景图片" do
+    f.inputs "文件上传" do
       f.input :description
-      f.input :ava_pic, :as => :file
+      f.input :document, :as => :file
     end
     f.actions
   end
   #
   #controller do
   #  def destroy
-  #
-  #
-  #
   #    @home_background = HomeBackground.find(params[:id])
   #    @home_background.ava_pic = nil
   #    @home_background.save
   #    @home_background.destroy
-  #    respond_to do |format|
-  #      format.html { redirect_to admin_home_background_url }
-  #      format.json { head :no_content }
-  #    end
-  #
   #  end
   #end
 
 
   filter :description
   filter :created_at
-
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -66,5 +55,5 @@ ActiveAdmin.register HomeBackground do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-
+  
 end

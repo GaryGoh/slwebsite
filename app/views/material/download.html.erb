@@ -1,0 +1,11 @@
+<% @materials.each do |m| %>
+    <tr>
+
+      <td><%= m.document_file_name %></td>
+      <td><%= m.description %></td>
+      <%= link_to "Download", Material.whatever.url(:original, true) %>
+      </td>
+    </tr>
+<% end %>
+
+
