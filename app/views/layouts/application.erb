@@ -58,12 +58,13 @@
 
         #sidebar.affix-top {
             position: static;
+
         }
 
         #sidebar.affix {
             position: fixed !important;
             top: 50px;
-            width: 200px;
+            width: 180px;
         }
 
         #midCol.affix-top {
@@ -122,6 +123,8 @@
     }
 
     .navbar {
+        opacity:0.9;
+
         background-color: #676767;
         color: #DDD;
         border-radius: 0;
@@ -139,7 +142,7 @@
     }
 
     .navbar-nav li a:hover {
-        background-color: #77CCDD;
+        background-color: #66BBCC;
     }
 
     .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
@@ -267,109 +270,22 @@
 
 <body>
 
-<!-- Begin Navbar -->
-<div class="navbar navbar-static navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href=<%= root_url %>><b>社团联合会</b></a>
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="glyphicon glyphicon-chevron-down"></span>
-      </a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href=<%= news_url %>>活动通知</a></li>
-        <li><a href="http://www.bootply.com/render/69913#">资料下载</a></li>
-        <li class="dropdown">
-          <a href="http://www.bootply.com/render/69913#" class="dropdown-toggle" data-toggle="dropdown">社团中心</a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.bootply.com/render/69913#">公益实践中心</a></li>
-            <li><a href="http://www.bootply.com/render/69913#">文娱兴趣中心</a></li>
-            <li><a href="http://www.bootply.com/render/69913#">体育竞技中心</a></li>
-            <li><a href="http://www.bootply.com/render/69913#">学术科技中心</a></li>
 
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav pull-right navbar-nav">
-        <li class="dropdown">
-          <a href="http://www.bootply.com/render/69913#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-          <ul class="dropdown-menu" style="padding:12px;">
-            <form class="form-inline">
-              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i>
-              </button>
-              <input type="text" class="form-control pull-left" placeholder="Search">
-            </form>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="http://www.bootply.com/render/69913#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>
-            <i class="glyphicon glyphicon-chevron-down"></i></a>
-          <ul class="dropdown-menu">
-            <% if current_user_stu %>
-                <li><%= link_to current_user_stu.email, user_url(session[:user_id]) %></li>
-                <li class="divider"></li>
-                <li><%= link_to '登出', signout_path, method: "delete" %></li>
-            <% else %>
-                <li><%= link_to "注册", signup_url %></li>
-                <li><%= link_to "登录", signin_url %></li>
-            <% end %>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- /.navbar -->
-
-
-
-
-
-<header class="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <!--<img src="images/home/logo.jpg" width="1140" height="180">-->
-      </div>
-    </div>
-  </div>
-</header>
+<%= render 'layouts/header2' %>
 
 <!-- Begin Body -->
 <div class="container">
   <div class="no-gutter row">
     <!-- left side column -->
-    <div class="col-md-2">
-      <div class="panel panel-default affix-top" id="sidebar">
-        <div class="panel-heading" style="background-color:#888;color:#fff;">导航栏</div>
-        <div class="panel-body">
-          <ul class="nav nav-stacked">
-            <li><a href=<%= root_url %>> 社联主页</a></li>
-            <li><a href="/news">新闻部落</a></li>
-            <li><a href="http://www.bootply.com/render/69913#">社团中心</a></li>
-            <li><a href="http://www.bootply.com/render/69913#">活动通知</a></li>
-            <li><a href="http://www.bootply.com/render/69913#">资料下载</a></li>
-            <li><a href="http://www.bootply.com/render/69913#">社联介绍</a></li>
-          </ul>
-
-
-          <hr>
-
-          <div class="col col-span-12">
-            <a href="http://e.weibo.com/guetstlhh" id="index_icon"><i class="fa fa-weibo fa-2x"></i></a>
-            <i class="fa fa-renren fa-2x"></i>
-            <!--<i class="fa fa-linkedin"></i>-->
-            <!--<i class="fa fa-pinterest"></i>-->
-          </div>
-
-        </div>
-        <!--/panel body-->
-      </div>
-      <!--/panel-->
-    </div>
+    <%= render 'layouts/navbar' %>
     <!--/end left column-->
-    <%= yield %>
+    <div class="col-md-10">
+        <div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>
+        <div class="panel-body">
+          <%= yield %>
+        </div>
+    </div>
+
 
   </div>
 </div>
