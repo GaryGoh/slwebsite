@@ -21,13 +21,11 @@
 //= require wysihtml5
 //= require parser_rules/advanced
 
-//$(function(){
-//    $("#global_left_nav").hover(function(){
-//        $(this).find("span").show();
-//    },function(){
-//        $(this).find("span").hide();
-//    });
-//});
+
+//= require masonry.pkgd.js
+
+
+
 
 //$("#span1").animate({
 //    opacity: .4

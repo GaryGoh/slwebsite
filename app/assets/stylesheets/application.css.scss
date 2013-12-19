@@ -1,6 +1,7 @@
 // change colors
 //$link-color: red;
 
+
 // import original bootstrap
 @import "twitter/bootstrap";
 
@@ -50,12 +51,17 @@ textarea {
 }
 
 #footer_div {
-  position:absolute;
+  position:static;
   bottom:0;
   width:100%;
   text-align: center;
 
 }
+#footer_index{
+  text-align: center;
+
+}
+
 
 // Signin form
 .form-signin {

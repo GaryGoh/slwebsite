@@ -55,7 +55,14 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "font-awesome-rails"
 gem 'font-awesome-sass'
 
+# fluid
+gem 'masonry-rails', :git => "git://github.com/kristianmandrup/masonry-rails.git"
 
+
+#search
+gem 'chinese_pinyin', '0.4.1'
+gem 'rmmseg-cpp-huacnlee', '0.2.9'
+gem 'redis-search', '0.9.0'
 
 #gem 'protected_attributes'
 
