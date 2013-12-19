@@ -18,6 +18,11 @@ class StaticPageController < ApplicationController
 
   def news
     @issues = Issue.all
+    respond_to do |format|
+      format.html
+      format.js
+    end
+
   end
 
   def background_params

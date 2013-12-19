@@ -18,57 +18,14 @@
       </thead>
 
       <tbody>
+      <!-- render ajax-->
+      <p><%= link_to 'Show ajax', news_path, remote: true %></p>
+
+      <div id="ajaxnews">
+        <%= render :partial => 'ajaxnews',:locals => { :issues => @issues } %>
+      </div>
 
 
-      <% @issues.each do |issue| %>
-          <tr>
-
-            <div id="container" class="js-masonry"
-                 data-masonry-options='{ "columnWidth": 200, "itemSelector": ".item" }'>
-              <div class="fluid">
-                <div class="col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img data-src="holder.js/300x200" alt="...">
-
-                    <div class="caption">
-                      <h3><%= issue.title %></h3>
-
-                      <p><%= issue.created_at.strftime("%m-%e-%Y") %></p>
-                      <!--<p>-->
-                      <!--&lt;!&ndash; Button trigger modal &ndash;&gt;-->
-                      <!--<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal">-->
-                      <!--查看-->
-                      <!--</button>-->
-
-                      <!--&lt;!&ndash; Modal &ndash;&gt;-->
-                      <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
-                      <!--<div class="modal-dialog">-->
-                      <!--<div class="modal-content">-->
-                      <!--<div class="modal-header">-->
-                      <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
-                      <!--<h4 class="modal-title" id="myModalLabel" align="center"><%= issue.title %></h4>-->
-                      <!--</br>-->
-                      <!--<h7 class="modal-title" align="left"><%= issue.created_at %></h7>-->
-                      <!--</div>-->
-                      <!--<div class="modal-body">-->
-                      <!--<p><%= issue.content %><p>-->
-                      <!--</div>-->
-                      <!--<div class="modal-footer">-->
-                      <!--<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
-                      <!--<a href=<%= shownews_url(issue) %>, class="btn btn-primary" role="button">详细</a>-->
-                      <!--</div>-->
-                      <!--</div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
-                      <!--</div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
-                      <!--</div>&lt;!&ndash; /.modal &ndash;&gt;-->
-                      <!--</p>&lt;!&ndash; col-md-6 &ndash;&gt;-->
-                      <p><a href=<%= shownews_url(issue) %>, class="btn btn-primary btn-block" role="button">详细</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </tr>
-      <% end %>
       </tbody>
     </table>
   </div>
