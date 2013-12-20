@@ -1,6 +1,6 @@
 class PublicNewsController < ApplicationController
   def allnews
-    @issues = Issue.all
+    @issues = Issue.all.reverse
   end
 
   def shownews
