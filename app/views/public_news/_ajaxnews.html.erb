@@ -6,7 +6,7 @@
         <div class="fluid">
           <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img data-src="holder.js/300x200" alt="...">
+              <%= image_tag issue.issue_pic.url(:thumb) %>
 
               <div class="caption">
                 <h3><%= issue.title %></h3>

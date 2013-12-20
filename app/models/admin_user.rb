@@ -10,6 +10,10 @@ class AdminUser < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
 
+  has_attached_file :admin_pic, :styles => {:medium => "300x300>", :thumb => "100x100>"}, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :admin_pic, :content_type => ['image/jpeg', 'image/jpg', 'image/png']
+
+
   VALID_STUID_REGEX = /^[0-9]{9,10}$/
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 

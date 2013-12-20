@@ -3,11 +3,12 @@
       <div class="panel-body">
         <div class="media">
           <a class="pull-left" href=<%= show_url(sl) %>>
-            <img class="media-object" src="..." alt="...">
+            <td><%= image_tag sl.admin_pic.url(:thumb) %></td>
           </a>
 
           <div class="media-body">
-            <h4 class="media-heading"><%= sl.name %></h4>
+            <a href=<%= show_url(sl) %>>
+              <h4 class="media-heading"><%= sl.name %></h4></a>
             <blockquote>
               <%= sl.proverb %>
             </blockquote>

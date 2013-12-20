@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131220042517) do
+ActiveRecord::Schema.define(version: 20131220054814) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -41,6 +41,10 @@ ActiveRecord::Schema.define(version: 20131220042517) do
     t.text     "proverb"
     t.string   "contact"
     t.string   "name"
+    t.string   "admin_pic_file_name"
+    t.string   "admin_pic_content_type"
+    t.integer  "admin_pic_file_size"
+    t.datetime "admin_pic_updated_at"
   end
 
   add_index "admin_users", ["admin_permission_id"], name: "index_admin_users_on_admin_permission_id"
@@ -104,6 +108,10 @@ ActiveRecord::Schema.define(version: 20131220042517) do
     t.string   "pic_url"
     t.string   "author"
     t.integer  "category_id"
+    t.string   "issue_pic_file_name"
+    t.string   "issue_pic_content_type"
+    t.integer  "issue_pic_file_size"
+    t.datetime "issue_pic_updated_at"
   end
 
   add_index "issues", ["category_id"], name: "index_issues_on_category_id"

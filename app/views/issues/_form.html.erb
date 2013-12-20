@@ -72,7 +72,7 @@
 
 
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">所属中心</label>
+            <label for="inputPassword3" class="col-sm-2 control-label">所属类型</label>
             <%= f.select :category_id, Category.find(:all).collect { |s|
               [(s.category_name), s.id] } %>
 
@@ -81,7 +81,24 @@
             </div>
           </div>
 
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">新闻图片</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="control-group">
+
+                <div class="controls">
+                  <%= f.file_field :issue_pic %>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <div class="form-group">
+
             <div class="col-sm-offset-2 col-sm-10">
               <%= f.submit class: "btn btn-primary btn-block", value: "提交" %>
             </div>
@@ -90,9 +107,6 @@
       </div>
     </div>
 <% end %>
-
-
-
 
 
 

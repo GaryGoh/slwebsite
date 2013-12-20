@@ -3,14 +3,81 @@
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h2 align="center"><%= @slmember.email%></h2>
+    <h2 align="center"><%= @slmember.sl_department.to_s%> - <%= @slmember.name%></h2>
   </div>
 
   <div class="panel-body">
-    <pre id="issue_pre"><h5><%= @slmember.email%></h5></pre>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" id="coll_a1"> 委员资料
+      </a>
+    </h4>
+  </div>
+  <div id="collapseOne" class="panel-collapse collapse in">
+    <div class="panel-body">
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+        <tr>
+          <th></th>
+          <th></th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <!--<tr>-->
+
+          <!--<td><strong>学号: </strong></td>-->
+          <!--<td><%= @slmember.stuid %></td>-->
+        <!--</tr>-->
+        <tr>
+          <td><strong>Email:</strong></td>
+          <td><%= @slmember.email %></td>
+        </tr>
+        <tr>
+          <td><strong>姓名: </strong></td>
+          <td><%= @slmember.name %></td>
+        </tr>
+        <tr>
+          <td><strong>性别: </strong></td>
+          <td><%= @slmember.gender.to_s %></td>
+        </tr>
+        <tr>
+          <td><strong>联系方式: </strong></td>
+          <td><%= @slmember.contact %></td>
+        </tr>
+        <tr>
+          <td><strong>所属部门: </strong></td>
+          <td><%= @slmember.sl_department.to_s %></td>
+        </tr>
+
+        <tr>
+          <td><strong>照片: </strong></td>
+          <td><%= image_tag @slmember.admin_pic.url(:thumb) %></td>
+        </tr>
+
+        <tr>
+          <td><strong>个人简介:</strong></td>
+          <td>
+            <pre id="user_pre"><%= @slmember.proverb %></pre>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
   </div>
 
 </div>
+
+
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), slmember_path %></td>
 
 

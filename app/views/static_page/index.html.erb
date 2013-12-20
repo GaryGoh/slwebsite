@@ -105,10 +105,9 @@
     <div class="panel-heading" style="background-color:#111;color:#fff;">头条新闻</div>
     <div class="panel-body">
 
-      <%= render partial: "module/news1", locals: {issue: Issue.all.first}%>
-      <%= render partial: "module/news2", locals: {issue: Issue.all.first}%>
-      <%= render partial: "module/news3", locals: {issue: Issue.all.first}%>
-      <%= render partial: "module/news4", locals: {issue: Issue.all.first}%>
+      <% @issues_index.each do |issue| %>
+          <%= render partial: "module/news#{issue.id % 4}", locals: {issue: issue} %>
+      <% end %>
 
 
 
@@ -117,7 +116,6 @@
 
 
       <hr>
-
 
 
       <hr>
@@ -206,4 +204,4 @@
   </div>
   <!--/panel-->
   <!--/end right column-->
-    </div>
+</div>

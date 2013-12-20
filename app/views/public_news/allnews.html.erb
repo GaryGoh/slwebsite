@@ -19,7 +19,7 @@
 
       <tbody>
       <!-- render ajax-->
-      <p><%= link_to 'Show ajax', news_path, remote: true %></p>
+      <!--<p><%= link_to 'Show ajax', news_path, remote: true %></p>-->
 
       <div id="ajaxnews">
         <%= render :partial => 'ajaxnews',:locals => { :issues => @issues } %>

@@ -10,6 +10,11 @@ class StaticPageController < ApplicationController
     @backgrounds_standby = @backgrounds.last(2)
   end
 
+  def index
+    @issues_index = Issue.limit(10).find(:all, :order => "created_at DESC")
+
+  end
+
   def faq
     @faqs = Faq.all
   end
