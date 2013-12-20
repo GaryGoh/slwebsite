@@ -25,68 +25,68 @@
 
       <h3>Top Members</h3>
 
-      <h5><a href="##"><i class="glyphicon glyphicon-user"></i> John Chapman</a></h5>
-      <h5><a href="##"><i class="glyphicon glyphicon-user"></i> Max Axleton</a></h5>
-      <h5><a href="##"><i class="glyphicon glyphicon-user"></i> Devin Skelly</a></h5>
-      <h5><a href="##"><i class="glyphicon glyphicon-user"></i> Katie Kowalski</a>
+      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> John Chapman</a></h5>
+      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Max Axleton</a></h5>
+      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Devin Skelly</a></h5>
+      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Katie Kowalski</a>
       </h5>
-      <h5><a href="##"><i class="glyphicon glyphicon-user"></i> Amet Deberge</a></h5>
+      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Amet Deberge</a></h5>
 
       <hr>
 
       <img class="img-responsive" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/FFF">
 
       <div class="media">
-        <a class="pull-left" href="##">
+        <a class="pull-left" href="http://www.bootply.com/render/69913#">
           <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
         </a>
 
         <div class="media-body">
           <h5 class="media-heading">
             <a href="http://www.bootply.com/tagged/modal" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="##"><strong>Modal</strong></a></h5>
+            <a href="http://www.bootply.com/render/69913#"><strong>Modal</strong></a></h5>
           <small>Examples using the Bootstrap modal.</small>
           <br>
           <span class="badge">87</span>
         </div>
       </div>
       <div class="media">
-        <a class="pull-left" href="##">
+        <a class="pull-left" href="http://www.bootply.com/render/69913#">
           <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
         </a>
 
         <div class="media-body">
           <h5 class="media-heading">
             <a href="http://www.bootply.com/tagged/slider" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="##"><strong>Carousel</strong></a></h5>
+            <a href="http://www.bootply.com/render/69913#"><strong>Carousel</strong></a></h5>
           <small>How to use the Bootstrap slider.</small>
           <br>
           <span class="badge">322</span>
         </div>
       </div>
       <div class="media">
-        <a class="pull-left" href="##">
+        <a class="pull-left" href="http://www.bootply.com/render/69913#">
           <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
         </a>
 
         <div class="media-body">
           <h5 class="media-heading">
             <a href="http://www.bootply.com/tagged/typography" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="##"><strong>Typography</strong></a></h5>
+            <a href="http://www.bootply.com/render/69913#"><strong>Typography</strong></a></h5>
           <small>See the various textual elements and options.</small>
           <br>
           <span class="badge">44</span>
         </div>
       </div>
       <div class="media">
-        <a class="pull-left" href="##">
+        <a class="pull-left" href="http://www.bootply.com/render/69913#">
           <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
         </a>
 
         <div class="media-body">
           <h5 class="media-heading">
             <a href="http://www.bootply.com/tagged/media" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="##"><strong>@Media</strong></a></h5>
+            <a href="http://www.bootply.com/render/69913#"><strong>@Media</strong></a></h5>
           <small>Use @media queries to get the layout you want.</small>
           <br>
           <span class="badge">119</span>
@@ -105,88 +105,20 @@
     <div class="panel-heading" style="background-color:#111;color:#fff;">头条新闻</div>
     <div class="panel-body">
 
-      <div class="row">
-        <div class="col-md-8">
-          <!--<img src="/assets/example/bg1.jpg" class="img-responsive">-->
-          <h2>2013. The Year of Responsive Design.</h2>
-          2013 is marked as the year of Responsive Web Design (RWD). The Web is filled with big brands, galleries and
-          magical examples that media queries demonstrate the glory of responsive design.
-          <br><br>
-          <button class="btn btn-default">More</button>
+      <%= render partial: "module/news1", locals: {issue: Issue.all.first}%>
+      <%= render partial: "module/news2", locals: {issue: Issue.all.first}%>
+      <%= render partial: "module/news3", locals: {issue: Issue.all.first}%>
+      <%= render partial: "module/news4", locals: {issue: Issue.all.first}%>
 
 
-        </div>
-        <div class="col col-sm-4">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/bg_dogcat.jpg" class="img-responsive"></a>
 
-          <div class="text-muted">
-            <small>Aug 15 / John Pierce</small>
-          </div>
-          <p>
-            Web design has come a long way since 1999.
-          </p>
-          <hr>
-          <img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/bg_blueplane.jpg" class="img-responsive">
 
-          <div class="text-muted">
-            <small>Aug 15 / Wilson Traiker</small>
-          </div>
-          <p>
-            The "flat" look was a big trend this year.
-          </p>
-        </div>
-      </div>
+
+
 
       <hr>
 
-      "Mobile first" and "unobtrusive JavaScript" (AKA: "progressive enhancement") are strategies for when a new site
-      design is being considered. These are related concepts that predated RWD: browsers of basic mobile phones do not
-      understand JavaScript or media queries, so the recommended practice is to create a basic web site then enhance it
-      for smart phones and PCs—rather than try "graceful degradation" to make a complex, image-heavy site work on the
-      most basic mobile phones.
-      <br><br>
-      Media Queries is a CSS3 module allowing content rendering to adapt to conditions such as screen resolution (e.g.
-      smartphone vs. high definition screen). It became a W3C recommended standard in June 2012.[1] and is a cornerstone
-      technology of Responsive Web Design.
 
-      <hr>
-
-      <div class="well text-center">
-        <h1>Centered Text</h1>
-        This was a 2.x challenge that seems a little easier in 3.
-        <br><br>
-
-        <div style="font-size:70pt">
-          <i class="glyphicon glyphicon-4x glyphicon-camera"></i>
-          <i class="glyphicon glyphicon-4x glyphicon-camera"></i>
-          <i class="glyphicon glyphicon-4x glyphicon-camera"></i>
-        </div>
-
-      </div>
-
-      <hr>
-
-      <h2>CSS3</h2>
-      <img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/EEEEEE" class="img-responsive pull-right">
-      To understand the RWD approach, you must first understand CSS - the basis of responsive design. CSS enables the
-      developer to use percentage-based (AKA fluid or proportion-based) grids, CSS3 media queries. The web site then
-      adapts to multiple devices (desktop, laptop, tablet, smartphone) and display conditions such as browser size and
-      screen resolution.
-
-      <br><br>
-      <button class="btn btn-default">More</button>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/bg_smartphones.jpg" class="img-responsive">
-
-        </div>
-        <div class="col-md-6">
-          <h1>There is still a lot to be said about the Responsive Web.</h1>
-        </div>
-      </div>
 
       <hr>
 
@@ -202,8 +134,8 @@
 
       <div class="well">
         <h1>Well..</h1>
-        Does anyone know why <a href="##">@mdo</a> or
-        <a href="##">@fat</a> would name this element a "well"?
+        Does anyone know why <a href="http://www.bootply.com/render/69913#">@mdo</a> or
+        <a href="http://www.bootply.com/render/69913#">@fat</a> would name this element a "well"?
       </div>
 
       <hr>
@@ -213,7 +145,7 @@
       another consideration for responsive developers.
       <span class="hidden-sm">Go ahead and shrink your browser's width to see how the HTML elements and images respond as the width of the viewport changes.</span>
 
-      <h1><a href="##"><i class="glyphicon glyphicon-user"></i>
+      <h1><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i>
         <i class="glyphicon glyphicon-chevron-down"></i></a></h1>
 
       <hr>
@@ -236,32 +168,32 @@
 
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/EDEDED" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/EDEDED" class="img-responsive"></a>
         </div>
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/DDDDDD" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/DDDDDD" class="img-responsive"></a>
         </div>
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/EEE" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/EEE" class="img-responsive"></a>
         </div>
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F3F3F3" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F3F3F3" class="img-responsive"></a>
         </div>
       </div>
       <br>
 
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/DDD" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/DDD" class="img-responsive"></a>
         </div>
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/CCCCCC" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/CCCCCC" class="img-responsive"></a>
         </div>
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/EDEDED" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/EDEDED" class="img-responsive"></a>
         </div>
         <div class="col-md-3 col-sm-6 col-6">
-          <a href="##"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/E0E0E0" class="img-responsive"></a>
+          <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/E0E0E0" class="img-responsive"></a>
         </div>
       </div>
 

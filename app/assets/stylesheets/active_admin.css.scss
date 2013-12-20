@@ -10,6 +10,25 @@
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
+//@import "just_datetime_picker/base";
+
+
+body.active_admin {
+  div.panel h3.user_question {
+    background: rgb(30,144,255);
+    color: white;
+    text-shadow: none;
+  }
+  div.panel h3.admin_response {
+    background: rgb(60,179,113);
+    color: white;
+    text-shadow: none;
+  }
+  .has_many {
+    h3 {
+      display: none;
+    }}
+}
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:

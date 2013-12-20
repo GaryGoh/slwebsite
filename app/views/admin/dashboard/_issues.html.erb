@@ -1,7 +1,19 @@
 <canvas id="canvas" height="450" width="600"></canvas>
 
 <% issues = Issue.all %>
-
+<%
+   now = Time.now
+   days = [        (now - 6.day),
+                   (now - 5.day),
+                   (now - 4.day),
+                   (now - 3.day),
+                   (now - 2.day),
+                   (now - 1.day),
+                   now        ]
+%>
+<% days.each do |d| %>
+    <%= issues.find_all { |e| e.created_at.wday == d.wday }.count %>
+<% end %>
 <script>
     <%
 now = Time.now
@@ -14,21 +26,21 @@ days = [        (now - 6.day),
                 now        ]
 %>
     var lineChartData = {
-        labels : [
+        labels: [
             <% days.each do |d| %>
             "<%= d.strftime("%A") %>"
             <% if d != days.last %>
             ,
             <% end %>
             <% end %>],
-        datasets : [
+        datasets: [
 
             {
-                fillColor : "rgba(151,187,205,0.5)",
-                strokeColor : "rgba(151,187,205,1)",
-                pointColor : "rgba(151,187,205,1)",
-                pointStrokeColor : "#fff",
-                data : [
+                fillColor: "rgba(151,187,205,0.5)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                data: [
                     <% days.each do |d| %>
                     <%= issues.find_all{|e| e.created_at.wday == d.wday}.count %>
                     <% if d != days.last %>

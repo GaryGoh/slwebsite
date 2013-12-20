@@ -40,7 +40,7 @@ ActiveAdmin.register_page "Dashboard" do
 
         #统计表
         panel "新闻发布统计表" do
-          render "issues"
+          render "issues", locals: {issues: @issues}
         end
       end
 

@@ -20,12 +20,11 @@
 
 //= require wysihtml5
 //= require parser_rules/advanced
+//= require Chart.min
 
 
 
 //= require masonry.pkgd.js
-
-
 
 
 //$("#span1").animate({
@@ -37,9 +36,7 @@
 //$("#span1").css({ opacity: .4 });
 
 
-
-
-$(document).ready(function() {
+$(document).ready(function () {
 
     $('#sidebar').affix({
         offset: {

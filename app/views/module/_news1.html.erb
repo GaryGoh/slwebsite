@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-8">
+    <!--<img src="/assets/example/bg1.jpg" class="img-responsive">-->
+    <h2><%= issue.title%></h2>
+    <%= truncate(issue.content, :length => 140)%>
+    <br><br>
+    <p><a href=<%= shownews_url(issue) %>, class="btn btn-default" role="button">详细</a></p>
+
+
+
+  </div>
+  <div class="col col-sm-4">
+    <a href="http://www.bootply.com/render/69913#"><img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/bg_dogcat.jpg" class="img-responsive"></a>
+
+    <div class="text-muted">
+      <small>Aug 15 / John Pierce</small>
+    </div>
+    <p>
+      Web design has come a long way since 1999.
+    </p>
+    <hr>
+    <img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/bg_blueplane.jpg" class="img-responsive">
+
+    <div class="text-muted">
+      <small>Aug 15 / Wilson Traiker</small>
+    </div>
+    <p>
+      The "flat" look was a big trend this year.
+    </p>
+  </div>
+</div>
+<hr>

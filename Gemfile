@@ -55,6 +55,12 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "font-awesome-rails"
 gem 'font-awesome-sass'
 
+#charts
+#gem "just-datetime-picker"
+
+#weather
+gem 'RubyWeather'
+
 ## fluid
 #gem 'masonry-rails', :git => "git://github.com/kristianmandrup/masonry-rails.git"
 #
