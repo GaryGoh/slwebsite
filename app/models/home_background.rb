@@ -3,6 +3,7 @@ class HomeBackground < ActiveRecord::Base
   attr_writer :remove_home_background
   before_save :before_save_callback
 
+  validates_attachment_content_type :ava_pic, :content_type => ['image/jpeg', 'image/jpg', 'image/png']
   validates_attachment :ava_pic, :presence => true,
                        :size => {:in => 1..10000.kilobytes}
 

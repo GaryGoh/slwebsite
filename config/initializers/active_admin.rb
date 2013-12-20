@@ -178,19 +178,20 @@ ActiveAdmin.setup do |config|
   #
   # To change the default utility navigation to show a link to your website & a logout btn
   #
-     config.namespace :admin do |admin|
-       admin.build_menu :utility_navigation do |menu|
-         menu.add label: :current_admin_user
-         admin.add_logout_button_to_menu menu
-       end
-     end
+  config.namespace :admin do |admin|
+    admin.build_menu :utility_navigation do |menu|
+      menu.add label: :current_admin_user
+      admin.add_logout_button_to_menu menu
+    end
+  end
 
   def main_app
     Rails.application.class.routes.url_helpers
   end
-    #def get_url
-    #  admin_admin_user_path(:current_admin_user)
-    #end
+
+  #def get_url
+  #  admin_admin_user_path(:current_admin_user)
+  #end
   #
   # If you wanted to add a static menu item to the default menu provided:
   #
@@ -239,5 +240,21 @@ ActiveAdmin.setup do |config|
   #
   # config.filters = true
   #Formtastic::FormBuilder.escape_html_entities_in_hints_and_labels = false
+
+  module ActiveAdmin
+    module Views
+      module Pages
+        class Base < Arbre::HTML::Document
+
+          def build_footer
+            div :id => "footer" do
+              para "Copyright &copy; #{Date.today.year.to_s} #{link_to('桂林电子科技大学 学生社团联合会', root_url)}. Powered by #{link_to('Gary Goh', 'http://weibo.com/u/1634556843')}".html_safe
+            end
+          end
+
+        end
+      end
+    end
+  end
 
 end

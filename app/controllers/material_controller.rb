@@ -8,7 +8,7 @@ class MaterialController < ApplicationController
     #    redirect_to download_url, :notice => "下载失败"
     #  end
     #end
-    @materials = Material.all
+    @materials = Material.all.reverse
 
   end
 end

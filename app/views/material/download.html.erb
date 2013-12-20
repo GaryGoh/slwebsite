@@ -1,11 +1,33 @@
-<% @materials.each do |m| %>
-    <tr>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+      <tr>
 
-      <td><%= m.document_file_name %></td>
-      <td><%= m.description %></td>
-      <%= link_to "Download", Material.whatever.url(:original, true) %>
-      </td>
-    </tr>
-<% end %>
+        <!--<th>发布人</th>-->
+        <th>文件名</th>
+        <th>文件描述</th>
+        <th>上传时间</th>
+        <th></th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @materials.each do |m| %>
+          <tr>
+
+            <td><%= m.document_file_name %></td>
+            <td><%= m.description %></td>
+            <td><%= m.created_at.strftime("%d %B %y, %A") %></td>
+            <td><%= link_to "下载", Material.last.document.url(:original, false) %>
+            </td>
+          </tr>
+      <% end %>
+      <tbody>
+      </table>
+  </div>
+</div>
+
+<!-- Default panel contents -->
 
 

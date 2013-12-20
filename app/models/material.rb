@@ -1,27 +1,22 @@
 class Material < ActiveRecord::Base
-  #has_attached_file :document, :default_url => "/images/:style/missing.png"
-  #attr_writer :remove_document
-  #before_save :before_save_callback
-  ##has_attached_file :document,  :default_url => "/images/:style/missing"
-  #
-  #
-  #attr_accessor :document_file_name
-  #attr_accessor :document_content_type
-  #attr_accessor :document_file_size
-  #attr_accessor :document_updated_at
-  #
-  #validates_attachment_presence :document
-  #
-  #validates_attachment_content_type :document, :content_type => ['application/pdf', 'application/doc', 'application/docx', 'application/xls', 'application/xlsx']
-  #
-
-
-  has_attached_file :document, :default_url => "/document/:style/missing.pdf"
+  has_attached_file :document
   attr_writer :remove_document
   before_save :before_save_callback
 
+  validates_attachment_presence :document
+
   validates_attachment :document, :presence => true,
                        :size => {:in => 1..10000.kilobytes}
+
+  validates_attachment_content_type :document,
+                                    :content_type => ['application/pdf', 'application/msword',
+                                                      ' application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                                                      'application/msexcel', 'application/vnd.ms-excel',
+                                                      'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                                                      'application/mspowerpoint', 'application/vnd.ms-powerpoint',
+                                                      'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'text/plain'],
+                                    :message => ' 只支持 "pdf, doc, docx, xls, xlsx, ppt, pptx, txt" 文件'
+  #validates_format_of :document, :with => /\.(?:doc|pdf)$/i, :multiline => true
 
 
   def remove_document
