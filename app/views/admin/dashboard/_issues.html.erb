@@ -42,7 +42,7 @@ days = [        (now - 6.day),
                 pointStrokeColor: "#fff",
                 data: [
                     <% days.each do |d| %>
-                    <%= issues.find_all{|e| e.created_at.wday == d.wday}.count %>
+                    <%= issues.find{|e| e.created_at.wday == d.wday}.count %>
                     <% if d != days.last %>
                     ,
                     <% end %>

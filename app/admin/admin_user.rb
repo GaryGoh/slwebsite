@@ -1,6 +1,6 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirm, :admin_permission_id,
-                :gender_id, :society_id, :sl_department_id
+                :gender_id, :society_id, :sl_department_id, :name, :proverb
   menu :label => "管理员", :priority => 2,
   :if => proc{ can?(:manage, AdminUser) }
   #controller.authorize_resource

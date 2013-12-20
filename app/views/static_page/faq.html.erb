@@ -1,0 +1,19 @@
+<% @faqs.each do |f| %>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#<%= f.id%>">
+              <%= f.query %>
+            </a>
+          </h4>
+        </div>
+        <div id="<%= f.id%>" class="panel-collapse collapse">
+          <div class="panel-body">
+
+            <pre id="user_pre"><%= f.answer %></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+<% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131219214914) do
+ActiveRecord::Schema.define(version: 20131220042517) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -71,6 +71,13 @@ ActiveRecord::Schema.define(version: 20131219214914) do
   end
 
   add_index "editable_areas", ["title"], name: "index_editable_areas_on_title"
+
+  create_table "faqs", force: true do |t|
+    t.string   "query"
+    t.text     "answer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "genders", force: true do |t|
     t.string   "gender_name"

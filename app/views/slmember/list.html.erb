@@ -1,0 +1,19 @@
+<% @slmembers.each do |sl| %>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="media">
+          <a class="pull-left" href=<%= show_url(sl) %>>
+            <img class="media-object" src="..." alt="...">
+          </a>
+
+          <div class="media-body">
+            <h4 class="media-heading"><%= sl.name %></h4>
+            <blockquote>
+              <%= sl.proverb %>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<% end %>

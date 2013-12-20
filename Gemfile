@@ -59,7 +59,7 @@ gem 'font-awesome-sass'
 #gem "just-datetime-picker"
 
 #weather
-gem 'RubyWeather'
+#gem 'RubyWeather'
 
 ## fluid
 #gem 'masonry-rails', :git => "git://github.com/kristianmandrup/masonry-rails.git"
