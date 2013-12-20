@@ -1,6 +1,6 @@
 <h2><%= issue.title %></h2>
 <%= image_tag issue.issue_pic.url(:thumb), :class => "img-responsive pull-right" %>
-<%= truncate(issue.content, :length => 240) %>
+<%= truncate(issue.content, :length => 600) %>
 <br><br>
 <p><a href=<%= shownews_url(issue) %>, class="btn btn-default" role="button">详细</a></p>
 <hr>
