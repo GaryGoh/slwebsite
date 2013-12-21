@@ -14,9 +14,7 @@ class StaticPageController < ApplicationController
 
   def index
     @issues_index = Issue.limit(10).find(:all, :order => "created_at DESC")
-    @issues = Issue.all.reverse
-    @issue = Issue.find_by(:id)
-
+    @rotators = Issue.all.reverse
   end
 
 

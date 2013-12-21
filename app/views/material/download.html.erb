@@ -19,7 +19,7 @@
             <td><%= m.document_file_name %></td>
             <td><%= m.description %></td>
             <td><%= m.created_at.strftime("%d %B %y, %A") %></td>
-            <td><%= link_to "下载", Material.last.document.url(:original, false) %>
+            <td><%= link_to "下载", m.document.url %>
             </td>
           </tr>
       <% end %>
