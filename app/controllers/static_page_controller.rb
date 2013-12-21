@@ -9,10 +9,13 @@ class StaticPageController < ApplicationController
     @backgrounds = HomeBackground.limit(3).find(:all, :order => "created_at DESC")
     @background_active = @backgrounds.first
     @backgrounds_standby = @backgrounds.last(2)
+
   end
 
   def index
     @issues_index = Issue.limit(10).find(:all, :order => "created_at DESC")
+    @issues = Issue.all.reverse
+    @issue = Issue.find_by(:id)
 
   end
 

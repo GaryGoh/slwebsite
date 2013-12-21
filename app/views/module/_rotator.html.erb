@@ -1,0 +1,48 @@
+<!--<link rel="stylesheet" type="text/css" href="css/QuotesRotator/default.css" />-->
+<link rel="stylesheet" type="text/css" href="css/QuotesRotator/component.css"/>
+<script src="js/QuotesRotator/modernizr.custom.js"></script>
+
+<div class="main">
+
+      <div id="cbp-qtrotator" class="cbp-qtrotator">
+        <% issues.each do |issue| %>
+        <div class="cbp-qtcontent">
+          <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
+          <blockquote>
+            <p>
+              <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(issue.content, :length => 60) %></p>
+              </a>
+            </p>
+            <footer><%= issue.title %></footer>
+
+          </blockquote>
+        </div>
+        <% end %>
+      </div>
+
+</div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script src="js/QuotesRotator/jquery.cbpQTRotator.min.js"></script>
+<script>
+    $(function () {
+        /*
+         - how to call the plugin:
+         $( selector ).cbpQTRotator( [options] );
+         - options:
+         {
+         // default transition speed (ms)
+         speed : 700,
+         // default transition easing
+         easing : 'ease',
+         // rotator interval (ms)
+         interval : 8000
+         }
+         - destroy:
+         $( selector ).cbpQTRotator( 'destroy' );
+         */
+
+        $('#cbp-qtrotator').cbpQTRotator();
+
+    });
+</script>
+
