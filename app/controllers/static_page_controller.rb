@@ -1,5 +1,6 @@
 class StaticPageController < ApplicationController
   layout "index", only: [:index]
+  layout "faq", only: [:faq]
 
   def home
     @issues_school = Issue.where('category_id = 1').last(5).reverse
