@@ -22,7 +22,7 @@
       <!--<p><%= link_to 'Show ajax', news_path, remote: true %></p>-->
 
       <div id="ajaxnews">
-        <%= render :partial => 'ajaxnews',:locals => { :issues => @issues } %>
+        <%= render 'module/timeline',:issues => @issues  %>
       </div>
 
 
