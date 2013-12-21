@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131220054814) do
+ActiveRecord::Schema.define(version: 20131221020414) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -145,6 +145,14 @@ ActiveRecord::Schema.define(version: 20131220054814) do
     t.integer  "num_registered_member"
     t.string   "home_url"
     t.boolean  "is_outstanding"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sub_faqs", force: true do |t|
+    t.string   "query"
+    t.text     "answer",     limit: 255
+    t.integer  "faq_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

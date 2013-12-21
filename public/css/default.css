@@ -141,10 +141,17 @@ a:hover {
    #top{
    	position: relative;
             position: fixed;
-            top: 165px;
+            top: 76px;
             left: 1150px;
 
         }
+
+    #header_faq{
+    	   	position: relative;
+    	   	top: 30px;
+
+    	/*top: 165px;*/
+    }
 
 
 .icon-drop:before {

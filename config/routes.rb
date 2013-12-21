@@ -14,7 +14,7 @@ Slwebsite::Application.routes.draw do
 
 
   get "home" => "static_page#home"
-  get "faq" => "static_page#faq"
+  get "faq" => "faq#faq"
   get "about" => "static_page#about"
   get "access_error" => "static_page#_access_error"
 
