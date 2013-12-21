@@ -1,25 +1,39 @@
-<link rel="stylesheet" type="text/css" href="css/VerticalTimeline/component.css" />
+<link rel="stylesheet" type="text/css" href="css/VerticalTimeline/component.css"/>
 <script src="js/modernizr.custom.js"></script>
 
 
-  <header class="clearfix">
-    <h1>新闻部落</h1>
-  </header>
-  <div class="main">
-    <ul class="cbp_tmtimeline">
+<header class="clearfix">
+  <h1>新闻部落</h1>
+</header>
+<div class="main">
+  <ul class="cbp_tmtimeline">
 
-      <% issues.each do |issue| %>
-          <li>
-            <time class="cbp_tmtime" datetime=""><span><%= issue.created_at.strftime("%r")%></span> <span><%= issue.created_at.strftime("%F")%></span></time>
-            <div class="cbp_tmicon cbp_tmicon-phone"></div>
-            <div class="cbp_tmlabel">
-              <h2><%= issue.title%></h2>
+    <% issues.each do |issue| %>
+        <li>
+          <time class="cbp_tmtime" datetime=""><span><%= issue.created_at.strftime("%r") %></span>
+            <span><%= issue.created_at.strftime("%F") %></span></time>
+          <div class="cbp_tmicon cbp_tmicon-phone"></div>
+          <div class="cbp_tmlabel">
+            <a href="<%= shownews_url(issue) %>" id="timeline_a"><h2><%= issue.title %></h2></a>
 
-              <p><%= truncate(issue.content, :length => 400)%></p>
-            </div>
-          </li>
-      <% end %>
-    </ul>
-  </div>
+            <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(issue.content, :length => 400) %></p>
+            </a>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+</div>
 
 
+<style>
+    #timeline_a {
+        position: static;
+        color: #ffffff;
+    }
+
+    #timeline_a.hover {
+        position: static;
+
+        color: #ffffff;
+    }
+</style>

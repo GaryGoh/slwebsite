@@ -1,7 +1,6 @@
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"><b>新闻列表</b>
-  </div>
+
   <div class="panel-body">
 
 
@@ -22,9 +21,9 @@
       <!--<p><%= link_to 'Show ajax', news_path, remote: true %></p>-->
 
       <div id="ajaxnews">
-        <%= render 'module/timeline',:issues => @issues  %>
+        <!--<%= render 'module/timeline',:issues => @issues  %>-->
       </div>
-
+      <%= render 'module/switchview',:issues => @issues  %>
 
       </tbody>
     </table>
