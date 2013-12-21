@@ -2,54 +2,39 @@
 <link rel="stylesheet" type="text/css" href="css/ViewModeSwitch/component.css"/>
 <script src="js/modernizr.custom.js"></script>
 
-<header class="clearfix">
 
-  <h1>新闻部落</h1>
-
-
-  <div class="main">
-    <div id="cbp-vm" class="cbp-vm-switcher cbp-vm-view-grid">
-      <div class="cbp-vm-options">
-        <a href="#" class="cbp-vm-icon cbp-vm-grid cbp-vm-selected" data-view="cbp-vm-view-grid">Grid View</a>
-        <a href="#" class="cbp-vm-icon cbp-vm-list" data-view="cbp-vm-view-list">List View</a>
-      </div>
-      <ul>
-
-        <% issues.each do |issue| %>
-            <li>
-              <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
+<h1>新闻部落</h1>
 
 
-              <h3 class="cbp-vm-title"><%= issue.title %></h3>
-
-              <div class="cbp-vm-price"><%= issue.created_at.strftime("%r") %></div>
-              <div class="cbp-vm-details">
-                <%= truncate(issue.content, :length => 100) %>
-              </div>
-              <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
-            </li>
-        <% end %>
-
-        <% issues.each do |issue| %>
-        <li>
-          <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
-
-          <h3 class="cbp-vm-title"><%= issue.title %></h3>
-
-          <div class="cbp-vm-price"><%= issue.created_at.strftime("%r") %></div>
-          <div class="cbp-vm-details">
-            <%= truncate(issue.content, :length => 100) %>
-          </div>
-          <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
-        </li>
-        <% end %>
-
-
-
-      </ul>
+<div class="main">
+  <div id="cbp-vm" class="cbp-vm-switcher cbp-vm-view-grid">
+    <div class="cbp-vm-options">
+      <a href="#" class="cbp-vm-icon cbp-vm-grid cbp-vm-selected" data-view="cbp-vm-view-grid">Grid View</a>
+      <a href="#" class="cbp-vm-icon cbp-vm-list" data-view="cbp-vm-view-list">List View</a>
     </div>
+    <ul>
+
+      <% issues.each do |issue| %>
+          <li>
+            <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
 
 
-    <!-- /main -->
-    <script src="js/ViewModeSwitch/classie.js"></script>
-    <script src="js/ViewModeSwitch/cbpViewModeSwitch.js"></script>
+            <h3 class="cbp-vm-title"><%= issue.title %></h3>
+
+            <div class="cbp-vm-price"><%= issue.created_at.strftime("%m-%e-%Y") %></div>
+            <div class="cbp-vm-details">
+              <%= truncate(issue.content, :length => 100) %>
+            </div>
+            <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
+          </li>
+      <% end %>
+
+
+    </ul>
+  </div>
+</div>
+
+
+<!-- /main -->
+<script src="js/ViewModeSwitch/classie.js"></script>
+<script src="js/ViewModeSwitch/cbpViewModeSwitch.js"></script>
