@@ -21,9 +21,8 @@
       <!--<p><%= link_to 'Show ajax', news_path, remote: true %></p>-->
 
       <div id="ajaxnews">
-        <!--<%= render 'module/timeline',:issues => @issues  %>-->
+        <%= render 'module/switchview',:issues => @issues  %>
       </div>
-      <%= render 'module/rotator',:issues => @issues  %>
 
       </tbody>
     </table>
