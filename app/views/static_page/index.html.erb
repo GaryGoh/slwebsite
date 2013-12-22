@@ -4,7 +4,6 @@
     <div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>
     <div class="panel-body">
 
-      <%= render 'module/rotator',:rotators => @rotators  %>
       <hr>
       <img class="img-responsive" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/66BBCC">
 
@@ -106,11 +105,10 @@
 <div class="col-md-7" id="content">
   <div class="panel">
     <div class="panel-heading" style="background-color:#111;color:#fff;">头条新闻</div>
-
-
+      <%= render 'module/roTopnews'%>
     <% @issues_index.each do |issue| %>
         <div class="panel-body">
-          <%= render partial: "module/news#{(issue.id % 4 +1)}", locals: {issue: issue} %> </div>
+          <%= render partial: "module/news#{( (issue.id+Time.now.strftime("%M").to_i ) % 4 + 1)}", locals: {issue: issue} %> </div>
     <% end %>
 
 

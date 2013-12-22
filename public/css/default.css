@@ -3,11 +3,11 @@
 
 @font-face {
 	font-family: 'fontawesome';
-	src:url('../../fonts/fontawesome.eot');
-	src:url('../../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
-		url('../../fonts/fontawesome.svg#fontawesome') format('svg'),
-		url('../../fonts/fontawesome.woff') format('woff'),
-		url('../../fonts/fontawesome.ttf') format('truetype');
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -136,23 +136,6 @@ a:hover {
 .container > header nav a:hover:before {
 	color: #fff;
 }
-
-
-   #top{
-   	position: relative;
-            position: fixed;
-            top: 76px;
-            left: 1150px;
-
-        }
-
-    #header_faq{
-    	   	position: relative;
-    	   	top: 30px;
-
-    	/*top: 165px;*/
-    }
-
 
 .icon-drop:before {
 	content: "\e000";

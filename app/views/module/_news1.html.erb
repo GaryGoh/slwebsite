@@ -2,6 +2,7 @@
   <div class="col-md-8">
     <!--<img src="/assets/example/bg1.jpg" class="img-responsive">-->
     <h2><%= issue.title %></h2>
+
     <p><%= truncate(issue.content, :length => 350) %></p>
     <br><br>
 
@@ -10,24 +11,23 @@
 
   </div>
   <div class="col col-sm-4">
-    <a href="http://www.bootply.com/render/69913#">
-      <%= image_tag issue.issue_pic.url(:thumb), :class => "img-responsive" %>
-    </a>
-
-    <div class="text-muted">
-      <small>Aug 15 / John Pierce</small>
-    </div>
-    <p>
-      Web design has come a long way since 1999.
-    </p>
+    <% if !(issue.issue_pic_file_name.nil?) %>
+        <a href=<%= shownews_url(issue) %>>
+          <%= image_tag issue.issue_pic.url(:thumb), :class => "img-responsive" %>
+        </a>
+    <% end %>
     <hr>
-    <%= image_tag issue.issue_pic.url(:thumb), :class => "img-responsive" %>
+    <% if !(issue.issue_pic_file_name.nil?) %>
+        <a href=<%= shownews_url(issue) %>>
+          <%= image_tag issue.issue_pic.url(:thumb), :class => "img-responsive" %>
+        </a>
+    <% end %>
 
     <div class="text-muted">
-      <small>Aug 15 / Wilson Traiker</small>
+      <small><%= issue.created_at.strftime("%F") %></small>
     </div>
     <p>
-      The "flat" look was a big trend this year.
+      由<%= issue.author %>发表
     </p>
   </div>
 </div>

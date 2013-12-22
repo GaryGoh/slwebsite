@@ -29,11 +29,15 @@ ActiveAdmin.register_page "Dashboard" do
         panel "最近新闻" do
           ul do
             Issue.limit(10).reverse.map do |e|
-              li link_to(if (e.user.name.nil?) then
-                           e.user.stuid
-                         else
-                           e.user.name
-                         end, admin_user_path(e.user.id)) + " 发表了 " + link_to(e.title, admin_issue_path(e.id)) + " (#{e.created_at.strftime("%b %e, %l:%M %p")})."
+              if !e.user_id.nil?
+                li link_to(if !e.user_id.nil? then
+                             e.user.stuid
+                           else
+                             e.user.name
+                           end, admin_user_path(e.user.id)) + " 发表了 " + link_to(e.title, admin_issue_path(e.id)) + " (#{e.created_at.strftime("%b %e, %l:%M %p")})."
+              else
+                li link_to("后台系统", admin_root_url) + " 发表了 " + link_to(e.title, admin_issue_path(e.id)) + " (#{e.created_at.strftime("%b %e, %l:%M %p")})."
+              end
             end
           end
         end

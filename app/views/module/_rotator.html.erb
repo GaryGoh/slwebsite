@@ -5,10 +5,13 @@
 
 <div class="main">
 
-      <div id="cbp-qtrotator" class="cbp-qtrotator">
-        <% rotators.each do |issue| %>
+  <div id="cbp-qtrotator" class="cbp-qtrotator">
+    <% @notifies.each do |issue| %>
         <div class="cbp-qtcontent">
-          <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
+          <% if !(issue.issue_pic_file_name.nil?) %>
+
+              <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
+          <% end %>
           <blockquote>
             <p>
               <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(issue.content, :length => 60) %></p>
@@ -18,8 +21,8 @@
 
           </blockquote>
         </div>
-        <% end %>
-      </div>
+    <% end %>
+  </div>
 
 </div>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->

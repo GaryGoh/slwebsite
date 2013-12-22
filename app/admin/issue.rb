@@ -13,7 +13,7 @@ ActiveAdmin.register Issue do
     selectable_column
     column :id
     column :title
-    column :category_id
+    column :category
     column :author
     column :created_at
     column :updated_at
