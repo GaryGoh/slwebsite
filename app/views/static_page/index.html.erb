@@ -4,25 +4,10 @@
     <div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>
     <div class="panel-body">
 
-      <hr>
-      <img class="img-responsive" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/66BBCC">
-
-      <div class="well">
-        <img src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/bg1.jpg" class="img-responsive">
-
-        <h3><a href="http://getbootstrap.com/">Bootstrap 3 is Here.</a></h3>
-
-        <p>
-          In simple terms, a responsive web design figures out what resolution of
-          device it's being served on. Flexible grids then size correctly to fit
-          the screen.
-        </p>
-
-        <p><a href="http://www.bootply.com/bootstrap-3-migration-guide" target="ext">Read our migration guide for help
-          with upgrading to Bootstrap 3.</a></p>
-      </div>
-
-      <hr>
+      <% @notifies.each do |issue| %>
+          <div class="panel-body">
+            <%= render partial: "module/notifies/no#{ (issue.id % 1 + 1)}", locals: {issue: issue} %> </div>
+      <% end %>
 
 
       <h3>Top Members</h3>
@@ -105,10 +90,10 @@
 <div class="col-md-7" id="content">
   <div class="panel">
     <div class="panel-heading" style="background-color:#111;color:#fff;">头条新闻</div>
-      <%= render 'module/roTopnews'%>
+    <%= render 'module/roTopnews' %>
     <% @issues_index.each do |issue| %>
         <div class="panel-body">
-          <%= render partial: "module/news#{( (issue.id+Time.now.strftime("%M").to_i ) % 4 + 1)}", locals: {issue: issue} %> </div>
+          <%= render partial: "module/news#{((issue.id+Time.now.strftime("%M").to_i) % 4 + 1)}", locals: {issue: issue} %> </div>
     <% end %>
 
 

@@ -1,0 +1,14 @@
+
+
+<div class="well">
+
+  <h3><a href="<%= shownews_url(issue)%>"><%= issue.title%></a></h3>
+
+  <p>
+    <%= issue.content%>
+  </p>
+
+  <p><a href="<%= shownews_url(issue)%>"><%= issue.created_at.strftime("%F %R")%></a></p>
+</div>
+
+<hr>
