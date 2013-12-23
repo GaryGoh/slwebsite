@@ -12,8 +12,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.cbpNTAccordion.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/members_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_faq.html.erb" afterPath="$PROJECT_DIR$/app/views/module/_faq.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_page_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +51,7 @@
     <file path="$USER_HOME$/slwebsite_bug1/app/views/users/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384136528476" ignored="false" />
     <file path="/home.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387332454676" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384177628226" ignored="false" />
-    <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387678693003" ignored="false" />
+    <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387806001283" ignored="false" />
     <file path="/news.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384181868045" ignored="false" />
     <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387684806287" ignored="false" />
     <file path="/a.dummy" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387424215455" ignored="false" />
@@ -234,19 +233,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_faq.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_faq.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_faq.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="10" selection-start="226" selection-end="226" vertical-scroll-proportion="0.023923445">
+            <state line="4" column="10" selection-start="226" selection-end="226" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="public_news_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/public_news_controller.rb">
+      <file leaf-file-name="static_page_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="14" selection-start="204" selection-end="212" vertical-scroll-proportion="0.0">
+            <state line="18" column="63" selection-start="740" selection-end="740" vertical-scroll-proportion="0.39170507">
               <folding />
             </state>
           </provider>
@@ -282,7 +281,6 @@
         <option value="$PROJECT_DIR$/app/views/module/_roTopnews.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/notifies/_no1.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ReadMode.erb" />
         <option value="$PROJECT_DIR$/public/css/ReadMode/custom.css" />
         <option value="$PROJECT_DIR$/app/views/module/_effectMenu.html.erb" />
@@ -295,6 +293,7 @@
         <option value="$PROJECT_DIR$/app/views/public_news/_contents.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/module/_faq.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
       </list>
     </option>
   </component>
@@ -1176,11 +1175,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_roTopnews.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="111" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
@@ -1275,7 +1269,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_faq.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="226" selection-end="226" vertical-scroll-proportion="0.023923445">
+        <state line="4" column="10" selection-start="226" selection-end="226" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="63" selection-start="740" selection-end="740" vertical-scroll-proportion="0.39170507">
           <folding />
         </state>
       </provider>
