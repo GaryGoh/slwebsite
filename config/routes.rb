@@ -26,6 +26,7 @@ Slwebsite::Application.routes.draw do
   root 'static_page#index'
 
   get '/news',  to: 'public_news#allnews'
+  get '/notis',  to: 'public_news#notifies'
   get '/read',  to: 'public_news#readmode'
   get 'shownews/:id', to: 'public_news#shownews', as: :shownews
 

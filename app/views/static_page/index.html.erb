@@ -4,81 +4,23 @@
     <div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>
     <div class="panel-body">
 
-      <% @notifies.each do |issue| %>
-          <div class="panel-body">
-            <%= render partial: "module/notifies/no#{ (issue.id % 1 + 1)}", locals: {issue: issue} %> </div>
-      <% end %>
 
+      <div class="list-group">
+        <% @notifies.each do |issue| %>
+            <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= issue.id %>">
+              <h4 class="list-group-item-heading"><%= issue.title %></h4>
+              <small><%= issue.created_at.strftime("%F") %></small>
+            </a>
 
-      <h3>Top Members</h3>
-
-      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> John Chapman</a></h5>
-      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Max Axleton</a></h5>
-      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Devin Skelly</a></h5>
-      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Katie Kowalski</a>
-      </h5>
-      <h5><a href="http://www.bootply.com/render/69913#"><i class="glyphicon glyphicon-user"></i> Amet Deberge</a></h5>
-
-      <hr>
-
-      <img class="img-responsive" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/FFF">
-
-      <div class="media">
-        <a class="pull-left" href="http://www.bootply.com/render/69913#">
-          <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
-        </a>
-
-        <div class="media-body">
-          <h5 class="media-heading">
-            <a href="http://www.bootply.com/tagged/modal" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="http://www.bootply.com/render/69913#"><strong>Modal</strong></a></h5>
-          <small>Examples using the Bootstrap modal.</small>
-          <br>
-          <span class="badge">87</span>
-        </div>
+            <div class="panel-body">
+              <div id="collapse<%= issue.id %>" class="panel-collapse collapse">
+                <p class="list-group-item-text"><%= truncate(issue.content, :length => 60) { link_to "", shownews_url(issue), class: "glyphicon glyphicon-search
+" } %></p>
+              </div>
+            </div>
+        <% end %>
       </div>
-      <div class="media">
-        <a class="pull-left" href="http://www.bootply.com/render/69913#">
-          <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
-        </a>
 
-        <div class="media-body">
-          <h5 class="media-heading">
-            <a href="http://www.bootply.com/tagged/slider" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="http://www.bootply.com/render/69913#"><strong>Carousel</strong></a></h5>
-          <small>How to use the Bootstrap slider.</small>
-          <br>
-          <span class="badge">322</span>
-        </div>
-      </div>
-      <div class="media">
-        <a class="pull-left" href="http://www.bootply.com/render/69913#">
-          <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
-        </a>
-
-        <div class="media-body">
-          <h5 class="media-heading">
-            <a href="http://www.bootply.com/tagged/typography" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="http://www.bootply.com/render/69913#"><strong>Typography</strong></a></h5>
-          <small>See the various textual elements and options.</small>
-          <br>
-          <span class="badge">44</span>
-        </div>
-      </div>
-      <div class="media">
-        <a class="pull-left" href="http://www.bootply.com/render/69913#">
-          <img class="media-object" src="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/F0F0F0">
-        </a>
-
-        <div class="media-body">
-          <h5 class="media-heading">
-            <a href="http://www.bootply.com/tagged/media" target="ext" class="pull-right"><i class="glyphicon glyphicon-share"></i></a>
-            <a href="http://www.bootply.com/render/69913#"><strong>@Media</strong></a></h5>
-          <small>Use @media queries to get the layout you want.</small>
-          <br>
-          <span class="badge">119</span>
-        </div>
-      </div>
 
     </div>
   </div>
