@@ -15,7 +15,7 @@
     <ul>
 
       <% issues.each do |issue| %>
-          <li>
+          <li type="hidden" id="masonry">
             <% if !(issue.issue_pic_file_name.nil?) %>
 
                 <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
@@ -33,7 +33,7 @@
             <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
           </li>
       <% end %>
-
+       <div id="fetchNextData"> a</div>
 
     </ul>
   </div>
@@ -43,3 +43,99 @@
 <!-- /main -->
 <script src="js/ViewModeSwitch/classie.js"></script>
 <script src="js/ViewModeSwitch/cbpViewModeSwitch.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+
+
+
+<script>
+    $(function () {
+
+        var masonryNode = $('#masonry');
+        masonryNode.imagesLoaded(function () {
+            masonryNode.masonry({
+                itemSelector: '.thumbnail',
+                isFitWidth: true
+            });
+        });
+
+
+        // 首先将新元素添加到页面容器中
+
+        masonryNode.append(newItems);
+// 等待新元素中的图片加载完毕
+        newItems.imagesLoaded(function () {
+
+// 调用瀑布流布局的appended方法
+            masonryNode.masonry('appended', newItems);
+        });
+
+    });
+
+    var ghostNode = $('#masonry_ghost').find('.thumbnail'), i, ghostIndexArray = [];
+    var ghostCount = ghostNode.length;
+    for (i = 0; i < ghostCount; i++) {
+        ghostIndexArray[i] = i;
+    }
+    ghostIndexArray.sort(function (a, b) {
+        if (Math.random() > 0.5) {
+            return a - b;
+        } else {
+            return b - a;
+        }
+    });
+
+
+    var nextDataNumber = 5;
+    var ajaxLoading = false;
+    var docNode = $(document);
+
+    var ulNode = $('ul.timeline');
+
+    function initLiNodes() {
+        var liNodes = ulNode.find('li'), count = liNodes.length, i, liNode, leftCount = nextDataNumber * 2;
+        for (i = 0; i < count; i++) {
+            liNode = $(liNodes.get(i));
+            if (i % 2 !== 0) {
+                liNode.addClass('alt');
+            } else {
+                liNode.removeClass('alt');
+            }
+            liNode.find('.number').text(leftCount + count - i);
+        }
+    }
+
+
+    $('#fetchNextData').click(function () {
+        var $this = $(this);
+        $this.addClass('disabled').text('正在加载后二十条数据...');
+        ajaxLoading = true;
+
+        $.get('./version_data_' + nextDataNumber + '.txt', function (data) {
+            ajaxLoading = false;
+            ulNode.append(data);
+            $this.removeClass('disabled').text('后二十条数据');
+            nextDataNumber--;
+
+            if (nextDataNumber === 0) {
+                $this.hide();
+            }
+
+            initLiNodes();
+        });
+
+    });
+
+    initLiNodes();
+
+    $(window).scroll(function() {
+
+        if($(document).height() - $(window).height() - $(document).scrollTop() < 2) {
+
+            if(!imagesLoading) {
+                appendToMasonry();
+            }
+
+        }
+
+    });
+</script>
