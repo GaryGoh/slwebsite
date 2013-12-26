@@ -57,7 +57,7 @@ ActiveAdmin.register_page "Dashboard" do
             th "学号"
             th "注册时间"
             th "姓名"
-            th "社团"
+            th "加上社团数"
             th "联系方式"
           end
           odd = true
@@ -70,7 +70,7 @@ ActiveAdmin.register_page "Dashboard" do
               else
                 td link_to c.name, admin_user_path(c.id)
               end
-              td c.society.to_s
+              td c.user_societies.count
               td c.contact
             end
             odd = !odd

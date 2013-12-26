@@ -1,13 +1,110 @@
 ActiveAdmin.register User do
-  permit_params :stuid, :email, :password, :password_confirmation, :name,
-                :gender_id, :contact, :society_id, :proverb, :member_id, :is_active, :avatar
+  # Here has a bug when update societies, which will get a old records from last time.
+  #permit_params :stuid, :email, :password, :password_confirmation, :name,
+  #              :gender_id, :contact, :society_id, :proverb, :member_id, :is_active, :avatar,
+  #              societies_attributes:[:id, :society_name],
+  #              user_attributes: [:id],
+  #              user_societies_update_attributes:[:society_id],
+  #              user_societies: [:society_id, :user_id]
+  #              #users_attributes:[:user],
+
+  controller do
+    def permitted_params
+      params.permit!
+    end
+  end
 
   menu :label => "公共用户",
        :if => proc { can?(:manage, User) }
   actions :all
 
 
-  # Index page form
+  show :title => :email do |c|
+    @user = User.find_by_id(params[:id])
+    columns do
+      column do
+
+        attributes_table do
+          row :name
+          row :email
+          row :gender
+          row :contact
+          row :created_at
+          row :proverb do
+            simple_format (c.proverb)
+          end
+
+
+        end
+        div :class => "panel" do
+          h3 "所属社团"
+          if c.user_societies and c.user_societies.count > 0
+            div :class => "panel_contents" do
+              div :class => "attributes_table" do
+                table do
+                  th do
+                    "所属中心"
+                  end
+                  th do
+                    "社团名字"
+                  end
+                  th do
+                    "加入时间"
+                  end
+
+                  tbody do
+                    c.user_societies.each do |s|
+                      tr do
+                        td do
+                          link_to s.society.department, admin_department_path(s.society.department.id)
+                        end
+                        td do
+                          link_to s.society, admin_society_path(s.society.id)
+                        end
+                        td do
+                          s.created_at.strftime("%F")
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          else
+            h3 "尚未加入社团"
+          end
+        end # end of {div :class => "panel" do}
+      end
+
+      column do
+
+        h3 "发布新闻"
+        table class: "index_table index" do
+          tr do
+            th "新闻标题"
+            th "发布时间"
+            th "新闻类型"
+            th "评论数"
+            th "阅读次数"
+          end
+          @user.issues.each do |e|
+            tr class: odd ? "odd" : "even" do
+              td link_to e.title, admin_issue_path(e.id)
+              td e.created_at.strftime("%b %e, %l:%M %p")
+              td e.category
+              td e.title
+              td e.title
+
+            end
+          end
+        end
+      end # end of #2 column
+
+    end
+  end
+
+
+# Index page form
   index do
     selectable_column
     column :state do |t|
@@ -22,12 +119,11 @@ ActiveAdmin.register User do
     column :name
     column :gender
     column :contact
-    column :society
     default_actions
   end
 
 
-  # The form is to create public student user info
+# The form is to create public student user info
   form do |f|
     f.semantic_errors *f.object.errors.keys
     if f.object.new_record?
@@ -38,10 +134,13 @@ ActiveAdmin.register User do
         f.input :password_confirmation
       end
     end
+
     f.inputs "学生信息" do
       f.input :name, :label => "姓名"
       f.input :gender, :label => "性别"
-      f.input :society, :label => "所属社团"
+      f.has_many :user_societies do |fm|
+        fm.input :society, :label => "所属社团"
+      end
       f.input :contact, :label => "联系方式"
       if f.object.avatar.nil?
         f.input :avatar, :as => :file, :label => "个人头像"
@@ -50,6 +149,7 @@ ActiveAdmin.register User do
       end
       f.input :proverb, :label => "个人简介"
     end
+
     f.inputs "账号状态" do
       f.input :is_active, :label => "激活"
     end
@@ -57,30 +157,29 @@ ActiveAdmin.register User do
   end
 
 
-  #show do
-  #
-  #end
+#show do
+#
+#end
 
 
   filter :stuid
   filter :name
   filter :email
   filter :gender
-  filter :society
   filter :created_at
 
 
-  # See permitted parameters documentation:
-  # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # permit_params :list, :of, :attributes, :on, :model
-  #
-  # or
-  #
-  # permit_params do
-  #  permitted = [:permitted, :attributes]
-  #  permitted << :other if resource.something?
-  #  permitted
-  # end
+# See permitted parameters documentation:
+# https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
+#
+# permit_params :list, :of, :attributes, :on, :model
+#
+# or
+#
+# permit_params do
+#  permitted = [:permitted, :attributes]
+#  permitted << :other if resource.something?
+#  permitted
+# end
 
 end

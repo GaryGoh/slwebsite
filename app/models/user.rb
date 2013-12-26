@@ -1,7 +1,14 @@
 class User < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
+  has_many :user_societies, :dependent => :destroy
+  has_many :societies, :through => :users_societies
+  #has_many :societies_as_owner, :class_name => "Society"
+
+  accepts_nested_attributes_for :user_societies, allow_destroy: true
+  #accepts_nested_attributes_for :societies
+
+
   belongs_to :member
-  belongs_to :society
   belongs_to :gender
 
   has_secure_password
