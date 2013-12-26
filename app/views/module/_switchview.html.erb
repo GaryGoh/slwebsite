@@ -15,6 +15,7 @@
     <ul>
 
       <% issues.each do |issue| %>
+
           <li type="hidden" id="masonry">
             <% if !(issue.issue_pic_file_name.nil?) %>
 
@@ -33,7 +34,7 @@
             <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
           </li>
       <% end %>
-       <div id="fetchNextData"> a</div>
+       <!--<div id="fetchNextData"> a</div>-->
 
     </ul>
   </div>
