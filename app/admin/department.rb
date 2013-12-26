@@ -2,7 +2,7 @@ ActiveAdmin.register Department do
   #permit_params :dep_name
   #actions :all, :except => [:edit, :show]
   menu false
-  #
+
   #
   #index do
   #  selectable_column

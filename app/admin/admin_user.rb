@@ -32,7 +32,7 @@ ActiveAdmin.register AdminUser do
       f.input :gender
       f.input :sl_department
       f.input :contact
-        if f.object.admin_pic.nil?
+        if f.object.admin_pic_file_name.nil?
           f.input :admin_pic, :as => :file, :label => "个人头像"
         else
           f.input :admin_pic, :as => :file, :hint => f.template.image_tag(f.object.admin_pic.url(:thumb)), :label => "个人头像"

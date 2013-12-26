@@ -1,6 +1,6 @@
 ActiveAdmin.register_page "Dashboard" do
 
-  menu :priority => 1, :label => proc { I18n.t("active_admin.dashboard") }, :if => proc { can?(:manage, User) }
+  menu :priority => 1, :label => proc { I18n.t("active_admin.dashboard") }
   #menu :priority => 1, :if => proc{ can?(:manage, Teacher) },
   #:if => proc{ can?(:manage, User) }
 

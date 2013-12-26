@@ -15,7 +15,8 @@ ActiveAdmin.register User do
   end
 
   menu :label => "公共用户",
-       :if => proc { can?(:manage, User) }
+       :if => proc { can?(:manage, User) } ,
+       :priority => 3
   actions :all
 
 

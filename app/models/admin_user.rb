@@ -21,7 +21,10 @@ class AdminUser < ActiveRecord::Base
   validates :email, presence: true,
             format: {with: VALID_EMAIL_REGEX, :message => "请输入正确的email格式"},
             uniqueness: {case_sensitive: false}
-  #validates :stuid,
+  validates :admin_permission, presence: true
+
+
+            #validates :stuid,
   #          format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
   #          uniqueness: {case_sensitive: false}
 

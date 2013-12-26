@@ -2,7 +2,8 @@ ActiveAdmin.register Member do
   permit_params :memid
   actions :all, :except => [:edit, :show]
   menu :label => "会员学号",
-  :if => proc{ can?(:manage, Member) }
+  :if => proc{ can?(:manage, Member) },
+  :priority => 3
 
 
   index do

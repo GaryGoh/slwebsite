@@ -1,0 +1,2 @@
+class SocietyController < ApplicationController
+end

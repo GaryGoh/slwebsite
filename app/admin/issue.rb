@@ -1,7 +1,11 @@
 ActiveAdmin.register Issue do
 
   menu :label => "新闻",
-       :if => proc { can?(:manage, Issue) }
+       :if => proc { can?(:manage, Issue) },
+       :priority => 4
+
+  #action_item :only => [:show], :if => proc {current_admin_user == "社团主席" }
+
 
   controller do
     def permitted_params
@@ -25,12 +29,15 @@ ActiveAdmin.register Issue do
       f.inputs "新闻信息" do
         f.input :title, :label => "标题"
         f.input :content, :label => "新闻内容"
-        f.input :category, :label => "新闻类别"
         f.input :user, :label => "作者"
       end
+    f.inputs "新闻类别" do
+      f.input :category, :label => "新闻类别"
+      f.input :society, :label => "所属社团"
+    end
 
     f.inputs "新闻图片" do
-      if f.object.issue_pic.nil?
+      if f.object.issue_pic_file_name.nil?
         f.input :issue_pic, :as => :file, :label => "新闻图片"
       else
         f.input :issue_pic, :as => :file, :hint => f.template.image_tag(f.object.issue_pic.url(:thumb)), :label => "新闻图片"

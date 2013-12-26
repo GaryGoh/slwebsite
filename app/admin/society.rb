@@ -3,7 +3,8 @@ ActiveAdmin.register Society do
                 user_societies: [:user_id, :society_id]
   actions :all
   menu :label => "社团",
-       :if => proc { can?(:manage, Society) }
+       :if => proc { can?(:manage, Society) },
+       :priority => 5
 
 
   index do
@@ -25,11 +26,13 @@ ActiveAdmin.register Society do
   form do |f|
     f.semantic_errors *f.object.errors.keys
     f.inputs "学生信息" do
-      f.input :society_name
-      f.input :department
-      f.input :num_member
+      f.input :society_name, :label => "社团名字"
+      f.input :department, :label => "所属中心"
+      f.input :num_member, :label => "社团会员数"
       f.input :home_url
+      if !current_admin_user.admin_permission == "社团主席"
       f.input :is_outstanding
+        end
     end
     f.actions
   end
