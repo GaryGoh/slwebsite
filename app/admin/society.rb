@@ -47,11 +47,14 @@ ActiveAdmin.register Society do
           row "所属中心" do
             c.department
           end
-          row "会员数" do
+          row "社团会员数" do
             c.num_member
           end
           row "网站会员数" do
             c.user_societies.count
+          end
+          row "社团新闻数" do
+            c.issues.count
           end
           row "社团主页" do
             c.home_url
@@ -135,10 +138,12 @@ ActiveAdmin.register Society do
   end
 
 
-  filter :society_name
-  filter :is_outstanding
-  filter :num_member
-  filter :created_at
+  filter :society_name, :label => "社团名字"
+  filter :is_outstanding, :label => "是否为优秀社团"
+  filter :num_member, :label => "社团会员数"
+  filter :num_registered_member, :label => "网站会员数"
+  filter :issues, :label => "社团新闻"
+  filter :created_at, :label => "创建于"
 
 
   # See permitted parameters documentation:

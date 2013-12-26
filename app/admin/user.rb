@@ -88,7 +88,7 @@ ActiveAdmin.register User do
             th "阅读次数"
           end
           @user.issues.each do |e|
-            tr class: odd ? "odd" : "even" do
+            tr do
               td link_to e.title, admin_issue_path(e.id)
               td e.created_at.strftime("%b %e, %l:%M %p")
               td e.category
@@ -162,11 +162,11 @@ ActiveAdmin.register User do
 #end
 
 
-  filter :stuid
-  filter :name
+  filter :stuid, :label => "学号"
+  filter :name, :label => "姓名"
   filter :email
-  filter :gender
-  filter :created_at
+  filter :gender, :label => "性别"
+  filter :created_at, :label => "创建于"
 
 
 # See permitted parameters documentation:

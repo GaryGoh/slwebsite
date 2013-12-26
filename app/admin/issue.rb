@@ -39,6 +39,14 @@ ActiveAdmin.register Issue do
     f.actions
   end
 
+  filter :title, :label => "新闻标题"
+  filter :content, :label => "内容"
+  filter :user, :label => "作者"
+  filter :category, :label => "新闻类别"
+  filter :society, :label => "所属社团"
+  filter :created_at, :label => "创建于"
+
+
 
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131226023415) do
+ActiveRecord::Schema.define(version: 20131226204600) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -112,9 +112,11 @@ ActiveRecord::Schema.define(version: 20131226023415) do
     t.string   "issue_pic_content_type"
     t.integer  "issue_pic_file_size"
     t.datetime "issue_pic_updated_at"
+    t.integer  "society_id"
   end
 
   add_index "issues", ["category_id"], name: "index_issues_on_category_id"
+  add_index "issues", ["society_id"], name: "index_issues_on_society_id"
 
   create_table "materials", force: true do |t|
     t.string   "description"
@@ -163,6 +165,9 @@ ActiveRecord::Schema.define(version: 20131226023415) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "user_societies", ["society_id"], name: "user_societies_society_id_fk"
+  add_index "user_societies", ["user_id", "society_id"], name: "index_user_societies_on_user_id_and_society_id", unique: true
 
   create_table "users", force: true do |t|
     t.integer  "stuid"
