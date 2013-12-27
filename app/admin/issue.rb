@@ -9,7 +9,7 @@ ActiveAdmin.register Issue do
 
   controller do
     def permitted_params
-      params.permit issue: [:title, :content, :date, :author, :user_id, :category_id, :issue_pic]
+      params.permit issue: [:title, :content, :date, :author, :user_id, :category_id, :issue_pic, :society_id]
     end
   end
 

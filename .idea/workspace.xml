@@ -12,6 +12,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.cbpNTAccordion.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/members_test.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/issue.rb" afterPath="$PROJECT_DIR$/app/admin/issue.rb" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +56,7 @@
     <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388110074973" ignored="false" />
     <file path="/a.dummy" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388108409922" ignored="false" />
     <file path="/_footer.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387341670771" ignored="false" />
-    <file path="/issue.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388098622061" ignored="false" />
+    <file path="/issue.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388119530947" ignored="false" />
     <file path="/allnews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388113706765" ignored="false" />
     <file path="/shownews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387668058377" ignored="false" />
     <file path="/20131214010501_add_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386983455409" ignored="false" />
@@ -202,10 +203,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="society_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="society_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/society_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="51" selection-start="99" selection-end="99" vertical-scroll-proportion="0.022255193">
+            <state line="1" column="51" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issue.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/admin/issue.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="109" selection-start="351" selection-end="351" vertical-scroll-proportion="0.24962178">
               <folding />
             </state>
           </provider>
@@ -265,15 +275,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gy.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/society/gy.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="53" selection-start="0" selection-end="55" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ty.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/society/ty.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -310,7 +311,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/society/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/society_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_timeline.html.erb" />
         <option value="$PROJECT_DIR$/public/css/TopMenu/default.css" />
@@ -326,6 +326,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_tlframe.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/society_controller.rb" />
+        <option value="$PROJECT_DIR$/app/admin/issue.rb" />
       </list>
     </option>
   </component>
@@ -1077,13 +1078,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/TopMenu/component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/TopMenu/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="22" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
@@ -1184,7 +1178,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/society_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="51" selection-start="99" selection-end="99" vertical-scroll-proportion="0.022255193">
+        <state line="1" column="51" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/issue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="109" selection-start="351" selection-end="351" vertical-scroll-proportion="0.24962178">
           <folding />
         </state>
       </provider>
