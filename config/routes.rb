@@ -37,6 +37,10 @@ Slwebsite::Application.routes.draw do
   get 'show/:id', to: 'slmember#show', as: :show
   get 'societyshow/:id', to: 'society#showso', as: :societyshow
 
+  get "gy" => "society#gy"
+  get "wy" => "society#wy"
+  get "ty" => "society#ty"
+  get "xs" => "society#xs"
 
 
   #default_url_options :host => "0.0.0.0:3000"

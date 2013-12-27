@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueprint: Tooltip Menu</title>
+  <meta name="description" content="Blueprint: Tooltip Menu"/>
+  <meta name="keywords" content="Tooltip Menu, navigation, tooltip, menu, css, web development, template"/>
+  <meta name="author" content="Codrops"/>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../css/TopMenu/default.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/TopMenu/component.css"/>
+  <script src="../js/TopMenu/modernizr.custom.js"></script>
+</head>
+<body>
+<div class="container">
+  <header class="clearfix">
+    <span>桂林电子科技大学 学生社团联合会 </span>
+
+    <h1><%= society.to_s %></h1>
+    <!--<nav>-->
+    <!--<a href="http://tympanus.net/Blueprints/ProductGridLayout/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>-->
+    <!--&lt;!&ndash;a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a&ndash;&gt;-->
+    <!--<a href="http://tympanus.net/codrops/?p=15212" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>-->
+    <!--<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>-->
+    <!--</nav>-->
+  </header>
+  <div class="filler-above">
+    <p>放置跑马灯</p>
+  </div>
+  <ul id="cbp-tm-menu" class="cbp-tm-menu">
+    <li>
+      <a href="/">社联主页</a>
+    </li>
+    <li>
+      <a href="#">站内导航</a>
+      <ul class="cbp-tm-submenu">
+        <li><a href="/news" class="cbp-tm-icon-archive">新闻部落</a></li>
+        <li><a href="/notis" class="cbp-tm-icon-mail">活动通知</a></li>
+        <li><a href="/download" class="cbp-tm-icon-link">资料下载</a></li>
+        <li><a href="/slmember" class="cbp-tm-icon-users">社联介绍</a></li>
+        <li><a href="/faq" class="cbp-tm-icon-clock">FAQ</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">社团中心</a>
+      <ul class="cbp-tm-submenu">
+        <li><a href="/gy" class="cbp-tm-icon-heart">公益实践中心</a></li>
+        <li><a href="/wy" class="cbp-tm-icon-music">文娱兴趣中心</a></li>
+        <li><a href="/ty" class="cbp-tm-icon-ball">体育竞技中心</a></li>
+        <li><a href="/xs" class="cbp-tm-icon-book">学术科技中心</a></li>
+
+      </ul>
+    </li>
+    <li>
+
+
+      <a href="#">用户</a>
+      <ul class="cbp-tm-submenu">
+        <% if current_user_stu %>
+            <li>
+              <a href="<%= user_url(session[:user_id]) %>" class="cbp-tm-icon-cog"><%= current_user_stu.stuid %></a>
+            </li>
+        <% else %>
+            <li><a href="/signup" class="cbp-tm-icon-pencil">注册</a></li>
+            <li><a href="/signin" class="cbp-tm-icon-article">登录</a></li>
+        <% end %>
+      </ul>
+    </li>
+  </ul>
+  <div class="filler-below">
+    <%= render 'module/timeline', :issues => issues, :society => society %>
+  </div>
+</div>
+
+<!--<footer id="footer_div">-->
+<!--<%= render 'layouts/footer_pub' %>-->
+
+<!--</footer>-->
+
+<script src="../js/TopMenu/cbpTooltipMenu.min.js"></script>
+<script>
+    var menu = new cbpTooltipMenu(document.getElementById('cbp-tm-menu'));
+</script>
+</body>
+</html>
