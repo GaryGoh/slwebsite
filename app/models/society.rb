@@ -4,6 +4,7 @@ class Society < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
 
   belongs_to :department
+  has_one :issue_image
 
   def to_s
     self.society_name

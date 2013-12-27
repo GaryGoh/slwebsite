@@ -9,7 +9,8 @@ ActiveAdmin.register Issue do
 
   controller do
     def permitted_params
-      params.permit issue: [:title, :content, :date, :author, :user_id, :category_id, :issue_pic, :society_id]
+      #params.permit issue: [:title, :content, :date, :author, :user_id, :category_id, :issue_pic, :society_id, :issue_images_attributes]
+      params.permit!
     end
   end
 
@@ -26,21 +27,29 @@ ActiveAdmin.register Issue do
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
-      f.inputs "新闻信息" do
-        f.input :title, :label => "标题"
-        f.input :content, :label => "新闻内容"
-        f.input :user, :label => "作者"
-      end
+    @issue = Issue.find_by_id(params[:id])
+    @society = @issue.society
+    f.inputs "新闻信息" do
+      f.input :title, :label => "标题"
+      f.input :content, :label => "新闻内容"
+      f.input :user, :label => "作者"
+    end
     f.inputs "新闻类别" do
       f.input :category, :label => "新闻类别"
       f.input :society, :label => "所属社团"
     end
 
+
     f.inputs "新闻图片" do
-      if f.object.issue_pic_file_name.nil?
-        f.input :issue_pic, :as => :file, :label => "新闻图片"
-      else
-        f.input :issue_pic, :as => :file, :hint => f.template.image_tag(f.object.issue_pic.url(:thumb)), :label => "新闻图片"
+      f.has_many :issue_images do |fm|
+        if fm.object.issue_pic_file_name.nil?
+          fm.input :issue_pic, :as => :file, :label => "新闻图片"
+        else
+          fm.input :issue_pic, :as => :file, :hint => fm.template.image_tag(fm.object.issue_pic.url(:thumb)), :label => "新闻图片"
+          fm.input :_destroy, :as => :boolean, :required => false, :label => '删除照片'
+        end
+        fm.input :society, :collection => Society.where("id = #{@issue.society_id}").map { |s| [s.to_s, s.id] }
+
       end
     end
     f.actions
@@ -52,7 +61,6 @@ ActiveAdmin.register Issue do
   filter :category, :label => "新闻类别"
   filter :society, :label => "所属社团"
   filter :created_at, :label => "创建于"
-
 
 
   # See permitted parameters documentation:

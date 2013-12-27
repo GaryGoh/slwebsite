@@ -7,11 +7,13 @@
     <div>发表于： <%= @issue.created_at.strftime("%m-%e-%Y  %H:%M") %> | 作者： <%= @issue.author %> </div>
   </div>
 
-  <% if !(@issue.issue_pic_file_name.nil?) %>
-      <div class="panel-body">
-        <%= image_tag @issue.issue_pic.url(:medium) %>
-        <hr>
-      </div>
+  <% @issue.issue_images.each do |i| %>
+      <% if !(i.issue_pic_file_name.nil?) %>
+          <div class="panel-body">
+            <%= image_tag i.issue_pic.url(:medium) %>
+            <hr>
+          </div>
+      <% end %>
   <% end %>
 
   <div class="panel-body">

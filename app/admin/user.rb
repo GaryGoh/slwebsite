@@ -15,7 +15,7 @@ ActiveAdmin.register User do
   end
 
   menu :label => "公共用户",
-       :if => proc { can?(:manage, User) } ,
+       :if => proc { can?(:manage, User) },
        :priority => 3
   actions :all
 
@@ -136,11 +136,13 @@ ActiveAdmin.register User do
       end
     end
 
+
     f.inputs "学生信息" do
       f.input :name, :label => "姓名"
       f.input :gender, :label => "性别"
       f.has_many :user_societies do |fm|
         fm.input :society, :label => "所属社团"
+        fm.input :_destroy, :as => :boolean, :required => false, :label => '退出社团'
       end
       f.input :contact, :label => "联系方式"
       if f.object.avatar.nil?
