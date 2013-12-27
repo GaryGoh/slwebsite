@@ -1,0 +1,53 @@
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/Win8/default.css"/>
+  <link rel="stylesheet" type="text/css" href="css/Win8/climacons.css"/>
+  <link rel="stylesheet" type="text/css" href="css/Win8/component.css"/>
+</head>
+
+<style>
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a.hover {
+        color: #000000;
+
+        text-decoration: none;
+    }
+</style>
+
+
+<div class="main">
+
+  <ul id="rb-grid" class="rb-grid clearfix">
+
+     <% tail = 0 %>
+    <% @gy_societies.each do |e| %>
+        <% head = ((e.id+Time.now.strftime("%h").to_i) % 4 + 1) %>
+        <% if (head + tail > 4) %>
+            <% head = 4 - tail %>
+        <% end %>
+        <a href="<%= societyshow_url(e) %>" class="icon-clima-<%= ((e.id+Time.now.strftime("%M").to_i) % 12 + 1) %> rb-span-<%= head %>">
+          <h3><%= e.to_s %></h3><span class="rb-temp"><%= e.num_registered_member %></span>
+        </a>
+        <% tail = ((e.id+Time.now.strftime("%h").to_i) % 4 + 1) %>
+    <% end %>
+
+
+  </ul>
+</div>
+
+
+<script>
+    $(function () {
+
+        Boxgrid.init();
+
+    });
+</script>
+

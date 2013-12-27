@@ -16,6 +16,7 @@ Slwebsite::Application.routes.draw do
   get "home" => "static_page#home"
   get "faq" => "faq#faq"
   get "about" => "static_page#about"
+  get "society" => "society#index"
   get "access_error" => "static_page#_access_error"
 
   match '/signup',  to: 'users#new',            via: 'get'
@@ -34,6 +35,8 @@ Slwebsite::Application.routes.draw do
 
   get '/slmember',  to: 'slmember#list'
   get 'show/:id', to: 'slmember#show', as: :show
+  get 'societyshow/:id', to: 'society#showso', as: :societyshow
+
 
 
   #default_url_options :host => "0.0.0.0:3000"
