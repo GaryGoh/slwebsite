@@ -12,16 +12,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.cbpNTAccordion.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/members_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/issues/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/issues/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/issues_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" afterPath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/society_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/society_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_gallary.html.erb" afterPath="$PROJECT_DIR$/app/views/module/_gallary.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
@@ -237,10 +228,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shownews.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="shownews.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="5" selection-start="381" selection-end="381" vertical-scroll-proportion="0.40983605">
+            <state line="15" column="5" selection-start="381" selection-end="381" vertical-scroll-proportion="-2.8481014">
               <folding />
             </state>
           </provider>
@@ -255,10 +246,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_gallary.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_gallary.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/module/_gallary.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="165" selection-end="165" vertical-scroll-proportion="1.329114">
+            <state line="30" column="8" selection-start="569" selection-end="569" vertical-scroll-proportion="0.33582088">
               <folding />
             </state>
           </provider>
@@ -341,8 +332,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.erb" />
         <option value="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/module/_carousel.erb" />
-        <option value="$PROJECT_DIR$/app/views/module/_gallary.html.erb" />
         <option value="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/_gallary.html.erb" />
       </list>
     </option>
   </component>
@@ -1105,16 +1096,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_gallary.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="165" selection-end="165" vertical-scroll-proportion="1.329114">
+        <state line="15" column="5" selection-start="381" selection-end="381" vertical-scroll-proportion="-2.8481014">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/module/_gallary.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="381" selection-end="381" vertical-scroll-proportion="0.40983605">
+        <state line="30" column="8" selection-start="569" selection-end="569" vertical-scroll-proportion="0.33582088">
           <folding />
         </state>
       </provider>
