@@ -21,7 +21,7 @@
 <!--</div>-->
 <!--</div>-->
 
-<%= form_for([@user, @issue]) do |f| %>
+<%= form_for([@user, @issue], :html => {:multipart => true}) do |f| %>
     <% if @issue.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
@@ -100,7 +100,24 @@
               <div class="control-group">
 
                 <div class="controls">
-                  <%= f.file_field :issue_pic %>
+                  <%= f.fields_for :issue_images do |fm| %>
+                      <% if fm.object.new_record? %>
+                          <p>
+                            <%= fm.file_field :issue_pic %>
+                          </p>
+                      <% end %>
+                  <% end %>
+                  <hr>
+                  <%= f.fields_for :issue_images do |fm| %>
+                      <% unless fm.object.new_record? %>
+                            <div class="col-sm-6 col-md-4">
+
+                              <P><%= image_tag(fm.object.issue_pic.url(:thumb)) %></p>
+                              <%= fm.check_box :_destroy %> 删除照片?
+                            </div>
+                      <% end %>
+                  <% end %>
+
                 </div>
               </div>
 

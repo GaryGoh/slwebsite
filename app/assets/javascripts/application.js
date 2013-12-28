@@ -23,7 +23,6 @@
 //= require Chart.min
 
 
-
 //= require masonry.pkgd.js
 
 

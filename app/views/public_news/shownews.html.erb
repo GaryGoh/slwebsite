@@ -1,3 +1,7 @@
+<style>
+
+</style>
+
 <div class="panel panel-info">
   <div class="panel-heading">
     <h2 align="center"><%= @issue.title %></h2>
@@ -6,15 +10,10 @@
   <div class="panel-heading">
     <div>发表于： <%= @issue.created_at.strftime("%m-%e-%Y  %H:%M") %> | 作者： <%= @issue.author %> </div>
   </div>
-
-  <% @issue.issue_images.each do |i| %>
-      <% if !(i.issue_pic_file_name.nil?) %>
-          <div class="panel-body">
-            <%= image_tag i.issue_pic.url(:medium) %>
-            <hr>
-          </div>
-      <% end %>
-  <% end %>
+  <div class="panel-body" id="gal">
+    <%= render "module/gallary", :issue => @issue %>
+  </div>
+  <hr>
 
   <div class="panel-body">
     <pre id="issue_pre"><h5><%= "#{@issue.content}" %></h5></pre>
@@ -22,7 +21,6 @@
 
 </div>
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), news_path %></td>
-
 
 
 

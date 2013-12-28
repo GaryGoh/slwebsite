@@ -55,6 +55,15 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "font-awesome-rails"
 gem 'font-awesome-sass'
 
+gem 'galleria-rails', github: 'albandiguer/galleria-rails'
+
+
+#gem 'remotipart', '~> 1.2'
+
+# Export UML diagrams from database
+#gem 'rails-erd'
+
+
 #charts
 #gem "just-datetime-picker"
 

@@ -20,11 +20,15 @@ class IssuesController < ApplicationController
   def new
     @user = User.find(params[:user_id])
     @issue = @user.issues.build
+    3.times {@issue.issue_images.build}
+
   end
 
   # GET /issues/1/edit
   def edit
     @issue = @user.issues.find(params[:id])
+    3.times {@issue.issue_images.build}
+
   end
 
   # POST /issues
@@ -77,7 +81,8 @@ class IssuesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def issue_params
-    params.require(:issue).permit(:title, :content, :user_id, :pic_url, :author, :category_id, :issue_pic, :society_id)
+    #params.require(:issue).permit(:title, :content, :user_id, :pic_url, :author, :category_id, :issue_pic, :society_id, :issue_image_id)
+    params.require(:issue).permit!
   end
 
   # To get a user

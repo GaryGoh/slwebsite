@@ -1,0 +1,11 @@
+<%= f.file_field :image %>
+<% f.has_many :issue_images do |fm| %>
+    <% if fm.object.issue_pic_file_name.nil?%>
+        <% fm.input :issue_pic, :as => :file, :label => "新闻图片" %>
+    <% else %>
+        <% fm.input :issue_pic, :as => :file, :hint => fm.template.image_tag(fm.object.issue_pic.url(:thumb)), :label => "新闻图片"%>
+        <% fm.input :_destroy, :as => :boolean, :required => false, :label => '删除照片' %>
+    <% end %>
+    <% fm.input :society, :collection => Society.where("id = #{@issue.society_id}").map { |s| [s.to_s, s.id] } %>
+
+<% end %>

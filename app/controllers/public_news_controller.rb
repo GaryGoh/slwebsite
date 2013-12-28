@@ -7,6 +7,8 @@ class PublicNewsController < ApplicationController
 
   def shownews
      @issue = Issue.find(params[:id])
+     @issues = Issue.all.reverse
+
   end
 
   def readmode
