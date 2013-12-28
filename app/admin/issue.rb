@@ -27,8 +27,8 @@ ActiveAdmin.register Issue do
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
-    @issue = Issue.find_by_id(params[:id])
-    @society = @issue.society
+
+
     f.inputs "新闻信息" do
       f.input :title, :label => "标题"
       f.input :content, :label => "新闻内容"
@@ -39,17 +39,19 @@ ActiveAdmin.register Issue do
       f.input :society, :label => "所属社团"
     end
 
+    unless f.object.new_record?
+      f.inputs "新闻图片" do
+        @issue = Issue.find_by_id(params[:id])
+        f.has_many :issue_images do |fm|
+          if fm.object.issue_pic_file_name.nil?
+            fm.input :issue_pic, :as => :file, :label => "新闻图片"
+          else
+            fm.input :issue_pic, :as => :file, :hint => fm.template.image_tag(fm.object.issue_pic.url(:thumb)), :label => "新闻图片"
+            fm.input :_destroy, :as => :boolean, :required => false, :label => '删除照片'
+          end
+          fm.input :society, :collection => Society.where("id = #{@issue.society_id}").map { |s| [s.to_s, s.id] }
 
-    f.inputs "新闻图片" do
-      f.has_many :issue_images do |fm|
-        if fm.object.issue_pic_file_name.nil?
-          fm.input :issue_pic, :as => :file, :label => "新闻图片"
-        else
-          fm.input :issue_pic, :as => :file, :hint => fm.template.image_tag(fm.object.issue_pic.url(:thumb)), :label => "新闻图片"
-          fm.input :_destroy, :as => :boolean, :required => false, :label => '删除照片'
         end
-        fm.input :society, :collection => Society.where("id = #{@issue.society_id}").map { |s| [s.to_s, s.id] }
-
       end
     end
     f.actions
@@ -63,17 +65,17 @@ ActiveAdmin.register Issue do
   filter :created_at, :label => "创建于"
 
 
-  # See permitted parameters documentation:
-  # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # permit_params :list, :of, :attributes, :on, :model
-  #
-  # or
-  #
-  # permit_params do
-  #  permitted = [:permitted, :attributes]
-  #  permitted << :other if resource.something?
-  #  permitted
-  # end
+# See permitted parameters documentation:
+# https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
+#
+# permit_params :list, :of, :attributes, :on, :model
+#
+# or
+#
+# permit_params do
+#  permitted = [:permitted, :attributes]
+#  permitted << :other if resource.something?
+#  permitted
+# end
 
 end
