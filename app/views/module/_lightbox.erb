@@ -16,7 +16,7 @@
   <% issues.each do |e| %>
       <% e.issue_images.each do |i| %>
 
-          <a href="<%= i.issue_pic.url %>" title="<%= i.id %>"><%= image_tag i.issue_pic.url(:medium), :alt => i.id %></a>
+          <a href="<%= i.issue_pic.url %>"><%= image_tag i.issue_pic.url(:medium) %></a>
 
       <% end %>
   <% end %>

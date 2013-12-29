@@ -12,9 +12,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.cbpNTAccordion.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/members_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_carousel.erb" afterPath="$PROJECT_DIR$/app/views/module/_carousel.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_lightbox.erb" afterPath="$PROJECT_DIR$/app/views/module/_lightbox.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_tlframe.html.erb" afterPath="$PROJECT_DIR$/app/views/module/_tlframe.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/society_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/society_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -179,7 +179,7 @@
     <file path="/showso.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388115764079" ignored="false" />
     <file path="/_sotimeline.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388111508001" ignored="false" />
     <file path="/_tlheader.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388113331734" ignored="false" />
-    <file path="/_tlframe.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388285177715" ignored="false" />
+    <file path="/_tlframe.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388285255723" ignored="false" />
     <file path="/default.css" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388115467763" ignored="false" />
     <file path="/gy.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388117222233" ignored="false" />
     <file path="/ty.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388117232498" ignored="false" />
@@ -215,7 +215,7 @@
       <file leaf-file-name="society_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/society_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+            <state line="30" column="0" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -233,7 +233,7 @@
       <file leaf-file-name="_tlframe.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/module/_tlframe.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="23" selection-start="657" selection-end="657" vertical-scroll-proportion="0.267101">
+            <state line="38" column="31" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.38925081">
               <folding />
             </state>
           </provider>
@@ -260,7 +260,7 @@
       <file leaf-file-name="_faqCollaspse.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_faqCollaspse.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.25">
+            <state line="18" column="9" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.25">
               <folding>
                 <marker date="1387591960000" expanded="true" signature="66:596" placeholder="..." />
                 <marker date="1387591960000" expanded="true" signature="106:585" placeholder="..." />
@@ -286,16 +286,16 @@
       <file leaf-file-name="_carousel.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_carousel.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="43" selection-start="738" selection-end="803" vertical-scroll-proportion="-11.25">
+            <state line="28" column="40" selection-start="738" selection-end="803" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_carousel2.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_carousel2.erb">
+      <file leaf-file-name="_lightbox.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/module/_lightbox.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="-11.875">
+            <state line="18" column="81" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -328,7 +328,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/issues/_form.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -344,6 +343,7 @@
         <option value="$PROJECT_DIR$/app/views/module/_carousel.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_carousel2.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_tlframe.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/_lightbox.erb" />
       </list>
     </option>
   </component>
@@ -1013,6 +1013,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3273906" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
@@ -1024,7 +1025,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30068967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1136,7 +1136,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_faqCollaspse.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.25">
+        <state line="18" column="9" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.25">
           <folding>
             <marker date="1387591960000" expanded="true" signature="66:596" placeholder="..." />
             <marker date="1387591960000" expanded="true" signature="106:585" placeholder="..." />
@@ -1172,7 +1172,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/society_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1184,13 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_carousel.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="43" selection-start="738" selection-end="803" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_gallary.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="31" selection-start="876" selection-end="962" vertical-scroll-proportion="-14.333333">
@@ -1198,16 +1191,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_carousel2.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/module/_carousel.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="-11.875">
+        <state line="28" column="40" selection-start="738" selection-end="803" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_lightbox.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="81" selection-start="607" selection-end="607" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_tlframe.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="23" selection-start="657" selection-end="657" vertical-scroll-proportion="0.267101">
+        <state line="38" column="31" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.38925081">
           <folding />
         </state>
       </provider>
