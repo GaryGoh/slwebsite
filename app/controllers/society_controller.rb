@@ -25,6 +25,6 @@ class SocietyController < ApplicationController
 
   def showso
     @society = Society.find_by_id(params[:id])
-    @issues = Issue.all
+    @issues = @society.issues
   end
 end

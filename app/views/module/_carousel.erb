@@ -1,24 +1,49 @@
+
+
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
 
-  <%%>
+
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <% is_active = true %>
+    <% cid = 1%>
+    <% issues.each do |e| %>
+        <% (1..e.issue_images.count).each do %>
+            <% if is_active %>
+                <% is_active = false%>
+                <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>" class="active"></li>
+            <% else %>
+                <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>"></li>
+            <% end %>
+            <% cid + 1%>
+        <% end %>
+    <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
-  </div>
 
+    <% is_active = true %>
+    <% issues.each do |e| %>
+        <% e.issue_images.each do |i| %>
+            <% if is_active %>
+                <div class="item active">
+                  <% is_active = false %>
+            <% else %>
+                <div class="item">
+            <% end %>
+             <div align= "center">
+            <%= image_tag i.issue_pic.url(:medium) %>
+             </div>
+            <div class="carousel-caption">
+              <h3><%= i.description %></h3>
+            </div>
+            </div>
+        <% end %>
+    <% end %>
+    </div>
+  </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -26,11 +51,4 @@
   <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-</div>
-
-<div id="galleria">
-  <% issue.issue_images.each do |i| %>
-      <a  href="<%= i.issue_pic.url %>"><%= image_tag i.issue_pic.url(:medium) %></a>
-
-  <% end %>
 </div>
