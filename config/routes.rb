@@ -40,7 +40,7 @@ Slwebsite::Application.routes.draw do
   get "gy" => "society#gy"
   get "wy" => "society#wy"
   get "ty" => "society#ty"
-  get "xs" => "society#index"
+  get "xs" => "society#xs"
 
 
   #default_url_options :host => "0.0.0.0:3000"
