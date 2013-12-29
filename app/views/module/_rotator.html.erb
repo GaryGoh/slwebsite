@@ -10,7 +10,7 @@
         <div class="cbp-qtcontent">
           <% if !(issue.issue_pic_file_name.nil?) %>
 
-              <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
+              <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_images.order("RANDOM()").first.issue_pic.url(:thumb) %></a>
           <% end %>
           <blockquote>
             <p>

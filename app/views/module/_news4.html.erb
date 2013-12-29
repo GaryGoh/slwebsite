@@ -12,7 +12,7 @@
   <div class="col-md-6">
     <% if !(issue.issue_pic_file_name.nil?) %>
 
-        <%= image_tag issue.issue_pic.url(:thumb), :class => "img-responsive pull-right" %>
+        <%= image_tag issue.issue_images.order("RANDOM()").first.issue_pic.url(:thumb), :class => "img-responsive pull-right" %>
     <% end %>
   </div>
   <div class="col-md-6">
