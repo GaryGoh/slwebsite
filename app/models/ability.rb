@@ -26,7 +26,8 @@ class Ability
       when "社团主席" #Teacher
         #can :manage, DashBoard
         can :manage, :all
-        cannot :manage, [AdminUser, Category, Department, Member, SlDepartment, HomeBackground]
+        # AdminUser
+        cannot :manage, [ Category, Department, Member, SlDepartment, HomeBackground]
     end
 
     # Define abilities for the passed in user here. For example:

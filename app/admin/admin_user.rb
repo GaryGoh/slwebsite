@@ -2,9 +2,8 @@ ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirm, :admin_permission_id,
                 :gender_id, :society_id, :sl_department_id, :name, :proverb, :admin_pic, :contact
   menu :label => "管理员", :priority => 2,
-  :if => proc{ can?(:manage, AdminUser) }
+       :if => proc { can?(:manage, AdminUser) }
   #controller.authorize_resource
-
 
 
   index do
@@ -28,15 +27,19 @@ ActiveAdmin.register AdminUser do
     end
 
     f.inputs "用户信息" do
-      f.input :name
-      f.input :gender
-      f.input :sl_department
+      f.input :name, :label => "姓名"
+      f.input :gender, :label => "性别"
+      if f.object.admin_permission != "社团主席"
+        f.input :sl_department, :label => "社联部门"
+      else
+        f.input :society, :label => "所属社团"
+      end
       f.input :contact
-        if f.object.admin_pic_file_name.nil?
-          f.input :admin_pic, :as => :file, :label => "个人头像"
-        else
-          f.input :admin_pic, :as => :file, :hint => f.template.image_tag(f.object.admin_pic.url(:thumb)), :label => "个人头像"
-        end
+      if f.object.admin_pic_file_name.nil?
+        f.input :admin_pic, :as => :file, :label => "个人头像"
+      else
+        f.input :admin_pic, :as => :file, :hint => f.template.image_tag(f.object.admin_pic.url(:thumb)), :label => "个人头像"
+      end
       f.input :proverb
     end
 

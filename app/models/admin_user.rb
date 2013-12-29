@@ -1,4 +1,5 @@
 class AdminUser < ActiveRecord::Base
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   belongs_to :admin_permission
@@ -17,14 +18,24 @@ class AdminUser < ActiveRecord::Base
   VALID_STUID_REGEX = /^[0-9]{9,10}$/
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
+  before_save { self.email = email.downcase }
+
 
   validates :email, presence: true,
             format: {with: VALID_EMAIL_REGEX, :message => "请输入正确的email格式"},
             uniqueness: {case_sensitive: false}
   validates :admin_permission, presence: true
 
+  if (new)
+    validates :name, presence: true, length: {maximum: 10}
+    if (:permission)
+      validates :sl_department_id, presence: true
+    else
+      validates :society_id, presence: true
+    end
+  end
 
-            #validates :stuid,
+  #validates :stuid,
   #          format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
   #          uniqueness: {case_sensitive: false}
 
@@ -41,6 +52,14 @@ class AdminUser < ActiveRecord::Base
 
 
   after_create { |admin| admin.send_reset_password_instructions }
+
+  def permission?
+    self.admin_permission != "社团主席"
+  end
+
+  def new
+    new_record?
+  end
 
   def password_required?
     new_record? ? false : super
