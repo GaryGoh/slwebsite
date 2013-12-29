@@ -1,5 +1,5 @@
 <h2><%= issue.title %></h2>
-<% if !(issue.issue_pic_file_name.nil?) %>
+<% if (issue.issue_images.count != 0) %>
     <%= image_tag issue.issue_images.order("RANDOM()").first.issue_pic.url(:thumb), :class => "img-responsive pull-right" %>
 <% end %>
 <%= truncate(issue.content, :length => 600) %>
