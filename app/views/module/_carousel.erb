@@ -27,3 +27,10 @@
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
+
+<div id="galleria">
+  <% issue.issue_images.each do |i| %>
+      <a  href="<%= i.issue_pic.url %>"><%= image_tag i.issue_pic.url(:medium) %></a>
+
+  <% end %>
+</div>

@@ -14,9 +14,10 @@
 
       <% issues.each do |issue| %>
           <li>
-            <% if !(issue.issue_pic_file_name.nil?) %>
+            <% pic = issue.issue_images.order("RANDOM()").first %>
+            <% if !(pic.nil?) %>
 
-                <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
+                <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag pic.issue_pic.url(:thumb) %></a>
             <% else %>
                 <img src="images/home/bg.jpg" width="87" height="87">
 
