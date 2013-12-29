@@ -11,13 +11,13 @@
 
   </div>
   <div class="col col-sm-4">
-    <% if !(issue.issue_pic_file_name.nil?) %>
+    <% if !(issue.issue_images.nil?) %>
         <a href=<%= shownews_url(issue) %>>
           <%= image_tag issue.issue_images.order("RANDOM()").first.issue_pic.url(:thumb), :class => "img-responsive" %>
         </a>
     <% end %>
     <hr>
-    <% if !(issue.issue_pic_file_name.nil?) %>
+    <% if !(issue.issue_images.nil?) %>
         <a href=<%= shownews_url(issue) %>>
           <%= image_tag issue.issue_images.order("RANDOM()").last.issue_pic.url(:thumb), :class => "img-responsive" %>
         </a>
