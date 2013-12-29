@@ -42,7 +42,9 @@ class User < ActiveRecord::Base
   validates :stuid, presence: true,
             format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
             uniqueness: {case_sensitive: false}
-  validate :member_id_exists
+
+  # if needs to validate by legal student id then add following
+  #validate :member_id_exists
 
   #unless $user_login
   #  validates :password, length: {in: 6..20, :message => "密码长度在6 - 20 之间"}
