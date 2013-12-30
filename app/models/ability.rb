@@ -21,42 +21,13 @@ class Ability
       when "超级管理员" #SuperAdmin
         can :manage, :all
       when "社联委员" #Admin
-        can :read, ActiveAdmin::Page, :name => "Dashboard"
-        can :manage, AdminUser, :id => user.id
-        cannot :destroy, AdminUser
-      #can :manage, DashBoard
-      #can :manage, AdminUser, :id => user.id
-      #can :manage, User
-      #can :manage, Issue
-      #can :manage, Society
-      #can :manage, Faq
-      #can :manage, SubFaq
-      #can :manage, IssueImage
-      #can :manage, Material
+        can :manage, :all
+        cannot :manage, AdminUser
       when "社团主席" #Teacher
-                  #can :manage, DashBoard
-                  #can :manage, :all
-        can :read, ActiveAdmin::Page, :name => "Dashboard"
-
-        can :manage, AdminUser, :id => user.id
-        cannot :destroy, AdminUser
-
-        can :manage, User, User.user_societies.society_id => user.society_id
-        #cannot :update, User
-        cannot :destroy, User
-
-        can :manage, Issue, :society_id => user.society_id
-        cannot :destroy, Issue
-
-        can :manage, Society, :id => user.society_id
-        cannot :destroy, Society
-
-        can :manage, Faq
-        can :manage, SubFaq
-        can :manage, IssueImage
-        can :manage, Material
+        #can :manage, DashBoard
+        can :manage, :all
         # AdminUser
-        cannot :manage, [Category, Department, Member, SlDepartment, HomeBackground]
+        cannot :manage, [ Category, Department, Member, SlDepartment, HomeBackground]
     end
 
     # Define abilities for the passed in user here. For example:
