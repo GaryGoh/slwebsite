@@ -61,7 +61,9 @@
                   <tr>
                     <td><strong>照片: </strong></td>
                     <% if @user.avatar_file_name.nil? %>
-                        <td><div class="text-danger">暂无照片</div></td>
+                        <td>
+                          <div class="text-danger">暂无照片</div>
+                        </td>
                     <% else %>
                         <td><%= image_tag @user.avatar.url(:thumb) %></td>
                     <% end %>
@@ -88,6 +90,8 @@
               </div>
               <div id="collapseSociety" class="panel-collapse collapse in">
 
+
+                <% %>
                 <% if (@user.user_societies) && (@user.user_societies.count > 0) %>
                     <div class="panel-body">
                       <table class="table">
@@ -106,13 +110,22 @@
                             <tr>
                               <td>
                                 <!--# need to update link when finished society views-->
-
-                                <%= link_to s.society.department, admin_department_path(s.society.department.id) %>
+                                <% case s.society.department.to_s %>
+                                <% when "公益实践中心" %>
+                                    <%= link_to s.society.department.to_s, gy_url %>
+                                <% when "文娱兴趣中心" %>
+                                    <%= link_to s.society.department.to_s, wy_url %>
+                                <% when "体育竞技中心" %>
+                                    <%= link_to s.society.department.to_s, ty_url %>
+                                <% when "学术科技中心" %>
+                                    <%= link_to s.society.department.to_s, xs_url %>
+                                <% end %>
                               </td>
                               <td>
                                 <!--# need to update link when finished society views-->
 
-                                <%= link_to s.society, admin_society_path(s.society.id) %>
+
+                                <%= link_to s.society, societyshow_path(s.society.id) %>
                               </td>
                               <td>
                                 <%= s.created_at.strftime("%F") %>

@@ -21,7 +21,7 @@ class Ability
       when "超级管理员" #SuperAdmin
         can :manage, :all
       when "社联委员" #Admin
-        #can :manage, :all
+                  #can :manage, :all
         can :read, ActiveAdmin::Page, :name => "Dashboard"
 
         can :manage, AdminUser, :id => user.id
@@ -35,7 +35,11 @@ class Ability
         can :manage, User
         can :manage, Material
         can :manage, Member
+
         can :manage, Society
+        cannot :destroy, Society
+        cannot :update, Society
+
         can :manage, Faq
         can :manage, SubFaq
         can :manage, IssueImage
@@ -72,8 +76,34 @@ class Ability
         cannot :destroy, Department
 
 
-        cannot :manage, [ Category, Member, SlDepartment, HomeBackground]
+        cannot :manage, [Category, Member, SlDepartment, HomeBackground]
+
+      #
+      #when "社联委员" && (user.sl_department.to_s == "公益实践中心" || user.sl_department.to_s == "文娱兴趣中心" || user.sl_department.to_s == "体育竞技中心"|| user.sl_department.to_s == "学术科技中心")
+      #  can :read, ActiveAdmin::Page, :name => "Dashboard"
+      #
+      #  can :manage, AdminUser, :id => user.id
+      #  cannot :destroy, AdminUser
+      #
+      #  can :manage, Category
+      #  can :manage, Department
+      #  can :manage, Member
+      #  can :manage, HomeBackground
+      #  can :manage, Issue
+      #  can :manage, User
+      #  can :manage, Material
+      #  can :manage, Member
+      #
+      #  can :manage, Society, :department_id.to_s =>
+      #  cannot :destroy, Society
+      #
+      #  can :manage, Faq
+      #  can :manage, SubFaq
+      #  can :manage, IssueImage
+
+
     end
+
 
     # Define abilities for the passed in user here. For example:
     #

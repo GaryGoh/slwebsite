@@ -9,5 +9,7 @@ class Issue < ActiveRecord::Base
   has_attached_file :issue_pic, :styles => {:medium => "640x480>", :thumb => "50x50>", :mini => "50x50>"}, :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :issue_pic, :content_type => ['image/jpeg', 'image/jpg', 'image/png']
 
+  validates :title, presence: true
+  validates :content, presence: true
 
 end
