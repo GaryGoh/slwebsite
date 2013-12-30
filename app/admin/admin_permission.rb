@@ -1,4 +1,6 @@
 ActiveAdmin.register AdminPermission do
+
+  menu false
   permit_params :permission_name
 
   

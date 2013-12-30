@@ -1,12 +1,14 @@
 ActiveAdmin.register IssueImage do
+  menu :label => "新闻图片",
+       :if => proc { can?(:manage, IssueImage) },
+       :priority => 4
 
 
-
-  controller do
-    def permitted_params
-      params.permit!
-    end
-  end
+      controller do
+        def permitted_params
+          params.permit!
+        end
+      end
 
   index do
     selectable_column
@@ -23,7 +25,7 @@ ActiveAdmin.register IssueImage do
       f.input :society
       f.input :description, :label => "图片描述"
       if f.object.issue_pic_file_name.nil?
-      f.input :issue_pic, :as => :file, :label => "新闻图片"
+        f.input :issue_pic, :as => :file, :label => "新闻图片"
       else
         f.input :issue_pic, :as => :file, :hint => f.template.image_tag(f.object.issue_pic.url(:thumb)), :label => "新闻图片"
         f.input :_destroy, :as => :boolean, :required => false, :label => '删除照片'
@@ -43,5 +45,5 @@ ActiveAdmin.register IssueImage do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  
+
 end

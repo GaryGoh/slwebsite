@@ -21,13 +21,58 @@ class Ability
       when "超级管理员" #SuperAdmin
         can :manage, :all
       when "社联委员" #Admin
-        can :manage, :all
-        cannot :manage, AdminUser
+        #can :manage, :all
+        can :read, ActiveAdmin::Page, :name => "Dashboard"
+
+        can :manage, AdminUser, :id => user.id
+        cannot :destroy, AdminUser
+
+        can :manage, Category
+        can :manage, Department
+        can :manage, Member
+        can :manage, HomeBackground
+        can :manage, Issue
+        can :manage, User
+        can :manage, Material
+        can :manage, Member
+        can :manage, Society
+        can :manage, Faq
+        can :manage, SubFaq
+        can :manage, IssueImage
+
       when "社团主席" #Teacher
-        #can :manage, DashBoard
-        can :manage, :all
-        # AdminUser
-        cannot :manage, [ Category, Department, Member, SlDepartment, HomeBackground]
+        can :read, ActiveAdmin::Page, :name => "Dashboard"
+
+        can :manage, AdminUser, :id => user.id
+        cannot :destroy, AdminUser, :id => user.id
+
+        can :manage, Society, :id => user.society_id
+        cannot :destroy, Society
+
+        can :manage, Issue, :society_id => user.society_id
+        #cannot :destroy, Issue
+
+        can :manage, IssueImage, :society_id => user.society_id
+
+        can :manage, Material
+        cannot :destroy, Society
+
+        can :manage, Faq
+        cannot :destroy, Faq
+
+        can :manage, SubFaq
+        cannot :destroy, SubFaq
+
+        can :manage, User
+        cannot :update, User
+        cannot :destroy, User
+
+        can :manage, Department
+        cannot :update, Department
+        cannot :destroy, Department
+
+
+        cannot :manage, [ Category, Member, SlDepartment, HomeBackground]
     end
 
     # Define abilities for the passed in user here. For example:
