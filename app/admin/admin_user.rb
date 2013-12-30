@@ -29,22 +29,24 @@ ActiveAdmin.register AdminUser do
     f.inputs "用户信息" do
       f.input :name, :label => "姓名"
       f.input :gender, :label => "性别"
-      if f.object.admin_permission != "社团主席"
+      if f.object.admin_permission.to_s != "社团主席"
         f.input :sl_department, :label => "社联部门"
       else
         f.input :society, :label => "所属社团"
       end
-      f.input :contact
+      f.input :contact, :label => "联系方式"
       if f.object.admin_pic_file_name.nil?
         f.input :admin_pic, :as => :file, :label => "个人头像"
       else
         f.input :admin_pic, :as => :file, :hint => f.template.image_tag(f.object.admin_pic.url(:thumb)), :label => "个人头像"
       end
-      f.input :proverb
+      f.input :proverb, :label => "个人简介"
     end
 
-    f.inputs "权限级别" do
-      f.input :admin_permission
+    if f.object.admin_permission.to_s == "超级管理员"
+      f.inputs "权限级别" do
+        f.input :admin_permission
+      end
     end
     f.actions
   end
