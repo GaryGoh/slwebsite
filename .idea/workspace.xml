@@ -2,25 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admin/admin_permission.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131107120826_create_issues.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131109181558_create_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131109211549_add_token.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131111102547_create_editable_areas.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131213120948_devise_create_admin_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131214010501_add_columns_issues.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131214013322_del_columns_issues.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131215001824_add_categories_in_issues.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131215003010_create_categories.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131215035157_create_members.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home/DSC_0458.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home/DSC_0673.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/home/DSC_0677.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.cbpNTAccordion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/jquery.cbpNTAccordion.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/members_test.rb" afterPath="" />
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131216182755_create_members.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131216183504_refine_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131216204455_create_admin_permissions.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131216204520_add_admin_permission_id_to_adminusers.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217130356_create_departments.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217130408_add_depid_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217131259_more_info_department.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217132147_create_societies.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217132202_modify_fk.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217133806_del_column_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217134601_create_genders.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217134738_add_fk_2.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217134938_create_sl_departments.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217135953_add_more_info.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131217221125_del_gender_uers.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131218002144_add_attachment_avatar_to_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131218011920_create_home_backgrounds.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131218012148_add_attachment_ava_pic_to_home_backgrounds.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131219194557_create_materials.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131219214914_add_attachment_document_to_materials.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131220042220_del_old_faq.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131220042517_create_faqs.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131220052210_add_attachment_admin_pic_to_admin_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131220054814_add_attachment_issue_pic_to_issues.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131221014944_create_sub_faqs.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131221020414_change_subfaq_column.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131225233034_add_index_multisociety.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131226002052_del_user_society_id.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131226022622_del_multi.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131226023338_create_user_societies.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131226023415_del_t.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131226204600_add_fk_issues_society.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131227191830_create_issue_images.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131227192808_add_attachment_issue_pic_to_issue_images.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131227195409_rename_issue_image_column.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131227195708_add_issue_image_column.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131227202941_change_issue_image_column.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131230031018_add_fk_users_user_societies.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/admin_user.rb" afterPath="$PROJECT_DIR$/app/admin/admin_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin_user.rb" afterPath="$PROJECT_DIR$/app/models/admin_user.rb" />
->>>>>>> parent of 27b295c... b4 add has_one
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,7 +108,7 @@
     <file path="/20131216183504_refine_users.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387219345107" ignored="false" />
     <file path="/20131216183719_refine_users2.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387219238463" ignored="false" />
     <file path="/20131216204520_add_admin_permission_id_to_adminusers.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387226790303" ignored="false" />
-    <file path="/admin_user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388326732917" ignored="false" />
+    <file path="/admin_user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388370940879" ignored="false" />
     <file path="/admin_permission.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387253868912" ignored="false" />
     <file path="/seeds.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387372635228" ignored="false" />
     <file path="$USER_HOME$/stutest/app/models/award.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387228219805" ignored="false" />
@@ -96,7 +127,7 @@
     <file path="$PROJECT_DIR$/app/mailers/system_mailer.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387254263044" ignored="false" />
     <file path="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387254263045" ignored="false" />
     <file path="/_issues.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387673950429" ignored="false" />
-    <file path="/dashboard.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388098495530" ignored="false" />
+    <file path="/dashboard.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388370229021" ignored="false" />
     <file path="/department.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387291421450" ignored="false" />
     <file path="/20131217130408_add_depid_users.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387285544808" ignored="false" />
     <file path="/20131217131259_more_info_department.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387286263976" ignored="false" />
@@ -109,7 +140,7 @@
     <file path="/20131217135953_add_more_info.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387289582218" ignored="false" />
     <file path="/20131213120948_devise_create_admin_users.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387290374840" ignored="false" />
     <file path="/Gemfile" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388184435191" ignored="false" />
-    <file path="/ability.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388326635584" ignored="false" />
+    <file path="/ability.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388372930926" ignored="false" />
     <file path="/20131217221125_del_gender_uers.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387318330985" ignored="false" />
     <file path="/home_background.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387486350335" ignored="false" />
     <file path="/.gitignore" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387357757936" ignored="false" />
@@ -201,11 +232,9 @@
     <file path="/_carousel2.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388288795835" ignored="false" />
     <file path="/blueimp.css.scss" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388287536324" ignored="false" />
     <file path="/_lightbox.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388294697399" ignored="false" />
-<<<<<<< HEAD
     <file path="/devise.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388369477816" ignored="false" />
     <file path="/20131230031018_add_fk_users_user_societies.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388373390258" ignored="false" />
-=======
->>>>>>> parent of 27b295c... b4 add has_one
+    <file path="/20131230032003_del_users_fk.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388373627286" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,124 +254,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
-      <file leaf-file-name="ability.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ability.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="27" selection-start="1180" selection-end="1210" vertical-scroll-proportion="-6.3454547">
-=======
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="87" selection-start="1349" selection-end="1350" vertical-scroll-proportion="-21.875">
->>>>>>> parent of 27b295c... b4 add has_one
+            <state line="14" column="27" selection-start="291" selection-end="291" vertical-scroll-proportion="0.33925685">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_news1.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_news1.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="12" selection-start="350" selection-end="395" vertical-scroll-proportion="-8.125">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="devise.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="35" selection-start="10624" selection-end="10624" vertical-scroll-proportion="0.0">
-=======
-      <file leaf-file-name="admin_user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="9" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
->>>>>>> parent of 27b295c... b4 add has_one
+            <state line="211" column="35" selection-start="10625" selection-end="10625" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
-=======
-      <file leaf-file-name="ability.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="25" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
->>>>>>> parent of 27b295c... b4 add has_one
+            <state line="5" column="27" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="20131230031018_add_fk_users_user_societies.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131230031018_add_fk_users_user_societies.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="75" selection-end="76" vertical-scroll-proportion="0.044510387">
-=======
-      <file leaf-file-name="_news2.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_news2.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
->>>>>>> parent of 27b295c... b4 add has_one
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
       <file leaf-file-name="issue.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
-=======
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
->>>>>>> parent of 27b295c... b4 add has_one
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="46" selection-start="955" selection-end="1001" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="active_admin_cancan.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/active_admin_cancan.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="3" selection-start="4528" selection-end="4528" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.29500756">
-              <folding />
+            <state line="43" column="39" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1388373531000" expanded="true" signature="1235:1302" placeholder="if ... end" />
+                <marker date="1388373531000" expanded="true" signature="1261:1272" placeholder="do ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_news3.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_news3.html.erb">
+      <file leaf-file-name="dashboard.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_news4.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_news4.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="-8.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_rotator.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_rotator.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="150" selection-start="574" selection-end="574" vertical-scroll-proportion="1.5833334">
+            <state line="2" column="74" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -366,15 +347,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blueimp.css.scss" />
-        <option value="$PROJECT_DIR$/app/models/issue.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/blueimp.js" />
-        <option value="$PROJECT_DIR$/app/views/module/_tlframe.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/module/_lightbox.erb" />
->>>>>>> parent of 27b295c... b4 add has_one
-        <option value="$PROJECT_DIR$/app/controllers/society_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/module/_rotator.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_news1.html.erb" />
@@ -382,13 +354,15 @@
         <option value="$PROJECT_DIR$/app/views/module/_news3.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_news4.html.erb" />
         <option value="$PROJECT_DIR$/app/models/admin_user.rb" />
-        <option value="$PROJECT_DIR$/app/models/ability.rb" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131230031018_add_fk_users_user_societies.rb" />
-=======
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
+        <option value="$PROJECT_DIR$/app/admin/dashboard.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/active_admin_cancan.rb" />
         <option value="$PROJECT_DIR$/app/admin/admin_user.rb" />
->>>>>>> parent of 27b295c... b4 add has_one
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131230031018_add_fk_users_user_societies.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131230032003_del_users_fk.rb" />
       </list>
     </option>
   </component>
@@ -501,11 +475,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,6 +490,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1173,119 +1165,82 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
-=======
-    <entry file="file://$PROJECT_DIR$/app/controllers/slmember_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/admin/sub_faq.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/society/wy.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/sub_faq.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="6" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/society/xs.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="40" selection-start="40" selection-end="53" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/society.rb">
->>>>>>> parent of 27b295c... b4 add has_one
+    <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/society_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="55" selection-start="443" selection-end="460" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_rotator.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="150" selection-start="574" selection-end="574" vertical-scroll-proportion="1.5833334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="87" selection-start="1349" selection-end="1350" vertical-scroll-proportion="-21.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_news2.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_news1.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="350" selection-end="395" vertical-scroll-proportion="-8.125">
+        <state line="211" column="35" selection-start="10625" selection-end="10625" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_news3.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.25">
+        <state line="2" column="74" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_news4.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/active_admin_cancan.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="46" selection-start="955" selection-end="1001" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="9" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
+        <state line="126" column="3" selection-start="4528" selection-end="4528" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="43" column="27" selection-start="1180" selection-end="1210" vertical-scroll-proportion="-6.3454547">
+        <state line="43" column="39" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1388373531000" expanded="true" signature="1235:1302" placeholder="if ... end" />
+            <marker date="1388373531000" expanded="true" signature="1261:1272" placeholder="do ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1299,17 +1254,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+        <state line="5" column="27" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131230031018_add_fk_users_user_societies.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="75" selection-end="76" vertical-scroll-proportion="0.044510387">
-=======
-        <state line="13" column="25" selection-start="466" selection-end="466" vertical-scroll-proportion="0.29500756">
->>>>>>> parent of 27b295c... b4 add has_one
+        <state line="14" column="27" selection-start="291" selection-end="291" vertical-scroll-proportion="0.33925685">
           <folding />
         </state>
       </provider>
