@@ -3,7 +3,7 @@
 </style>
 
 
-<% if @issue.category.to_s != "活动新闻" %>
+<% if @issue.category_id == 1 || @issue.category_id == 2 %>
     <%= render "module/newsshow/newsbasic", :issue => @issue %>
 <% else %>
     <%= render "module/newsshow/notis", :noti => @noti, :issues => @notifies %>
