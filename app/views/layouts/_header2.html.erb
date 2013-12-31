@@ -41,6 +41,9 @@
             <% if current_user_stu %>
                 <li><%= link_to current_user_stu.email, user_url(session[:user_id]) %></li>
                 <li class="divider"></li>
+                <li><%= link_to raw('发布新闻'), new_user_issue_path(session[:user_id], @issue) %></li>
+                <li><%= link_to raw('发布活动通知'), new_user_noti_path(session[:user_id], @noti) %></li>
+                <li class="divider"></li>
                 <li><%= link_to '登出', signout_path, method: "delete" %></li>
             <% else %>
                 <li><%= link_to "注册", signup_url %></li>

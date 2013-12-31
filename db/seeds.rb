@@ -14,10 +14,15 @@ AdminPermission.create([
                        ])
 
 AdminUser.create([
-                     {:email => 'gaomingqian90929@gmail.com',
-                      :password => 'gmq1990929',
-                      :password_confirmation => 'gmq1990929',
-                      :admin_permission_id => AdminPermission.first.id}
+                     {
+                         :email => 'gaomingqian90929@gmail.com',
+                         :password => 'gmq1990929',
+                         :password_confirmation => 'gmq1990929',
+                         :admin_permission_id => AdminPermission.first.id,
+                         :name => "高铭谦",
+                         :sl_department_id => 2
+
+                     }
                  ])
 
 Category.create([
@@ -53,7 +58,6 @@ SlDepartment.create([
                         {:sl_dep_name => "新闻部"},
                         {:sl_dep_name => "组织部"}
                     ])
-
 
 
 # 1.公益实践中心
