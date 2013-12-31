@@ -32,6 +32,7 @@ class Ability
         can :manage, Member
         can :manage, HomeBackground
         can :manage, Issue
+        can :manage, Noti
         can :manage, User
         can :manage, Material
         can :manage, Member
@@ -55,6 +56,9 @@ class Ability
 
         can :manage, Issue, :society_id => user.society_id
         #cannot :destroy, Issue
+
+        can :manage, Noti, :society_id => user.society_id
+        #cannot :destroy, Noti
 
         can :manage, IssueImage, :society_id => user.society_id
 

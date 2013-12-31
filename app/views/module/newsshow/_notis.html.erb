@@ -1,10 +1,10 @@
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h2 align="center"><%= issue.title %></h2>
+    <h2 align="center"><%= noti.title %></h2>
   </div>
 
   <div class="panel-heading">
-    <div>发表于： <%= issue.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会： <%= issue.society.to_s %> </div>
+    <div>发表于： <%= noti.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会： <%= noti.society.to_s %> </div>
   </div>
   <div class="panel-body">
     <ul class="nav nav-tabs nav-justified" id="myTab">
@@ -15,12 +15,12 @@
 
     <!-- Tab panes -->
     <div class="tab-content" id="notinav">
-      <div class="tab-pane active" id="content"><h3><%= issue.content %></h3></div>
+      <div class="tab-pane active" id="content"><h3><%= noti.content %></h3></div>
       <div class="tab-pane" id="time"></br>
         <div id='calendar'></div>
       </div>
       <div class="tab-pane" id="location">
-        <div class="alert alert-success"><h2><%= issue.location %></h2></div>
+        <div class="alert alert-success"><h2><%= noti.location %></h2></div>
         <div class="alert alert-warning">谷歌地图地理位置显示，开发中，不久的将来会开放</div>
       </div>
     </div>
@@ -37,17 +37,83 @@
 <script src='../fullcalendar/fullcalendar.min.js'></script>
 
 
-
+<%
+    noti = @noti
+%>
 
 
 <script type="text/javascript">
 
+//    $(document).ready(function () {
+//
+//        var date = new Date();
+//        var d = date.getDate();
+//        var m = date.getMonth();
+//        var y = date.getFullYear();
+//
+//        $('#calendar').fullCalendar({
+//            header: {
+//                left: 'prev,next today',
+//                center: 'title',
+//                right: 'month,agendaWeek,agendaDay'
+//            },
+//            editable: true,
+//            events: [
+//                {
+//                    title: 'All Day Event',
+//                    start: new Date(y, m, 1)
+//                },
+//                {
+//                    title: 'Long Event',
+//                    start: new Date(y, m, d - 5),
+//                    end: new Date(y, m, d - 2)
+//                },
+//                {
+//                    id: 999,
+//                    title: 'Repeating Event',
+//                    start: new Date(y, m, d - 3, 16, 0),
+//                    allDay: false
+//                },
+//                {
+//                    id: 999,
+//                    title: 'Repeating Event',
+//                    start: new Date(y, m, d + 4, 16, 0),
+//                    allDay: false
+//                },
+//                {
+//                    title: 'Meeting',
+//                    start: new Date(y, m, d, 10, 30),
+//                    allDay: false
+//                },
+//                {
+//                    title: 'Lunch',
+//                    start: new Date(y, m, d, 12, 0),
+//                    end: new Date(y, m, d, 14, 0),
+//                    allDay: false
+//                },
+//                {
+//                    title: 'Birthday Party',
+//                    start: new Date(y, m, d + 1, 19, 0),
+//                    end: new Date(y, m, d + 1, 22, 30),
+//                    allDay: false
+//                },
+//                {
+//                    title: 'Click for Google',
+//                    start: new Date(y, m, 28),
+//                    end: new Date(y, m, 29),
+//                    url: 'http://google.com/'
+//                }
+//            ]
+//        });
+//
+//    });
+
+        ///////////////////
+
     $(document).ready(function () {
 
-        var date = new Date();
-        var d = date.getDate();
-        var m = date.getMonth();
-        var y = date.getFullYear();
+//                change ruby data to javascript data: var date = new Date(date.to_i*1000)
+        var start_date = new Date(<%= noti.start_time.to_i * 1000 %>);
 
         $('#calendar').fullCalendar({
             header: {
@@ -55,56 +121,28 @@
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay'
             },
-            editable: true,
+            date: start_date.getDate(),
+            month: start_date.getMonth(),
+            year: start_date.getFullYear(),
+            allDaySlot: false,
+            defaultView: "agendaWeek",
+            theme: false,
+            editable: false,
+//            minTime: 0,
+//            maxTime: 24,
             events: [
                 {
-                    title: 'All Day Event',
-                    start: new Date(y, m, 1)
-                },
-                {
-                    title: 'Long Event',
-                    start: new Date(y, m, d - 5),
-                    end: new Date(y, m, d - 2)
-                },
-                {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d - 3, 16, 0),
+                    title: "Title: <%= noti.title%>",
+                    start: new Date(<%= noti.start_time.to_i * 1000 %>),
+                    end: new Date(<%= noti.end_time.to_i * 1000%>),
                     allDay: false
-                },
-                {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d + 4, 16, 0),
-                    allDay: false
-                },
-                {
-                    title: 'Meeting',
-                    start: new Date(y, m, d, 10, 30),
-                    allDay: false
-                },
-                {
-                    title: 'Lunch',
-                    start: new Date(y, m, d, 12, 0),
-                    end: new Date(y, m, d, 14, 0),
-                    allDay: false
-                },
-                {
-                    title: 'Birthday Party',
-                    start: new Date(y, m, d + 1, 19, 0),
-                    end: new Date(y, m, d + 1, 22, 30),
-                    allDay: false
-                },
-                {
-                    title: 'Click for Google',
-                    start: new Date(y, m, 28),
-                    end: new Date(y, m, 29),
-                    url: 'http://google.com/'
                 }
             ]
         });
 
     });
+
+        ////////////////
 
 </script>
 
