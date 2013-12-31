@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" afterPath="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notis_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/notis_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" afterPath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_page/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +10,7 @@
     <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388456724544" ignored="false" />
     <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388458788642" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388457851493" ignored="false" />
-    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388457237328" ignored="false" />
+    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388462002511" ignored="false" />
     <file path="$USER_HOME$/students/app/models/student.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1383827692863" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384175595089" ignored="false" />
     <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388456300799" ignored="false" />
@@ -231,10 +226,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_notis.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_notis.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="66" selection-start="4422" selection-end="4422" vertical-scroll-proportion="0.66494846">
+            <state line="135" column="66" selection-start="4422" selection-end="4422" vertical-scroll-proportion="-4.898734">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_no1.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/module/notifies/_no1.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="1" selection-start="834" selection-end="834" vertical-scroll-proportion="0.40031397">
               <folding />
             </state>
           </provider>
@@ -253,15 +266,6 @@
         <entry file="file://$PROJECT_DIR$/db/migrate/20131231033913_chage_type.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="30" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="issues_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -303,15 +307,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -330,7 +325,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/notis/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/notis/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/notis/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/notis/new.html.erb" />
@@ -346,6 +340,7 @@
         <option value="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20131231033913_chage_type.rb" />
         <option value="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
       </list>
     </option>
   </component>
@@ -515,6 +510,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1134,16 +1151,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="0" selection-start="7150" selection-end="7150" vertical-scroll-proportion="0.7535322" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="42" selection-start="913" selection-end="913" vertical-scroll-proportion="-0.51186943" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/notis/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="65" selection-start="871" selection-end="871" vertical-scroll-proportion="0.46391752" />
@@ -1231,7 +1238,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="66" selection-start="4422" selection-end="4422" vertical-scroll-proportion="0.66494846">
+        <state line="135" column="66" selection-start="4422" selection-end="4422" vertical-scroll-proportion="-4.898734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/notifies/_no1.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="834" selection-end="834" vertical-scroll-proportion="0.40031397">
           <folding />
         </state>
       </provider>
