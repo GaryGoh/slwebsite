@@ -10,6 +10,12 @@ class IssuesController < ApplicationController
     @issues = @user.issues
   end
 
+
+  def notis
+    @user = User.find(params[:user_id])
+    @issue = @user.issues.build
+  end
+
   # GET /issues/1
   # GET /issues/1.json
   def show
@@ -96,3 +102,5 @@ class IssuesController < ApplicationController
 
 
 end
+
+

@@ -1,13 +1,13 @@
 Slwebsite::Application.routes.draw do
 
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :users do
     resources :issues
+    resources :notis
   end
   resources :sessions, only: [:new, :create, :destroy]
-
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -19,21 +19,21 @@ Slwebsite::Application.routes.draw do
   get "society" => "society#index"
   get "access_error" => "static_page#_access_error"
 
-  match '/signup',  to: 'users#new',            via: 'get'
-  match '/signin',  to: 'sessions#new',         via: 'get'
-  match '/signout', to: 'sessions#destroy',     via: 'delete'
-  match '/failure', to: 'sessions#failure',     via: 'delete'
+  match '/signup', to: 'users#new', via: 'get'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+  match '/failure', to: 'sessions#failure', via: 'delete'
 
   root 'static_page#index'
 
-  get '/news',  to: 'public_news#allnews'
-  get '/notis',  to: 'public_news#notifies'
-  get '/read',  to: 'public_news#readmode'
+  get '/news', to: 'public_news#allnews'
+  get '/notis', to: 'public_news#notifies'
+  get '/read', to: 'public_news#readmode'
   get 'shownews/:id', to: 'public_news#shownews', as: :shownews
 
-  get '/download',  to: 'material#download'
+  get '/download', to: 'material#download'
 
-  get '/slmember',  to: 'slmember#list'
+  get '/slmember', to: 'slmember#list'
   get 'show/:id', to: 'slmember#show', as: :show
   get 'societyshow/:id', to: 'society#showso', as: :societyshow
 
@@ -42,6 +42,10 @@ Slwebsite::Application.routes.draw do
   get "ty" => "society#ty"
   get "xs" => "society#xs"
 
+
+  #get '/users', to: 'issues#notis'
+
+  #get '/users/:user_id/issues/notis', to: "issues#notis"
 
   #default_url_options :host => "0.0.0.0:3000"
 

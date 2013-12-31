@@ -24,11 +24,14 @@
 <%= form_for([@user, @issue], :html => {:multipart => true}) do |f| %>
     <% if @issue.errors.any? %>
         <div id="error_explanation">
-          <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
-
+          <div class="alert alert-warning">
+            <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2></div>
           <ul>
             <% @issue.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
+
+                <li>
+                  <div class="alert alert-danger"><%= msg %></div>
+                </li>
             <% end %>
           </ul>
         </div>
@@ -82,7 +85,7 @@
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">新闻类型</label>
-            <%= f.select :category_id, Category.find(:all).collect { |s|
+            <%= f.select :category_id, Category.where("id <> 3").collect { |s|
               [(s.category_name), s.id] } %>
 
             <div class="col-sm-10">

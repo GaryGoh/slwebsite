@@ -2,16 +2,13 @@
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">编辑新闻</h3>
+        <h3 class="panel-title">编辑活动通知</h3>
       </div>
       <div class="panel-body">
-        <% if @issue.category_id == 3 %>
-            <%= render "notis" %>
-        <% else %>
-            <%= render "form" %>
-        <% end %>
 
-        <td><%= link_to raw('<button type="button" class="btn btn-primary">查看</button>'), [@user, @issue] %></td>
+        <%= render "form" %>
+
+        <td><%= link_to raw('<button type="button" class="btn btn-primary">查看</button>'), [@user, @noti] %></td>
 
         <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), @user %></td>
       </div>

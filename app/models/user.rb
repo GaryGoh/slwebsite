@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :issues, :dependent => :destroy
+  has_many :notis, :dependent => :destroy
   has_many :user_societies, :dependent => :destroy
   has_many :societies, :through => :user_societies
   #belongs_to :user_society

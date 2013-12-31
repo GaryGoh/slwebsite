@@ -21,9 +21,8 @@ AdminUser.create([
                  ])
 
 Category.create([
-                    {:category_name => "学校新闻"},
+                    {:category_name => "顶置新闻"},
                     {:category_name => "社团新闻"},
-                    {:category_name => "活动新闻"}
 
                 ])
 

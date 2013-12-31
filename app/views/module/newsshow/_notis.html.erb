@@ -1,0 +1,133 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 align="center"><%= issue.title %></h2>
+  </div>
+
+  <div class="panel-heading">
+    <div>发表于： <%= issue.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会： <%= issue.society.to_s %> </div>
+  </div>
+  <div class="panel-body">
+    <ul class="nav nav-tabs nav-justified" id="myTab">
+      <li class="active"><a href="#content" data-toggle="tab">通知内容</a></li>
+      <li><a href="#time" data-toggle="tab">活动时间</a></li>
+      <li><a href="#location" data-toggle="tab">活动地点</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="notinav">
+      <div class="tab-pane active" id="content"><h3><%= issue.content %></h3></div>
+      <div class="tab-pane" id="time"></br>
+        <div id='calendar'></div>
+      </div>
+      <div class="tab-pane" id="location">
+        <div class="alert alert-success"><h2><%= issue.location %></h2></div>
+        <div class="alert alert-warning">谷歌地图地理位置显示，开发中，不久的将来会开放</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<link href='../fullcalendar/fullcalendar.css' rel='stylesheet'/>
+<link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print'/>
+<script src='../fullcalendar/jquery.min.js'></script>
+<script src='../fullcalendar/jquery-ui.custom.min.js'></script>
+<script src='../fullcalendar/fullcalendar.min.js'></script>
+
+
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            editable: true,
+            events: [
+                {
+                    title: 'All Day Event',
+                    start: new Date(y, m, 1)
+                },
+                {
+                    title: 'Long Event',
+                    start: new Date(y, m, d - 5),
+                    end: new Date(y, m, d - 2)
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: new Date(y, m, d - 3, 16, 0),
+                    allDay: false
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: new Date(y, m, d + 4, 16, 0),
+                    allDay: false
+                },
+                {
+                    title: 'Meeting',
+                    start: new Date(y, m, d, 10, 30),
+                    allDay: false
+                },
+                {
+                    title: 'Lunch',
+                    start: new Date(y, m, d, 12, 0),
+                    end: new Date(y, m, d, 14, 0),
+                    allDay: false
+                },
+                {
+                    title: 'Birthday Party',
+                    start: new Date(y, m, d + 1, 19, 0),
+                    end: new Date(y, m, d + 1, 22, 30),
+                    allDay: false
+                },
+                {
+                    title: 'Click for Google',
+                    start: new Date(y, m, 28),
+                    end: new Date(y, m, 29),
+                    url: 'http://google.com/'
+                }
+            ]
+        });
+
+    });
+
+</script>
+
+
+<style>
+
+    body {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    }
+
+    #calendar {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+</style>
+
+
+
+
+
+
+

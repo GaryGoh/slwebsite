@@ -8,6 +8,9 @@ class PublicNewsController < ApplicationController
   def shownews
      @issue = Issue.find(params[:id])
      @issues = Issue.all.reverse
+     @noti = Noti.find(params[:id])
+     @notifies = Noti.all.reverse
+
 
   end
 
@@ -16,6 +19,6 @@ class PublicNewsController < ApplicationController
   end
 
   def notifies
-    @notifies = Issue.where('category_id = 3').reverse
+    @notifies = Noti.all.reverse
   end
 end

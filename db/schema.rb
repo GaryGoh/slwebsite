@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131227202941) do
+ActiveRecord::Schema.define(version: 20131231022757) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -146,6 +146,21 @@ ActiveRecord::Schema.define(version: 20131227202941) do
     t.datetime "updated_at"
   end
 
+  create_table "notis", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.integer  "user_id"
+    t.integer  "category_id"
+    t.integer  "society_id"
+    t.date     "start_time"
+    t.date     "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "in_members"
+    t.boolean  "in"
+    t.string   "location"
+  end
+
   create_table "sl_departments", force: true do |t|
     t.string   "sl_dep_name"
     t.datetime "created_at"
@@ -199,10 +214,12 @@ ActiveRecord::Schema.define(version: 20131227202941) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.integer  "user_society_id"
   end
 
   add_index "users", ["gender_id"], name: "index_users_on_gender_id"
   add_index "users", ["member_id"], name: "index_users_on_member_id"
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+  add_index "users", ["user_society_id"], name: "index_users_on_user_society_id"
 
 end
