@@ -26,14 +26,16 @@ class AdminUser < ActiveRecord::Base
             uniqueness: {case_sensitive: false}
   validates :admin_permission, presence: true
 
-  if (new)
-    validates :name, presence: true, length: {maximum: 10}
-    if (:permission)
-      validates :sl_department_id, presence: true
-    else
-      validates :society_id, presence: true
-    end
-  end
+
+  # Here will cause rake db:schema:load problem
+  #if (new)
+  #  validates :name, presence: true, length: {maximum: 10}
+  #  if (:permission)
+  #    validates :sl_department_id, presence: true
+  #  else
+  #    validates :society_id, presence: true
+  #  end
+  #end
 
   #validates :stuid,
   #          format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},

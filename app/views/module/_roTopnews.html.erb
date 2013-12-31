@@ -5,25 +5,25 @@
 
 
 
-  <div id="cbp-qtrotator" class="cbp-qtrotator">
-    <% @topnews.each do |issue| %>
-        <div class="cbp-qtcontent">
-          <% if !(issue.issue_pic_file_name.nil?) %>
+<div id="cbp-qtrotator" class="cbp-qtrotator">
+  <% @topnews.each do |issue| %>
+      <div class="cbp-qtcontent">
+        <% if (issue.issue_images.count != 0) %>
 
-              <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_pic.url(:thumb) %></a>
-          <% end %>
-          <blockquote>
-            <p>
-              <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(issue.content, :length => 200) %></p>
-              </a>
-            </p>
-            <footer><%= issue.title %></footer>
+            <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_images.order("RANDOM()").first.issue_pic.url(:thumb) %></a>
+        <% end %>
+        <blockquote>
+          <p>
+            <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(issue.content, :length => 200) %></p>
+            </a>
+          </p>
+          <footer><%= issue.title %></footer>
 
-          </blockquote>
+        </blockquote>
 
-        </div>
-    <% end %>
-  </div>
+      </div>
+  <% end %>
+</div>
 
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
