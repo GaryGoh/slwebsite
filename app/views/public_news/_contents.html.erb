@@ -1,22 +1,48 @@
+<style>
+    #readA {
+        /*text-align: center;*/
+        font-size: 18px;
+        color: #fffaf6;
+    }
+
+    #readB {
+        position: relative;
+        top: -15px;
+    }
+</style>
+
 <div id="container" class="container">
 
   <div class="menu-panel">
     <h3>阅读模式</h3>
     <ul id="menu-toc" class="menu-toc">
+      <% issuecount = 0 %>
       <% @issues.reverse.each do |issue| %>
-          <li><a href="#item<%= issue.id %>">第<%= issue.id %>篇新闻</a></li>
+          <% if issuecount <= 8 %>
+              <li><a href="#<%= issue.title %>"><%= truncate(issue.title, :length => 14) %></a></li>
+              <% issuecount += 1 %>
+          <% end %>
+
+          <% if @issues.count <= 8 %>
+          <% end %>
       <% end %>
     </ul>
+    <hr>
     <div>
-      <a href="http://weibo.com/u/1634556843">Powered by Gary Goh</a>
+      <a id="readA" href="/news">退出</a>
     </div>
+
+    <div>
+      <a id="readB" href="http://weibo.com/u/1634556843">Powered by Gary Goh</a>
+    </div>
+
   </div>
 
   <div class="bb-custom-wrapper">
     <div id="bb-bookblock" class="bb-bookblock">
 
-      <% @issues.each do |issue| %>
-          <div class="bb-item" id="item<%= issue.id %>">
+      <% @issues.reverse.each do |issue| %>
+          <div class="bb-item" id="<%= issue.title %>">
             <div class="content">
               <div class="scroller">
                 <h2><%= issue.title %></h2>

@@ -48,14 +48,16 @@
           </div>
         </div>
 
-        <div class="control-group">
-          <label class="control-label" for="Department">部门</label>
 
-          <div class="controls">
-            <%= f.select :society_id, Society.find(:all, :order => "society_name").collect { |s|
-              [(s.society_name), s.id] } %>
-          </div>
-        </div>
+        <!--<div class="control-group">-->
+          <!--<label class="control-label" for="Department">部门</label>-->
+          <!--<div class="controls">-->
+            <%=
+                #@user.user_societies :id, Society.find(:all).collect { |s|
+              #[(s.society_name), s.id] }
+            %>
+          <!--</div>-->
+        <!--</div>-->
 
         <div class="control-group">
           <label class="control-label" for="Department">头像</label>

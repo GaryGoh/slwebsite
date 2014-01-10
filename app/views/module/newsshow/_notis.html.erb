@@ -15,11 +15,11 @@
 
     <!-- Tab panes -->
     <div class="tab-content" id="notinav">
-      <div class="tab-pane active" id="content"><h3><%= noti.content %></h3></div>
-      <div class="tab-pane" id="time"></br>
+      <div class="tab-pane fade in active" id="content"><h3><%= noti.content %></h3></div>
+      <div class="tab-pane fade" id="time"></br>
         <div id='calendar'></div>
       </div>
-      <div class="tab-pane" id="location">
+      <div class="tab-pane fade" id="location">
         <div class="alert alert-success"><h2><%= noti.location %></h2></div>
         <div class="alert alert-warning">谷歌地图地理位置显示，开发中，不久的将来会开放</div>
       </div>
@@ -117,7 +117,7 @@
 
         $('#calendar').fullCalendar({
             header: {
-                left: 'prev,next today',
+                left: 'prev,next',
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay'
             },
@@ -145,6 +145,7 @@
         ////////////////
 
 </script>
+
 
 
 <style>
