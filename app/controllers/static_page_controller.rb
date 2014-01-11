@@ -16,8 +16,8 @@ class StaticPageController < ApplicationController
     @issues_index = Issue.limit(10).find(:all, :order => "created_at DESC")
     #@notifies = Issue.limit(5).find_by_category_id(3)
     #@topnews = Issue.limit(5).find_by_category_id(1)
-    @notifies = Noti.limit(5).find(:all, :order => "created_at DESC")
-    @topnews = Issue.limit(5).where('category_id = 1').reverse
+    @notifies = Noti.last(5).reverse.map
+    @topnews = Issue.where('category_id = 1').last(5).reverse
 
   end
 
