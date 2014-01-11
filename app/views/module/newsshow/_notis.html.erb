@@ -1,3 +1,13 @@
+<style>
+    #newsP{
+        font-size: 1.2em;
+        line-height: 2.1;
+        font-weight: 200;
+        padding: 20px 2%;
+        text-align: justify;
+    }
+</style>
+
 <div class="panel panel-info">
   <div class="panel-heading">
     <h2 align="center"><%= noti.title %></h2>
@@ -15,7 +25,7 @@
 
     <!-- Tab panes -->
     <div class="tab-content" id="notinav">
-      <div class="tab-pane fade" id="content"><h3><%= noti.content %></h3></div>
+      <div class="tab-pane fade" id="content"><h3 id="newsP"><%= noti.content %></h3></div>
       <div class="tab-pane fade in active" id="time"></br>
         <div id='calendar'></div>
       </div>

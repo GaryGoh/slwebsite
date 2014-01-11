@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="" />
+    <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" afterPath="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" afterPath="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389447222846" ignored="false" />
+    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389457641499" ignored="false" />
     <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388456724544" ignored="false" />
     <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389449096641" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389451675824" ignored="false" />
@@ -182,7 +186,7 @@
     <file path="/devise.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388369477816" ignored="false" />
     <file path="/20131230031018_add_fk_users_user_societies.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388373390258" ignored="false" />
     <file path="/20131230032003_del_users_fk.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388373627286" ignored="false" />
-    <file path="/_notis.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389318707715" ignored="false" />
+    <file path="/_notis.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389458163278" ignored="false" />
     <file path="/_calender.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388446072545" ignored="false" />
     <file path="/calender.css.scss" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388443343968" ignored="false" />
     <file path="/system_mailer_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388445700978" ignored="false" />
@@ -207,7 +211,7 @@
     <file path="$USER_HOME$/blog/app/views/posts/create.js.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389355595111" ignored="false" />
     <file path="$USER_HOME$/blog/app/views/posts/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389355651104" ignored="false" />
     <file path="$USER_HOME$/blog/app/assets/javascripts/application.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389355686870" ignored="false" />
-    <file path="/_newsbasic.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389450318724" ignored="false" />
+    <file path="/_newsbasic.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389458388772" ignored="false" />
     <file path="/shownotis.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389451835524" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,28 +237,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="25" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_newsbasic.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="23" selection-start="457" selection-end="530" vertical-scroll-proportion="-10.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_switchview.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_switchview.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="75" selection-start="1295" selection-end="1405" vertical-scroll-proportion="-19.375">
+            <state line="40" column="31" selection-start="1575" selection-end="1575" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_newsbasic.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="6" selection-start="644" selection-end="644" vertical-scroll-proportion="0.65960914">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_notis.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="59" selection-start="845" selection-end="845" vertical-scroll-proportion="-16.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shownotis.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/public_news/shownotis.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/ReadMode/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="240" column="0" selection-start="4522" selection-end="4648" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shownews.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -263,34 +294,16 @@
       <file leaf-file-name="_news1.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_news1.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="29" selection-start="215" selection-end="223" vertical-scroll-proportion="-3.75">
+            <state line="6" column="29" selection-start="215" selection-end="223" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_news2.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_news2.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_news2.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="108" selection-end="108" vertical-scroll-proportion="0.046153847">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_news3.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_news3.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="297" selection-end="297" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_news4.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_news4.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="10" column="52" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -299,7 +312,7 @@
       <file leaf-file-name="_rotator.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_rotator.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="625" selection-end="625" vertical-scroll-proportion="-9.375">
+            <state line="15" column="6" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -308,16 +321,7 @@
       <file leaf-file-name="_timeline.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_timeline.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="350" column="9" selection-start="8217" selection-end="8263" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_roTopnews.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/module/_roTopnews.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="352" column="38" selection-start="8360" selection-end="8368" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
@@ -341,11 +345,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/bootstrap-button.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/issues/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" />
         <option value="$PROJECT_DIR$/app/views/public_news/_contents.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_switchview.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_timeline.html.erb" />
@@ -357,6 +359,8 @@
         <option value="$PROJECT_DIR$/app/views/module/_news3.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_rotator.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_news2.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" />
       </list>
     </option>
   </component>
@@ -397,6 +401,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -926,7 +931,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1232,7 +1236,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.363047" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37601295" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1309,46 +1313,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/module/_tlframe.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="38.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/public_news/_contents.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="79" selection-start="1163" selection-end="1243" vertical-scroll-proportion="-10.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownotis.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="123" selection-start="223" selection-end="223" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="0" selection-start="6772" selection-end="6772" vertical-scroll-proportion="-16.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1806" selection-end="1931" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
+        <state line="42" column="0" selection-start="1806" selection-end="1931" vertical-scroll-proportion="-11.875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/issue.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
@@ -1358,23 +1330,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="457" selection-end="530" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_switchview.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="75" selection-start="1295" selection-end="1405" vertical-scroll-proportion="-19.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_news3.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="297" selection-end="297" vertical-scroll-proportion="-3.125">
+        <state line="5" column="49" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1395,28 +1353,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_rotator.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="625" selection-end="625" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_timeline.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="350" column="9" selection-start="8217" selection-end="8263" vertical-scroll-proportion="-6.875">
+        <state line="15" column="6" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_news1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="215" selection-end="223" vertical-scroll-proportion="-3.75">
+        <state line="6" column="29" selection-start="215" selection-end="223" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_news2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="108" selection-end="108" vertical-scroll-proportion="0.046153847">
+        <state line="10" column="52" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_timeline.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="352" column="38" selection-start="8360" selection-end="8368" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_switchview.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="31" selection-start="1575" selection-end="1575" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/ReadMode/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="0" selection-start="4522" selection-end="4648" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownotis.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="59" selection-start="845" selection-end="845" vertical-scroll-proportion="-16.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="6" selection-start="644" selection-end="644" vertical-scroll-proportion="0.65960914">
           <folding />
         </state>
       </provider>

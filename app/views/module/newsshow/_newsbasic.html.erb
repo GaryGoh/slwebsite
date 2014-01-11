@@ -1,3 +1,13 @@
+<style>
+    #newsP{
+        font-size: 1.2em;
+        line-height: 2.1;
+        font-weight: 200;
+        padding: 20px 2%;
+        text-align: justify;
+    }
+</style>
+
 <div class="panel panel-info">
   <div class="panel-heading">
     <h2 align="center"><%= issue.title %></h2>
@@ -14,7 +24,7 @@
       <hr>
   <% end %>
 
-  <div class="panel-body">
+  <div class="panel-body"  id="newsP">
     <p><%= simple_format((issue.content), {}, :sanitize => false) %></p>
   </div>
 
