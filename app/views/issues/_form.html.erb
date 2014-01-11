@@ -21,6 +21,33 @@
 <!--</div>-->
 <!--</div>-->
 
+<!--<link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link>-->
+<!--<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"></link>-->
+<!--<script src="js/wysihtml5-0.3.0.js"></script>-->
+<!--<script src="js/jquery-1.7.2.min.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="js/bootstrap-wysihtml5.js"></script>-->
+
+<%= stylesheet_link_tag "bootstrap-wysihtml5.css" %>
+<%= stylesheet_link_tag "prettify.css" %>
+<%= stylesheet_link_tag "w-color.css" %>
+
+<%= javascript_include_tag "bootstrap-wysihtml5.js" %>
+<%= javascript_include_tag "bootstrap-button.js" %>
+<%= javascript_include_tag "prettify.js" %>
+<!--&lt;!&ndash;<%= javascript_include_tag "jquery-1.7.2.min.js" %>&ndash;&gt;-->
+
+
+
+
+<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+<script>
+    tinymce.init({selector:'textarea'});
+</script>
+
+
+
+
 <%= form_for([@user, @issue], :html => {:multipart => true}) do |f| %>
     <% if @issue.errors.any? %>
         <div id="error_explanation">
@@ -69,9 +96,10 @@
             <label for="inputPassword3" class="col-sm-2 control-label">新闻内容</label>
 
             <div class="col-sm-10">
-              <%= f.text_area :content, :class => "form-control", :id => "wysihtml5-textarea", :placeholder => "新闻内容", :rows => "10" %>
+              <%= f.text_area :content, :class => "form-control", :placeholder => "新闻内容", :rows => "10" %>
             </div>
           </div>
+
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">所属社团</label>
@@ -113,11 +141,11 @@
                   <hr>
                   <%= f.fields_for :issue_images do |fm| %>
                       <% unless fm.object.new_record? %>
-                            <div class="col-sm-6 col-md-4">
+                          <div class="col-sm-6 col-md-4">
 
-                              <P><%= image_tag(fm.object.issue_pic.url(:thumb)) %></p>
-                              <%= fm.check_box :_destroy %> 删除照片?
-                            </div>
+                            <P><%= image_tag(fm.object.issue_pic.url(:thumb)) %></p>
+                            <%= fm.check_box :_destroy %> 删除照片?
+                          </div>
                       <% end %>
                   <% end %>
 
@@ -143,6 +171,11 @@
 
 
 
+<script type="text/javascript">
+    $('#some-textarea').wysihtml5({
+
+    });
+</script>
 
 
 
@@ -152,16 +185,15 @@
 
 
 
+ <!--Here is the script for text editor, so far it's not useful yet-->
 
-<!-- Here is the script for text editor, so far it's not useful yet-->
-
-<!--<script>-->
-<!--//    var editor = new wysihtml5.Editor("wysihtml5-textarea", {-->
-<!--//        toolbar:      "wysihtml5-toolbar",-->
-<!--//        stylesheets:  "<%= stylesheet_path('wysiwyg') %>",-->
-<!--//        parserRules:  wysihtml5ParserRules-->
-<!--//    });-->
-<!--</script>-->
+<script>
+//    var editor = new wysihtml5.Editor("wysihtml5-textarea", {
+//        toolbar:      "wysihtml5-toolbar",
+//        stylesheets:  "<= stylesheet_path('wysiwyg') %>",
+//        parserRules:  wysihtml5ParserRules
+//    });
+</script>
 
 
 

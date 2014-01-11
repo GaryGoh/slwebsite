@@ -3,7 +3,8 @@
     <!--<img src="/assets/example/bg1.jpg" class="img-responsive">-->
     <h2><%= issue.title %></h2>
 
-    <p><%= truncate(issue.content, :length => 350) %></p>
+    <% content = strip_tags((issue.content)) %>
+    <p><%= (truncate(sanitize(content), :length => 350)) %></p>
     <br><br>
 
     <p><a href=<%= shownews_url(issue) %>, class="btn btn-default" role="button">详细</a></p>

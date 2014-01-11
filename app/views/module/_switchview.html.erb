@@ -32,7 +32,8 @@
 
             <div class="cbp-vm-price"><%= issue.created_at.strftime("%m-%e-%Y") %></div>
             <div class="cbp-vm-details">
-              <%= truncate(issue.content, :length => 100) %>
+              <% content = strip_tags((issue.content)) %>
+              <%= (truncate(sanitize(content), :length => 100)) %>
             </div>
             <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
           </li>

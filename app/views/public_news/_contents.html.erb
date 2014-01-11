@@ -48,7 +48,7 @@
                 <h2><%= issue.title %></h2>
 
                 <p>
-                  <%= issue.content %>
+                  <%= simple_format((issue.content), {}, :sanitize => false) %>
                 </p>
 
               </div>

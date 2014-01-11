@@ -7,13 +7,15 @@
     <div>发表于： <%= issue.created_at.strftime("%m-%e-%Y  %H:%M") %> | 作者： <%= issue.author %> </div>
   </div>
 
-  <div class="panel-body" id="gal">
-    <%= render "module/gallary", :issue => issue %>
-  </div>
-  <hr>
+  <% if issue.issue_images.count > 0 %>
+      <div class="panel-body" id="gal">
+        <%= render "module/gallary", :issue => issue %>
+      </div>
+      <hr>
+  <% end %>
 
   <div class="panel-body">
-    <pre id="issue_pre"><h5><%= "#{issue.content}" %></h5></pre>
+    <p><%= simple_format((issue.content), {}, :sanitize => false) %></p>
   </div>
 
 </div>

@@ -11,14 +11,21 @@
         /* General Blueprint Style */
     @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-
-    *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+    *, *:after, *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
         /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-    .clearfix:before, .clearfix:after { content: " "; display: table; }
-    .clearfix:after { clear: both; }
+    .clearfix:before, .clearfix:after {
+        content: " ";
+        display: table;
+    }
 
-
+    .clearfix:after {
+        clear: both;
+    }
 
     .main,
     .container > header {
@@ -116,18 +123,12 @@
         content: "\f060";
     }
 
-
-
-
-
-
     body {
         font-family: 'Lato', Calibri, Arial, sans-serif;
         color: #47a3da;
         background-color: #ffffff;
 
     }
-
 
     #timeline_a {
         position: static;
@@ -142,16 +143,14 @@
 
     @font-face {
         font-family: 'ecoico';
-        src:url('../../../fonts/timelineicons/ecoico.eot');
-        src:url('../../../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
-        url('../../../fonts/timelineicons/ecoico.woff') format('woff'),
-        url('../../../fonts/timelineicons/ecoico.ttf') format('truetype'),
-        url('../../../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
+        src: url('../../../fonts/timelineicons/ecoico.eot');
+        src: url('../../../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'), url('../../../fonts/timelineicons/ecoico.woff') format('woff'), url('../../../fonts/timelineicons/ecoico.ttf') format('truetype'), url('../../../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
         font-weight: normal;
         font-style: normal;
 
+    }
 
-    } /* Made with http://icomoon.io/ */
+        /* Made with http://icomoon.io/ */
 
     .cbp_tmtimeline {
         margin: 30px 0 0 0;
@@ -219,7 +218,7 @@
     .cbp_tmtimeline > li .cbp_tmlabel h2 {
         margin-top: 0px;
         padding: 0 0 10px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     }
 
         /* The triangle */
@@ -347,9 +346,11 @@
             <span><%= issue.created_at.strftime("%F") %></span></time>
           <div class="cbp_tmicon cbp_tmicon-phone"></div>
           <div class="cbp_tmlabel">
-            <a href="<%= shownews_url(issue) %>" id="timeline_a"><h2><%= issue.title %></h2></a>
+            <a href="<%= shownews_url(issue) %>" id="timeline_a"><h2 align="center"><%= issue.title %></h2></a>
 
-            <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(issue.content, :length => 400) %></p>
+            <% content = strip_tags((issue.content)) %>
+            <a href="<%= shownews_url(issue) %>" id="timeline_a">
+              <p><%= truncate(sanitize(content), :length => 400) %></p>
             </a>
           </div>
         </li>
@@ -454,11 +455,11 @@
 
     initLiNodes();
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
-        if($(document).height() - $(window).height() - $(document).scrollTop() < 2) {
+        if ($(document).height() - $(window).height() - $(document).scrollTop() < 2) {
 
-            if(!imagesLoading) {
+            if (!imagesLoading) {
                 appendToMasonry();
             }
 

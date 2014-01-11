@@ -108,7 +108,7 @@
                   </th>
 
                   <tbody>
-                  <% @user.user_societies.each do |s| %>
+                  <% @user.user_societies.reverse.each do |s| %>
                       <tr>
                         <td>
                           <!--# need to update link when finished society views-->
@@ -173,13 +173,12 @@
             </thead>
 
             <tbody>
-            <% for issue in @user.issues %>
+            <% for issue in @user.issues.reverse %>
                 <tr>
 
-                  <td><%= truncate(issue.title, :length => 20) %></td>
-                  <td><%= issue.society %></td>
+                  <td><%= link_to truncate(issue.title, :length => 20), shownews_url(issue) %></td>
+                  <td><%= link_to issue.society, societyshow_path(issue.society.id) %></td>
                   <td><%= issue.created_at.strftime("%d %b. %Y") %></td>
-                  <td><%= link_to '详细', [@user, issue] %></td>
                   <td><%= link_to '修改', edit_user_issue_path(@user, issue) %></td>
                   <td><%= link_to '删除', [@user, issue], method: :delete, data: {confirm: 'Are you sure?'} %></td>
                 </tr>
@@ -217,13 +216,12 @@
             </thead>
 
             <tbody>
-            <% for noti in @user.notis %>
+            <% for noti in @user.notis.reverse %>
                 <tr>
 
-                  <td><%= truncate(noti.title, :length => 20) %></td>
-                  <td><%= noti.society %></td>
+                  <td><%= link_to truncate(noti.title, :length => 20), shownotis_url(noti) %></td>
+                  <td><%= link_to noti.society, societyshow_path(noti.society.id) %></td>
                   <td><%= noti.created_at.strftime("%d %b. %Y") %></td>
-                  <td><%= link_to '详细', [@user, noti] %></td>
                   <td><%= link_to '修改', edit_user_noti_path(@user, noti) %></td>
                   <td><%= link_to '删除', [@user, noti], method: :delete, data: {confirm: 'Are you sure?'} %></td>
                 </tr>

@@ -1,5 +1,6 @@
 <blockquote class="pull-right">
-  <p>    <%= truncate(issue.content, :length => 140) %>
+  <% content = strip_tags((issue.content)) %>
+  <p>    <%= truncate(sanitize(content), :length => 140) %>
   </p>
   <small><cite title="Source Title"><%= link_to issue.title, shownews_url(issue) %></cite></small>
 

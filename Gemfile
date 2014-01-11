@@ -56,7 +56,7 @@ gem "font-awesome-rails"
 gem 'font-awesome-sass'
 
 gem 'galleria-rails', github: 'albandiguer/galleria-rails'
-
+gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 
 #gem 'remotipart', '~> 1.2'
 

@@ -13,8 +13,9 @@
               <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag issue.issue_images.order("RANDOM()").first.issue_pic.url(:thumb) %></a>
           <% end %>
           <blockquote>
+
             <p>
-              <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(issue.content, :length => 60) %></p>
+              <a href="<%= shownews_url(issue) %>" id="timeline_a"><p><%= truncate(sanitize(content), :length => 60) %></p>
               </a>
             </p>
             <footer><%= issue.title %></footer>
