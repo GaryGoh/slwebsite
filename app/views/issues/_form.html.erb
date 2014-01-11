@@ -1,48 +1,27 @@
-<!--<div id="wysihtml5-toolbar" style="display: none;">-->
-<!--<a data-wysihtml5-command="bold">bold</a>-->
-<!--<a data-wysihtml5-command="italic">italic</a>-->
-<!--<a data-wysihtml5-command="underline">underline</a>-->
-
-<!--<a data-wysihtml5-command="insertOrderedList">insert ordered list</a>-->
-<!--<a data-wysihtml5-command="insertUnorderedList">insert unordered list</a>-->
-
-<!--<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>-->
-<!--<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>-->
-<!--<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a>-->
-
-<!--<a data-wysihtml5-command="createLink">insert link</a>-->
-
-<!--<div data-wysihtml5-dialog="createLink" style="display: none;">-->
-<!--<label>-->
-<!--Link: <input data-wysihtml5-dialog-field="href" value="http://" class="text">-->
-<!--</label>-->
-<!--<a data-wysihtml5-dialog-action="save">OK</a>-->
-<!--<a data-wysihtml5-dialog-action="cancel">Cancel</a>-->
-<!--</div>-->
-<!--</div>-->
-
-<!--<link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link>-->
-<!--<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"></link>-->
-<!--<script src="js/wysihtml5-0.3.0.js"></script>-->
-<!--<script src="js/jquery-1.7.2.min.js"></script>-->
-<!--<script src="js/bootstrap.min.js"></script>-->
-<!--<script src="js/bootstrap-wysihtml5.js"></script>-->
-
-<%= stylesheet_link_tag "bootstrap-wysihtml5.css" %>
-<%= stylesheet_link_tag "prettify.css" %>
-<%= stylesheet_link_tag "w-color.css" %>
-
-<%= javascript_include_tag "bootstrap-wysihtml5.js" %>
-<%= javascript_include_tag "bootstrap-button.js" %>
-<%= javascript_include_tag "prettify.js" %>
-<!--&lt;!&ndash;<%= javascript_include_tag "jquery-1.7.2.min.js" %>&ndash;&gt;-->
 
 
 
+<%= javascript_include_tag "tin" %>
 
-<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
 <script>
-    tinymce.init({selector:'textarea'});
+    tinymce.init({
+        selector:'textarea',
+        plugins: "image link spellchecker charmap media table autosave searchreplace visualblocks textcolor visualchars insertdatetime",
+        image_list: [
+            {title: 'Dog', value: 'mydog.jpg'},
+            {title: 'Cat', value: 'mycat.gif'}
+        ],
+        link_list: [
+            {title: '桂电主页', value: 'http://www.guet.cn'},
+            {title: '社联主页', value: 'http://stlhh.guet.edu.cn'}
+        ],
+        tools: "inserttable searchreplace visualchars insertdate",
+        insertdatetime_formats: ["%Y.%m.%d", "%H:%M"],
+        language : 'zh_CN',
+        browser_spellcheck : true,
+        statusbar : false
+
+    });
 </script>
 
 
