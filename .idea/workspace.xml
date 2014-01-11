@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/issues/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/issues/_form.html.erb" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -256,7 +256,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="134" selection-start="231" selection-end="231" vertical-scroll-proportion="0.20618556">
+            <state line="8" column="136" selection-start="233" selection-end="233" vertical-scroll-proportion="0.20618556">
               <folding />
             </state>
           </provider>
@@ -1446,7 +1446,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="134" selection-start="231" selection-end="231" vertical-scroll-proportion="0.20618556">
+        <state line="8" column="136" selection-start="233" selection-end="233" vertical-scroll-proportion="0.20618556">
           <folding />
         </state>
       </provider>
