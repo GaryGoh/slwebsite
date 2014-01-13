@@ -264,6 +264,17 @@
 </style>
 </head>
 
+<%
+   rankPics = (Time.now.strftime("%M").to_i) % 4 + 1
+%>
+
+<script>
+
+    window.onload =  function myFunction() {
+        document.body.style.backgroundImage = "url(<%= asset_path "background/#{rankPics}.png" %>)";
+    }
+</script>
+
 <!-- HTML code from Bootply.com editor -->
 
 <body>
@@ -280,8 +291,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <!--<img src="images/home/logo.jpg" width="1140" height="180">-->
-        <%= render "module/clock"%>
+        <img src="images/home/logo.jpg" width="1140" height="180">
+        <%=
+            #render "module/clock"
+        %>
       </div>
     </div>
   </div>

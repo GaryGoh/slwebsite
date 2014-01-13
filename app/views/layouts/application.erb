@@ -3,8 +3,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 
-<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <!--<script type="text/javascript" src="js/jquery.iframe-transport.js"></script>-->
   <!--<script type="text/javascript" src="js/jquery.remotipart.js"></script>-->
 
@@ -12,28 +12,41 @@
   <%= csrf_meta_tags %>
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta charset="utf-8">
-<title>桂林电子科技大学 - 学生社团联合会</title>
-<meta name="generator" content="Bootply">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>桂林电子科技大学 - 学生社团联合会</title>
+  <meta name="generator" content="Bootply">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
 
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<link rel="shortcut icon" href="#">
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="http://www.bootply.com/bootstrap/img/apple-touch-icon-114x114.png">
-<link href="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="#">
+  <link rel="apple-touch-icon" href="#">
+  <link rel="apple-touch-icon" sizes="72x72" href="#">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.bootply.com/bootstrap/img/apple-touch-icon-114x114.png">
+  <link href="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/font-awesome.min.css" type="text/css" rel="stylesheet">
 
 
-<!-- CSS code from Bootply.com editor -->
+  <!-- CSS code from Bootply.com editor -->
 
-<%= render "layouts/css1"%>
+  <%= render "layouts/css1" %>
 </head>
+
+
+
+<%
+   rankPics = (Time.now.strftime("%M").to_i) % 4 + 1
+%>
+
+<script>
+
+       window.onload =  function myFunction() {
+            document.body.style.backgroundImage = "url(<%= asset_path "background/#{rankPics}.png" %>)";
+        }
+</script>
 
 <!-- HTML code from Bootply.com editor -->
 <header class="masthead">
@@ -59,7 +72,7 @@
     <!--/end left column-->
     <div class="col-md-10">
       <div class="panel-heading" style="background-color:#555;color:#eee;"><%= Time.now.strftime("%Y-%m-%d %A") %></div>
-      <div class="panel-body">
+      <div class="panel-body" id="public_area">
         <%= yield %>
       </div>
     </div>

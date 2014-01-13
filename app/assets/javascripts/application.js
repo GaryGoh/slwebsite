@@ -12,11 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require googleajax.jquery.js
 //= require turbolinks
 //= require_tree .
 
 // Include all twitter's javascripts
 //= require twitter/bootstrap
+
 
 
 
