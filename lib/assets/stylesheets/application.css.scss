@@ -1,0 +1,255 @@
+// change colors
+//$link-color: red;
+
+
+// import original bootstrap
+@import "twitter/bootstrap";
+
+// import font-awesome
+@import "font-awesome";
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+// Header CSS
+#search_header {
+  position: relative;
+  left: 200px;
+}
+
+#search_header_form {
+  width: 300px;
+}
+
+// Footer CSS
+#footer {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+#footer_div {
+  position:static;
+  bottom:0;
+  width:100%;
+  text-align: center;
+
+}
+#footer_index{
+  text-align: center;
+
+}
+
+
+// Signin form
+.form-signin {
+  max-width: 430px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin input[type="password_confirmation"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#new_user_in_users {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#new_user_in_users:hover {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+a:hover {
+  // -- Cancel underline and bolder font when hovering -- //
+  position: relative;
+  font: bold;
+  text-decoration: none;
+}
+
+// Collapse effect
+#coll_a1:hover {
+  font-size: large;
+}
+
+#coll_a2:hover {
+  // --  in User profile -> -- //
+  font-size: large;
+}
+
+#global_left_nav {
+  // -- leff side nav -- //
+  //float:right;
+  //opacity: .7;
+  position: relative;
+  left: 15px;
+  width: 190px;
+  //margin-right: -200%;
+  background: #ffffff;
+}
+
+#global_left_nav.hover {
+  // -- leff side nav -- //
+  //float:right;
+  //opacity: 1.0;
+}
+
+
+#global_right_contents {
+  position: relative;
+}
+
+
+#span1 {
+  // -- left side nav icon -- //
+  font-size: 32px;
+  position: relative;
+  left: 10px;
+  //opacity: .7;
+}
+
+#span2 {
+  font-size: 20px;
+  left: -10px;
+  //opacity: .7;
+}
+
+#span1.hover {
+  // -- Try to achieve hiden effect -- //
+  font-size: 32px;
+  position: relative;
+  left: 10px;
+  //opacity: 1.0;
+}
+
+// To modify the background that shows in textarea
+#user_pre {
+  background-color: #ffffff;
+  border-bottom: 0px;
+  //border-top: 0px;
+  //border-left: 0px;
+  border-right: 0px;
+}
+
+#issue_pre {
+  background-color: #ffffff;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+// End of pre
+
+.controls {
+  // -- To modify user profile form -- //
+  position: inherit;
+  width: 800px;
+}
+
+#home_carousel {
+  z-index: 0;
+}
+
+#home_panel1 {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  z-index: 1;
+  width: 1000px;
+  opacity: 0.93;
+}
+
+#footer_nav {
+
+  margin-bottom: -20px;
+}
+
+#footer_link{
+  position: relative;
+  top: -10px;
+}
+
+#home_div{
+  position: relative;
+  top: -10px;
+  margin-bottom: -20px;
+}
+
+#span2{
+  font-size: 18px;
+}
+
+#navword{
+  //font-size: 24px;
+  //font-variant: inherit;
+}
+
+#brand.hover{
+  color: #FFFFFF;
+}
+
+
+
+

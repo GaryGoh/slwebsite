@@ -18,21 +18,8 @@
 // Include all twitter's javascripts
 //= require twitter/bootstrap
 
-//= require wysihtml5
-//= require parser_rules/advanced
-//= require Chart.min
 
 
-//= require masonry.pkgd.js
-
-
-//$("#span1").animate({
-//    opacity: .4
-//}, 1000, function() {
-//    // 动画完成，所有浏览器下有效
-//});
-
-//$("#span1").css({ opacity: .4 });
 
 
 $(document).ready(function () {
