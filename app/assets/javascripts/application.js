@@ -20,11 +20,8 @@
 //= require twitter/bootstrap
 
 
-
-
-
-
 $(document).ready(function () {
+    $(".cbp-af-header").css("overflow", "hidden");
 
     $('#sidebar').affix({
         offset: {
@@ -32,6 +29,7 @@ $(document).ready(function () {
             bottom: 100
         }
     });
+
     $('#midCol').affix({
         offset: {
             top: 230,

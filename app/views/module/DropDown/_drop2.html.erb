@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="../css/SimpleDropDown/style2.css"/>
+<%= javascript_include_tag "SimpleDropDown/modernizr.custom.63321.js" %>
+
+<select id="cd-dropdown2" class="cd-select">
+  <option value="-1" selected>Choose a network to add</option>
+  <option value="1" class="icon-google-plus">Google Plus</option>
+  <option value="2" class="icon-facebook">Facebook</option>
+  <option value="3" class="icon-twitter">Twitter</option>
+  <option value="4" class="icon-github">GitHub</option>
+</select>
+
+<%= javascript_include_tag "SimpleDropDown/jquery.dropdown.js" %>
+<script type="text/javascript">
+
+    $(function () {
+
+        $('#cd-dropdown2').dropdown({
+            gutter: 5,
+            delay: 100,
+            random: true
+        });
+
+    });
+
+</script>
+

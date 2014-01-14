@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131231033913) do
+ActiveRecord::Schema.define(version: 20140114025809) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -130,6 +130,13 @@ ActiveRecord::Schema.define(version: 20131231033913) do
   add_index "issues", ["category_id"], name: "index_issues_on_category_id"
   add_index "issues", ["society_id"], name: "index_issues_on_society_id"
 
+  create_table "item", force: true do |t|
+    t.string   "item_name"
+    t.string   "item_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "materials", force: true do |t|
     t.string   "description"
     t.datetime "created_at"
@@ -182,6 +189,14 @@ ActiveRecord::Schema.define(version: 20131231033913) do
     t.string   "query"
     t.text     "answer",     limit: 255
     t.integer  "faq_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subitems", force: true do |t|
+    t.string   "subitem_name"
+    t.string   "subitem_url"
+    t.integer  "item_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

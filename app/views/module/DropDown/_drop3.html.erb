@@ -1,0 +1,35 @@
+<%= stylesheet_link_tag "SimpleDropDown/style3.css"%>
+<%= javascript_include_tag "SimpleDropDown/modernizr.custom.63321.js" %>
+
+<select id="cd-dropdown3" class="cd-select" onChange="location=this.value">
+  <option value="#" selected>站内导航</option>
+  <option value="/" class="icon-home">主页</option>
+  <option value="/news" class="icon-feed">新闻部落</option>
+  <option value="/notis" class="icon-globe">活动通知</option>
+  <option value="/faq" class="icon-question">FAQ</option>
+  <option value="/download" class="icon-cloud-download">资料下载</option>
+  <option value="/slmember" class="icon-users">社联介绍</option>
+</select>
+
+
+<%= javascript_include_tag "SimpleDropDown/jquery.dropdown.js" %>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $('#cd-dropdown3').dropdown({
+            gutter: 5,
+            delay: 40,
+            rotated: 'left' ,
+            slidingIn : true
+        });
+//        $('#cd-dropdown3').onChange(location=this.value)
+
+
+    });
+
+</script>
+
+
+

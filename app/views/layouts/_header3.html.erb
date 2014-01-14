@@ -1,9 +1,26 @@
 <link rel="stylesheet" type="text/css" href="css/AnimatedHeader/component.css"/>
 <script src="js/AnimatedHeader/js/modernizr.custom.js"></script>
 
+<style>
+    .cbp-af-header {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /*background: #f6f6f6;*/
+        z-index: 100000;
+        height: 0px;
+        /*overflow: hidden;*/
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+
+</style>
+
 
 <div class="cbp-af-header">
-  <div class="navbar navbar-static navbar-fixed-top">
+  <div class="navbar navbar-static">
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href=<%= root_url %>><b>社团联合会</b></a>
@@ -63,11 +80,39 @@
 </div>
 
 
+<header class="masthead" id="pageHead">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <%=
+            #render "module/clock"
+        %>
+        <table class="table">
+          <thead>
+          <tr>
+            <th><%= render "module/DropDown/drop6" %></th>
+            <th><%= render "module/DropDown/drop5" %></th>
+            <th><%= render "module/DropDown/drop3" %></th>
+
+          </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <img src="images/home/logo.jpg" width="1140" height="180">
+
+    <%=
+        #render "module/clock"
+    %>
+  </div>
+</header>
+
 
 <script src="js/AnimatedHeader/js/classie.js"></script>
 <script src="js/AnimatedHeader/js/cbpAnimatedHeader.min.js"></script>
 
 <script type="text/javascript">
+
 
     $(function () {
         $("#headDrop").hover(

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subitem_name: MyString
+  subitem_url: MyString
+  item_id: 1
+
+two:
+  subitem_name: MyString
+  subitem_url: MyString
+  item_id: 1
