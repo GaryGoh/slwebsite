@@ -1,7 +1,5 @@
 class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
-  layout "signinup", only: [:indexnotic]
-  layout "thirdlevel", only: [:shownews, :shownotis]
 
 
 
