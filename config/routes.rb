@@ -31,6 +31,8 @@ Slwebsite::Application.routes.draw do
   get '/read', to: 'public_news#readmode'
   get 'shownews/:id', to: 'public_news#shownews', as: :shownews
   get 'shownotis/:id', to: 'public_news#shownotis', as: :shownotis
+  get 'indexnotic/:id', to: 'public_news#indexnotic', as: :indexnotic
+
 
 
   get '/download', to: 'material#download'

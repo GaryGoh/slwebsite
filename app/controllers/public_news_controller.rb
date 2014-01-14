@@ -1,5 +1,6 @@
 class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
+  layout "signinup", only: [:indexnotic]
 
   def allnews
     @issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
@@ -13,7 +14,6 @@ class PublicNewsController < ApplicationController
 
   def shownotis
     @noti = Noti.find(params[:id])
-    @notifies = Noti.all.reverse
   end
 
   def readmode
@@ -22,5 +22,9 @@ class PublicNewsController < ApplicationController
 
   def notifies
     @notifies = Noti.all.reverse
+  end
+
+  def indexnotic
+    @noti = Noti.find(params[:id])
   end
 end

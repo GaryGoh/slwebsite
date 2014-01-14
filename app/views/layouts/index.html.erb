@@ -5,6 +5,8 @@
 
 <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+
 <%= csrf_meta_tags %>
 
 
@@ -270,7 +272,7 @@
 
 <script>
 
-    window.onload =  function myFunction() {
+    window.onload = function myFunction() {
         document.body.style.backgroundImage = "url(<%= asset_path "background/#{rankPics}.png" %>)";
     }
 </script>
@@ -280,11 +282,10 @@
 <body>
 
 <!-- Begin Navbar -->
-<%= render "layouts/header2"%>
+  <%= render "layouts/header3" %>
+
+
 <!-- /.navbar -->
-
-
-
 
 
 <header class="masthead">
@@ -304,7 +305,7 @@
 <div class="container">
   <div class="no-gutter row">
     <!-- left side column -->
-    <%= render "layouts/navbar"%>
+    <%= render "layouts/navbar" %>
 
     <!--/end left column-->
     <%= yield %>
