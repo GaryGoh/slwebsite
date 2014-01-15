@@ -6,6 +6,13 @@ ActiveAdmin.register AdminUser do
   #controller.authorize_resource
 
 
+
+  #controller do
+  #  def permitted_params
+  #    params.permit!
+  #  end
+  #end
+
   index do
     selectable_column
     column :email
@@ -42,13 +49,14 @@ ActiveAdmin.register AdminUser do
         end
         f.input :proverb, :label => "个人简介"
       end
+    end
 
-      if f.object.admin_permission.to_s == "超级管理员"
+      if current_admin_user.admin_permission.to_s == "超级管理员"
         f.inputs "权限级别" do
           f.input :admin_permission
         end
       end
-    end
+
 
     f.actions
   end
