@@ -2,7 +2,6 @@ class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
 
 
-
   def allnews
     @issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
 

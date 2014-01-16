@@ -2,6 +2,49 @@
 <link rel="stylesheet" type="text/css" href="css/ViewModeSwitch/component.css"/>
 <script src="js/modernizr.custom.js"></script>
 
+<style>
+    #masonry {
+        padding: 0;
+        min-height: 450px;
+        margin: 0 auto;
+    }
+
+    #masonry .thumbnail {
+        width: 230px;
+        margin: 20px;
+        padding: 0;
+        border-width: 1px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    }
+
+    #masonry .thumbnail .imgs {
+        padding: 10px;
+    }
+
+    #masonry .thumbnail .imgs img {
+        margin-bottom: 5px;
+    }
+
+    #masonry .thumbnail .caption {
+        background-color: #fff;
+        padding-top: 0;
+        font-size: 13px;
+    }
+
+    #masonry .thumbnail .caption .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    #masonry .thumbnail .caption .author {
+        font-size: 11px;
+        text-align: right;
+    }
+
+</style>
 
 
 <div class="main">
@@ -11,135 +54,156 @@
 
     <div class="cbp-vm-options">
       <a href="#" class="cbp-vm-icon cbp-vm-grid cbp-vm-selected" data-view="cbp-vm-view-grid">Grid View</a>
-      <a href="#" class="cbp-vm-icon cbp-vm-list" data-view="cbp-vm-view-list">List View</a>
+      <!--<a href="#" class="cbp-vm-icon cbp-vm-list" data-view="cbp-vm-view-list">List View</a>-->
     </div>
     <ul>
+      <div id="masonry" class="container-fluid">
+      </div>
+      <div id="masonry_ghost" class="hide">
+        <% issues.each do |issue| %>
 
-      <% issues.each do |issue| %>
+            <div class="thumbnail">
+              <div class="imgs">
+                <% pic = issue.issue_images.order("RANDOM()").first %>
+                <% if !(pic.nil?) %>
 
-          <li type="hidden" id="masonry">
-            <% pic = issue.issue_images.order("RANDOM()").first %>
-            <% if !(pic.nil?) %>
+                    <a class="cbp-vm-image" href="<%= shownews_url(issue) %>">
+                      <input type="hidden" value="<%= pic.issue_pic.url(:thumb) %>">
+                    </a>
+                <% else %>
+                    <input type="hidden" value="images/home/bg.jpg">
+                <% end %>
+              </div>
+              <div class="caption">
+                <h3 class="cbp-vm-title">
+                  <div class="title"><%= issue.title %></div>
+                </h3>
 
-                <a class="cbp-vm-image" href="<%= shownews_url(issue) %>"><%= image_tag pic.issue_pic.url(:thumb) %></a>
-            <% else %>
-                <img src="images/home/bg.jpg" width="87" height="87">
-
-            <% end %>
-
-            <h3 class="cbp-vm-title"><%= issue.title %></h3>
-
-            <div class="cbp-vm-price"><%= issue.created_at.strftime("%m-%e-%Y") %></div>
-            <div class="cbp-vm-details">
-              <% content = strip_tags((issue.content)) %>
-              <%= (truncate(sanitize(content), :length => 100)) %>
+                <div class="cbp-vm-price"><%= issue.created_at.strftime("%m-%e-%Y") %></div>
+                <div class="cbp-vm-details">
+                  <div class="content">
+                    <% content = strip_tags((issue.content)) %>
+                    <%= (truncate(sanitize(content), :length => 100)) %>
+                  </div>
+                </div>
+                <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
+              </div>
             </div>
-            <a class="cbp-vm-icon cbp-vm-add" href="<%= shownews_url(issue) %>">详细</a>
-          </li>
-      <% end %>
-      <!--<div id="fetchNextData"> a</div>-->
+        <% end %>
+        <!--<div id="fetchNextData"> a</div>-->
+      </div>
 
     </ul>
   </div>
 </div>
 
 
+
+
+
 <!-- /main -->
 <script src="js/ViewModeSwitch/classie.js"></script>
 <script src="js/ViewModeSwitch/cbpViewModeSwitch.js"></script>
-<!--<script src="js/masonry.pkgd.min.js"></script>-->
+<%= javascript_include_tag "masonry.pkgd.min.js" %>
+<%= javascript_include_tag "imagesloaded.pkgd.min.js" %>
+<%= javascript_include_tag "jquery-1.8.2.min.js" %>
+<%= javascript_include_tag "lightbox-2.6.min.js" %>
 
 
 
 <script>
-//    $(function () {
-//
-//        var masonryNode = $('#masonry');
-//        masonryNode.imagesLoaded(function () {
-//            masonryNode.masonry({
-//                itemSelector: '.thumbnail',
-//                isFitWidth: true
-//            });
-//        });
-//
-//
-//        // 首先将新元素添加到页面容器中
-//
-//        masonryNode.append(newItems);
-//// 等待新元素中的图片加载完毕
-//        newItems.imagesLoaded(function () {
-//
-//// 调用瀑布流布局的appended方法
-//            masonryNode.masonry('appended', newItems);
-//        });
-//
-//    });
-//
-//    var ghostNode = $('#masonry_ghost').find('.thumbnail'), i, ghostIndexArray = [];
-//    var ghostCount = ghostNode.length;
-//    for (i = 0; i < ghostCount; i++) {
-//        ghostIndexArray[i] = i;
-//    }
-//    ghostIndexArray.sort(function (a, b) {
-//        if (Math.random() > 0.5) {
-//            return a - b;
-//        } else {
-//            return b - a;
-//        }
-//    });
-//
-//
-//    var nextDataNumber = 5;
-//    var ajaxLoading = false;
-//    var docNode = $(document);
-//
-//    var ulNode = $('ul.timeline');
-//
-//    function initLiNodes() {
-//        var liNodes = ulNode.find('li'), count = liNodes.length, i, liNode, leftCount = nextDataNumber * 2;
-//        for (i = 0; i < count; i++) {
-//            liNode = $(liNodes.get(i));
-//            if (i % 2 !== 0) {
-//                liNode.addClass('alt');
-//            } else {
-//                liNode.removeClass('alt');
-//            }
-//            liNode.find('.number').text(leftCount + count - i);
-//        }
-//    }
-//
-//
-//    $('#fetchNextData').click(function () {
-//        var $this = $(this);
-//        $this.addClass('disabled').text('正在加载后二十条数据...');
-//        ajaxLoading = true;
-//
-//        $.get('./version_data_' + nextDataNumber + '.txt', function (data) {
-//            ajaxLoading = false;
-//            ulNode.append(data);
-//            $this.removeClass('disabled').text('后二十条数据');
-//            nextDataNumber--;
-//
-//            if (nextDataNumber === 0) {
-//                $this.hide();
-//            }
-//
-//            initLiNodes();
-//        });
-//
-//    });
-//
-//    initLiNodes();
-//
-//    $(window).scroll(function () {
-//
-//        if ($(document).height() - $(window).height() - $(document).scrollTop() < 2) {
-//
-//            if (!imagesLoading) {
-//                appendToMasonry();
-//            }
-//
-//        }
-//
-//    });
+    $(function () {
+
+        var ghostNode = $('#masonry_ghost').find('.thumbnail'), i, ghostIndexArray = [];
+        var ghostCount = ghostNode.length;
+        for (i = 0; i < ghostCount; i++) {
+            ghostIndexArray[i] = i;
+        }
+        ghostIndexArray.sort(function (a, b) {
+            if (Math.random() > 0.5) {
+                return a - b;
+            } else {
+                return b - a;
+            }
+        });
+
+        var currentIndex = 0;
+        var masNode = $('#masonry');
+        var imagesLoading = false;
+
+
+        function getNewItems() {
+            var newItemContainer = $('<div/>');
+            for (var i = 0; i < 6; i++) {
+                if (currentIndex < ghostCount) {
+                    newItemContainer.append(ghostNode.get(ghostIndexArray[currentIndex]));
+                    currentIndex++;
+                }
+            }
+            return newItemContainer.find('.thumbnail');
+        }
+
+        function processNewItems(items) {
+            items.each(function () {
+                var $this = $(this);
+                var imgsNode = $this.find('.imgs');
+                var title = $this.find('.title').text();
+                var author = $this.find('.author').text();
+                title += '&nbsp;&nbsp;(' + author + ')';
+                var lightboxName = 'lightbox_'; // + imgNames[0];
+
+                var imgNames = imgsNode.find('input[type=hidden]').val().split(',');
+                $.each(imgNames, function (index, item) {
+                    imgsNode.append('<a href="' + item + '" data-lightbox="' + lightboxName + '" title="' + title + '"><img src="' + item + '" /></a>');
+                });
+            });
+        }
+
+        function initMasonry() {
+            var items = getNewItems().css('opacity', 0);
+            processNewItems(items);
+            masNode.append(items);
+
+            imagesLoading = true;
+            items.imagesLoaded(function () {
+                imagesLoading = false;
+                items.css('opacity', 1);
+                masNode.masonry({
+                    itemSelector: '.thumbnail',
+                    isFitWidth: true
+                });
+            });
+        }
+
+
+        function appendToMasonry() {
+            var items = getNewItems().css('opacity', 0);
+            processNewItems(items);
+            masNode.append(items);
+
+            imagesLoading = true;
+            items.imagesLoaded(function () {
+                imagesLoading = false;
+                items.css('opacity', 1);
+                masNode.masonry('appended', items);
+            });
+        }
+
+
+        initMasonry();
+
+        $(window).scroll(function () {
+
+            if ($(document).height() - $(window).height() - $(document).scrollTop() < 5) {
+
+                if (!imagesLoading) {
+                    appendToMasonry();
+                }
+
+            }
+
+        });
+
+
+    });
 </script>
