@@ -1,0 +1,29 @@
+<%=
+    stylesheet_link_tag "slidebox/jquery.slideBox.css"
+%>
+<%= javascript_include_tag "slidebox/jquery.slideBox.min.js" %>
+
+<script>
+    jQuery(function ($) {
+
+        $('#demo3').slideBox({
+            duration: 0.3,//滚动持续时间，单位：秒
+            easing: 'linear',//swing,linear//滚动特效
+            delay: 5,//滚动延迟时间，单位：秒
+            hideClickBar: false,//不自动隐藏点选按键
+            clickBarRadius: 10,
+            hideBottomBar: true//隐藏底栏
+
+        });
+    });
+</script>
+
+
+
+<div id="demo3" class="slideBox">
+  <ul class="items">
+    <% imgs.each do |i| %>
+        <li><%= image_tag i.issue_pic.url(:thumb)%></li>
+    <% end %>
+  </ul>
+</div>

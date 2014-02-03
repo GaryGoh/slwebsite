@@ -1,0 +1,80 @@
+<%= form_for(@user) do |f| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <% @user.errors.full_messages.each do |msg| %>
+              <div class="alert alert-warning"><%= msg %></div>
+          <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label" for="server_name">学号</label>
+
+          <div class="controls">
+            <%= f.text_field :stuid, readonly: true, :class => "form-control" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">Email</label>
+
+          <div class="controls">
+            <%= f.text_field :email, readonly: true, :class => "form-control" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="Name">姓名</label>
+
+          <div class="controls">
+            <%= f.text_field :name, id: "Name", placeholder: "Name", :class => "form-control" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="Contact">联系方式</label>
+
+          <div class="controls">
+            <%= f.text_field :contact, id: "Contact", placeholder: "Contact", :class => "form-control" %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="Gender">性别</label>
+
+          <div class="controls">
+            <%= f.select :gender_id, Gender.find(:all, :order => "gender_name DESC").collect { |s|
+              [(s.gender_name), s.id] } %>
+          </div>
+        </div>
+
+
+        <!--<div class="control-group">-->
+        <!--<label class="control-label" for="Department">部门</label>-->
+        <!--<div class="controls">-->
+        <%=
+            #@user.user_societies :id, Society.find(:all).collect { |s|
+            #[(s.society_name), s.id] }
+        %>
+        <!--</div>-->
+        <!--</div>-->
+
+        <div class="control-group">
+          <label class="control-label" for="Department">头像</label>
+
+          <div class="controls">
+            <%= f.file_field :avatar %>
+          </div>
+        </div>
+
+
+
+        </br>
+        <!--<div class="actions">-->
+        <%= f.submit class: 'btn btn-primary btn-lg', :value => "提交" %>
+        <!--</div>-->
+      </form>
+
+<% end %>
+
+
+

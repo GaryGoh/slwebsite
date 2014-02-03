@@ -5,4 +5,13 @@ class Noti < ActiveRecord::Base
 
   validates :title, presence: true
   validates :content, presence: true
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['content LIKE ? OR title LIKE ?', "%#{search}%", "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
 end

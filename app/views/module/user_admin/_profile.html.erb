@@ -1,0 +1,52 @@
+<!--用户资料-->
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+        <tr>
+          <th></th>
+          <th></th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+
+          <td><strong>学号: </strong></td>
+          <td><%= @user.stuid %></td>
+        </tr>
+        <tr>
+          <td><strong>Email:</strong></td>
+          <td><%= @user.email %></td>
+        </tr>
+        <tr>
+          <td><strong>姓名: </strong></td>
+          <td><%= @user.name %></td>
+        </tr>
+        <tr>
+          <td><strong>性别: </strong></td>
+          <td><%= @user.gender.to_s %></td>
+        </tr>
+        <tr>
+          <td><strong>联系方式: </strong></td>
+          <td><%= @user.contact %></td>
+        </tr>
+        <tr>
+          <td><strong>加入社团数: </strong></td>
+          <td><%= @user.user_societies.count %></td>
+        </tr>
+
+        <tr>
+          <td><strong>照片: </strong></td>
+          <% if @user.avatar_file_name.nil? %>
+              <td>
+                <div class="text-danger">暂无照片</div>
+              </td>
+          <% else %>
+              <td><%= image_tag @user.avatar.url(:thumb) %></td>
+          <% end %>
+        </tr>
+
+        </tbody>
+      </table>

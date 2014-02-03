@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "slidebox/jquery.slideBox.css" %>
+<%= javascript_include_tag "slidebox/jquery.slideBox.min.js" %>
+
+<script>
+    jQuery(function ($) {
+        $('#demo1').slideBox({
+            hideBottomBar: true//隐藏底栏
+        });
+    });
+</script>
+
+
+<div id="demo1" class="slideBox">
+  <ul class="items">
+    <% imgs.each do |i| %>
+        <li><%= image_tag i.issue_pic.url(:thumb)%></li>
+    <% end %>
+  </ul>
+</div>
