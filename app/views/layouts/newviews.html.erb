@@ -1,0 +1,64 @@
+<head>
+  <title>桂林电子科技大学 - 学生社团联合会</title>
+
+  <%= stylesheet_link_tag "BorderMenu/style5.css", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "BorderMenu/icons.css", media: "all", "data-turbolinks-track" => true %>
+
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <%= javascript_include_tag "BorderMenu/modernizr.custom.js", "data-turbolinks-track" => true %>
+
+  <%=
+      render "layouts/css1"
+  %>
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  <%=
+      render "layouts/header3"
+  %>
+  <div class="no-gutter row">
+    <!-- left side column -->
+    <%=
+        #render 'layouts/navbar2'
+    %>
+    <!--/end left column-->
+    <div class="col-md-10">
+      <%= yield %>
+    </div>
+  </div>
+  <!-- menuside-->
+  <nav id="bt-menu" class="bt-menu">
+    <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+    <ul>
+      <li><a href="#">社联主页</a></li>
+      <li><a href="#">新闻部落</a></li>
+      <li><a href="#">活动通知</a></li>
+      <li><a href="#">社团中心</a></li>
+      <li><a href="#">社联介绍</a></li>
+      <li><a href="#">资料下载</a></li>
+
+    </ul>
+    <ul>
+      <li><a href="http://e.weibo.com/guetstlhh" class="fa fa-weibo fa-2x">新浪微博</a></li>
+      <li><a href="#" class="fa fa-renren fa-2x">人人</a></li>
+      <li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
+    </ul>
+  </nav>
+
+
+  <footer id="footer_div">
+    <%= render 'layouts/footer_pub' %>
+
+  </footer>
+</div>
+<!-- /container -->
+</body>
+<%= javascript_include_tag "BorderMenu/borderMenu.js", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "BorderMenu/classie.js", "data-turbolinks-track" => true %>
