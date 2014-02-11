@@ -1,20 +1,4 @@
-<% @slmembers.each do |sl| %>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <div class="media">
-          <a class="pull-left" href=<%= show_url(sl) %>>
-            <td><%= image_tag sl.admin_pic.url(:thumb) %></td>
-          </a>
 
-          <div class="media-body">
-            <a href=<%= show_url(sl) %>>
-              <h4 class="media-heading"><%= sl.name %></h4></a>
-            <blockquote>
-              <%= sl.proverb %>
-            </blockquote>
-          </div>
-        </div>
-
-      </div>
-    </div>
-<% end %>
+<%=
+    render "module/slmembers/books", :slmembers => @slmembers
+%>
