@@ -1,0 +1,15 @@
+<!-- right content column-->
+<div class="panel">
+  <!--<div class="panel-heading" style="background-color:#111;color:#fff;">头条新闻</div>-->
+  <%= render 'module/roTopnews' %>
+  <% @issues_index.each do |issue| %>
+      <div class="panel-body" id="main_content">
+        <%= render partial: "module/news#{((issue.id+Time.now.strftime("%M").to_i) % 4 + 1)}", locals: {issue: issue} %> </div>
+  <% end %>
+
+
+
+  <!--/panel-body-->
+</div>
+<!--/panel-->
+<!--/end right column-->

@@ -1,0 +1,30 @@
+<head>
+  <%= stylesheet_link_tag "indexcell/component.css" %>
+  <%= javascript_include_tag "indexcell/modernizr.custom.js" %>
+
+  <!--<link rel="stylesheet" type="text/css" href="css/default.css" />-->
+</head>
+
+<!--<div class="container demo-3">-->
+
+<ul class="grid cs-style-3">
+  <% issues.each do |i| %>
+      <li>
+        <figure>
+
+          <img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg">
+
+          <%=
+              #image_tag i.issue_pic.url(:medium), :alt => "img01"
+          %>
+          <figcaption>
+            <h3 class="col-xs-12 col-md-8"><%= truncate(i.title, :length => 10)%></h3>
+            <a class="col-xs-6 col-md-4" href="<%= shownews_url(i) %>">详细</a>
+          </figcaption>
+        </figure>
+      </li>
+  <% end %>
+</ul>
+<!--</div>-->
+<%= javascript_include_tag "indexcell/toucheffects.js" %>
+
