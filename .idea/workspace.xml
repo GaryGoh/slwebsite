@@ -130,11 +130,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.print.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/SimpleDropDown/fonts/license.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_carousel.erb" afterPath="$PROJECT_DIR$/app/views/module/_carousel.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header3.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header3.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_page/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -309,7 +304,7 @@
     <file path="/20131227202941_change_issue_image_column.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388176324671" ignored="false" />
     <file path="/new.js.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388179331706" ignored="false" />
     <file path="/_gallary.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388192846241" ignored="false" />
-    <file path="/_carousel.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392090102578" ignored="false" />
+    <file path="/_carousel.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392091537775" ignored="false" />
     <file path="/_carousel2.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388288795835" ignored="false" />
     <file path="/blueimp.css.scss" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388287536324" ignored="false" />
     <file path="/_lightbox.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388294697399" ignored="false" />
@@ -405,10 +400,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_carousel.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_carousel.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/module/_carousel.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="0" selection-end="2143" vertical-scroll-proportion="-0.75949365">
+            <state line="45" column="59" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.66906476">
               <folding />
             </state>
           </provider>
@@ -432,10 +427,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="110" selection-end="110" vertical-scroll-proportion="0.14246947">
+            <state line="7" column="22" selection-start="110" selection-end="110" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -498,10 +493,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header2.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header3.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/module/_carousel.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/_carousel.erb" />
       </list>
     </option>
   </component>
@@ -1477,13 +1472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_carousel.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="0" selection-end="2143" vertical-scroll-proportion="-0.75949365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="52" selection-start="1820" selection-end="1831" vertical-scroll-proportion="-23.75">
@@ -1507,7 +1495,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="110" selection-end="110" vertical-scroll-proportion="0.14246947">
+        <state line="7" column="22" selection-start="110" selection-end="110" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_carousel.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="59" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.66906476">
           <folding />
         </state>
       </provider>
