@@ -1,3 +1,13 @@
+<style>
+    .carousel-control.left, .carousel-control.right {
+        background: none;
+        /*color: #119CDD;*/
+        border: none;
+    }
+    .carousel-control.left {margin-left: -45px; color: #119cdd;}
+    .carousel-control.right {margin-right: -45px; color: #119cdd;}
+</style>
+
 
 
 
@@ -49,10 +59,10 @@
     </div>
   </div>
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" id="pprev">
+    <span class="glyphicon glyphicon-chevron-left" id="prev"></span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next" id="nnext">
+    <span class="glyphicon glyphicon-chevron-right" id="next"></span>
   </a>
 </div>
