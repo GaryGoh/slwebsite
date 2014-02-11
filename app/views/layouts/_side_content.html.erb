@@ -1,0 +1,30 @@
+<!--mid column-->
+
+<div class="col-xs-12 col-md-2">
+  <div class="panel affix-top" id="midCol">
+    <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
+    <div class="panel-body" id="side_content">
+
+
+      <div class="list-group">
+        <% @notifies.each do |issue| %>
+            <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= issue.id %>">
+              <h4 class="list-group-item-heading"><%= issue.title %></h4>
+              <small><%= issue.created_at.strftime("%F") %></small>
+            </a>
+
+            <div class="panel-body">
+              <div id="collapse<%= issue.id %>" class="panel-collapse collapse">
+                <p class="list-group-item-text"><%= truncate(issue.content, :length => 60) %> <%= link_to "", shownotis_url(issue), class: "glyphicon glyphicon-search
+" %></p>
+              </div>
+            </div>
+        <% end %>
+      </div>
+
+
+    </div>
+  </div>
+  <!--/panel-->
+</div>
+<!--/end mid column-->

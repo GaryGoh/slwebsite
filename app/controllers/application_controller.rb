@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   #layout "2_split"
   protect_from_forgery with: :exception
   include SessionsHelper
+  before_action :set_gloable
 
 
   #rescue_from CanCan::AccessDenied do |exception|
@@ -21,4 +22,9 @@ class ApplicationController < ActionController::Base
     Rails.application.class.routes.url_helpers
   end
 
+
+  def set_gloable
+    @notifies = Noti.last(8).reverse.map
+    @topnews = Issue.where('category_id = 1').last(4).reverse
+  end
 end

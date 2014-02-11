@@ -31,7 +31,7 @@
   <!-- CSS code from Bootply.com editor -->
 
   <%=
-     render "layouts/css1"
+      render "layouts/css1"
   %>
 </head>
 
@@ -51,14 +51,20 @@
 
 
 <!-- Begin Body -->
-<div class="container">
+<div class="container-fluid">
   <div class="no-gutter row">
     <!-- left side column -->
-    <%= render "layouts/navbar" %>
+    <%=
+        #render "layouts/navbar"
+    %>
 
     <!--/end left column-->
-    <%= yield %>
-
+    <div class="col-xs-12 col-md-10" id="content">
+      <%= yield %>
+    </div>
+    <%=
+        render "layouts/side_content"
+    %>
   </div>
 </div>
 </div>

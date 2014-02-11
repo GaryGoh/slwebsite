@@ -4,7 +4,6 @@ class PublicNewsController < ApplicationController
 
   def allnews
     @issues = Issue.where('category_id = 1' || 'category_id = 2').search(params[:search])
-
   end
 
   def shownews
@@ -22,6 +21,7 @@ class PublicNewsController < ApplicationController
 
   def notifies
     @notifies = Noti.search(params[:search]).reverse
+
   end
 
   def indexnotic

@@ -34,10 +34,14 @@
                 <div class="item">
             <% end %>
              <div align= "center">
-            <%= image_tag i.issue_pic.url(:medium) %>
+               <a href=<%= shownews_url(i) %>>
+               <%= image_tag i.issue_pic.url(:medium) %>
+                   </a>
              </div>
             <div class="carousel-caption">
-              <h3><%= i.description %></h3>
+              <h3><%= e.title %></h3>
+              <% content = strip_tags((e.content)) %>
+              <p><%= (truncate(sanitize(content), :length => 20)) %></p>
             </div>
             </div>
         <% end %>

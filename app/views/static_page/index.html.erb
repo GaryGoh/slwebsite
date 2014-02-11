@@ -1,41 +1,20 @@
-<!--mid column-->
+<style>
+  #main_content{
+      /*background: #f6f7fb*/
+  }
 
-<div class="col-md-3">
-  <div class="panel affix-top" id="midCol">
-    <div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>
-    <div class="panel-body">
-
-
-      <div class="list-group">
-        <% @notifies.each do |issue| %>
-            <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= issue.id %>">
-              <h4 class="list-group-item-heading"><%= issue.title %></h4>
-              <small><%= issue.created_at.strftime("%F") %></small>
-            </a>
-
-            <div class="panel-body">
-              <div id="collapse<%= issue.id %>" class="panel-collapse collapse">
-                <p class="list-group-item-text"><%= truncate(issue.content, :length => 60) %> <%= link_to "", shownotis_url(issue), class: "glyphicon glyphicon-search
-" %></p>
-              </div>
-            </div>
-        <% end %>
-      </div>
-
-
-    </div>
-  </div>
-  <!--/panel-->
-</div>
-<!--/end mid column-->
+  #side_content{
+      /*background: #f6f7fb*/
+  }
+</style>
 
 <!-- right content column-->
-<div class="col-md-7" id="content">
+<div class="col-xs-12 col-md-10" id="content">
   <div class="panel">
-    <div class="panel-heading" style="background-color:#111;color:#fff;">头条新闻</div>
+    <!--<div class="panel-heading" style="background-color:#111;color:#fff;">头条新闻</div>-->
     <%= render 'module/roTopnews' %>
     <% @issues_index.each do |issue| %>
-        <div class="panel-body">
+        <div class="panel-body" id="main_content">
           <%= render partial: "module/news#{((issue.id+Time.now.strftime("%M").to_i) % 4 + 1)}", locals: {issue: issue} %> </div>
     <% end %>
 
@@ -46,3 +25,6 @@
   <!--/panel-->
   <!--/end right column-->
 </div>
+
+
+

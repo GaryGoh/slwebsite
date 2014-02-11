@@ -16,6 +16,11 @@
         transition: height 0.3s;
     }
 
+     #index_carousel{
+         height: 400px;
+         overflow: hidden;
+     }
+
 </style>
 
 
@@ -30,9 +35,11 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
+          <li><a id="navLi" href="/news" onclick="ajax()">新闻部落</a></li>
           <li><a href=<%= notis_url %>>活动通知</a></li>
           <li><a href="/download">资料下载</a></li>
           <li><a href="/faq">FAQ</a></li>
+          <li><a id="navLi" href="/slmember">社联介绍</a></li>
           <li class="dropdown" id="headDrop">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navfade">社团中心</a>
             <ul class="dropdown-menu" id="hul">
@@ -99,11 +106,15 @@
         </table>
       </div>
     </div>
-    <img src="images/home/logo.jpg" width="1140" height="180">
+    <!--<img src="images/home/logo.jpg" width="1140" height="180">-->
 
-    <%=
-        #render "module/clock"
-    %>
+    <div class="container-fluid">
+      <div class="col-md-12" id="index_carousel">
+        <%=
+            render "module/carousel", :issues => @topnews
+        %>
+      </div>
+    </div>
   </div>
 </header>
 
