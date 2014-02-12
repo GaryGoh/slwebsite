@@ -87,23 +87,19 @@
           render "module/indexcell/cell1", :issues => @normnews
       %>
     </div>
-    <!--<div class="tab-pane fade" id="global">-->
-    <%=
-        #render "module/indexcell/cell1", :issues => @topnews
-    %>
-    <!--</div>-->
+
   </div>
 
 </div>
 <div class="col-md-2" id="te">
   <h3>优秀社团</h3>
   <ul class="nav nav-pills nav-stacked" id="society">
-    <% counter = 1 %>
+    <% counter = true %>
     <% @societies.each do |s| %>
-        <% if counter == 1 %>
+        <% if counter %>
             <li class="active"><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
+            <% counter = false %>
         <% else %>
-            <% counter += 1 %>
             <li><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
         <% end %>
     <% end %>
@@ -113,17 +109,17 @@
 <div class="col-md-10" id="rightcontent">
   <div class="tab-content" id="notinav">
 
-    <% counter = 1 %>
+    <% counter = true %>
     <% @societies.each do |s| %>
-        <% if counter == 1 %>
+        <% if counter %>
             <div class="tab-pane fade in active" id="<%= s.id %>">
               <%=
                   #render "module/indexcell/cell1", :issues => @normnews
                   link_to s.society_name + "社团主页", societyshow_url(s)
               %>
             </div>
+            <% counter = false %>
         <% else %>
-            <% counter += 1 %>
             <div class="tab-pane fade in" id="<%= s.id %>">
               <%=
                   #render "module/indexcell/cell1", :issues => @normnews
