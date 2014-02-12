@@ -129,7 +129,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.print.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/SimpleDropDown/fonts/license.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/indexcell/_cell1.html.erb" afterPath="$PROJECT_DIR$/app/views/module/indexcell/_cell1.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/stylesheets/book/book2.css" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/book/book2.css" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -368,7 +368,7 @@
     <file path="/newviews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392056488585" ignored="false" />
     <file path="/style5.css" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392058054502" ignored="false" />
     <file path="/_books.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392118739340" ignored="false" />
-    <file path="/book2.css" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392117873465" ignored="false" />
+    <file path="/book2.css" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392167550989" ignored="false" />
     <file path="/_cell1.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392167044029" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -394,10 +394,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_cell1.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_cell1.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/indexcell/_cell1.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="47" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.76">
+            <state line="38" column="47" selection-start="1232" selection-end="1232" vertical-scroll-proportion="-23.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book2.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/assets/stylesheets/book/book2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="13" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.45335084">
               <folding />
             </state>
           </provider>
@@ -478,7 +487,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/_carousel.erb" />
         <option value="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
-        <option value="$PROJECT_DIR$/lib/assets/stylesheets/book/book2.css" />
         <option value="$PROJECT_DIR$/app/views/slmember/list.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/slmembers/_books.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/contentbar.html.erb" />
@@ -491,6 +499,7 @@
         <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/module/indexcell/_cell1.html.erb" />
+        <option value="$PROJECT_DIR$/lib/assets/stylesheets/book/book2.css" />
       </list>
     </option>
   </component>
@@ -1607,13 +1616,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/notis/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_page/_access_error.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="5" selection-start="130" selection-end="130" vertical-scroll-proportion="0.08">
@@ -1714,7 +1716,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/indexcell/_cell1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="47" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.76">
+        <state line="38" column="47" selection-start="1232" selection-end="1232" vertical-scroll-proportion="-23.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/assets/stylesheets/book/book2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="13" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.45335084">
           <folding />
         </state>
       </provider>
