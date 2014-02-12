@@ -1,3 +1,29 @@
+<style>
+    #sidea {
+        color: #000000;
+    }
+
+    #title_noti {
+        border-bottom-style: solid;
+        border-color: #eee;
+        border-width: 0.06cm;
+        /*border-bottom-color: #eee;*/
+        min-height: 270px;
+        max-height: 270px;
+        overflow: auto;
+
+    }
+
+    .list-group-item {
+        /*border-bottom-color: #ffffff;*/
+        border-color: #ffffff;
+        /*border-color: #eee;*/
+    }
+
+
+</style>
+
+
 <!--mid column-->
 
 <div class="col-xs-12 col-md-2">
@@ -5,26 +31,24 @@
     <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
     <div class="panel-body" id="side_content">
 
+      <div id="title_noti">
+        <div class="list-group">
+          <li class="list-group-item" id="">
+            <h3>通知公告</h3>
+          </li>
+          <% @notifies.each do |issue| %>
 
-      <div class="list-group">
-        <% @notifies.each do |issue| %>
-            <a class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= issue.id %>">
-              <h4 class="list-group-item-heading"><%= issue.title %></h4>
-              <small><%= issue.created_at.strftime("%F") %></small>
-            </a>
-
-            <div class="panel-body">
-              <div id="collapse<%= issue.id %>" class="panel-collapse collapse">
-                <p class="list-group-item-text"><%= truncate(issue.content, :length => 60) %> <%= link_to "", shownotis_url(issue), class: "glyphicon glyphicon-search
-" %></p>
-              </div>
-            </div>
-        <% end %>
+              <a id="sidea" href="<%= shownotis_url(issue) %>" class="list-group-item text-left">
+                <small><%= truncate(issue.title, :length => 11) %></small>
+              </a>
+          <% end %>
+        </div>
       </div>
-
 
     </div>
   </div>
   <!--/panel-->
 </div>
 <!--/end mid column-->
+
+

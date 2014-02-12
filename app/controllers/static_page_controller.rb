@@ -18,7 +18,7 @@ class StaticPageController < ApplicationController
     #@topnews = Issue.limit(5).find_by_category_id(1)
     @topnews = Issue.where('category_id = 1').last(6).reverse
     @normnews = Issue.where('category_id = 1').first(6).reverse
-    @societies = Society.where(:is_outstanding => false).last(6)
+    @societies = Society.where(:is_outstanding => true)
 
 
   end

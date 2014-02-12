@@ -6,9 +6,9 @@
 </head>
 
 <style>
-    h4 {
-        text-align: center
-    }
+    /*h5 {*/
+        /*text-align: center*/
+    /*}*/
 
 </style>
 
@@ -19,7 +19,7 @@
 
           <!--<img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg">-->
           <% if (i.issue_images.count != 0) %>
-              <%= image_tag i.issue_images.order("RANDOM()").first.issue_pic.url(:medium), :class => "img-responsive" %>
+              <%= image_tag i.issue_images.order("RANDOM()").first.issue_pic.url(:medium), :class => "img-rounded" %>
               <%=
                   #render "module/slidebox/s1", :imgs => issue.issue_images.order("RANDOM()")
               %>
@@ -36,7 +36,8 @@
             <a class="col-xs-6 col-md-4" href="<%= shownews_url(i) %>">详细</a>
           </figcaption>
         </figure>
-        <h4><%= truncate(i.title, :length => 12) %></h4>
+        <p class="text-left"><%= truncate(i.title, :length => 16) %></p>
+        <p class="text-left small text-muted"><%= i.author %> 发布</p>
 
       </li>
   <% end %>
