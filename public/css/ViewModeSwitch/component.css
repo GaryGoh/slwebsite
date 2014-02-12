@@ -103,6 +103,7 @@
 .cbp-vm-add:hover {
 	color: #fff;
 	background: #02639d;
+    text-decoration: none
 }
 
 .cbp-vm-add:before {

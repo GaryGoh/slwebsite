@@ -56,9 +56,21 @@
 	padding: 5px 10px;
 	border-radius: 2px;
 	display: inline-block;
-	background: #ed4e6e;
+	background: #ed4e6a;
 	color: #fff;
 }
+
+.grid figcaption a:hover {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #d9534f;
+    color: #fff;
+    text-decoration: none
+}
+
 
 /* Individual Caption Styles */
 
