@@ -14,18 +14,23 @@
         /*height: 400px;*/
         /*background: #fffffe;*/
     }
-        #rightcontent{
-            border-left-style: solid;
-            border-color: #dcdcdc;
-            background: #fffffe;
-            margin: 3% 0 2% 0;
-        }
+
+    #rightcontent {
+        border-left-style: solid;
+        border-color: #dcdcdc;
+        background: #fffffe;
+        margin: 3% 0 2% 0;
+    }
+
+    #society {
+        text-align: center;
+    }
 </style>
 
 
 <div class="col-md-2" id="te">
   <!--<div class="panel">-->
-    <h3>新闻部落</h3>
+  <h3>新闻部落</h3>
   <!--</div>-->
 </div>
 
@@ -83,43 +88,51 @@
       %>
     </div>
     <!--<div class="tab-pane fade" id="global">-->
-      <%=
-          #render "module/indexcell/cell1", :issues => @topnews
-      %>
+    <%=
+        #render "module/indexcell/cell1", :issues => @topnews
+    %>
     <!--</div>-->
   </div>
 
 </div>
 <div class="col-md-2" id="te">
-  <h3>新闻部落</h3>
-</div>
-
-<div class="col-md-10" id="rightcontent">
-  <ul class="nav nav-tabs nav-justified" id="myTab">
-    <li class="active"><a href="#society" data-toggle="tab">社团新闻</a></li>
-    <li><a href="#school" data-toggle="tab">学校新闻</a></li>
-    <li><a href="#global" data-toggle="tab">世界时事</a></li>
+  <h3>优秀社团</h3>
+  <ul class="nav nav-pills nav-stacked" id="society">
+    <% counter = 1 %>
+    <% @societies.each do |s| %>
+        <% if counter == 1 %>
+            <li class="active"><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
+        <% else %>
+            <% counter += 1 %>
+            <li><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
+        <% end %>
+    <% end %>
   </ul>
-
-  <!-- Tab panes -->
+</div>
+<!-- Tab panes -->
+<div class="col-md-10" id="rightcontent">
   <div class="tab-content" id="notinav">
-    <div class="tab-pane fade in active" id="society">
-      <%=
-          render "module/indexcell/cell1", :issues => @normnews
-      %>
-    </div>
-    <div class="tab-pane fade" id="school">
-      <%=
-          render "module/indexcell/cell1", :issues => @topnews
-      %>
-    </div>
-    <div class="tab-pane fade" id="global">
-      <%=
-          render "module/indexcell/cell1", :issues => @normnews
-      %>
-    </div>
-  </div>
 
+    <% counter = 1 %>
+    <% @societies.each do |s| %>
+        <% if counter == 1 %>
+            <div class="tab-pane fade in active" id="<%= s.id %>">
+              <%=
+                  #render "module/indexcell/cell1", :issues => @normnews
+                  link_to s.society_name + "社团主页", societyshow_url(s)
+              %>
+            </div>
+        <% else %>
+            <% counter += 1 %>
+            <div class="tab-pane fade in" id="<%= s.id %>">
+              <%=
+                  #render "module/indexcell/cell1", :issues => @normnews
+                  link_to s.society_name + "社团主页", societyshow_url(s)
+              %>
+            </div>
+        <% end %>
+    <% end %>
+  </div>
 </div>
 
 
