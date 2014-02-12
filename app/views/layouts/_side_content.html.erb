@@ -31,11 +31,12 @@
     <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
     <div class="panel-body" id="side_content">
 
-      <div id="title_noti">
+
         <div class="list-group">
           <li class="list-group-item" id="">
             <h3>通知公告</h3>
           </li>
+          <div id="title_noti">
           <% @notifies.each do |issue| %>
 
               <a id="sidea" href="<%= shownotis_url(issue) %>" class="list-group-item text-left">
