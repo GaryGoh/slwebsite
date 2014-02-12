@@ -129,7 +129,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.print.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/SimpleDropDown/fonts/license.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_page/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -405,10 +405,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_css1.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_css1.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_css1.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="1385" selection-end="1474" vertical-scroll-proportion="-23.75">
+            <state line="59" column="18" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.6209573">
               <folding />
             </state>
           </provider>
@@ -423,10 +423,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="65" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.37904269">
+            <state line="136" column="65" selection-start="2929" selection-end="2929" vertical-scroll-proportion="-12.208333">
               <folding />
             </state>
           </provider>
@@ -460,12 +460,12 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer2.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer_pub.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_side_content.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" />
       </list>
     </option>
   </component>
@@ -1658,13 +1658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/indexcell/_cell1.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="64" selection-start="1258" selection-end="1258" vertical-scroll-proportion="-23.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="23" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.7734057">
@@ -1693,13 +1686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_css1.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1385" selection-end="1474" vertical-scroll-proportion="-23.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_side_content.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="31" selection-start="823" selection-end="823" vertical-scroll-proportion="-4.721519">
@@ -1709,7 +1695,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="65" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.37904269">
+        <state line="136" column="65" selection-start="2929" selection-end="2929" vertical-scroll-proportion="-12.208333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/indexcell/_cell1.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="64" selection-start="1258" selection-end="1258" vertical-scroll-proportion="-23.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_css1.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="18" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.6209573">
           <folding />
         </state>
       </provider>
