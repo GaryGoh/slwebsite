@@ -9,10 +9,17 @@
 
     #te {
         /*background: firebrick;*/
-        border-right-style: solid;
-        border-color: #dcdcdc;
-        height: 550px;
+        /*border-right-style: solid;*/
+        /*border-color: #dcdcdc;*/
+        /*height: 400px;*/
+        /*background: #fffffe;*/
     }
+        #rightcontent{
+            border-left-style: solid;
+            border-color: #dcdcdc;
+            background: #fffffe;
+            margin: 3% 0 2% 0;
+        }
 </style>
 
 
@@ -22,8 +29,8 @@
   <!--</div>-->
 </div>
 
-<div class="col-md-10">
-  <ul class="nav nav-tabs nav-justified" id="myTab">
+<div class="col-md-10" id="rightcontent">
+  <ul class="nav nav-tabs" id="myTab">
     <li class="active"><a href="#society" data-toggle="tab">社团新闻</a></li>
     <li><a href="#school" data-toggle="tab">学校新闻</a></li>
     <li><a href="#global" data-toggle="tab">世界时事</a></li>
@@ -51,34 +58,35 @@
 </div>
 
 
+
 <div class="col-md-2" id="te">
-  <h3>新闻部落</h3>
+  <h3>活动专区</h3>
 </div>
 
-<div class="col-md-10">
-  <ul class="nav nav-tabs nav-justified" id="myTab">
-    <li class="active"><a href="#society" data-toggle="tab">社团新闻</a></li>
-    <li><a href="#school" data-toggle="tab">学校新闻</a></li>
-    <li><a href="#global" data-toggle="tab">世界时事</a></li>
+<div class="col-md-10" id="rightcontent">
+  <ul class="nav nav-tabs" id="myTab">
+    <li class="active"><a href="#society_activity" data-toggle="tab">社团活动</a></li>
+    <li><a href="#boutique" data-toggle="tab">精品活动</a></li>
+    <!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content" id="notinav">
-    <div class="tab-pane fade in active" id="society">
+    <div class="tab-pane fade in active" id="society_activity">
       <%=
           render "module/indexcell/cell1", :issues => @topnews
       %>
     </div>
-    <div class="tab-pane fade" id="school">
+    <div class="tab-pane fade" id="boutique">
       <%=
           render "module/indexcell/cell1", :issues => @topnews
       %>
     </div>
-    <div class="tab-pane fade" id="global">
+    <!--<div class="tab-pane fade" id="global">-->
       <%=
-          render "module/indexcell/cell1", :issues => @topnews
+          #render "module/indexcell/cell1", :issues => @topnews
       %>
-    </div>
+    <!--</div>-->
   </div>
 
 </div>
@@ -86,7 +94,7 @@
   <h3>新闻部落</h3>
 </div>
 
-<div class="col-md-10">
+<div class="col-md-10" id="rightcontent">
   <ul class="nav nav-tabs nav-justified" id="myTab">
     <li class="active"><a href="#society" data-toggle="tab">社团新闻</a></li>
     <li><a href="#school" data-toggle="tab">学校新闻</a></li>

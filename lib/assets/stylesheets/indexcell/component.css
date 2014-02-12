@@ -1,5 +1,5 @@
 .grid {
-	padding: 50px;
+	padding: 10px;
 	/*max-width: 1300px;*/
 	/*margin: 0 auto;*/
 	list-style: circle;
@@ -10,7 +10,7 @@
 .grid li {
 	display: inline-block;
 	width: 220px;
-	margin: 0;
+	margin: 20px;
 	padding: 10px;
 	text-align: left;
 	position: relative;
@@ -19,6 +19,8 @@
 .grid figure {
 	margin: 0;
 	position: relative;
+    max-height: 120px;
+    min-height: 120px;
 }
 
 .grid figure img {
@@ -31,7 +33,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 20px;
+	/*padding: 20px;*/
     padding-left: 20px;
     background: #2c3f52;
 	color: #ed4e6e;
