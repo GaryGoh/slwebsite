@@ -30,8 +30,8 @@ ActiveAdmin.register Society do
       f.input :department, :label => "所属中心"
       f.input :num_member, :label => "社团会员数"
       f.input :home_url
-      if !current_admin_user.admin_permission == "社团主席"
-      f.input :is_outstanding
+      if current_admin_user.admin_permission.to_s != "社团主席"
+      f.input :is_outstanding, :label => "是否属于优秀社团"
         end
     end
     f.actions
