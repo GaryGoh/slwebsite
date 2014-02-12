@@ -5,7 +5,12 @@
   <!--<link rel="stylesheet" type="text/css" href="css/default.css" />-->
 </head>
 
-<!--<div class="container demo-3">-->
+<style>
+    h4 {
+        text-align: center
+    }
+
+</style>
 
 <ul class="grid cs-style-3">
   <% issues.each do |i| %>
@@ -20,7 +25,7 @@
               %>
           <% else %>
               <!--<img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg">-->
-        <% end %>
+          <% end %>
 
 
           <%=
@@ -31,7 +36,7 @@
             <a class="col-xs-6 col-md-4" href="<%= shownews_url(i) %>">详细</a>
           </figcaption>
         </figure>
-        <h3><%= truncate(i.title, :length => 12) %></h3>
+        <h4><%= truncate(i.title, :length => 16) %></h4>
 
       </li>
   <% end %>

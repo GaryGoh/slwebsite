@@ -17,6 +17,8 @@ class StaticPageController < ApplicationController
     #@notifies = Issue.limit(5).find_by_category_id(3)
     #@topnews = Issue.limit(5).find_by_category_id(1)
     @topnews = Issue.where('category_id = 1').last(6).reverse
+    @normnews = Issue.where('category_id = 1').first(6).reverse
+
 
   end
 
