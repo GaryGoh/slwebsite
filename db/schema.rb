@@ -130,7 +130,7 @@ ActiveRecord::Schema.define(version: 20140114025809) do
   add_index "issues", ["category_id"], name: "index_issues_on_category_id"
   add_index "issues", ["society_id"], name: "index_issues_on_society_id"
 
-  create_table "item", force: true do |t|
+  create_table "items", force: true do |t|
     t.string   "item_name"
     t.string   "item_url"
     t.datetime "created_at"

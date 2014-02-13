@@ -128,12 +128,22 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/calender.css.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131231005033_add_column_issues.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131231022010_more_nots.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131231022319_create_notis.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131231022757_add_column_notis.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131231033913_chage_type.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140114024716_create_page_urls.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140114025308_change_page_url.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140114025538_rename_table.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140114025809_create_subitems.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/SimpleDropDown/fonts/license.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392290725967" ignored="false" />
+    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392296936842" ignored="false" />
     <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388456724544" ignored="false" />
     <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389992217874" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1390096093089" ignored="false" />
@@ -373,6 +383,8 @@
     <file path="/_footer_pub.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392209202927" ignored="false" />
     <file path="/_side_content.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392215103958" ignored="false" />
     <file path="/slcss.css" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392224525501" ignored="false" />
+    <file path="/20140213130949_renametable.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392297009102" ignored="false" />
+    <file path="/schema.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392297101876" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +421,7 @@
       <file leaf-file-name="_timeline.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/_timeline.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -427,16 +439,25 @@
       <file leaf-file-name="devise.zh-CN.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/locales/devise.zh-CN.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="277" column="17" selection-start="6109" selection-end="6109" vertical-scroll-proportion="-30.958334">
+            <state line="277" column="17" selection-start="6109" selection-end="6109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="39" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.45169386">
+            <state line="24" column="39" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="21" selection-start="4581" selection-end="4581" vertical-scroll-proportion="0.323219">
               <folding />
             </state>
           </provider>
@@ -460,8 +481,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_css1.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/module/_gallary.html.erb" />
@@ -476,6 +495,8 @@
         <option value="$PROJECT_DIR$/config/locales/devise.zh-CN.yml.html" />
         <option value="$PROJECT_DIR$/config/locales/devise.zh-CN.yml" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140213130949_renametable.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
       </list>
     </option>
   </component>
@@ -517,7 +538,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -547,24 +567,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1140,19 +1142,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jquery-fileupload" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1439,13 +1442,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33787662" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34289813" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1522,16 +1525,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/galleria.classic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="35" selection-start="2026" selection-end="2031" vertical-scroll-proportion="1.9852941" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_side_content.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="8" selection-end="423" vertical-scroll-proportion="0.02" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_css1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1602,14 +1595,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/devise.zh-CN.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="17" selection-start="6109" selection-end="6109" vertical-scroll-proportion="-30.958334">
+        <state line="277" column="17" selection-start="6109" selection-end="6109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="39" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.45169386">
+        <state line="24" column="39" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="21" selection-start="4581" selection-end="4581" vertical-scroll-proportion="0.323219">
           <folding />
         </state>
       </provider>
