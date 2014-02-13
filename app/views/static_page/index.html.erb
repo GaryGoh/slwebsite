@@ -27,9 +27,9 @@
         border-color: #eee;
         background: #fffffe;
         margin: 3% 0 2% 0;
-        min-height: 495px;
-        max-height: 495px;
-        overflow: auto;
+        min-height: 470px;
+        max-height: 470px;
+        /*overflow: auto;*/
         /*overflow-y: visible;*/
     }
 
@@ -38,95 +38,281 @@
     }
 
     #index_scet {
-        min-height: 495px;
-        max-height: 495px;
+        min-height: 480px;
+        max-height: 480px;
+    }
+
+    #right_constant {
+        min-height: 430px;
+        max-height: 430px;
+        overflow: auto;
+    }
+
+    #left_dynamic {
+        min-height: 430px;
+        max-height: 430px;
+        overflow: auto;
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 </style>
 
 
 <div class="col-md-12" id="index_scet">
-  <div class="col-md-2" id="te">
-    <h3>优秀社团</h3>
-    <ul class="nav nav-pills nav-stacked" id="society">
-      <% counter = true %>
-      <% @societies.each do |s| %>
-          <% if counter %>
-              <li class="active"><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
-              <% counter = false %>
-          <% else %>
-              <li><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
-          <% end %>
-      <% end %>
-    </ul>
-  </div>
-  <!-- Tab panes -->
-  <div class="col-md-10" id="rightcontent_so">
-    <div class="tab-content" id="notinav">
-
-      <% counter = true %>
-      <% @societies.each do |s| %>
-          <% if counter %>
-              <div class="tab-pane fade in active" id="<%= s.id %>">
-
-                <%=
-                    #render "module/indexcell/cell1", :issues => @normnews
-                    link_to s.society_name + "社团主页", societyshow_url(s)
-
-                %>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-                <p>主题</p>
-
-
-              </div>
-              <% counter = false %>
-          <% else %>
-              <div class="tab-pane fade in" id="<%= s.id %>">
-                <%=
-                    #render "module/indexcell/cell1", :issues => @normnews
-                    link_to s.society_name + "社团主页", societyshow_url(s)
-                %>
-              </div>
-          <% end %>
-      <% end %>
-    </div>
-  </div>
+<div class="col-md-2" id="te">
+  <h3>优秀社团</h3>
+  <ul class="nav nav-pills nav-stacked" id="society">
+    <% counter = true %>
+    <% @societies.each do |s| %>
+        <% if counter %>
+            <li class="active"><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
+            <% counter = false %>
+        <% else %>
+            <li><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
+        <% end %>
+    <% end %>
+  </ul>
 </div>
+<!-- Tab panes -->
+<div class="col-md-10" id="rightcontent_so">
+<div class="tab-content" id="notinav">
+
+<% counter = true %>
+<% @societies.each do |s| %>
+    <% if counter %>
+        <div class="tab-pane fade in active" id="<%= s.id %>">
+
+          <ul class="nav nav-pills nav-justified" id="society">
+            <li class="active"><a href="#<%= s.id %>_pro" data-toggle="tab">社团资料</a></li>
+            <li><a href="#<%= s.id %>_act" data-toggle="tab">精品活动</a></li>
+            <li><a href="#<%= s.id %>_his" data-toggle="tab">社团历史</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="col-md-6" id="left_dynamic">
+            <div class="tab-content" id="">
+              <div class="tab-pane fade in active" id="<%= s.id %>_pro">
+
+                <h3> 社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO</h3>
+
+                <h3> 社团介绍</h3>
+
+                <h3> 社团主席</h3>
+
+                <h3> 社团主页</h3>
+
+                <h3> 社团LOGO</h3>
+
+                <h3> 社团介绍</h3>
+
+                <h3> 社团主席</h3>
+
+                <h3> 社团主页</h3>
+
+                <h3> 社团LOGO</h3>
+
+                <h3> 社团介绍</h3>
+
+                <h3> 社团主席</h3>
+
+                <h3> 社团主页</h3>
+              </div>
+              <div class="tab-pane fade" id="<%= s.id %>_act">
+
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>活动主题</th>
+                    <th>开始时间</th>
+                    <th>活动人数</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  <% s.notis.reverse.each do |sn| %>
+                      <tr>
+                        <td>
+                          <%= link_to truncate(sn.title, :length => 14), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%= link_to sn.start_time.strftime("%F"), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%=
+                              #link_to sn.in_members, shownotis_url(sn)
+                          %>
+                          100
+                        </td>
+                        </td>
+                      </tr>
+                  <% end %>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="tab-pane fade" id="<%= s.id %>_his">
+                <h4>社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" id="right_constant">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>新闻标题</th>
+                <th>发布时间</th>
+                <th>浏览次数</th>
+                <th></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% s.issues.reverse.each do |sn| %>
+                  <tr>
+                    <td>
+                      <%= link_to truncate(sn.title, :length => 14), shownotis_url(sn) %>
+                    </td>
+                    <td>
+                      <%= link_to sn.created_at.strftime("%F"), shownotis_url(sn) %>
+                    </td>
+                    <td>
+                      <%=
+                          #link_to sn.in_members, shownotis_url(sn)
+                      %>
+                      coming up later
+                    </td>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <% counter = false %>
+    <% else %>
+        <div class="tab-pane fade in" id="<%= s.id %>">
+
+          <ul class="nav nav-pills nav-justified" id="society">
+            <li class="active"><a href="#<%= s.id %>_pro" data-toggle="tab">社团资料</a></li>
+            <li><a href="#<%= s.id %>_act" data-toggle="tab">精品活动</a></li>
+            <li><a href="#<%= s.id %>_his" data-toggle="tab">社团历史</a></li>
+          </ul>
+
+          <div class="col-md-6" id="left_dynamic">
+            <div class="tab-content" id="">
+              <div class="tab-pane fade in active" id="<%= s.id %>_pro">
+
+                <h3> 社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO社团LOGO</h3>
+
+                <h3> 社团介绍</h3>
+
+                <h3> 社团主席</h3>
+
+                <h3> 社团主页</h3>
+
+                <h3> 社团LOGO</h3>
+
+                <h3> 社团介绍</h3>
+
+                <h3> 社团主席</h3>
+
+                <h3> 社团主页</h3>
+
+                <h3> 社团LOGO</h3>
+
+                <h3> 社团介绍</h3>
+
+                <h3> 社团主席</h3>
+
+                <h3> 社团主页</h3>
+              </div>
+              <div class="tab-pane fade" id="<%= s.id %>_act">
+
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>活动主题</th>
+                    <th>开始时间</th>
+                    <th>活动人数</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  <% s.notis.reverse.each do |sn| %>
+                      <tr>
+                        <td>
+                          <%= link_to truncate(sn.title, :length => 14), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%= link_to sn.start_time.strftime("%F"), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%=
+                              #link_to sn.in_members, shownotis_url(sn)
+                          %>
+                          100
+                        </td>
+                        </td>
+                      </tr>
+                  <% end %>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="tab-pane fade" id="<%= s.id %>_his">
+                <h4>社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史社团历史</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" id="right_constant">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>新闻标题</th>
+                <th>发布时间</th>
+                <th>浏览次数</th>
+                <th></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% s.issues.reverse.each do |sn| %>
+                  <tr>
+                    <td>
+                      <%= link_to truncate(sn.title, :length => 14), shownotis_url(sn) %>
+                    </td>
+                    <td>
+                      <%= link_to sn.created_at.strftime("%F"), shownotis_url(sn) %>
+                    </td>
+                    <td>
+                      <%=
+                          #link_to sn.in_members, shownotis_url(sn)
+                      %>
+                      coming up later
+                    </td>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    <% end %>
+<% end %>
+</div>
+</div>
+</div>
+
+
 
 <div class="col-md-12" id="index_ns">
   <div class="col-md-2" id="te">
