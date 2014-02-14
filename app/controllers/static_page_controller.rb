@@ -20,7 +20,15 @@ class StaticPageController < ApplicationController
     @normnews = Issue.where('category_id = 1').first(6).reverse
     @societies = Society.where(:is_outstanding => true)
 
+    @issues = Issue.search(params[:search])
+    @issues_top = Issue.where('category_id = 1').last(6).reverse
+    @issues_society = Issue.where('category_id = 2').last(6).reverse
+    @issues_school = Issue.where('category_id = 3').last(6).reverse
 
+    @notis = Noti.search(params[:search])
+    @notis_activity = Issue.where('category_id = 11').last(6).reverse
+    @notis_info = Issue.where('category_id = 12').last(6).reverse
+    @notis_good = Issue.where('category_id = 13').last(6).reverse
   end
 
 

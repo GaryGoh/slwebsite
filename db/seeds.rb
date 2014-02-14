@@ -27,81 +27,81 @@ AdminUser.create([
 
 
 Item.create([
-                   {
-                       :item_name => "社联主页",
-                       :item_url => "root_url"
-                   },
-                   {
-                       :item_name => "站内导航",
-                       :item_url => "#"
-                   },
-                   {
-                       :item_name => "社团中心",
-                       :item_url => "#"
-                   },
-                   {
-                       :item_name => "用户中心",
-                       :item_url => "#"
-                   }
-
-               ])
-
-
-Subitem.create([
                 {
-                    :subitem_name => "新闻部落",
-                    :subitem_url => "news_url"
+                    :item_name => "社联主页",
+                    :item_url => "root_url"
                 },
                 {
-                    :subitem_name => "活动通知",
-                    :subitem_url => "notics_url"
+                    :item_name => "站内导航",
+                    :item_url => "#"
                 },
                 {
-                    :subitem_name => "FAQ",
-                    :subitem_url => "faq_url"
+                    :item_name => "社团中心",
+                    :item_url => "#"
                 },
                 {
-                    :subitem_name => "资料下载",
-                    :subitem_url => "download_url"
-                },
-                {
-                    :subitem_name => "社联介绍",
-                    :subitem_url => "slmember_url"
-                },
-                {
-                    :subitem_name => "公益实践中心",
-                    :subitem_url => "gy_url"
-                },
-                {
-                    :subitem_name => "文娱兴趣中心",
-                    :subitem_url => "wy_url"
-                },
-                {
-                    :subitem_name => "体育竞技中心",
-                    :subitem_url => "ty_url"
-                },
-                {
-                    :subitem_name => "学术科技中心",
-                    :subitem_url => "xs_url"
-                },
-                {
-                    :subitem_name => "登录",
-                    :subitem_url => "signin_url"
-                },
-                {
-                    :subitem_name => "注册",
-                    :subitem_url => "signup_url"
-                },
-                {
-                    :subitem_name => "登出",
-                    :subitem_url => "signout_url"
-                },
-                {
-                    :subitem_name => "学术科技中心",
-                    :subitem_url => "xs_url"
+                    :item_name => "用户中心",
+                    :item_url => "#"
                 }
 
             ])
+
+
+Subitem.create([
+                   {
+                       :subitem_name => "新闻部落",
+                       :subitem_url => "news_url"
+                   },
+                   {
+                       :subitem_name => "活动通知",
+                       :subitem_url => "notics_url"
+                   },
+                   {
+                       :subitem_name => "FAQ",
+                       :subitem_url => "faq_url"
+                   },
+                   {
+                       :subitem_name => "资料下载",
+                       :subitem_url => "download_url"
+                   },
+                   {
+                       :subitem_name => "社联介绍",
+                       :subitem_url => "slmember_url"
+                   },
+                   {
+                       :subitem_name => "公益实践中心",
+                       :subitem_url => "gy_url"
+                   },
+                   {
+                       :subitem_name => "文娱兴趣中心",
+                       :subitem_url => "wy_url"
+                   },
+                   {
+                       :subitem_name => "体育竞技中心",
+                       :subitem_url => "ty_url"
+                   },
+                   {
+                       :subitem_name => "学术科技中心",
+                       :subitem_url => "xs_url"
+                   },
+                   {
+                       :subitem_name => "登录",
+                       :subitem_url => "signin_url"
+                   },
+                   {
+                       :subitem_name => "注册",
+                       :subitem_url => "signup_url"
+                   },
+                   {
+                       :subitem_name => "登出",
+                       :subitem_url => "signout_url"
+                   },
+                   {
+                       :subitem_name => "学术科技中心",
+                       :subitem_url => "xs_url"
+                   }
+
+               ])
 
 Society.create([
                    {
@@ -383,61 +383,88 @@ Society.create([
                ])
 
 Gender.create([
-                {
-                    :gender_name => "男",
-                },
-                {
-                    :gender_name => "女",
-                },
-                {
-                    :gender_name => "其他",
-                }
-            ])
+                  {
+                      :gender_name => "男",
+                  },
+                  {
+                      :gender_name => "女",
+                  },
+                  {
+                      :gender_name => "其他",
+                  }
+              ])
 
 SlDepartment.create([
-                  {
-                      :sl_dep_name => "主席团",
-                  },
-                  {
-                      :sl_dep_name => "公益实践中心",
-                  },
-                  {
-                      :sl_dep_name => "文娱兴趣中心",
-                  },
-                  {
-                      :sl_dep_name => "科技实践中心",
-                  },
-                  {
-                      :sl_dep_name => "体育竞技中心",
-                  },
-                  {
-                      :sl_dep_name => "外联部",
-                  },
-                  {
-                      :sl_dep_name => "财务部",
-                  },
-                  {
-                      :sl_dep_name => "网络部",
-                  },
-                  {
-                      :sl_dep_name => "办公室",
-                  },
-                  {
-                      :sl_dep_name => "新闻部",
-                  }
-              ])
+                        {
+                            :sl_dep_name => "主席团",
+                        },
+                        {
+                            :sl_dep_name => "公益实践中心",
+                        },
+                        {
+                            :sl_dep_name => "文娱兴趣中心",
+                        },
+                        {
+                            :sl_dep_name => "科技实践中心",
+                        },
+                        {
+                            :sl_dep_name => "体育竞技中心",
+                        },
+                        {
+                            :sl_dep_name => "外联部",
+                        },
+                        {
+                            :sl_dep_name => "财务部",
+                        },
+                        {
+                            :sl_dep_name => "网络部",
+                        },
+                        {
+                            :sl_dep_name => "办公室",
+                        },
+                        {
+                            :sl_dep_name => "新闻部",
+                        }
+                    ])
 
 Department.create([
-                  {
-                      :dep_name => "公益实践中心",
-                  },
-                  {
-                      :dep_name => "文娱兴趣中心",
-                  },
-                  {
-                      :dep_name => "科技实践中心",
-                  },
-                  {
-                      :dep_name => "体育竞技中心",
-                  }
-              ])
+                      {
+                          :dep_name => "公益实践中心",
+                      },
+                      {
+                          :dep_name => "文娱兴趣中心",
+                      },
+                      {
+                          :dep_name => "科技实践中心",
+                      },
+                      {
+                          :dep_name => "体育竞技中心",
+                      }
+                  ])
+
+Category.create([
+                    {
+                        :category_name => "顶置新闻",
+                        :id => 1
+                    },
+                    {
+                        :category_name => "社团新闻",
+                        :id => 2
+                    },
+                    {
+                        :category_name => "学校新闻",
+                        :id => 3
+                    },
+                    {
+                        :category_name => "活动通知",
+                        :id => 11
+                    },
+                    {
+                        :category_name => "公告通知",
+                        :id => 12
+                    },
+                    {
+                        :category_name => "精品活动",
+                        :id => 13
+                    }
+                ])

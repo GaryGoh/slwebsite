@@ -1,11 +1,8 @@
-
-
-
 <%= javascript_include_tag "tin" %>
 
 <script>
     tinymce.init({
-        selector:'textarea',
+        selector: 'textarea',
         plugins: "image link spellchecker charmap media table autosave searchreplace visualblocks textcolor visualchars insertdatetime",
         link_list: [
             {title: '桂电主页', value: 'http://www.guet.cn'},
@@ -13,9 +10,9 @@
         ],
         tools: "inserttable searchreplace visualchars insertdate",
         insertdatetime_formats: ["%Y.%m.%d", "%H:%M"],
-        language : 'zh_CN',
-        browser_spellcheck : true,
-        statusbar : false
+        language: 'zh_CN',
+        browser_spellcheck: true,
+        statusbar: false
 
     });
 </script>
@@ -27,7 +24,7 @@
     <% if @issue.errors.any? %>
         <div id="error_explanation">
           <div class="alert alert-warning">
-            <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2></div>
+            <h2>以下<%= pluralize(@issue.errors.count, "") %> 项不合法操作导致提交失败:</h2></div>
           <ul>
             <% @issue.errors.full_messages.each do |msg| %>
 
@@ -88,8 +85,10 @@
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">新闻类型</label>
-            <%= f.select :category_id, Category.where("id <> 3").collect { |s|
-              [(s.category_name), s.id] } %>
+            <%= f.select :category_id,
+                         Category.where('id = 2 OR id = 3').collect { |s|
+                           [(s.category_name), s.id] }
+            %>
 
             <div class="col-sm-10">
 

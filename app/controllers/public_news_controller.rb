@@ -3,12 +3,15 @@ class PublicNewsController < ApplicationController
 
 
   def allnews
-    @issues = Issue.where('category_id = 1' || 'category_id = 2').search(params[:search])
+    @issues = Issue.search(params[:search])
+    @issues_top = Issue.where('category_id = 1').search(params[:search])
+    @issues_society = Issue.where('category_id = 2').search(params[:search])
+    @issues_school = Issue.where('category_id = 3').search(params[:search])
   end
 
   def shownews
     @issue = Issue.find(params[:id])
-    @issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
+    #@issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
   end
 
   def shownotis
@@ -16,7 +19,7 @@ class PublicNewsController < ApplicationController
   end
 
   def readmode
-    @issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
+    @issues = Issue.all.reverse
   end
 
   def notifies

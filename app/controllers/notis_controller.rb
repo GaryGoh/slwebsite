@@ -7,7 +7,10 @@ class NotisController < InheritedResources::Base
   # GET /notis
   # GET /notis.json
   def index
-    @notis = @user.notis
+    @notis_info = @user.notis.where(:id => 12).reverse
+    @notis_activity = @user.notis.where(:id => 11).reverse
+    @notis_good = @user.notis.where(:id => 13).reverse
+
   end
 
 
