@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
 
 
   def set_gloable
-    @notifies = Noti.last(8).reverse.map
-    @topnews = Issue.where('category_id = 1').last(4).reverse
+    #@notis = Issue.where(:category_id => 12).reverse
+    #@topnews = Issue.where(:category_id => 1).last(4).reverse
   end
 end
