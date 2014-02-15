@@ -27,7 +27,7 @@ class StaticPageController < ApplicationController
 
     @notis = Noti.search(params[:search])
     @notis_activity = Noti.where(:category_id => 11).last(6).reverse
-    @notis_info = Noti.where(:category_id => 12).last(6).reverse
+    #@notis_info = Noti.where(:category_id => 12).last(6).reverse
     @notis_good = Noti.where(:category_id => 13).last(6).reverse
   end
 
