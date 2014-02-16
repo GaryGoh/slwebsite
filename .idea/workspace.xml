@@ -130,8 +130,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fullcalendar/fullcalendar.print.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/SimpleDropDown/fonts/license.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_side_content.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_side_content.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
@@ -157,7 +156,7 @@
     <file path="/20131110133335_add_usrid.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384090436805" ignored="false" />
     <file path="/application_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392463200377" ignored="false" />
     <file path="/application_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392086260278" ignored="false" />
-    <file path="/application.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392215273404" ignored="false" />
+    <file path="/application.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392521373306" ignored="false" />
     <file path="/sessions_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386938004539" ignored="false" />
     <file path="$USER_HOME$/slwebsite_bug1/app/views/layouts/_header.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384098126789" ignored="false" />
     <file path="/_access_error.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392155226025" ignored="false" />
@@ -374,7 +373,7 @@
     <file path="/book2.css" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392167550989" ignored="false" />
     <file path="/_cell1.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392208858190" ignored="false" />
     <file path="/_footer_pub.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392209202927" ignored="false" />
-    <file path="/_side_content.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392520831744" ignored="false" />
+    <file path="/_side_content.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392521818171" ignored="false" />
     <file path="/slcss.css" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392520493726" ignored="false" />
     <file path="/20140213130949_renametable.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392297009102" ignored="false" />
     <file path="/schema.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392297101876" ignored="false" />
@@ -403,10 +402,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="53" selection-start="1853" selection-end="1853" vertical-scroll-proportion="-17.5">
+            <state line="47" column="24" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.20833333">
               <folding />
             </state>
           </provider>
@@ -415,7 +423,7 @@
       <file leaf-file-name="_side_content.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_side_content.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="23" selection-start="578" selection-end="578" vertical-scroll-proportion="0.18523677">
+            <state line="27" column="22" selection-start="576" selection-end="576" vertical-scroll-proportion="0.5640668">
               <folding />
             </state>
           </provider>
@@ -460,9 +468,9 @@
         <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/slcss.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_side_content.html.erb" />
       </list>
     </option>
@@ -1219,13 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="411" column="50" selection-start="12969" selection-end="12969" vertical-scroll-proportion="0.3604651">
@@ -1308,13 +1309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="53" selection-start="1853" selection-end="1853" vertical-scroll-proportion="-17.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/slcss.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="21" selection-start="1174" selection-end="1175" vertical-scroll-proportion="0.0">
@@ -1322,9 +1316,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="24" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.20833333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_side_content.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="578" selection-end="578" vertical-scroll-proportion="0.18523677">
+        <state line="27" column="22" selection-start="576" selection-end="576" vertical-scroll-proportion="0.5640668">
           <folding />
         </state>
       </provider>
