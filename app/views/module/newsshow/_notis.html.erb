@@ -42,8 +42,8 @@
 
 <link href='../fullcalendar/fullcalendar.css' rel='stylesheet'/>
 <link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print'/>
-<script src='../fullcalendar/jquery.min.js'></script>
-<script src='../fullcalendar/jquery-ui.custom.min.js'></script>
+<!--<script src='../fullcalendar/jquery.min.js'></script>-->
+<!--<script src='../fullcalendar/jquery-ui.custom.min.js'></script>-->
 <script src='../fullcalendar/fullcalendar.min.js'></script>
 
 
@@ -138,8 +138,8 @@
             defaultView: "agendaWeek",
             theme: false,
             editable: false,
-//            minTime: 0,
-//            maxTime: 24,
+            minTime: 6,
+            maxTime: 24,
             events: [
                 {
                     title: "Title: <%= noti.title%>",
