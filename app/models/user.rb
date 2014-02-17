@@ -3,10 +3,16 @@ class User < ActiveRecord::Base
   has_many :notis, :dependent => :destroy
   has_many :user_societies, :dependent => :destroy
   has_many :societies, :through => :user_societies
+
+  has_one :timetable, :dependent => :destroy
+
+  #has_many :user_notis, :dependent => :destroy
+  #has_many :notis, :through => :user_notis
   #belongs_to :user_society
   #has_many :societies_as_owner, :class_name => "Society"
 
   accepts_nested_attributes_for :user_societies, allow_destroy: true
+  #accepts_nested_attributes_for :user_notis, allow_destroy: true
   #accepts_nested_attributes_for :societies
 
 

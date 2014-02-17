@@ -2,6 +2,9 @@ class Noti < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
   belongs_to :society
+  belongs_to :timetable
+
+  has_one :noti_attend, :dependent => :destroy
 
   validates :title, presence: true
   validates :content, presence: true

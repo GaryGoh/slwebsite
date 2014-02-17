@@ -1,0 +1,120 @@
+<!--用户资料-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      用户资料
+    </h4>
+  </div>
+  <div class="panel-body">
+    <!-- Table -->
+    <table class="table">
+      <thead>
+      <tr>
+        <th></th>
+        <th></th>
+
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+
+        <td><strong>学号: </strong></td>
+        <td><%= @user.stuid %></td>
+      </tr>
+      <tr>
+        <td><strong>Email:</strong></td>
+        <td><%= @user.email %></td>
+      </tr>
+      <tr>
+        <td><strong>姓名: </strong></td>
+        <td><%= @user.name %></td>
+      </tr>
+      <tr>
+        <td><strong>性别: </strong></td>
+        <td><%= @user.gender.to_s %></td>
+      </tr>
+      <tr>
+        <td><strong>联系方式: </strong></td>
+        <td><%= @user.contact %></td>
+      </tr>
+      <tr>
+        <td><strong>加入社团数: </strong></td>
+        <td><%= @user.user_societies.count %></td>
+      </tr>
+
+      <tr>
+        <td><strong>照片: </strong></td>
+        <% if @user.avatar_file_name.nil? %>
+            <td>
+              <div class="text-danger">暂无照片</div>
+            </td>
+        <% else %>
+            <td><%= image_tag @user.avatar.url(:thumb) %></td>
+        <% end %>
+      </tr>
+
+      <tr>
+        <td><strong>个人简介:</strong></td>
+        <td>
+          <pre id="user_pre"><%= @user.proverb %></pre>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--所属社团-->
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      所属社团
+    </h4>
+  </div>
+  <% if (@user.user_societies) && (@user.user_societies.count > 0) %>
+      <div class="panel-body">
+        <table class="table">
+          <th>
+            所属中心
+          </th>
+          <th>
+            社团名字
+          </th>
+          <th>
+            加入时间
+          </th>
+
+          <tbody>
+          <% @user.user_societies.reverse.each do |s| %>
+              <tr>
+                <td>
+                  <!--# need to update link when finished society views-->
+                  <% case s.society.department.to_s %>
+                  <% when "公益实践中心" %>
+                      <%= link_to s.society.department.to_s, gy_url %>
+                  <% when "文娱兴趣中心" %>
+                      <%= link_to s.society.department.to_s, wy_url %>
+                  <% when "体育竞技中心" %>
+                      <%= link_to s.society.department.to_s, ty_url %>
+                  <% when "学术科技中心" %>
+                      <%= link_to s.society.department.to_s, xs_url %>
+                  <% end %>
+                </td>
+                <td>
+                  <!--# need to update link when finished society views-->
+
+
+                  <%= link_to s.society, societyshow_path(s.society.id) %>
+                </td>
+                <td>
+                  <%= s.created_at.strftime("%F") %>
+                </td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+  <% else %>
+      <h3>尚未加入社团</h3>
+  <% end %>
+
+</div>
