@@ -142,7 +142,7 @@
             maxTime: 24,
             events: [
                 {
-                    title: "Title: <%= noti.title%>",
+                    title: "<%= noti.title%>",
                     start: new Date(<%= noti.start_time.to_i * 1000 %>),
                     end: new Date(<%= noti.end_time.to_i * 1000%>),
                     allDay: false

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_filter :check_login , only: [:index, :show, :edit, :update, :destroy]
+  before_filter :check_login, only: [:index, :show, :edit, :update, :destroy]
   layout "signinup", only: [:new]
 
   # GET /users
@@ -30,6 +30,7 @@ class UsersController < ApplicationController
   def create
     #$login = true
     @user = User.new(user_params)
+    @timetable = Timetable.new(timetable_params)
 
     respond_to do |format|
       if @user.save
@@ -80,5 +81,9 @@ class UsersController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
     params.require(:user).permit(:stuid, :email, :password, :password_confirmation, :name, :gender_id, :contact, :society_id, :proverb, :avatar)
+  end
+
+  def timetable_params
+    params.require(:timetable).permit(:user_id, :start_time, :end_time)
   end
 end

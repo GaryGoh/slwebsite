@@ -1,0 +1,21 @@
+<style xmlns="http://www.w3.org/1999/html">
+    #index_activity {
+        min-height: 150px;
+        max-height: 150px;
+    }
+</style>
+
+<% notis.each do |i| %>
+    <div class="col-6 col-sm-6 col-lg-4" id="index_activity">
+      <h4><%= truncate(i.title, :length => 16) %></h4>
+
+      <p>
+        <small><%= truncate(i.content, :length => 46) %></small>
+      </p>
+      <% if i.content.length <= 24 %>
+          </br>
+      <% end %>
+
+      <p><a class="btn btn-block btn-primary" href="<%= shownotis_url(i) %>">详细</a></p>
+    </div><!--/span-->
+<% end %>
