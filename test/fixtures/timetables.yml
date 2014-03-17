@@ -4,8 +4,14 @@ one:
   user_id: 1
   start_time: MyString
   end_time: MyString
+  title: MyString
+  content: MyString
+  location: MyString
 
 two:
   user_id: 1
   start_time: MyString
   end_time: MyString
+  title: MyString
+  content: MyString
+  location: MyString

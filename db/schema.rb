@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140217213054) do
+ActiveRecord::Schema.define(version: 20140218230517) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -218,6 +218,9 @@ ActiveRecord::Schema.define(version: 20140217213054) do
     t.integer  "user_id"
     t.string   "start_time"
     t.string   "end_time"
+    t.string   "title"
+    t.string   "content"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
