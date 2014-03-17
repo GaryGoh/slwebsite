@@ -50,6 +50,7 @@ class User < ActiveRecord::Base
   validates :stuid, presence: true,
             format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
             uniqueness: {case_sensitive: false}
+  validate :alo_society
 
   # if needs to validate by legal student id then add following
   #validate :member_id_exists
@@ -62,6 +63,11 @@ class User < ActiveRecord::Base
   #def check_signin?
   #  $user_login
   #end
+
+  private
+  def alo_society
+    errors.add_to_base("请先加入社团，再发布新闻") unless UserSociety.count <= 0
+  end
 
   private
   def member_id_exists

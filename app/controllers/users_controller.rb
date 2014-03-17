@@ -30,7 +30,7 @@ class UsersController < ApplicationController
   def create
     #$login = true
     @user = User.new(user_params)
-    @timetable = Timetable.new(timetable_params)
+    #@timetable = Timetable.new(timetable_params)
 
     respond_to do |format|
       if @user.save
@@ -83,7 +83,9 @@ class UsersController < ApplicationController
     params.require(:user).permit(:stuid, :email, :password, :password_confirmation, :name, :gender_id, :contact, :society_id, :proverb, :avatar)
   end
 
-  def timetable_params
-    params.require(:timetable).permit(:user_id, :start_time, :end_time)
-  end
+
+  # For future development, so far just need to be ignored
+  #def timetable_params
+  #  params.require(:timetable).permit(:user_id, :start_time, :end_time)
+  #end
 end
