@@ -39,7 +39,7 @@
     }
 
     #index_scet {
-        min-height: 480px;
+        /*min-height: 480px;*/
         max-height: 480px;
     }
 
@@ -50,7 +50,7 @@
     }
 
     #left_dynamic {
-        min-height: 430px;
+        /*min-height: 430px;*/
         max-height: 430px;
         overflow: auto;
     }
@@ -59,6 +59,45 @@
         text-decoration: none;
     }
 </style>
+
+
+
+
+<div class="col-md-12" id="index_ns">
+  <div class="col-md-2" id="te">
+    <!--<div class="panel">-->
+    <h3>新闻部落</h3>
+    <!--</div>-->
+  </div>
+
+  <div class="col-md-10" id="rightcontent">
+    <ul class="nav nav-tabs" id="myTab">
+      <li class="active"><a href="#isociety" data-toggle="tab">社团新闻</a></li>
+      <li><a href="#school" data-toggle="tab">学校新闻</a></li>
+      <li><a href="#global" data-toggle="tab">世界时事</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="notinav">
+      <div class="tab-pane fade in active" id="isociety">
+        <%=
+            render "module/indexcell/cell1", :issues => @issues_society
+        %>
+      </div>
+      <div class="tab-pane fade" id="school">
+        <%=
+            render "module/indexcell/cell1", :issues => @issues_school
+        %>
+      </div>
+      <div class="tab-pane fade" id="global">
+        <%=
+            render "module/indexcell/cell1", :issues => @issues_global
+        %>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 <div class="col-md-12" id="index_scet">
@@ -286,41 +325,6 @@
 </div>
 
 
-<div class="col-md-12" id="index_ns">
-  <div class="col-md-2" id="te">
-    <!--<div class="panel">-->
-    <h3>新闻部落</h3>
-    <!--</div>-->
-  </div>
-
-  <div class="col-md-10" id="rightcontent">
-    <ul class="nav nav-tabs" id="myTab">
-      <li class="active"><a href="#isociety" data-toggle="tab">社团新闻</a></li>
-      <li><a href="#school" data-toggle="tab">学校新闻</a></li>
-      <li><a href="#global" data-toggle="tab">世界时事</a></li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content" id="notinav">
-      <div class="tab-pane fade in active" id="isociety">
-        <%=
-            render "module/indexcell/cell1", :issues => @issues_society
-        %>
-      </div>
-      <div class="tab-pane fade" id="school">
-        <%=
-            render "module/indexcell/cell1", :issues => @issues_school
-        %>
-      </div>
-      <div class="tab-pane fade" id="global">
-        <%=
-            render "module/indexcell/cell1", :issues => @issues_global
-        %>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 <div class="col-md-12" id="index_atvt">
   <div class="col-md-2" id="te">
