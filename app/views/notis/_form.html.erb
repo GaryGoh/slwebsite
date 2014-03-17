@@ -4,11 +4,11 @@
           <div class="alert alert-warning">
             <h2>以下<%= pluralize(@noti.errors.count, "") %> 项不合法操作导致提交失败:</h2></div>
           <ul>
-            <% @noti.errors.full_messages.each do |msg| %>
+            <% @noti.errors.messages.values.each do |msg| %>
+                <% msg.each do |m| %>
+                      <li class="alert alert-danger"><%= m %></li>
+                <% end %>
 
-                <li>
-                  <div class="alert alert-danger"><%= msg %></div>
-                </li>
             <% end %>
           </ul>
         </div>

@@ -45,33 +45,29 @@ class User < ActiveRecord::Base
 
 
   validates :email, presence: true,
-            format: {with: VALID_EMAIL_REGEX, :message => "请输入正确的email格式"},
-            uniqueness: {case_sensitive: false}
+            format: {with: VALID_EMAIL_REGEX, :message => "请输入正确的email"},
+            uniqueness: {case_sensitive: false, :message => "此email已经被注册"}
   validates :stuid, presence: true,
             format: {with: VALID_STUID_REGEX, :multiline => true, :message => "请输入正确的Student ID格式"},
-            uniqueness: {case_sensitive: false}
-  validate :alo_society
+            uniqueness: {case_sensitive: false, :message => "此学号已经被注册"}, on: :create
 
   # if needs to validate by legal student id then add following
-  #validate :member_id_exists
+  validate :member_id_exists, on: :create
 
-  #unless $user_login
-  #  validates :password, length: {in: 6..20, :message => "密码长度在6 - 20 之间"}
-  #end
-
-  #
-  #def check_signin?
-  #  $user_login
-  #end
-
-  private
-  def alo_society
-    errors.add_to_base("请先加入社团，再发布新闻") unless UserSociety.count <= 0
+  unless $user_login
+    validates :password,
+              length: {in: 6..20, :message => "密码长度在6 - 20 之间"}, on: :create
   end
+
+
+  def check_signin?
+    $user_login
+  end
+
 
   private
   def member_id_exists
-    errors.add(:stuid, " 此学号不能注册社联网站") unless Member.exists?(:memid => self.stuid)
+    errors.add(:stuid, "此学号不能注册社联网站") unless Member.exists?(:memid => self.stuid)
   end
 
   #def member_id_exists

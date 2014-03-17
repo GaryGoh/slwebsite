@@ -31,11 +31,10 @@
           <div class="alert alert-warning">
             <h2>以下<%= pluralize(@issue.errors.count, "") %> 项不合法操作导致提交失败:</h2></div>
           <ul>
-            <% @issue.errors.full_messages.each do |msg| %>
-
-                <li>
-                  <div class="alert alert-danger"><%= msg %></div>
-                </li>
+            <% @issue.errors.messages.values.each do |msg| %>
+                <% msg.each do |m| %>
+                    <li class="alert alert-danger"><%= m %></li>
+                <% end %>
             <% end %>
           </ul>
         </div>
@@ -111,7 +110,9 @@
 
                 <div class="controls">
                   <%= f.fields_for :issue_images do |fm| %>
-                      <% if fm.object.new_record? %>
+                      <%
+                         if fm.object.new_record?
+                      %>
                           <p>
                             <%= fm.file_field :issue_pic %>
                           </p>

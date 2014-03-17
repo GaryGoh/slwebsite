@@ -1,11 +1,13 @@
 <% if @user.errors.any? %>
     <div id="error_explanation">
-      <div class="alert alert-danger">
-        The form contains <%= pluralize(@user.errors.count, "error") %>.
+      <div class="alert alert-warning">
+        有以下 <%= pluralize(@user.errors.count, "") %> 项错误 .
       </div>
       <ul>
-        <% @user.errors.full_messages.each do |msg| %>
-            <li>* <%= msg %></li>
+        <% @user.errors.messages.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li class="alert alert-danger"><%= m %></li>
+            <% end %>
         <% end %>
       </ul>
     </div>

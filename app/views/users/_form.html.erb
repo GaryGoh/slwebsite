@@ -1,8 +1,10 @@
 <%= form_for(@user) do |f| %>
     <% if @user.errors.any? %>
         <div id="error_explanation">
-          <% @user.errors.full_messages.each do |msg| %>
-              <div class="alert alert-warning"><%= msg %></div>
+          <% @user.errors.messages.values.each do |msg| %>
+              <% msg.each do |m| %>
+                  <li class="alert alert-warning"><%= m %></li>
+              <% end %>
           <% end %>
           </ul>
         </div>
@@ -50,13 +52,13 @@
 
 
         <!--<div class="control-group">-->
-          <!--<label class="control-label" for="Department">部门</label>-->
-          <!--<div class="controls">-->
-            <%=
-                #@user.user_societies :id, Society.find(:all).collect { |s|
-              #[(s.society_name), s.id] }
-            %>
-          <!--</div>-->
+        <!--<label class="control-label" for="Department">部门</label>-->
+        <!--<div class="controls">-->
+        <%=
+            #@user.user_societies :id, Society.find(:all).collect { |s|
+            #[(s.society_name), s.id] }
+        %>
+        <!--</div>-->
         <!--</div>-->
 
         <div class="control-group">
