@@ -30,6 +30,7 @@ class UsersController < ApplicationController
   def create
     #$login = true
     @user = User.new(user_params)
+    @timetable = Timetable.new(timetable_params)
 
     respond_to do |format|
       if @user.save

@@ -16,10 +16,6 @@ class PublicNewsController < ApplicationController
 
   def shownotis
     @noti = Noti.find(params[:id])
-
-    @user = User.find(params[:user_id])
-    @timetable = @user.timetable.build
-
   end
 
   def readmode
@@ -33,13 +29,5 @@ class PublicNewsController < ApplicationController
 
   def indexnotic
     @noti = Noti.find(params[:id])
-  end
-
-  def create
-     @timetable = @user.Timetable.build(issue_params)
-  end
-
-  def timetable_params
-    params.require(:timetable).permit(:user_id, :start_time, :end_time, :title, :content, :location)
   end
 end
