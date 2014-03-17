@@ -16,12 +16,12 @@
         transition: height 0.3s;
     }
 
-     #index_carousel{
-         height: 400px;
-         overflow: hidden;
-         padding-top: 20px;
-         padding-bottom: 20px;
-     }
+    #index_carousel {
+        height: 400px;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
 </style>
 
@@ -90,31 +90,24 @@
 
 
 <header class="masthead" id="pageHead">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <%=
-            #render "module/clock"
-        %>
-        <table class="table">
-          <thead>
-          <tr>
-            <th><%= render "module/DropDown/drop3" %></th>
-            <th><%= render "module/DropDown/drop5" %></th>
-            <th><%= render "module/DropDown/drop6" %></th>
+  <div class="row">
+    <div class="col-md-12">
+      <!--<img src="images/home/logo.jpg" width="1140" height="180">-->
 
-          </tr>
-          </thead>
-        </table>
-      </div>
+      <%=
+          render "layouts/horizontalHeader"
+      %>
+
     </div>
-    <img src="images/home/logo.jpg" width="1140" height="180">
+  </div>
+  <div class="container">
 
-      <div class="col-md-12" id="index_carousel">
-        <%=
-            render "module/carousel", :issues => @issues_top
-        %>
-      </div>
+
+    <div class="col-md-12" id="index_carousel">
+      <%=
+          render "module/carousel", :issues => @issues_top
+      %>
+    </div>
   </div>
 </header>
 

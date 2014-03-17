@@ -25,6 +25,12 @@ class ApplicationController < ActionController::Base
 
   def set_gloable
     @notis_info = Noti.where(:category_id => 12).reverse
+    @societies = Society.where(:is_outstanding => true)
+    @societies_gy = @societies.where(:department_id => 1)
+    @societies_wy = @societies.where(:department_id => 2)
+    @societies_xs = @societies.where(:department_id => 3)
+    @societies_ty = @societies.where(:department_id => 4)
+
     #@topnews = Issue.where(:category_id => 1).last(4).reverse
   end
 end
