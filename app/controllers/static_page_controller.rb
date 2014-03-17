@@ -21,9 +21,10 @@ class StaticPageController < ApplicationController
     @societies = Society.where(:is_outstanding => true)
 
     @issues = Issue.search(params[:search])
-    @issues_top = Issue.where(:category_id => 1).last(6).reverse
-    @issues_society = Issue.where(:category_id => 2).last(6).reverse
-    @issues_school = Issue.where(:category_id => 3).last(6).reverse
+    @issues_top = Issue.joins(:category).where(:categories => {:category_name => "顶置新闻"}).last(6).reverse
+    @issues_society = Issue.joins(:category).where(:categories => {:category_name => "社团新闻"}).last(6).reverse
+    @issues_school = Issue.joins(:category).where(:categories => {:category_name => "学校新闻"}).last(6).reverse
+    @issues_global = Issue.joins(:category).where(:categories => {:category_name => "世界时事"}).last(6).reverse
 
     @notis = Noti.search(params[:search])
     @notis_activity = Noti.where(:category_id => 11).last(6).reverse

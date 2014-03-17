@@ -15,7 +15,7 @@
           <li><a href="#admin_activity" data-toggle="tab">发布的活动</a></li>
           <li><a href="#admin_timetable" data-toggle="tab">日程表</a></li>
           <li><a href="#admin_society" data-toggle="tab">社团资料</a></li>
-          <li><a href="#admin_comment" data-toggle="tab">新闻评论</a></li>
+          <!--<li><a href="#admin_comment" data-toggle="tab">新闻评论</a></li>-->
           <!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
         </ul>
 
@@ -40,20 +40,22 @@
           </div>
 
           <div class="tab-pane fade" id="admin_timetable">
+            <div class="alert alert-warning">日程表功能未正式开放，此日程表为demo</div>
             <%=
-                render "module/user_admin/rendernews"
+                render "module/user_admin/timetable"
             %>
           </div>
 
           <div class="tab-pane fade" id="admin_society">
+            <div class="alert alert-warning">所属社团资料板块未正式开放，此板块为demo</div>
             <%=
-                render "module/user_admin/rendernews"
+                render "module/user_admin/affiliateSociety", :user => @user
             %>
           </div>
 
           <div class="tab-pane fade" id="admin_comment">
             <%=
-                render "module/user_admin/rendernews"
+                #render "module/user_admin/rendernews"
             %>
           </div>
 
@@ -73,7 +75,8 @@
 <% else %>
     <%= render "static_page/access_error", :notice => "用户错误" %>
 <% end %>
- </div>
+</div>
+
 
 
 

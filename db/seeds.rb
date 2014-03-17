@@ -456,6 +456,10 @@ Category.create([
                         :id => 3
                     },
                     {
+                        :category_name => "世界时事",
+                        :id => 4
+                    },
+                    {
                         :category_name => "活动通知",
                         :id => 11
                     },

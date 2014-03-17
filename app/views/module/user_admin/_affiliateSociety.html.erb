@@ -1,0 +1,54 @@
+<div class="panel panel-default">
+
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      所属社团
+    </h4>
+  </div>
+  <% if (user.user_societies) && (user.user_societies.count > 0) %>
+      <div class="panel-body">
+        <table class="table">
+          <th>
+            所属中心
+          </th>
+          <th>
+            社团名字
+          </th>
+          <th>
+            加入时间
+          </th>
+
+          <tbody>
+          <% user.user_societies.reverse.each do |s| %>
+              <tr>
+                <td>
+                  <!--# need to update link when finished society views-->
+                  <% case s.society.department.to_s %>
+                  <% when "公益实践中心" %>
+                      <%= link_to s.society.department.to_s, gy_url %>
+                  <% when "文娱兴趣中心" %>
+                      <%= link_to s.society.department.to_s, wy_url %>
+                  <% when "体育竞技中心" %>
+                      <%= link_to s.society.department.to_s, ty_url %>
+                  <% when "学术科技中心" %>
+                      <%= link_to s.society.department.to_s, xs_url %>
+                  <% end %>
+                </td>
+                <td>
+                  <!--# need to update link when finished society views-->
+
+
+                  <%= link_to s.society, societyshow_path(s.society.id) %>
+                </td>
+                <td>
+                  <%= s.created_at.strftime("%F") %>
+                </td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+  <% else %>
+      <h3>尚未加入社团</h3>
+  <% end %>
+</div>

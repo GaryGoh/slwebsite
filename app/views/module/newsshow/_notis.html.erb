@@ -18,15 +18,15 @@
   </div>
   <div class="panel-body">
     <ul class="nav nav-tabs nav-justified" id="myTab">
-      <li><a href="#content" data-toggle="tab">通知内容</a></li>
-      <li class="active"><a href="#time" data-toggle="tab">活动时间</a></li>
+      <li class="active"><a href="#content" data-toggle="tab">通知内容</a></li>
+      <li><a href="#time" data-toggle="tab">活动时间</a></li>
       <li><a href="#location" data-toggle="tab">活动地点</a></li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content" id="notinav">
-      <div class="tab-pane fade" id="content"><h3 id="newsP"><%= noti.content %></h3></div>
-      <div class="tab-pane fade in active" id="time"></br>
+      <div class="tab-pane fade in active" id="content"><h3 id="newsP"><%= noti.content %></h3></div>
+      <div class="tab-pane fade" id="time"></br>
         <div id='calendar'></div>
       </div>
       <div class="tab-pane fade" id="location">
@@ -120,37 +120,51 @@
 
         ///////////////////
 
-    $(document).ready(function () {
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    if (e.target.hash == "#time") {
+//            reset calendar
+        $("#calendar").html("");
+//            add calendar related js
+
+        $(document).ready(function () {
 
 //                change ruby data to javascript data: var date = new Date(date.to_i*1000)
-        var start_date = new Date(<%= noti.start_time.to_i * 1000 %>);
+            var start_date = new Date(<%= noti.start_time.to_i * 1000 %>);
 
-        $('#calendar').fullCalendar({
-            header: {
-                left: 'prev,next',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay'
-            },
-            date: start_date.getDate(),
-            month: start_date.getMonth(),
-            year: start_date.getFullYear(),
-            allDaySlot: false,
-            defaultView: "agendaWeek",
-            theme: false,
-            editable: false,
-            minTime: 6,
-            maxTime: 24,
-            events: [
-                {
-                    title: "<%= noti.title%>",
-                    start: new Date(<%= noti.start_time.to_i * 1000 %>),
-                    end: new Date(<%= noti.end_time.to_i * 1000%>),
-                    allDay: false
-                }
-            ]
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                date: start_date.getDate(),
+                month: start_date.getMonth(),
+                year: start_date.getFullYear(),
+                allDaySlot: false,
+                defaultView: "agendaWeek",
+                theme: false,
+                editable: false,
+                minTime: 6,
+                maxTime: 24,
+                events: [
+                    {
+                        title: "<%= noti.title%>",
+                        start: new Date(<%= noti.start_time.to_i * 1000 %>),
+                        end: new Date(<%= noti.end_time.to_i * 1000%>),
+                        allDay: false
+                    }
+                ]
+            });
+
         });
 
-    });
+    }
+
+    else {
+//            show galleria
+    }
+})
 
         ////////////////
 
