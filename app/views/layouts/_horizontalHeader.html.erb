@@ -12,6 +12,14 @@
         position: relative;
         z-index: 300001;
     }
+
+    #index_drop {
+        font-weight: 700;
+        /*padding: 1em 2em;*/
+        margin-left: 0em;
+        color: #999;
+        display: inline-block;
+    }
 </style>
 
 <div id="horizon">
@@ -139,13 +147,32 @@
                 </div>
             <% end %>
           </div>
+
           <!-- /cbp-hrsub-inner -->
         </div>
         <!-- /cbp-hrsub -->
       </li>
+
+
+      <!--<li>-->
+        <!--<input type="text" class="form-control">-->
+      <!--</li>-->
+      <!--<div class="dropdown" id="index_drop">-->
+        <!--<button id="dLabel" type="button" class="btn btn-primary dropdown-toggle" role="button" data-toggle="dropdown" data-target="#" href="/page.html">-->
+          <!--Dropdown <span class="caret"></span>-->
+        <!--</button>-->
+
+        <!--<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">-->
+          <!--...-->
+        <!--</ul>-->
+      <!--</div>-->
+
     </ul>
   </nav>
 </div>
+
+
+
 <%= javascript_include_tag "Horizon/cbpHorizontalMenu.min.js", "data-turbolinks-track" => true %>
 <script>
     $(function () {
