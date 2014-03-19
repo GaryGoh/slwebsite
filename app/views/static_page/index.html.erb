@@ -204,7 +204,7 @@
               <% s.issues.reverse.each do |sn| %>
                   <tr>
                     <td>
-                      <%= link_to truncate(sn.title, :length => 14), shownews_url(sn) %>
+                      <%= link_to truncate(sn.title, :length => 11), shownews_url(sn) %>
                     </td>
                     <td>
                       <%= link_to sn.created_at.strftime("%F"), shownews_url(sn) %>

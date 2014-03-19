@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/indexcell/_activity.html.erb" afterPath="$PROJECT_DIR$/app/views/module/indexcell/_activity.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_page/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -278,19 +278,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="34" selection-start="143" selection-end="143" vertical-scroll-proportion="188.125">
+            <state line="206" column="66" selection-start="5557" selection-end="5557" vertical-scroll-proportion="0.64">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_activity.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_activity.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/module/indexcell/_activity.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="52" selection-start="340" selection-end="340" vertical-scroll-proportion="0.24">
+            <state line="12" column="52" selection-start="340" selection-end="340" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -396,12 +396,12 @@
         <option value="$PROJECT_DIR$/public/js/AnimatedHeader/js/cbpAnimatedHeader.min.js" />
         <option value="$PROJECT_DIR$/lib/assets/stylesheets/Horizon/css/component.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/_side_content.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/slcss.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/lib/assets/stylesheets/indexcell/component.css" />
         <option value="$PROJECT_DIR$/app/views/module/indexcell/_activity.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1484,16 +1484,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/module/indexcell/_activity.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="143" selection-end="143" vertical-scroll-proportion="188.125">
+        <state line="12" column="52" selection-start="340" selection-end="340" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/indexcell/_activity.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="340" selection-end="340" vertical-scroll-proportion="0.24">
+        <state line="206" column="66" selection-start="5557" selection-end="5557" vertical-scroll-proportion="0.64">
           <folding />
         </state>
       </provider>
