@@ -21,6 +21,8 @@
 
 
 
+
+// To adjust the params of right side panel
 $(document).ready(function () {
     $(".cbp-af-header").css("overflow", "hidden");
 
@@ -33,7 +35,7 @@ $(document).ready(function () {
 
     $('#midCol').affix({
         offset: {
-            top: 230,
+            top: 800,
             bottom: 100
         }
     });
