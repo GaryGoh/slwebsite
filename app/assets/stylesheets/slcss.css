@@ -22,7 +22,7 @@ header {
     }
 
     #maincontent {
-        padding-left: 60px;
+        /*padding-left: 60px;*/
     }
 
     #sidebar.affix-top {
@@ -38,7 +38,7 @@ header {
 
     #midCol.affix-top {
         position: static;
-        padding-right: 60px;
+        /*padding-right: 60px;*/
         height: 638px;
         /*min-height: 135px;*/
         /*max-height: 135px;*/
@@ -47,8 +47,8 @@ header {
 
     #midCol.affix-bottom {
         padding-top: 0;
-        padding-right: 60px;
-        padding-left: 0px;
+        /*padding-right: 60px;*/
+        /*padding-left: 0px;*/
         /*min-height: 135px;*/
         /*max-height: 135px;*/
         /*overflow: auto;*/
@@ -57,7 +57,7 @@ header {
     #midCol.affix {
         position: fixed !important;
         top: 10px;
-        padding-right: 35px;
+        /*padding-right: 35px;*/
         width: 220px;
         min-height: 670px;
         max-height: 670px;

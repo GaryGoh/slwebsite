@@ -2,6 +2,7 @@
 	width: 100%;
 	margin-top: 2em;
 	border-bottom: 4px solid #47a3da;
+
 }
 
 /* general ul style */
@@ -33,12 +34,14 @@
 
 .cbp-hrmenu > ul > li > a:hover {
 	color: #47a3da;
+
 }
 
 .cbp-hrmenu > ul > li.cbp-hropen a,
 .cbp-hrmenu > ul > li.cbp-hropen > a:hover {
 	color: #fff;
 	background: #47a3da;
+
 }
 
 /* sub-menu */
@@ -48,6 +51,7 @@
 	background: #47a3da;
 	width: 100%;
 	left: 0;
+
 }
 
 .cbp-hropen .cbp-hrsub {

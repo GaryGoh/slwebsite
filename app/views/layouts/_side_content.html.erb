@@ -37,36 +37,36 @@
 
 <!--mid column-->
 
-<div class="col-xs-12 col-md-2">
-
-  <div class="panel affix-top" id="midCol">
-    <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
-    <div class="panel-body" id="side_content">
 
 
-      <div class="list-group">
-        <li class="list-group-item" id="">
-          <h3>通知公告</h3>
-        </li>
-        <div id="title_noti">
-          <% @notis_info.each do |issue| %>
+<div class="panel affix-top" id="midCol">
+  <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
+  <div class="panel-body" id="side_content">
 
-              <a id="sidea" href="<%= shownotis_url(issue) %>" class="list-group-item text-left">
-                <small><%= truncate(issue.title, :length => 11) %></small>
-              </a>
-          <% end %>
-        </div>
+
+    <div class="list-group">
+      <li class="list-group-item" id="">
+        <h3>通知公告</h3>
+      </li>
+      <div id="title_noti">
+        <% @notis_info.each do |issue| %>
+
+            <a id="sidea" href="<%= shownotis_url(issue) %>" class="list-group-item text-left">
+              <small><%= truncate(issue.title, :length => 11) %></small>
+            </a>
+        <% end %>
       </div>
-
     </div>
+
   </div>
-  <a href="#" id="sidebtn" title="返回顶部">
-    <button type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-circle-arrow-up"></span>
-    </button>
-  </a>
-  <!--/panel-->
 </div>
+
+<a href="#" id="sidebtn" title="返回顶部">
+  <button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-circle-arrow-up"></span>
+  </button>
+</a>
+<!--/panel-->
 <!--/end mid column-->
 
 
