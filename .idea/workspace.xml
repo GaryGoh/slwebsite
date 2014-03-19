@@ -353,7 +353,7 @@
       <file leaf-file-name="component.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/assets/stylesheets/indexcell/component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="195" selection-end="195" vertical-scroll-proportion="0.251938">
+            <state line="12" column="13" selection-start="179" selection-end="179" vertical-scroll-proportion="0.23255815">
               <folding />
             </state>
           </provider>
@@ -1493,7 +1493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/assets/stylesheets/indexcell/component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="195" selection-end="195" vertical-scroll-proportion="0.251938">
+        <state line="12" column="13" selection-start="179" selection-end="179" vertical-scroll-proportion="0.23255815">
           <folding />
         </state>
       </provider>
