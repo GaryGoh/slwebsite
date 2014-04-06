@@ -1,16 +1,20 @@
-<link rel="stylesheet" type="text/css" href="css/default.css"/>
-<link rel="stylesheet" type="text/css" href="css/NestedAccordion/component.css"/>
-<script src="js/modernizr.custom.js"></script>
-<a name="faq_top"></a>
-</br></br>
-<div class="container">
+<%= stylesheet_link_tag "FAQ/default.css" %>
+<%= stylesheet_link_tag "FAQ/component.css" %>
+<%= javascript_include_tag "FAQ/modernizr.custom.js" %>
+
+<style>
+    #FAQ {
+        padding-top: 50px;;
+    }
+</style>
+
+<div class="container" id="FAQ">
   <header class="clearfix" id="header_faq">
     <h1>使用说明</h1>
 
-    <nav>
-      <a href="<%= root_url %>" class="icon-arrow-left" data-info="返回主页">返回主页</a>
-      <a href="#faq_top" class="icon-drop" data-info="顶部" id="top">顶部</a>
-    </nav>
+    <p>
+      <!-- Put some statments here in the future-->
+    </p>
   </header>
   <div class="main">
 
@@ -46,8 +50,9 @@
     </ul>
   </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/NestedAccordion/jquery.cbpNTAccordion.min.js"></script>
+
+<%= javascript_include_tag "FAQ/jquery.cbpNTAccordion.min.js" %>
+
 <script>
     $(function () {
         /*

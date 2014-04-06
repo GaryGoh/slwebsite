@@ -24,7 +24,7 @@
 
             <td><%= link_to truncate(noti.title, :length => 20), shownotis_url(noti) %></td>
             <% unless @user.societies.count <= 0 %>
-                <td><%= link_to noti.society, societyshow_path(noti.society.id) %></td>
+                <td><%= link_to noti.society, societyshow_path(noti.society) %></td>
             <% end %>
             <td><%= noti.created_at.strftime("%d %b. %Y") %></td>
             <td><%= link_to '修改', edit_user_noti_path(@user, noti) %></td>

@@ -1,95 +1,25 @@
-<!DOCTYPE html>
-<!-- saved from url=(0035)# -->
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+<!-- The html head declaration-->
+<%= render "layouts/head" %>
 
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <meta charset="utf-8">
-  <title>桂林电子科技大学 - 学生社团联合会</title>
-  <meta name="generator" content="Bootply">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-
-  <!--[if lt IE 9]>
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link rel="shortcut icon" href="#">
-  <link rel="apple-touch-icon" href="#">
-  <link rel="apple-touch-icon" sizes="72x72" href="#">
-  <link rel="apple-touch-icon" sizes="114x114" href="http://www.bootply.com/bootstrap/img/apple-touch-icon-114x114.png">
-  <link href="./Bootply.com - Bootstrap Bootstrap 3 Template   Theme - Bootable_files/font-awesome.min.css" type="text/css" rel="stylesheet">
-
-
-  <!-- CSS code from Bootply.com editor -->
-
-  <%= render "layouts/css1" %>
-</head>
-
-<!-- HTML code from Bootply.com editor -->
-<header class="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <!--<img src="images/home/logo.jpg" width="1140" height="180">-->
-        <%= render "module/clock" %>
-      </div>
-    </div>
-  </div>
-</header>
-<body>
-
-
-<%= render 'layouts/header2' %>
+<!-- The Header of website-->
+<%= render "layouts/header2" %>
 
 <!-- Begin Body -->
-<div class="container">
+
+<div class="container-fluid">
   <div class="no-gutter row">
 
-    <%= yield %>
-
+    <div class="col-md-12">
+      <%= yield %>
+    </div>
   </div>
 </div>
-
+<!-- End of Body-->
 
 <footer id="footer_div">
   <%= render 'layouts/footer_pub' %>
 
 </footer>
 
-
-<script type="text/javascript" src="vendor/assets/javascripts/jquery.min.js"></script>
-
-
-<script type="text/javascript" src="vendor/assets/javascripts/bootstrap.min.js"></script>
-<!-- JavaScript jQuery code from Bootply.com editor -->
-
-<script type="text/javascript">
-
-    $(document).ready(function () {
-
-        $('#sidebar').affix({
-            offset: {
-                top: 230,
-                bottom: 100
-            }
-        });
-        $('#midCol').affix({
-            offset: {
-                top: 230,
-                bottom: 100
-            }
-        });
-
-    });
-
-</script>
-
-
-</body>
-</html>
+<%= render "layouts/foot" %>

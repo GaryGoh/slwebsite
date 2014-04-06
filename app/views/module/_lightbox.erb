@@ -3,18 +3,41 @@
 
 <style>
 
-  .img-box{background:#f0f0f0;}
-  .img-box li{float:left; background:#f0f0f0; overflow:hidden;}
-  .img-box li a{float:left; overflow:hidden;position:relative;}
-  .img-box li a img{position:relative; vertical-align:text-top; }
-      /*themes*/
+    .img-box {
+        background: #f0f0f0;
+    }
 
-  .themes2 li{width:100px; height:100px;}
-  .themes2 li a{width:100px; height:100px;}
+    .img-box li {
+        float: left;
+        background: #f0f0f0;
+        overflow: hidden;
+    }
+
+    .img-box li a {
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .img-box li a img {
+        position: relative;
+        vertical-align: text-top;
+    }
+
+        /*themes*/
+
+    .themes2 li {
+        width: 100px;
+        height: 100px;
+    }
+
+    .themes2 li a {
+        width: 100px;
+        height: 100px;
+    }
 
 
-  </style>
-
+</style>
 
 
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
@@ -30,12 +53,12 @@
 <div id="links">
   <div class="img-box themes2 clearfix">
     <ul>
-  <% issues.each do |e| %>
-      <% e.issue_images.each do |i| %>
-          <li><a href="<%= i.issue_pic.url %>" id="pic"><%= image_tag i.issue_pic.url(:thumb)%></a></li>
+      <% issues.each do |e| %>
+          <% e.issue_images.each do |i| %>
+              <li><a href="<%= i.issue_pic.url %>" id="pic"><%= image_tag i.issue_pic.url(:thumb) %></a></li>
+          <% end %>
       <% end %>
-  <% end %>
-        </ul>
+    </ul>
   </div>
 </div>
 
@@ -50,43 +73,42 @@
         blueimp.Gallery(links, options);
     };
 
-    $(function(){
+    $(function () {
         zmnImgCenter($(".t-img"));//JQ的dom
     });
-    function zmnImgCenter(obj){
-        obj.each(function(){
-            var $this=$(this);
-            var objHeight=$this.height();//图片高度
-            var objWidth=$this.width();//图片宽度
-            var parentHeight=$this.parent().height();//图片父容器高度
-            var parentWidth=$this.parent().width();//图片父容器宽度
-            var ratio=objHeight/objWidth;
-            if(objHeight>parentHeight && objWidth>parentWidth){//当图片宽高都大于父容器宽高
-                if(objHeight>objWidth) {//赋值宽高
+    function zmnImgCenter(obj) {
+        obj.each(function () {
+            var $this = $(this);
+            var objHeight = $this.height();//图片高度
+            var objWidth = $this.width();//图片宽度
+            var parentHeight = $this.parent().height();//图片父容器高度
+            var parentWidth = $this.parent().width();//图片父容器宽度
+            var ratio = objHeight / objWidth;
+            if (objHeight > parentHeight && objWidth > parentWidth) {//当图片宽高都大于父容器宽高
+                if (objHeight > objWidth) {//赋值宽高
                     $this.width(parentWidth);
-                    $this.height(parentWidth*ratio);
+                    $this.height(parentWidth * ratio);
                 }
                 else {
                     $this.height(parentHeight);
-                    $this.width(parentHeight/ratio);
+                    $this.width(parentHeight / ratio);
                 }
-                objHeight=$this.height();//重新获取宽高
-                objWidth=$this.width();
-                if(objHeight>objWidth) {
-                    $(this).css("top",(parentHeight-objHeight)/2);
+                objHeight = $this.height();//重新获取宽高
+                objWidth = $this.width();
+                if (objHeight > objWidth) {
+                    $(this).css("top", (parentHeight - objHeight) / 2);
                     //定义top属性
                 }
-                else
-                {
+                else {
                     //定义left属性
-                    $(this).css("left",(parentWidth-objWidth)/2);
+                    $(this).css("left", (parentWidth - objWidth) / 2);
                 }
             }
-            else{//当图片宽高小于父容器宽高
-                if(objWidth>parentWidth){//当图片宽大于容器宽，小于时利用css text-align属性居中
-                    $(this).css("left",(parentWidth-objWidth)/2);
+            else {//当图片宽高小于父容器宽高
+                if (objWidth > parentWidth) {//当图片宽大于容器宽，小于时利用css text-align属性居中
+                    $(this).css("left", (parentWidth - objWidth) / 2);
                 }
-                $(this).css("top",(parentHeight-objHeight)/2);
+                $(this).css("top", (parentHeight - objHeight) / 2);
             }
         })
     }

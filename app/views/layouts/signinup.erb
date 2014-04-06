@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>学生社团联合会</title>
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-
-</head>
-
-<%=
-    render "layouts/css1"
-%>
-
-<%=
-    #render "layouts/changingBG"
-%>
-
+<!-- The html head declaration-->
+<%= render "layouts/head" %>
 <body>
 <%= render 'layouts/header2' %>
 <div class="container">
@@ -24,8 +8,7 @@
 </div>
 
 
-</button>
 <%= render 'layouts/footer2' %>
 </body>
-</html>
+
 

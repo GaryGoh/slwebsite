@@ -3,11 +3,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>阅读模式</title>
 
-<link rel="stylesheet" type="text/css" href="css/ReadMode/jquery.jscrollpane.custom.css"/>
-<link rel="stylesheet" type="text/css" href="css/ReadMode/bookblock.css"/>
-<link rel="stylesheet" type="text/css" href="css/ReadMode/custom.css"/>
-<script src="js/ReadMode/modernizr.custom.79639.js"></script>
 
+<%= javascript_include_tag "ReadMode/modernizr.custom.79639.js" %>
+<%= stylesheet_link_tag "ReadMode/jquery.jscrollpane.custom.css" %>
+<%= stylesheet_link_tag "ReadMode/bookblock.css" %>
+<%= stylesheet_link_tag "ReadMode/custom.css" %>
 
 
 
@@ -17,11 +17,12 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="js/ReadMode/jquery.mousewheel.js"></script>
-<script src="js/ReadMode/jquery.jscrollpane.min.js"></script>
-<script src="js/ReadMode/jquerypp.custom.js"></script>
-<script src="js/ReadMode/jquery.bookblock.js"></script>
-<script src="js/ReadMode/page.js"></script>
+<%= javascript_include_tag "ReadMode/jquery.mousewheel.js" %>
+<%= javascript_include_tag "ReadMode/jquery.jscrollpane.min.js" %>
+<%= javascript_include_tag "ReadMode/jquerypp.custom.js" %>
+<%= javascript_include_tag "ReadMode/jquery.bookblock.js" %>
+<%= javascript_include_tag "ReadMode/page.js" %>
+
 
 
 <script>

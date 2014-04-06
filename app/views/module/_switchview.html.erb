@@ -1,7 +1,5 @@
-<!--<link rel="stylesheet" type="text/css" href="css/ViewModeSwitch/default.css"/>-->
-<link rel="stylesheet" type="text/css" href="css/ViewModeSwitch/component.css"/>
-<script src="js/modernizr.custom.js"></script>
-
+<%= stylesheet_link_tag "ViewModeSwitch/component.css" %>
+<%= javascript_include_tag "ViewModeSwitch/modernizr.custom.js" %>
 <style>
     #masonry {
         padding: 0;
@@ -102,8 +100,9 @@
 
 
 <!-- /main -->
-<script src="js/ViewModeSwitch/classie.js"></script>
-<script src="js/ViewModeSwitch/cbpViewModeSwitch.js"></script>
+<%= javascript_include_tag "ViewModeSwitch/classie.js" %>
+<%= javascript_include_tag "ViewModeSwitch/cbpViewModeSwitch.js" %>
+
 <%= javascript_include_tag "masonry.pkgd.min.js" %>
 <%= javascript_include_tag "imagesloaded.pkgd.min.js" %>
 <%= javascript_include_tag "jquery-1.8.2.min.js" %>
@@ -136,7 +135,10 @@
             var newItemContainer = $('<div/>');
             for (var i = 0; i < 6; i++) {
                 if (currentIndex < ghostCount) {
-                    newItemContainer.append(ghostNode.get(ghostIndexArray[currentIndex]));
+                    // randomly show
+                    // newItemContainer.append(ghostNode.get(ghostIndexArray[currentIndex]));
+                    newItemContainer.append(ghostNode.get(currentIndex));
+
                     currentIndex++;
                 }
             }
