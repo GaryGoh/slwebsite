@@ -2,7 +2,7 @@
 
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-
+  <%= csrf_meta_tags %>
   <title>桂林电子科技大学 - 学生社团联合会</title>
 
   <!--[if lt IE 9]>
@@ -12,7 +12,7 @@
 
   <!-- The global css of previous version -->
   <%=
-      #render "layouts/css1"
+      render "layouts/css1"
   %>
 
 </head>

@@ -1,5 +1,5 @@
 <style>
-    #newsP{
+    #newsP {
         font-size: 1.2em;
         line-height: 2.1;
         font-weight: 200;
@@ -39,139 +39,69 @@
 </div>
 
 
+<%= stylesheet_link_tag "fullcalendar/fullcalendar.css" %>
+<%= stylesheet_link_tag "fullcalendar.print.css" %>
+<%= javascript_include_tag "fullcalendar/fullcalendar.min.js" %>
+<%= javascript_include_tag "fullcalendar/jquery-ui.custom.min.js" %>
 
-<link href='../fullcalendar/fullcalendar.css' rel='stylesheet'/>
-<link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print'/>
-<!--<script src='../fullcalendar/jquery.min.js'></script>-->
-<!--<script src='../fullcalendar/jquery-ui.custom.min.js'></script>-->
-<script src='../fullcalendar/fullcalendar.min.js'></script>
 
 
 <%
-    noti = @noti
+   noti = @noti
 %>
 
 
 <script type="text/javascript">
-
-//    $(document).ready(function () {
-//
-//        var date = new Date();
-//        var d = date.getDate();
-//        var m = date.getMonth();
-//        var y = date.getFullYear();
-//
-//        $('#calendar').fullCalendar({
-//            header: {
-//                left: 'prev,next today',
-//                center: 'title',
-//                right: 'month,agendaWeek,agendaDay'
-//            },
-//            editable: true,
-//            events: [
-//                {
-//                    title: 'All Day Event',
-//                    start: new Date(y, m, 1)
-//                },
-//                {
-//                    title: 'Long Event',
-//                    start: new Date(y, m, d - 5),
-//                    end: new Date(y, m, d - 2)
-//                },
-//                {
-//                    id: 999,
-//                    title: 'Repeating Event',
-//                    start: new Date(y, m, d - 3, 16, 0),
-//                    allDay: false
-//                },
-//                {
-//                    id: 999,
-//                    title: 'Repeating Event',
-//                    start: new Date(y, m, d + 4, 16, 0),
-//                    allDay: false
-//                },
-//                {
-//                    title: 'Meeting',
-//                    start: new Date(y, m, d, 10, 30),
-//                    allDay: false
-//                },
-//                {
-//                    title: 'Lunch',
-//                    start: new Date(y, m, d, 12, 0),
-//                    end: new Date(y, m, d, 14, 0),
-//                    allDay: false
-//                },
-//                {
-//                    title: 'Birthday Party',
-//                    start: new Date(y, m, d + 1, 19, 0),
-//                    end: new Date(y, m, d + 1, 22, 30),
-//                    allDay: false
-//                },
-//                {
-//                    title: 'Click for Google',
-//                    start: new Date(y, m, 28),
-//                    end: new Date(y, m, 29),
-//                    url: 'http://google.com/'
-//                }
-//            ]
-//        });
-//
-//    });
-
-        ///////////////////
-
-
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    if (e.target.hash == "#time") {
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        if (e.target.hash == "#time") {
 //            reset calendar
-        $("#calendar").html("");
+            $("#calendar").html("");
 //            add calendar related js
 
-        $(document).ready(function () {
+            $(document).ready(function () {
 
 //                change ruby data to javascript data: var date = new Date(date.to_i*1000)
-            var start_date = new Date(<%= noti.start_time.to_i * 1000 %>);
+                var start_date = new Date(<%= noti.start_time.to_i * 1000 %>);
 
-            $('#calendar').fullCalendar({
-                header: {
-                    left: 'prev,next',
-                    center: 'title',
-                    right: 'month,agendaWeek,agendaDay'
-                },
-                date: start_date.getDate(),
-                month: start_date.getMonth(),
-                year: start_date.getFullYear(),
-                allDaySlot: false,
-                defaultView: "agendaWeek",
-                theme: false,
-                editable: false,
-                minTime: 6,
-                maxTime: 24,
-                events: [
-                    {
-                        title: "<%= noti.title%>",
-                        start: new Date(<%= noti.start_time.to_i * 1000 %>),
-                        end: new Date(<%= noti.end_time.to_i * 1000%>),
-                        allDay: false
-                    }
-                ]
+                $('#calendar').fullCalendar({
+                    header: {
+                        left: 'prev,next',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    },
+                    date: start_date.getDate(),
+                    month: start_date.getMonth(),
+                    year: start_date.getFullYear(),
+                    allDaySlot: false,
+                    defaultView: "agendaWeek",
+                    theme: false,
+                    editable: false,
+                    minTime: 6,
+                    maxTime: 24,
+                    events: [
+                        {
+                            title: "<%= noti.title%>",
+                            start: new Date(<%= noti.start_time.to_i * 1000 %>),
+                            end: new Date(<%= noti.end_time.to_i * 1000%>),
+                            allDay: false
+                        }
+                    ]
+                });
+
             });
 
-        });
+        }
 
-    }
+        else {
+//            show others
+        }
+    })
 
-    else {
-//            show galleria
-    }
-})
-
-        ////////////////
 
 </script>
 
 
-
+<!-- calendar css-->
 <style>
 
     body {

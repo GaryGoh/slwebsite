@@ -13,7 +13,7 @@ class Noti < ActiveRecord::Base
 
   private
   def activity_time
-    if :start_time >= :end_time
+    if ((start_time).to_time.to_i >= (end_time).to_time.to_i)
       errors.add(:start_time, "活动开始时间不能晚于活动结束时间")
     end
   end
