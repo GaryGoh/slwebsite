@@ -17,3 +17,6 @@
 
 # Ignore upload location
 public/system/
+
+# Ignore workspace fils
+.idea/workspace.xml
