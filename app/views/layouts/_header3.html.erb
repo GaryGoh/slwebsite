@@ -1,29 +1,5 @@
-<link rel="stylesheet" type="text/css" href="css/AnimatedHeader/component.css"/>
-<script src="js/AnimatedHeader/js/modernizr.custom.js"></script>
-
-<style>
-    .cbp-af-header {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        /*background: #f6f6f6;*/
-        z-index: 100000;
-        height: 0px;
-        /*overflow: hidden;*/
-        -webkit-transition: height 0.3s;
-        -moz-transition: height 0.3s;
-        transition: height 0.3s;
-    }
-
-    #index_carousel {
-        height: 400px;
-        overflow: hidden;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-</style>
+<%= stylesheet_link_tag "AnimatedHeader/component.css" %>
+<%= javascript_include_tag "AnimatedHeader/modernizr.custom.js" %>
 
 
 <div class="cbp-af-header">
@@ -108,12 +84,14 @@
         %>
       </div>
     </div>
-      </div>
+  </div>
 </header>
 
 
-<script src="js/AnimatedHeader/js/classie.js"></script>
-<script src="js/AnimatedHeader/js/cbpAnimatedHeader.min.js"></script>
+<%= javascript_include_tag "AnimatedHeader/classie.js" %>
+<%= javascript_include_tag "AnimatedHeader/cbpAnimatedHeader.min.js" %>
+
+
 
 <script type="text/javascript">
 
