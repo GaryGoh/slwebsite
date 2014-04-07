@@ -14,7 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-gem 'anjlab-bootstrap-rails'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+    :github => 'anjlab/bootstrap-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -41,8 +42,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'tinymce-rails'
 
 # Back-end
-#gem 'activeadmin', github: 'gregbell/active_admin'
-gem 'activeadmin', github: 'gregbell/active_admin', branch: '0-6-stable'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 #authorisation
 gem "cancan"

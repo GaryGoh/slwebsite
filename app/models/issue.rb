@@ -11,7 +11,7 @@ class Issue < ActiveRecord::Base
 
   validates :title, presence: {:message => "新闻标题不能为空"}
   validates :content, presence: {:message => "新闻内容不能为空"}
-  #validates :society_id, presence: {:message => "请先加入社团，再发布新闻"}
+  validates :society_id, presence: {:message => "请先加入社团，再发布新闻"}
 
 
   def self.search(search)
