@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/changelog.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/jquery.tinymce.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/langs/en_GB.js" afterPath="" />
@@ -93,57 +92,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/skins/lightgray/skin.min.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/themes/modern/theme.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/tinymce.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/DSC_0458-0e1c6ef1613d38e4f8aa3e20a19b2702.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/DSC_0458-f7f479b9aecf9cb041e98fd25e0514a2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/DSC_0673-54e432c20ff6e8fa36b91e49a34a407e.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/DSC_0677-2f57b64bb9af2a0d874a2b4e85cf0fe4.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FontAwesome-b88ec331ffbddc4c940f8cc15cc66ac8.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon.dev-2cf3622cbba861b85d33ffabfa420c13.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-3638bd152cba738692067e7bc0f410b3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-3638bd152cba738692067e7bc0f410b3.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-c26bca373abab21cb834347d0b0a69be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-c26bca373abab21cb834347d0b0a69be.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-fb36c618f711b343d0e63ffea13fe53c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin-fb36c618f711b343d0e63ffea13fe53c.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5e008540089fca2d20400f778ddb9c2d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5e008540089fca2d20400f778ddb9c2d.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-baae0b5342424932154ed443eb87393f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-baae0b5342424932154ed443eb87393f.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5-9fb60e67ebfbacf800bf3f62cab9fe1e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5-9fb60e67ebfbacf800bf3f62cab9fe1e.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5-d9d84a9cb9331a55202f0cc5c9186c88.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5-d9d84a9cb9331a55202f0cc5c9186c88.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/classic-loader-7f3df8c1d849c0979695edc0b2bf7bf1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/classic-map-9e760351eb5ddf452df6593dd45bbb17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-24d906f9c0a6f667695b5d96f4ce13ec.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-3ab574486b45549a40e3dde830d8b33b.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-8cf3a95843f1b37c26b0d41a415d72a8.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont-d1fb6517bea984090defc4cf3304ead4.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/icomoon-2cf3622cbba861b85d33ffabfa420c13.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/icomoon-2cf3622cbba861b85d33ffabfa420c13.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/icomoon-2cf3622cbba861b85d33ffabfa420c13.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/icomoon-2cf3622cbba861b85d33ffabfa420c13.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/icomoon.dev-2cf3622cbba861b85d33ffabfa420c13.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest-0d24b64e9943fd5cdd242ccad2155cd1.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/issue.rb" afterPath="$PROJECT_DIR$/app/models/issue.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/slwebsite.iml" afterPath="$PROJECT_DIR$/.idea/slwebsite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/society.rb" afterPath="$PROJECT_DIR$/app/admin/society.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/society.rb" afterPath="$PROJECT_DIR$/app/models/society.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/tinymce.yml" afterPath="$PROJECT_DIR$/config/tinymce.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1396860268872" ignored="false" />
+    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1396899298360" ignored="false" />
     <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1395084351240" ignored="false" />
     <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1396869355410" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1390096093089" ignored="false" />
@@ -439,7 +392,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="20" selection-start="1436" selection-end="1474" vertical-scroll-proportion="0.2562418">
+            <state line="58" column="20" selection-start="1436" selection-end="1474" vertical-scroll-proportion="0.29172143">
               <folding />
             </state>
           </provider>
@@ -754,14 +707,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="ruby.project.structure" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/sample/cats-rails-master" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1048,14 +1001,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46771878" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4748924" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1064,6 +1016,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30060607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1131,39 +1084,36 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/noti.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="3" column="16" selection-start="74" selection-end="96" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/wrap_parameters.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/backtrace_silencers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/active_admin_cancan.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="41" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
@@ -1231,7 +1181,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="20" selection-start="1436" selection-end="1474" vertical-scroll-proportion="0.2562418">
+        <state line="58" column="20" selection-start="1436" selection-end="1474" vertical-scroll-proportion="0.29172143">
           <folding />
         </state>
       </provider>
