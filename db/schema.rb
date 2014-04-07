@@ -193,9 +193,6 @@ ActiveRecord::Schema.define(version: 20140217213054) do
     t.boolean  "is_outstanding"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "history"
-    t.string   "profile"
-    t.string   "president"
   end
 
   create_table "sub_faqs", force: true do |t|

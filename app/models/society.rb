@@ -11,4 +11,9 @@ class Society < ActiveRecord::Base
   def to_s
     self.society_name
   end
+
+
+
 end
+
+
