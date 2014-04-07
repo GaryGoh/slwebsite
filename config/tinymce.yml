@@ -31,9 +31,4 @@ fullscreen_new_window:
   - true
 browser_spellcheck:
   - true
-link_list:
-          [
-              {title: '桂电主页', value: 'http://www.guet.cn'},
-              {title: '社联主页', value: 'http://stlhh.guet.edu.cn'}
-          ]
 
