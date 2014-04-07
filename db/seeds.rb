@@ -379,6 +379,17 @@ Society.create([
                        :department_id => "4",
                        :is_outstanding => false
                    },
+
+                   {
+                       :society_name => "社团联合会",
+                       :department_id => "5",
+                       :is_outstanding => false
+                   },
+                   {
+                       :society_name => "暖风志愿者服务队",
+                       :department_id => "5",
+                       :is_outstanding => false
+                   }
                # 14
                ])
 
@@ -399,47 +410,59 @@ SlDepartment.create([
                             :sl_dep_name => "主席团",
                         },
                         {
-                            :sl_dep_name => "公益实践中心",
+                            :sl_dep_name => "公益实践中心"
                         },
                         {
-                            :sl_dep_name => "文娱兴趣中心",
+                            :sl_dep_name => "文娱兴趣中心"
                         },
                         {
-                            :sl_dep_name => "科技实践中心",
+                            :sl_dep_name => "科技实践中心"
                         },
                         {
-                            :sl_dep_name => "体育竞技中心",
+                            :sl_dep_name => "体育竞技中心"
                         },
                         {
-                            :sl_dep_name => "外联部",
+                            :sl_dep_name => "外联部"
                         },
                         {
-                            :sl_dep_name => "财务部",
+                            :sl_dep_name => "财务部"
                         },
                         {
-                            :sl_dep_name => "网络部",
+                            :sl_dep_name => "网络部"
                         },
                         {
-                            :sl_dep_name => "办公室",
+                            :sl_dep_name => "办公室"
                         },
                         {
-                            :sl_dep_name => "新闻部",
+                            :sl_dep_name => "组织部"
+                        },
+                        {
+                            :sl_dep_name => "新闻部"
                         }
                     ])
 
 Department.create([
                       {
                           :dep_name => "公益实践中心",
+                          :id => 1
                       },
                       {
                           :dep_name => "文娱兴趣中心",
+                          :id => 4
                       },
                       {
                           :dep_name => "科技实践中心",
+                          :id => 2
                       },
                       {
-                          :dep_name => "体育竞技中心",
+                          :dep_name => "体育竞技中心" ,
+                          :id => 3
+                      },
+                      {
+                          :dep_name => "社团联合会",
+                          :id => 5
                       }
+
                   ])
 
 Category.create([

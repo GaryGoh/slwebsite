@@ -2,117 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-gallery-fullscreen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-gallery-indicator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-gallery-video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-gallery-vimeo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-gallery-youtube.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-gallery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-gallery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/blueimp-helper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/jquery.blueimp-gallery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/blueimp/jquery.blueimp-gallery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/LICENSE.TXT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/jquery.tinymce.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/langs/en_GB.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/langs/fr_FR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/langs/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/langs/ko_KR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/langs/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/langs/zh_CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/langs/zh_TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/advlist/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/anchor/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/autolink/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/autosave/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/charmap/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/code/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/directionality/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/example/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/example_dependency/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/hr/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/image/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/importcss/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/layer/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/link/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/lists/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/media/moxieplayer.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/media/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/paste/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/preview/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/print/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/save/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/table/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/template/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/content.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/img/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/img/object.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/img/trans.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/img/wline.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/skin.ie7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/skins/lightgray/skin.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/themes/modern/theme.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce/js/tinymce/tinymce.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blueimp.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blueimp/blueimp-gallery-indicator.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blueimp/blueimp-gallery-video.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blueimp/blueimp-gallery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blueimp/blueimp-gallery.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blueimp/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tin.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/changelog.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/jquery.tinymce.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/langs/en_GB.js" afterPath="" />
@@ -203,92 +92,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/skins/lightgray/skin.min.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/themes/modern/theme.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/tinymce.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysiwyg-color-ac4ff8d55437994c39af37bc0dd939e2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysiwyg-color-ac4ff8d55437994c39af37bc0dd939e2.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/configform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/configpre.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/logger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/jquery.vanillabox-0.1.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/jquery.vanillabox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/close0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/close0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/close1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/close1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/next0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/next0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/next1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/next1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/prev0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/prev0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/prev1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/img/prev1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter/vanillabox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/close0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/close0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/close1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/close1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/next0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/next0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/next1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/next1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/prev0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/prev0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/prev1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/img/prev1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/bitter_frame/vanillabox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/close0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/close0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/close1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/close1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/next0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/next0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/next1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/next1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/prev0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/prev0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/prev1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/img/prev1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet/vanillabox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/close0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/close0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/close1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/close1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/next0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/next0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/next1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/next1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/prev0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/prev0@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/prev1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/img/prev1@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/vanillabox/vanillabox/theme/sweet_frame/vanillabox.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/LICENSE.TXT" afterPath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/issues/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/issues/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_lightbox.erb" afterPath="$PROJECT_DIR$/app/views/module/_lightbox.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/javascripts/blueimp.js" afterPath="$PROJECT_DIR$/lib/assets/javascripts/blueimp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-0d24b64e9943fd5cdd242ccad2155cd1.json" afterPath="$PROJECT_DIR$/public/assets/manifest-0d24b64e9943fd5cdd242ccad2155cd1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -347,7 +151,7 @@
     <file path="/20131216204520_add_admin_permission_id_to_adminusers.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387226790303" ignored="false" />
     <file path="/admin_user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389747584539" ignored="false" />
     <file path="/admin_permission.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388374943064" ignored="false" />
-    <file path="/seeds.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1395056428653" ignored="false" />
+    <file path="/seeds.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1396873690962" ignored="false" />
     <file path="$USER_HOME$/stutest/app/models/award.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387228219805" ignored="false" />
     <file path="$USER_HOME$/stutest/app/models/student.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387228227405" ignored="false" />
     <file path="$USER_HOME$/stutest/app/views/awards/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387228302545" ignored="false" />
@@ -594,10 +398,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="skin.min.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="skin.min.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/assets/javascripts/tinymce/skins/lightgray/skin.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="14" selection-start="691" selection-end="691" vertical-scroll-proportion="0.5124836">
+            <state line="26" column="14" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="389" column="43" selection-start="12394" selection-end="12394" vertical-scroll-proportion="-1.2273325">
               <folding />
             </state>
           </provider>
@@ -639,7 +461,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/module/_lightbox.erb" />
         <option value="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/jquery.tinymce.min.js" />
         <option value="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/tinymce.min.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
@@ -655,6 +476,7 @@
         <option value="$PROJECT_DIR$/lib/assets/javascripts/tinymce/skins/lightgray/content.inline.min.css" />
         <option value="$PROJECT_DIR$/app/views/issues/_form.html.erb" />
         <option value="$PROJECT_DIR$/lib/assets/javascripts/tinymce/skins/lightgray/skin.min.css" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -796,163 +618,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lightgray" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -967,6 +633,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1703,23 +1387,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/module/_gallary.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.10526316">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/module/_tlframe.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="14" selection-start="160" selection-end="211" vertical-scroll-proportion="0.098684214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1812,7 +1482,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/assets/javascripts/tinymce/skins/lightgray/skin.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="691" selection-end="691" vertical-scroll-proportion="0.5124836">
+        <state line="26" column="14" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="389" column="43" selection-start="12394" selection-end="12394" vertical-scroll-proportion="-1.2273325">
           <folding />
         </state>
       </provider>
