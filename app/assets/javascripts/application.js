@@ -21,7 +21,6 @@
 
 
 
-
 // To adjust the params of right side panel
 $(document).ready(function () {
     $(".cbp-af-header").css("overflow", "hidden");

@@ -38,7 +38,8 @@ end
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 # news editor
-gem 'wysihtml5-rails'
+#gem 'wysihtml5-rails'
+gem 'tinymce-rails'
 
 # Back-end
 gem 'activeadmin', github: 'gregbell/active_admin'

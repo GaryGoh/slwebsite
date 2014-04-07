@@ -1,0 +1,39 @@
+theme_advanced_toolbar_location: top
+theme_advanced_toolbar_align: left
+theme_advanced_statusbar_location: bottom
+theme_advanced_buttons3_add:
+  - tablecontrols
+  - fullscreen
+plugins:
+  - table
+  - fullscreen
+  - image
+  - link
+  - spellchecker
+  - charmap
+  - media
+  - table
+  - autosave
+  - searchreplace
+  - visualblocks
+  - textcolor
+  - visualchars
+  - insertdatetime
+  - fullscreen
+tools:
+  - inserttable
+  - searchreplace
+  - visualchars
+  - insertdate
+language:
+  - zh_CN
+fullscreen_new_window:
+  - true
+browser_spellcheck:
+  - true
+link_list:
+          [
+              {title: '桂电主页', value: 'http://www.guet.cn'},
+              {title: '社联主页', value: 'http://stlhh.guet.edu.cn'}
+          ]
+
