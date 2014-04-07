@@ -238,8 +238,8 @@ ActiveAdmin.setup do |config|
   # hand side with a filter for each attribute of the registered model.
   # You can enable or disable them for all resources here.
   #
-  config.filters = true
-  Formtastic::FormBuilder.escape_html_entities_in_hints_and_labels = false
+  # config.filters = true
+  #Formtastic::FormBuilder.escape_html_entities_in_hints_and_labels = false
 
   module ActiveAdmin
     module Views

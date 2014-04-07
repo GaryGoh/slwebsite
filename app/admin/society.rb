@@ -1,18 +1,10 @@
 ActiveAdmin.register Society do
-  #permit_params :society_name, :department_id, :num_member, :home_url, :is_outstanding, :history, :profile, :president,
-  #              user_societies: [:user_id, :society_id]
-
-
-  controller do
-    def permitted_params
-      params.permit!
-    end
-  end
-
+  permit_params :society_name, :department_id, :num_member, :home_url, :is_outstanding,
+                user_societies: [:user_id, :society_id]
   actions :all
   menu :label => "社团",
        :if => proc { can?(:manage, Society) },
-       :priority => 6
+       :priority => 5
 
 
   index do
@@ -39,8 +31,8 @@ ActiveAdmin.register Society do
       f.input :num_member, :label => "社团会员数"
       f.input :home_url
       if current_admin_user.admin_permission.to_s != "社团主席"
-        f.input :is_outstanding, :label => "是否属于优秀社团"
-      end
+      f.input :is_outstanding, :label => "是否属于优秀社团"
+        end
     end
     f.actions
   end
@@ -80,34 +72,34 @@ ActiveAdmin.register Society do
         end
 
 
-        div :class => "panel" do
-          h3 "新加入会员"
-          if c.user_societies and c.user_societies.count > 0
-            div :class => "panel_contents" do
-              div :class => "attributes_table" do
-                table do
-                  th do
-                    "会员学号"
-                  end
-                  th do
-                    "会员名字"
-                  end
-                  th do
-                    "加入时间"
-                  end
 
-                  tbody do
-                    c.user_societies.each do |s|
-                      tr do
-                        td do
-                          link_to s.user.stuid, admin_user_path(s.user.id)
-                        end
-                        td do
-                          link_to s.user.name, admin_society_path(s.user.id)
-                        end
-                        td do
-                          s.created_at.strftime("%F")
-                        end
+      div :class => "panel" do
+        h3 "新加入会员"
+        if c.user_societies and c.user_societies.count > 0
+          div :class => "panel_contents" do
+            div :class => "attributes_table" do
+              table do
+                th do
+                  "会员学号"
+                end
+                th do
+                  "会员名字"
+                end
+                th do
+                  "加入时间"
+                end
+
+                tbody do
+                  c.user_societies.each do |s|
+                    tr do
+                      td do
+                        link_to s.user.stuid, admin_user_path(s.user.id)
+                      end
+                      td do
+                        link_to s.user.name, admin_society_path(s.user.id)
+                      end
+                      td do
+                        s.created_at.strftime("%F")
                       end
                     end
                   end
@@ -115,42 +107,45 @@ ActiveAdmin.register Society do
               end
             end
           end
-        end # end of {div :class => "panel" do}
-      end
+        end
+      end # end of {div :class => "panel" do}
+    end
 
-      column do
+    column do
 
-        h3 "发布新闻"
-        table class: "index_table index" do
+      h3 "发布新闻"
+      table class: "index_table index" do
+        tr do
+          th "新闻标题"
+          th "新闻类型"
+          th "作者"
+          th "发布时间"
+          th "阅读次数"
+        end
+        c.issues.each do |e|
           tr do
-            th "新闻标题"
-            th "新闻类型"
-            th "作者"
-            th "发布时间"
-            th "阅读次数"
-          end
-          c.issues.each do |e|
-            tr do
-              td link_to truncate(e.title, :length => 12), admin_issue_path(e.id)
-              td e.category
-              td link_to e.author, admin_user_path(e.user.id)
-              td e.created_at.strftime("%b %e, %l:%M %p")
-              td e.title
+            td link_to truncate(e.title, :length => 12), admin_issue_path(e.id)
+            td e.category
+            td link_to e.author, admin_user_path(e.user.id)
+            td e.created_at.strftime("%b %e, %l:%M %p")
+            td e.title
 
-            end
           end
         end
-      end # end of #2 column
+      end
+    end # end of #2 column
 
-    end
   end
+end
 
-  filter :society_name, :label => "社团名字"
-  filter :is_outstanding, :label => "是否为优秀社团"
-  filter :num_member, :label => "社团会员数"
-  filter :num_registered_member, :label => "网站会员数"
-  filter :issues, :label => "社团新闻"
-  filter :created_at, :label => "创建于"
+
+
+filter :society_name, :label => "社团名字"
+filter :is_outstanding, :label => "是否为优秀社团"
+filter :num_member, :label => "社团会员数"
+filter :num_registered_member, :label => "网站会员数"
+filter :issues, :label => "社团新闻"
+filter :created_at, :label => "创建于"
 
 
 # See permitted parameters documentation:

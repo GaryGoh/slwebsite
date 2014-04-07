@@ -32,25 +32,6 @@ Slwebsite::Application.configure do
   # Generate digests for assets URLs.
   config.assets.digest = true
 
-  config.assets.debug = false
-
-# In production.rb
-  config.assets.precompile << Proc.new { |path|
-    if path =~ /\.(css|js)\z/
-      full_path = Rails.application.assets.resolve(path).to_path
-      app_assets_path = Rails.root.join('app', 'assets').to_path
-      if full_path.starts_with? app_assets_path
-        puts "including asset: " + full_path
-        true
-      else
-        puts "excluding asset: " + full_path
-        false
-      end
-    else
-      false
-    end
-  }
-
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
 
@@ -78,7 +59,7 @@ Slwebsite::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css.scss, and all non-JS/CSS in app/assets folder are already added.
-  #config.assets.precompile += %w( active_admin/*)
+  config.assets.precompile += %w( tinymce/tinymce.min.js tinymce/langs/en.js tinymce/themes/theme.min.js tinymce/jquery.tinymce.min.js)
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
