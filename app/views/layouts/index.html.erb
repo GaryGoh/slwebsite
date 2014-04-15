@@ -7,33 +7,24 @@
         /*border-width: 0.06cm;*/
         margin-left: 60px;
         /*margin-right: 0;*/
-        background-color: #ffffff;
+        /*background-color: #ffffff;*/
 
 
     }
 
     #sidecontent {
-        background-color: #ffffff;
-        min-height: 740px;
-        max-height: 740px;
+        /*background-color: #ffffff;*/
+        /*min-height: 740px;*/
+        /*max-height: 740px;*/
         max-width: 250px;
         overflow: auto;
+        margin-left: 20px;
         padding-top: 10px;
         padding-right: 10px;
 
     }
 
-    #indexheader {
-        padding-bottom: 20px;
 
-    }
-
-    #idex {
-        background-color: #ededeb;
-        max-height: 740px;
-        overflow: auto;
-
-    }
 </style>
 
 
@@ -45,7 +36,7 @@
 
 
 <!-- Begin Body -->
-<div class="container-fluid" id="idex">
+<div class="container-fluid" id="wrap">
   <div class="no-gutter row">
     <!-- left side column -->
     <%=
@@ -62,6 +53,7 @@
       %>
     </div>
   </div>
+  <div class="clear"></div>
 </div>
 <!-- End of Begin-->
 
@@ -71,3 +63,14 @@
 </footer>
 <%= render "layouts/foot" %>
 
+
+<script type="text/javascript">
+    window.onload=window.onresize=function(){
+        if(document.getElementById("maincontent").clientHeight<document.getElementById("sidecontent").clientHeight){
+            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
+        }
+        else{
+            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
+        }
+    }
+</script>
