@@ -1,0 +1,65 @@
+<style>
+    #sidea {
+        color: #000000;
+        border-bottom-style: solid;
+        border-bottom-color: #eee;
+        border-width: 0.06cm;
+
+    }
+
+    #title_noti {
+        /*border-bottom-style: solid;*/
+        /*border-color: #eee;*/
+        /*border-width: 0.03cm;*/
+        /*border-bottom-color: #eee;*/
+        min-height: 670px;
+        max-height: 670px;
+        overflow: auto;
+    }
+
+    .list-group-item {
+        /*border-bottom-color: #ffffff;*/
+        /*border-color: #ffffff;*/
+        /*border-color: #eee;*/
+    }
+
+    #sidebtn {
+        position: fixed;
+        /*mleft: 0px;*/
+        /*margin-right: -100px;*/
+        margin-left: 185px;
+        margin-top: 630px;
+        /*top: 690px;*/
+    }
+
+</style>
+
+
+<!--mid column-->
+
+
+
+  <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
+  <!--<div class="panel-body" id="side_content">-->
+
+
+    <div class="list-group">
+      <% @notis_info.each do |issue| %>
+          <div class="panel panel-default">
+            <div class="panel-heading" >
+              <%= link_to issue.title, shownotis_url(issue) %>
+            </div>
+            <div class="panel-body" >
+              <%= truncate(issue.content, :length => 100) %>
+            </div>
+
+          </div>
+      <% end %>
+    </div>
+
+  <!--</div>-->
+
+<!--/panel-->
+<!--/end mid column-->
+
+
