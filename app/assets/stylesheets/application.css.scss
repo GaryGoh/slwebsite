@@ -266,3 +266,7 @@ a:hover {
 }
 
 
+html,body{
+  background:url(nothing.txt) white fixed; /*prevent screen flash in IE6*/
+  //-webkit-transform: translateZ(0);
+}

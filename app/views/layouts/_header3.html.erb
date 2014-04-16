@@ -1,6 +1,15 @@
 <%= stylesheet_link_tag "AnimatedHeader/component.css" %>
 <%= javascript_include_tag "AnimatedHeader/modernizr.custom.js" %>
 
+<style>
+
+  #car_head{
+      max-height: 500px;
+      overflow: auto;
+  }
+
+
+</style>
 
 <div class="cbp-af-header">
   <div class="navbar navbar-static">
@@ -67,24 +76,15 @@
 
 <header class="masthead" id="pageHead">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <img src="images/home/logo.jpg" width="1140" height="180">
-
         <%=
-            render "layouts/horizontalHeader"
+            #render "layouts/horizontalHeader"
         %>
 
-      </div>
-
-      <div class="col-md-12" id="index_carousel">
+        <div id="car_head">
         <%=
             render "module/carousel", :issues => @issues_top
         %>
-      </div>
-    </div>
-  </div>
+        </div>
 </header>
 
 
@@ -117,3 +117,15 @@
     })
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
