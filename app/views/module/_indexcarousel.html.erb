@@ -1,14 +1,25 @@
-
-
-
 <style>
     .carousel-control.left, .carousel-control.right {
         background: none;
         /*color: #119CDD;*/
         border: none;
     }
-    .carousel-control.left {margin-left: -45px; color: #119cdd;}
-    .carousel-control.right {margin-right: -45px; color: #119cdd;}
+
+    .carousel-control.left {
+        margin-left: -45px;
+        color: #119cdd;
+    }
+
+    .carousel-control.right {
+        margin-right: -45px;
+        color: #119cdd;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
 </style>
 
 
@@ -20,16 +31,16 @@
 
   <ol class="carousel-indicators">
     <% is_active = true %>
-    <% cid = 1%>
+    <% cid = 1 %>
     <% issues.each do |e| %>
         <% (1..e.issue_images.count).each do %>
             <% if is_active %>
-                <% is_active = false%>
+                <% is_active = false %>
                 <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>" class="active"></li>
             <% else %>
                 <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>"></li>
             <% end %>
-            <% cid + 1%>
+            <% cid + 1 %>
         <% end %>
     <% end %>
   </ol>
@@ -46,7 +57,7 @@
             <% else %>
                 <div class="item">
             <% end %>
-            <div align= "center">
+            <div align="center">
               <a href=<%= shownews_url(e) %>>
                 <%= image_tag i.issue_pic.url(:medium) %>
               </a>

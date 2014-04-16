@@ -3,12 +3,9 @@
 
 <style>
 
-  #car_head{
-      max-height: 500px;
-      overflow: auto;
+  #index_carousel{
+      margin-bottom: 20px;
   }
-
-
 </style>
 
 <div class="cbp-af-header">
@@ -76,15 +73,24 @@
 
 <header class="masthead" id="pageHead">
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="images/home/logo.jpg" width="1140" height="180">
+
         <%=
-            #render "layouts/horizontalHeader"
+            render "layouts/horizontalHeader"
         %>
 
-        <div id="car_head">
+      </div>
+
+      <div class="col-md-12" id="index_carousel">
         <%=
-            render "module/carousel", :issues => @issues_top
+            render "module/indexcarousel", :issues => @issues_top
         %>
-        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
 
