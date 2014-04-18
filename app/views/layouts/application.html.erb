@@ -3,16 +3,25 @@
 
 <style>
     #maincontent {
-        border-right-style: solid;
-        border-right-color: #eee;
-        border-width: 0.06cm;
+        /*border-right-style: solid;*/
+        /*border-right-color: #eee;*/
+        /*border-width: 0.06cm;*/
         padding-left: 120px;
         margin-right: 0;
+        margin-top: 20px;
 
     }
 
     #sidecontent {
-        padding-right: 120px;
+        max-width: 250px;
+        overflow: auto;
+        margin-left: 10px;
+        margin-top: 20px;
+        /*padding-right: 10px;*/
+    }
+
+    #wrap{
+        background-color: #f9f9f7;
     }
 </style>
 
@@ -23,7 +32,7 @@
 
 <!-- Begin Body -->
 
-<div class="container-fluid">
+<div class="container-fluid" id="wrap">
   <div class="no-gutter row">
     <!-- left side column -->
     <%=
@@ -31,11 +40,15 @@
     %>
     <!--/end left column-->
     <div class="col-xs-12 col-md-9" id="maincontent">
+      <div class="panel panel-default">
+        <div class="panel-body">
       <%= yield %>
+          </div>
+        </div>
     </div>
     <div class="col-xs-12 col-md-3" id="sidecontent">
       <%=
-          render "layouts/side_content"
+          render "layouts/newsidecontent"
       %>
     </div>
   </div>

@@ -18,13 +18,13 @@
         /*max-height: 740px;*/
         max-width: 250px;
         overflow: auto;
-        margin-left: 20px;
+        margin-left: 10px;
         padding-top: 10px;
         padding-right: 10px;
 
     }
         #wrap{
-            background-color: #ededeb;
+            background-color: #f9f9f7;
         }
 
        * {
@@ -68,14 +68,3 @@
 </footer>
 <%= render "layouts/foot" %>
 
-
-<script type="text/javascript">
-    window.onload=window.onresize=function(){
-        if(document.getElementById("maincontent").clientHeight<document.getElementById("sidecontent").clientHeight){
-            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
-        }
-        else{
-            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
-        }
-    }
-</script>

@@ -18,4 +18,12 @@
 
     });
 
+    window.onload=window.onresize=function(){
+        if(document.getElementById("maincontent").clientHeight<document.getElementById("sidecontent").clientHeight){
+            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
+        }
+        else{
+            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
+        }
+    }
 </script>
