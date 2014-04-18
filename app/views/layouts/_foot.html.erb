@@ -1,6 +1,6 @@
-
 <script type="text/javascript">
 
+    // Header fade out
     $(document).ready(function () {
 
         $('#sidebar').affix({
@@ -18,12 +18,31 @@
 
     });
 
-    window.onload=window.onresize=function(){
-        if(document.getElementById("maincontent").clientHeight<document.getElementById("sidecontent").clientHeight){
-            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
+    // Fixed height of left & right
+    window.onload = window.onresize = function () {
+        if (document.getElementById("maincontent").clientHeight < document.getElementById("sidecontent").clientHeight) {
+            document.getElementById("sidecontent").style.maxHeight = document.getElementById("maincontent").offsetHeight + "px";
         }
-        else{
-            document.getElementById("sidecontent").style.maxHeight=document.getElementById("maincontent").offsetHeight+"px";
+        else {
+            document.getElementById("sidecontent").style.maxHeight = document.getElementById("maincontent").offsetHeight + "px";
         }
     }
+
+
+    // Go up
+    $(document).ready(function () {
+        $('#goup').goup({
+            appear: 200,
+            scrolltime: 800,
+            imgsrc: 'http://goo.gl/VDOdQc',
+            width: 36,
+            place: 'bottom-right',
+            fadein: 500,
+            fadeout: 500,
+            opacity: 0.5,
+            marginX: 1,
+            marginY: 1
+        });
+
+    });
 </script>
