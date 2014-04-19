@@ -41,7 +41,7 @@
 
     #index_scet {
         /*min-height: 480px;*/
-        max-height: 480px;
+        /*max-height: 480px;*/
         margin-bottom: 90px;
     }
 
@@ -67,9 +67,13 @@
 </style>
 
 
+<div class="col-md-12 thumbnail" id="idhead">
+  <%=
+      render "module/nmolist", :issues => @issues_society
+  %>
+</div>
 
-
-<div class="col-md-12" id="index_ns">
+<div class="col-md-12 thumbnail" id="index_ns">
   <div class="panel panel-default" id="index_frame">
     <div class="panel-body">
       <div class="col-md-2" id="te">
@@ -110,43 +114,43 @@
 </div>
 
 
-<div class="col-md-12" id="index_atvt">
-  <div class="panel panel-default" id="index_frame">
-    <div class="panel-body">
-      <div class="col-md-2" id="te">
-        <h4>活动专区</h4>
-      </div>
-
-      <div class="col-md-10" id="rightcontent">
-        <ul class="nav nav-tabs" id="myTab">
-          <li class="active"><a href="#society_activity" data-toggle="tab">社团活动</a></li>
-          <li><a href="#boutique" data-toggle="tab">精品活动</a></li>
+<!--<div class="col-md-12 thumbnail" id="index_atvt">-->
+  <!--<div class="panel panel-default" id="index_frame">-->
+    <!--<div class="panel-body">-->
+      <!--<div class="col-md-2" id="te">-->
+        <!--<h4>活动专区</h4>-->
+      <!--</div>-->
+<!---->
+      <!--<div class="col-md-10" id="rightcontent">-->
+        <!--<ul class="nav nav-tabs" id="myTab">-->
+          <!--<li class="active"><a href="#society_activity" data-toggle="tab">社团活动</a></li>-->
+          <!--<li><a href="#boutique" data-toggle="tab">精品活动</a></li>-->
           <!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
-        </ul>
-
+        <!--</ul>-->
+<!---->
         <!-- Tab panes -->
-        <div class="tab-content" id="notinav">
-          <div class="tab-pane fade in active" id="society_activity">
+        <!--<div class="tab-content" id="notinav">-->
+          <!--<div class="tab-pane fade in active" id="society_activity">-->
             <%=
-                render "module/indexcell/activity", :notis => @notis_activity
+                #render "module/indexcell/activity", :notis => @notis_activity
             %>
-          </div>
-          <div class="tab-pane fade" id="boutique">
+          <!--</div>-->
+          <!--<div class="tab-pane fade" id="boutique">-->
             <%=
-                render "module/indexcell/activity", :notis => @notis_good
+                #render "module/indexcell/activity", :notis => @notis_good
             %>
-          </div>
+          <!--</div>-->
+<!---->
+        <!--</div>-->
+<!---->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
 
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
 
 
-
-<div class="col-md-12" id="index_scet">
+<div class="col-md-12 thumbnail" id="index_scet">
 <div class="panel panel-default" id="index_frame">
 <div class="panel-body">
 <div class="col-md-2" id="te">

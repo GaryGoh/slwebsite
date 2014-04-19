@@ -20,6 +20,16 @@
 //= require twitter/bootstrap
 //= require jquery.goup.min
 
+//= require flat-ui/bootstrap-select
+//= require flat-ui/bootstrap-switch
+//= require flat-ui/flatui-fileinput
+//= require flat-ui/jquery.tagsinput
+//= require flat-ui/holder
+
+
+
+
+
 
 
 // To adjust the params of right side panel

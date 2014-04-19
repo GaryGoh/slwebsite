@@ -6,7 +6,7 @@
           <ul>
             <% @noti.errors.messages.values.each do |msg| %>
                 <% msg.each do |m| %>
-                      <li class="alert alert-danger"><%= m %></li>
+                    <li class="alert alert-danger"><%= m %></li>
                 <% end %>
 
             <% end %>
@@ -14,81 +14,90 @@
         </div>
     <% end %>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title"></h3>
-      </div>
-      <div class="panel-body">
 
-        <form class="form-horizontal" role="form">
+    <div class="panel-body">
 
+      <form class="form-horizontal" role="form">
 
-          <!--活动标题-->
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">活动标题</label>
+        <!--活动标题-->
+        <div class="control-group">
+          <h5>活动标题</h5>
 
-            <div class="col-sm-10">
-              <%= f.text_field :title, :class => "form-control", :id => "inputEmail3", :placeholder => "活动标题" %>
-            </div>
-          </div>
+          <%= f.text_field :title, :class => "form-control", :id => "inputEmail3", :placeholder => "活动标题" %>
+
+        </div>
 
 
-          <!--活动内容-->
-          <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">活动内容</label>
+        <!--活动内容-->
+        <div class="control-group">
+          <h5>活动内容</h5>
 
-            <div class="col-sm-10">
-              <%= f.text_area :content, :class => "form-control", :id => "wysihtml5-textarea", :placeholder => "新闻内容", :rows => "10" %>
-            </div>
-          </div>
+          <%= f.text_area :content, :class => "form-control", :id => "wysihtml5-textarea", :placeholder => "新闻内容", :rows => "10" %>
+        </div>
 
 
-          <!--活动地点-->
-          <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">活动地点</label>
+        <!--活动地点-->
+        <div class="control-group">
+          <h5>活动地点</h5>
 
-            <div class="col-sm-10">
-              <%= f.text_field :location, :class => "form-control", :id => "inputLocation", :placeholder => "活动地点" %>
-            </div>
-          </div>
+          <%= f.text_field :location, :class => "form-control", :id => "inputLocation", :placeholder => "活动地点" %>
+        </div>
+        <h5>活动参数</h5>
 
+        <div class="thumbnail">
           <!--活动发起组织-->
-          <div class="form-group">
-            <label for="author" class="col-sm-2 control-label"> 活动发起组织</label>
-            <%= f.select :society_id, @user.user_societies(:all).collect { |s|
-              [(s.society), s.society_id] } %>
-          </div>
 
-          <!--活动开始时间-->
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">活动开始时间</label>
-            <%= f.datetime_select :start_time, :class => "form-control" %>
-          </div>
+            <div>
+              <label for="inputPassword3" class="col-sm-2 control-label">活动发起组织</label>
+              <%=
+                  f.select(:society_id, @user.user_societies(:all).collect { |s|
+                    [(s.society), s.society_id] }, {}, {:class => "selectpicker", :nameui => "huge"})
+              %>
 
-
-          <!--活动结束时间-->
-          <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">活动结束时间</label>
-            <%= f.datetime_select :end_time, :class => "form-control" %>
+            </div>
           </div>
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">通知类型</label>
             <%= f.select :category_id,
                          Category.where('id = 11 OR id = 12').collect { |s|
-                           [(s.category_name), s.id] }
+                           [(s.category_name), s.id] }, {}, {:class => "selectpicker", :nameui => "huge"}
             %>
           </div>
 
-
-          <!--提交-->
+          <!--活动开始时间-->
           <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <%= f.submit class: "btn btn-primary btn-block", "data-loading-text" => "Loading...", value: "提交" %>
-            </div>
+            <label for="inputPassword3" class="col-sm-2 control-label">活动开始时间</label>
+            <%= f.datetime_select :start_time, :class => "datepicker" %>
           </div>
-        </form>
 
-      </div>
+
+          <!--活动结束时间-->
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">活动结束时间</label>
+            <%= f.datetime_select :end_time, :class => "datepicker" %>
+          </div>
+
+
+        </div>
+
+        <!--提交-->
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <%= f.submit class: "btn btn-primary btn-block", "data-loading-text" => "Loading...", value: "提交" %>
+          </div>
+        </div>
+      </form>
     </div>
 <% end %>
+
+
+<script>
+
+    // Select dropdown
+    $("select[nameui='huge']").selectpicker({style: 'btn btn-primary', menuStyle: 'dropdown-inverse'});
+    $("select[nameui='large']").selectpicker({style: 'btn-lg btn-default'});
+    $("select[nameui='info']").selectpicker({style: 'btn-info'});
+    $("select[nameui='small']").selectpicker({style: 'btn-sm btn-warning'});
+</script>

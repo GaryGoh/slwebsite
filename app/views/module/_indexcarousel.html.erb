@@ -1,49 +1,25 @@
-<style>
-    .carousel-control.left, .carousel-control.right {
-        background: none;
-        /*color: #119CDD;*/
-        border: none;
-    }
-
-    .carousel-control.left {
-        margin-left: -45px;
-        color: #119cdd;
-    }
-
-    .carousel-control.right {
-        margin-right: -45px;
-        color: #119cdd;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-
-    }
-</style>
-
-
-
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide">
   <!-- Indicators -->
 
 
   <ol class="carousel-indicators">
+
     <% is_active = true %>
     <% cid = 1 %>
     <% issues.each do |e| %>
         <% (1..e.issue_images.count).each do %>
             <% if is_active %>
                 <% is_active = false %>
-                <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="<%= cid %>" class="active"></li>
             <% else %>
-                <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>"></li>
+                <li data-target="#myCarousel" data-slide-to="<%= cid %>"></li>
             <% end %>
             <% cid + 1 %>
         <% end %>
     <% end %>
+
   </ol>
+
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
@@ -52,14 +28,14 @@
     <% issues.each do |e| %>
         <% e.issue_images.each do |i| %>
             <% if is_active %>
-                <div class="item active">
+                <div class="active item">
                   <% is_active = false %>
             <% else %>
                 <div class="item">
             <% end %>
             <div align="center">
               <a href=<%= shownews_url(e) %>>
-                <%= image_tag i.issue_pic.url(:medium) %>
+                <%= image_tag i.issue_pic.url(:medium), :height => "640" %>
               </a>
             </div>
             <div class="carousel-caption">
@@ -67,16 +43,15 @@
               <% content = strip_tags((e.content)) %>
               <p><%= (truncate(sanitize(content), :length => 20)) %></p>
             </div>
+
             </div>
         <% end %>
     <% end %>
+    <!-- Controls -->
+
     </div>
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
   </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" id="pprev">
-    <span class="glyphicon glyphicon-chevron-left" id="prev"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next" id="nnext">
-    <span class="glyphicon glyphicon-chevron-right" id="next"></span>
-  </a>
-</div>
+
+

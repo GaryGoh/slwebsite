@@ -5,7 +5,9 @@
         /*border-right-style: solid;*/
         /*border-right-color: #eee;*/
         /*border-width: 0.06cm;*/
-        margin-left: 60px;
+        margin-left: 3%;
+        padding-top: 5%;
+
         /*margin-right: 0;*/
         /*background-color: #ffffff;*/
 
@@ -16,16 +18,14 @@
         /*background-color: #ffffff;*/
         /*min-height: 740px;*/
         /*max-height: 740px;*/
-        max-width: 250px;
+        max-width: 18%;
         overflow: auto;
         margin-left: 10px;
-        padding-top: 10px;
-        padding-right: 10px;
+        padding-top: 5%;
 
     }
-        #wrap{
-            background-color: #f9f9f7;
-            margin-top: 50px;
+        body{
+            background-color: #f0f2f4;
         }
 
        * {
@@ -33,14 +33,18 @@
        }
 
     #index_carousel {
-        margin-top: 20px;
-        overflow: hidden;
-        min-height: 750px;
-        max-height: 750px;
+        /*margin-top: 80px;*/
+        /*overflow: hidden;*/
+        /*min-height: 750px;*/
+        /*max-height: 750px;*/
         /*max-width: 100%;*/
     }
 
-
+    #idhead{
+        /*margin-right: 2%;*/
+        min-height: 50%;
+        overflow: hidden;
+    }
 </style>
 
 
@@ -49,23 +53,32 @@
 <!--<div id="indexheader">-->
   <%= render "layouts/header2" %>
 <!--</div>-->
-<div id="index_carousel">
-  <%=
-      render "module/carousel", :issues => @issues_top
-  %>
-</div>
+
+
+
+
 
 <!-- Begin Body -->
-<div class="container-fluid" id="wrap">
-  <div class="no-gutter row">
+<!--<div class="container-fluid">-->
+
+  <div class="no-gutter row"  id="wrap">
     <!-- left side column -->
     <%=
         #render "layouts/navbar"
     %>
-
     <!--/end left column-->
+
+
+
     <div class="col-xs-12 col-md-9" id="maincontent">
-      <%= yield %>
+
+      <%=
+          yield
+      %>
+      <footer>
+        <%= render 'layouts/footer2' %>
+
+      </footer>
     </div>
     <div class="col-xs-12 col-md-3" id="sidecontent">
       <%=
@@ -75,13 +88,10 @@
     </div>
     <div id='goup'></div>
   </div>
-  <div class="clear"></div>
-</div>
+<!--</div>-->
 <!-- End of Begin-->
 
-<footer>
-  <%= render 'layouts/footer2' %>
 
-</footer>
+
 <%= render "layouts/foot" %>
 

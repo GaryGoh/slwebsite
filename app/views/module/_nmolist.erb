@@ -1,0 +1,29 @@
+<style></style>
+
+<div class="col-md-7">
+  <div class="thumbnail" id="caindex">
+    <%=
+        render "module/indexcarousel", :issues => @issues_top
+    %>
+  </div>
+</div>
+
+<div class="col-md-5">
+<% token = 0 %>
+<% issues.each do |e| %>
+    <%
+       #if token < 0
+    %>
+    <%
+       #next if (e.issue_images.count == 0)
+    %>
+
+    <% token = token + 1 %>
+    <!--<div class="col-md-6">-->
+    <!--<div class="thumbnail">-->
+    <p><%= token %> | <%= link_to truncate(e.title, :length => 20), shownews_url(e) %></p>
+    <hr>
+    <!--</div>-->
+    <!--</div>-->
+<% end %>
+</div>

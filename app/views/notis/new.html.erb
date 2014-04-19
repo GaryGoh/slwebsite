@@ -1,15 +1,15 @@
 <% if session[:user_id] == @user.id %>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">发布活动通知</h3>
-      </div>
-      <div class="panel-body">
+    <!--<div class="panel panel-default">-->
+    <!--<div class="row">-->
+        <h4>发布活动通知</h4>
+
+      <!--<div class="panel-body">-->
         <%= render 'form' %>
 
         <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), @user %></td>
-      </div>
-    </div>
+      <!--</div>-->
+    <!--</div>-->
 
 <% else %>
     <%= render "static_page/access_error" %>
