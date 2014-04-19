@@ -25,20 +25,35 @@
     }
         #wrap{
             background-color: #f9f9f7;
+            margin-top: 50px;
         }
 
        * {
 
        }
+
+    #index_carousel {
+        margin-top: 20px;
+        overflow: hidden;
+        min-height: 750px;
+        max-height: 750px;
+        /*max-width: 100%;*/
+    }
+
+
 </style>
 
 
 
 <!-- Begin Navbar -->
-<div id="indexheader">
-  <%= render "layouts/header3" %>
+<!--<div id="indexheader">-->
+  <%= render "layouts/header2" %>
+<!--</div>-->
+<div id="index_carousel">
+  <%=
+      render "module/carousel", :issues => @issues_top
+  %>
 </div>
-
 
 <!-- Begin Body -->
 <div class="container-fluid" id="wrap">

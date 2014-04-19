@@ -5,6 +5,9 @@
 
   #index_carousel{
       margin-bottom: 20px;
+      overflow: auto;
+      min-height: 800px;
+      max-height: 800px;
   }
   .cbp-af-header{
       border-bottom-style: solid;
@@ -78,24 +81,25 @@
 
 <header class="masthead" id="pageHead">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <img src="images/home/logo.jpg" width="1140" height="180">
+  <!--<div class="container">-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-12">-->
+        <!--<img src="images/home/logo.jpg" width="1140" height="180">-->
 
         <%=
-            render "layouts/horizontalHeader"
+            #render "layouts/horizontalHeader"
         %>
 
-      </div>
+      <!--</div>-->
 
-      <div class="col-md-12" id="index_carousel">
+      <!--<div class="col-md-12" id="index_carousel">-->
+      <div id="index_carousel">
         <%=
-            render "module/indexcarousel", :issues => @issues_top
+            render "module/carousel", :issues => @issues_top
         %>
       </div>
     </div>
-  </div>
+  <!--</div>-->
 </header>
 
 
