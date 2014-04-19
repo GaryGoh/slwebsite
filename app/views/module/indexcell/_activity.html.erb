@@ -7,10 +7,10 @@
 
 <% notis.each do |i| %>
     <div class="col-6 col-sm-6 col-lg-4" id="index_activity">
-      <h4><%= truncate(i.title, :length => 16) %></h4>
+      <h6><%= truncate(i.title, :length => 11) %></h6>
 
       <p>
-        <small><%= truncate(i.content, :length => 43) %></small>
+        <small><%= truncate(i.content, :length => 32) %></small>
       </p>
       <% if i.content.length <= 24 %>
           </br>

@@ -53,7 +53,7 @@
             <%= link_to issue.title, shownotis_url(issue) %>
           </div>
           <div class="panel-body">
-            <%= truncate(issue.content, :length => 100) %>
+            <h7><small><%= truncate(issue.content, :length => 70){ link_to "  详情", shownotis_url(issue), :align => "right"} %></small></h7>
           </div>
 
         </div>
