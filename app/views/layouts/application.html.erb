@@ -50,9 +50,16 @@
 
 
 
-<!-- The Header of website-->
+<ul id="shelf">
+  <li id="sli"><a href="/" id="index" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="主页"><i class="fa fa-home fa-2x"></i></a></li>
+  <li id="sli"><a href="/news" id="news" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="新闻部落"><i class="fa fa-archive fa-2x"></i></a></li>
+  <li id="sli"><a href="/notis" id="notis" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="活动通知"><i class="fa fa-bell fa-2x"></i></a></li>
+  <li id="sli"><a href="/download" id="download" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="资料下载"><i class="fa fa-cloud-download fa-2x"></i></a></li>
+  <li id="sli"><a href="/faq" id="faq" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="FAQ"><i class="fa fa-question-circle fa-2x"></i></a></li>
+  <li id="sli"><a href="/slmember" id="slmember" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="社联介绍"><i class="fa fa-users fa-2x"></i></a></li>
+</ul>
 
-<%= render "layouts/header2" %>
+
 
 <!-- Begin Body -->
 
@@ -63,7 +70,9 @@
   %>
   <!--/end left column-->
 
+  <!-- The Header of website-->
 
+  <%= render "layouts/header2" %>
 
   <div class="col-xs-12 col-md-9" id="maincontent">
 
