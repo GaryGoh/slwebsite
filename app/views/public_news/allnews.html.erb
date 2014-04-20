@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <!-- Default panel contents -->
 
-  <div class="panel-body">
+  <div class="thumbnail">
 
 
     <!-- Table -->
@@ -25,7 +25,7 @@
       <div id="ajaxnews">
       </div>
       <%=
-          render 'module/switchview', :issues => @issues
+          render 'module/flatnelist', :issues => @issues
       %>
       <%=
           #render 'public_news/flow', :issues => @issues

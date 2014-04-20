@@ -1,5 +1,4 @@
 class StaticPageController < ApplicationController
-  layout "index", only: [:index]
 
 
   def home

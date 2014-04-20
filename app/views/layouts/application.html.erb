@@ -1,5 +1,5 @@
 <!-- The html head declaration-->
-<%= render "layouts/head"%>
+<%= render "layouts/head" %>
 
 <style>
     #maincontent {
@@ -11,7 +11,6 @@
 
         /*margin-right: 0;*/
         /*background-color: #ffffff;*/
-
 
     }
 
@@ -25,8 +24,9 @@
         padding-top: 5%;
 
     }
-    body{
-        background-color: #f0f2f4;
+
+    body {
+        background-color: #edeff0;
     }
 
     * {
@@ -41,29 +41,53 @@
         /*max-width: 100%;*/
     }
 
-    #idhead{
+    #idhead {
         /*margin-right: 2%;*/
         min-height: 50%;
         overflow: hidden;
     }
+
+    #sli a i {
+        color: #1abc9c;
+    }
+
+    #sli a i:hover {
+        color: #20ffd4;
+    }
+     #inhed{
+         border-radius: 10px;
+     }
+
 </style>
 
 
 
 <ul id="shelf">
-  <li id="sli"><a href="/" id="index" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="主页"><i class="fa fa-home fa-2x"></i></a></li>
-  <li id="sli"><a href="/news" id="news" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="新闻部落"><i class="fa fa-archive fa-2x"></i></a></li>
-  <li id="sli"><a href="/notis" id="notis" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="活动通知"><i class="fa fa-bell fa-2x"></i></a></li>
-  <li id="sli"><a href="/download" id="download" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="资料下载"><i class="fa fa-cloud-download fa-2x"></i></a></li>
-  <li id="sli"><a href="/faq" id="faq" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="FAQ"><i class="fa fa-question-circle fa-2x"></i></a></li>
-  <li id="sli"><a href="/slmember" id="slmember" data-trigger="hover"  data-toggle="popover" data-placement="right" data-content="社联介绍"><i class="fa fa-users fa-2x"></i></a></li>
+  <li id="sli">
+    <a href="/" id="index" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="主页"><i class="fa fa-home fa-2x"></i></a>
+  </li>
+  <li id="sli">
+    <a href="/news" id="news" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="新闻部落"><i class="fa fa-archive fa-2x"></i></a>
+  </li>
+  <li id="sli">
+    <a href="/notis" id="notis" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="活动通知"><i class="fa fa-bell fa-2x"></i></a>
+  </li>
+  <li id="sli">
+    <a href="/download" id="download" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="资料下载"><i class="fa fa-cloud-download fa-2x"></i></a>
+  </li>
+  <li id="sli">
+    <a href="/faq" id="faq" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="FAQ"><i class="fa fa-question-circle fa-2x"></i></a>
+  </li>
+  <li id="sli">
+    <a href="/slmember" id="slmember" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="社联介绍"><i class="fa fa-users fa-2x"></i></a>
+  </li>
 </ul>
 
 
 
 <!-- Begin Body -->
 
-<div class="no-gutter row"  id="wrap">
+<div class="no-gutter row" id="wrap">
   <!-- left side column -->
   <%=
       #render "layouts/navbar"
@@ -71,9 +95,9 @@
   <!--/end left column-->
 
   <!-- The Header of website-->
-
-  <%= render "layouts/header2" %>
-
+  <div id="inhed">
+    <%= render "layouts/header2" %>
+  </div>
   <div class="col-xs-12 col-md-9" id="maincontent">
 
     <%=
