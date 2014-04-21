@@ -1,4 +1,7 @@
 <div class="panel panel-default">
+<%=
+    #javascript_include_tag "pbTable.min.js"
+%>
   <!-- Default panel contents -->
 
   <div class="thumbnail">
@@ -24,6 +27,7 @@
 
       <div id="ajaxnews">
       </div>
+      <!--<table id="tablaDatos" class="table table-striped">-->
       <%=
           render 'module/flatnelist', :issues => @issues
       %>
@@ -32,34 +36,34 @@
       %>
 
       <!--<ul class="nav nav-pills nav-justified" id="myTab">-->
-        <!--<li class="active"><a href="#news_all" data-toggle="tab">所有新闻</a></li>-->
-        <!--<li><a href="#news_society" data-toggle="tab">社团新闻</a></li>-->
-        <!--<li><a href="#news_school" data-toggle="tab">学校新闻</a></li>-->
-        <!--<li><a href="#news_global" data-toggle="tab">世界时事</a></li>-->
+      <!--<li class="active"><a href="#news_all" data-toggle="tab">所有新闻</a></li>-->
+      <!--<li><a href="#news_society" data-toggle="tab">社团新闻</a></li>-->
+      <!--<li><a href="#news_school" data-toggle="tab">学校新闻</a></li>-->
+      <!--<li><a href="#news_global" data-toggle="tab">世界时事</a></li>-->
       <!--</ul>-->
 
       <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
       <!--<div class="tab-content" id="notinav">-->
-        <!--<div class="tab-pane fade in active" id="news_all">-->
-          <%=
-#              render 'module/switchview', :issues => @issues_society
-          %>
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="news_society">-->
-          <%=
-#              render 'module/switchview', :issues => @issues_society
-          %>
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="news_school">-->
-          <%=
-#              render 'module/switchview', :issues => @issues_school
-          %>
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="news_global">-->
-          <%=
-#              render 'module/switchview', :issues => @issues_top
-          %>
-        <!--</div>-->
+      <!--<div class="tab-pane fade in active" id="news_all">-->
+      <%=
+          #              render 'module/switchview', :issues => @issues_society
+      %>
+      <!--</div>-->
+      <!--<div class="tab-pane fade" id="news_society">-->
+      <%=
+          #              render 'module/switchview', :issues => @issues_society
+      %>
+      <!--</div>-->
+      <!--<div class="tab-pane fade" id="news_school">-->
+      <%=
+          #              render 'module/switchview', :issues => @issues_school
+      %>
+      <!--</div>-->
+      <!--<div class="tab-pane fade" id="news_global">-->
+      <%=
+          #              render 'module/switchview', :issues => @issues_top
+      %>
+      <!--</div>-->
       <!--</div>-->
 
       </tbody>
@@ -69,11 +73,4 @@
 
 
 <!--<td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), root_url %></td>-->
-
-
-
-
-
-
-
 
