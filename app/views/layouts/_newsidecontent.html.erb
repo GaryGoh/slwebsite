@@ -39,25 +39,27 @@
 
 
 
-  <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
-  <!--<div class="panel-body" id="side_content">-->
+<!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
+<!--<div class="panel-body" id="side_content">-->
 
 
-    <div class="list-group">
-      <% @notis_info.each do |issue| %>
-          <div class="panel panel-default">
-            <div class="panel-heading" >
-              <%= link_to issue.title, shownotis_url(issue) %>
-            </div>
-            <div class="panel-body" >
-              <%= truncate(issue.content, :length => 100) %>
-            </div>
 
+<div class="panel-body">
+
+  <div class="list-group">
+    <% @notis_info.each do |issue| %>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <%= link_to issue.title, shownotis_url(issue) %>
           </div>
-      <% end %>
-    </div>
+          <div class="panel-body">
+            <h7><small><%= truncate(issue.content, :length => 70){ link_to "  详情", shownotis_url(issue), :align => "right"} %></small></h7>
+          </div>
 
-  <!--</div>-->
+        </div>
+    <% end %>
+  </div>
+</div>
 
 <!--/panel-->
 <!--/end mid column-->

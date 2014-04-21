@@ -57,8 +57,7 @@
       <tr>
         <td><strong>个人简介:</strong></td>
         <td>
-          <pre id="user_pre"><%= @user.proverb %></pre>
-        </td>
+          <input name="tagsinput" class="tagsinput tagsinput-primary" value=<%= @user.proverb%>  readonly /></td>
       </tr>
       </tbody>
     </table>
@@ -118,3 +117,8 @@
   <% end %>
 
 </div>
+
+<script>
+    // Select dropdown
+    $(".tagsinput").tagsInput({});
+</script>

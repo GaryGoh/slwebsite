@@ -1,29 +1,26 @@
 // change colors
 //$link-color: red;
 
-
 // import original bootstrap
 @import "twitter/bootstrap";
-@import "bootstrap-select.min.css";
-@import "slcss.css";
-
-
-
+//@import "slcss.css";
+//@import "bootstrap";
+@import "flat-ui";
 // import font-awesome
 @import "font-awesome";
-
 
 ::-webkit-scrollbar {
   width: 0px;
 }
 
-html {
-  //overflow-y: visible;
-}
-
+//html {
+//  //overflow-y: visible;
+//}
+//
 body {
-  padding-top: 60px;
+  //padding-top: 20px;
   //overflow-y: scroll;
+  background-color: #f0f2f4;
 
 }
 
@@ -46,7 +43,7 @@ textarea {
 // Header CSS
 #search_header {
   position: relative;
-  left: 200px;
+  left: 500px;
 }
 
 #search_header_form {
@@ -55,24 +52,24 @@ textarea {
 
 // Footer CSS
 #footer {
-  margin-top: 10px;
-  padding-top: 15px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
+  //margin-top: 10px;
+  //padding-top: 15px;
+  //border-top: 1px solid #eaeaea;
+  //color: #999;
 }
 
 #footer_div {
-  position:static;
-  bottom:0;
-  width:100%;
-  text-align: center;
-
-}
-#footer_index{
+  //position:static;
+  //bottom:0;
+  //width:100%;
   text-align: center;
 
 }
 
+#footer_index {
+  text-align: center;
+
+}
 
 // Signin form
 .form-signin {
@@ -166,32 +163,8 @@ a:hover {
   //opacity: 1.0;
 }
 
-
 #global_right_contents {
   position: relative;
-}
-
-
-#span1 {
-  // -- left side nav icon -- //
-  font-size: 32px;
-  position: relative;
-  left: 10px;
-  //opacity: .7;
-}
-
-#span2 {
-  font-size: 20px;
-  left: -10px;
-  //opacity: .7;
-}
-
-#span1.hover {
-  // -- Try to achieve hiden effect -- //
-  font-size: 32px;
-  position: relative;
-  left: 10px;
-  //opacity: 1.0;
 }
 
 // To modify the background that shows in textarea
@@ -219,50 +192,18 @@ a:hover {
   width: 800px;
 }
 
-#home_carousel {
-  z-index: 0;
+.bottom-menu {
+  background-color: #f0f2f4;
 }
 
-#home_panel1 {
-  position: absolute;
-  left: 100px;
-  top: 200px;
-  z-index: 1;
-  width: 1000px;
-  opacity: 0.93;
+html, body {
+  background: url(nothing.txt) white fixed; /*prevent screen flash in IE6*/
+  //-webkit-transform: translateZ(0);
 }
 
-#footer_nav {
-
-  margin-bottom: -20px;
+.popover-content{
+  background: #384047;
+  color: #ffffff;
+  border-radius: 6px;
 }
-
-#footer_link{
-  position: relative;
-  top: -10px;
-}
-
-#home_div{
-  position: relative;
-  top: -10px;
-  margin-bottom: -20px;
-}
-
-#span2{
-  font-size: 18px;
-}
-
-#navword{
-  //font-size: 24px;
-  //font-variant: inherit;
-}
-
-#brand.hover{
-  color: #FFFFFF;
-}
-
-#pageHead{
-  margin-top: -72px;
-}
-
 

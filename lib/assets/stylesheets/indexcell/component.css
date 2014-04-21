@@ -10,7 +10,7 @@
 .grid li {
 	display: inline-block;
 	width: 220px;
-	margin: 10px;
+	/*margin-right: 7%;*/
 	padding: 10px;
 	text-align: left;
 	position: relative;
