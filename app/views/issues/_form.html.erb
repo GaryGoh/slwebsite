@@ -16,42 +16,47 @@
         </div>
     <% end %>
 
-    <div class="panel-body">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"></h3>
+      </div>
+      <div class="panel-body">
+        <form class="form-horizontal" role="form">
 
-        <div class="form-group">
-          <h5>发布者</h5>
+          <div class="form-group">
+            <label for="author" class="col-sm-2 control-label">发布者</label>
 
-          <% if @user.name == "" || @user.name == nil %>
-              <%= f.text_field :author, :class => "form-control", :value => @user.stuid, :readonly => "true" %>
-          <% else %>
-              <%= f.text_field :author, :class => "form-control", :value => @user.name, :readonly => "true" %>
-          <% end %>
-        </div>
+            <div class="col-sm-10">
+              <% if @user.name == "" || @user.name == nil %>
+                  <%= f.text_field :author, :class => "form-control", :value => @user.stuid, :readonly => "true" %>
+              <% else %>
+                  <%= f.text_field :author, :class => "form-control", :value => @user.name, :readonly => "true" %>
+              <% end %>
+            </div>
+          </div>
 
-        <div class="form-group">
-          <h5>新闻标题</h5>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">新闻标题</label>
 
-          <%= f.text_field :title, :class => "form-control", :id => "inputEmail3", :placeholder => "新闻标题" %>
-        </div>
-
-
-        <div class="form-group">
-          <h5>新闻内容</h5>
-
-          <%= f.text_area :content, :class => "tinymce", :placeholder => "新闻内容", :rows => "10" %>
-        </div>
+            <div class="col-sm-10">
+              <%= f.text_field :title, :class => "form-control", :id => "inputEmail3", :placeholder => "新闻标题" %>
+            </div>
+          </div>
 
 
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">新闻内容</label>
 
+            <div class="col-sm-10">
+              <%= f.text_area :content, :class => "tinymce", :placeholder => "新闻内容", :rows => "10" %>
+            </div>
+          </div>
 
-        <h5>新闻属性</h5>
-
-        <div class="thumbnail">
 
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">所属社团</label>
             <%= f.select :society_id, @user.user_societies(:all).collect { |s|
-              [(s.society), s.society_id] }, {}, {:class => "selectpicker", :nameui => "huge"} %>
+              [(s.society), s.society_id] } %>
 
             <div class="col-sm-10">
 
@@ -62,65 +67,60 @@
             <label for="inputPassword3" class="col-sm-2 control-label">新闻类型</label>
             <%= f.select :category_id,
                          Category.where('id = 2 OR id = 3').collect { |s|
-                           [(s.category_name), s.id] }, {}, {:class => "selectpicker", :nameui => "huge"}
+                           [(s.category_name), s.id] }
             %>
 
             <div class="col-sm-10">
 
             </div>
           </div>
-        </div>
 
 
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">新闻图片</h3>
+            </div>
+            <div class="panel-body">
 
-      <h5>新闻图片</h5>
+              <div class="control-group">
 
-      <!--<div class="thumbnail">-->
-        <div class="control-group">
+                <div class="controls">
+                  <%= f.fields_for :issue_images do |fm| %>
+                      <%
+                         if fm.object.new_record?
+                      %>
+                          <p>
+                            <%= fm.file_field :issue_pic %>
+                          </p>
+                      <% end %>
+                  <% end %>
+                  <hr>
+                  <%= f.fields_for :issue_images do |fm| %>
+                      <% unless fm.object.new_record? %>
+                          <div class="col-sm-6 col-md-4">
 
-          <div class="controls">
-            <%= f.fields_for :issue_images do |fm| %>
-                <%
-                   if fm.object.new_record?
-                %>
-                    <p>
-                      <%= fm.file_field :issue_pic %>
-                    </p>
-                <% end %>
-            <% end %>
-            <hr>
-            <%= f.fields_for :issue_images do |fm| %>
-                <% unless fm.object.new_record? %>
-                    <div class="col-sm-6 col-md-4">
+                            <P><%= image_tag(fm.object.issue_pic.url(:thumb)) %></p>
+                            <%= fm.check_box :_destroy %> 删除照片?
+                          </div>
+                      <% end %>
+                  <% end %>
 
-                      <P><%= image_tag(fm.object.issue_pic.url(:thumb)) %></p>
-                      <%= fm.check_box :_destroy %> 删除照片?
-                    </div>
-                <% end %>
-            <% end %>
+                </div>
+              </div>
 
+            </div>
           </div>
-        </div>
+          <div class="form-group">
+
+            <div class="col-sm-offset-2 col-sm-10">
+              <%= f.submit class: "btn btn-primary btn-block", value: "提交" %>
+            </div>
+          </div>
+        </form>
       </div>
-
-        <div class="form-group">
-
-          <div class="col-sm-offset-2 col-sm-10">
-            <%= f.submit class: "btn btn-primary btn-block", value: "提交" %>
-          </div>
-        <!--</div>-->
-      </form>
     </div>
 <% end %>
 
 <%= tinymce %>
 
 
-<script>
-    // Select dropdown
-    $("select[nameui='huge']").selectpicker({style: 'btn btn-primary', menuStyle: 'dropdown-inverse'});
-    $("select[nameui='large']").selectpicker({style: 'btn-lg btn-default'});
-    $("select[nameui='info']").selectpicker({style: 'btn-info'});
-    $("select[nameui='small']").selectpicker({style: 'btn-sm btn-warning'});
-
-</script>

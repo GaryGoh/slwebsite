@@ -1,23 +1,21 @@
 <style xmlns="http://www.w3.org/1999/html">
     #index_activity {
-        /*min-height: 150px;*/
-        /*max-height: 150px;*/
+        min-height: 150px;
+        max-height: 150px;
     }
 </style>
-<!--<ul class="grid cs-style-3">-->
-  <% notis.each do |i| %>
-      <ul class="grid cs-style-3">
-        <h6><%= truncate(i.title, :length => 11) %></h6>
 
-        <p>
-          <small><%= truncate(i.content, :length => 32) %></small>
-        </p>
-        <% if i.content.length <= 24 %>
-            </br>
-        <% end %>
+<% notis.each do |i| %>
+    <div class="col-6 col-sm-6 col-lg-4" id="index_activity">
+      <h4><%= truncate(i.title, :length => 16) %></h4>
 
-        <p><a class="btn btn-primary" href="<%= shownotis_url(i) %>">详细</a></p>
-      </ul>
-      <!--/span-->
-  <% end %>
-<!--</ul>-->
+      <p>
+        <small><%= truncate(i.content, :length => 43) %></small>
+      </p>
+      <% if i.content.length <= 24 %>
+          </br>
+      <% end %>
+
+      <p><a class="btn btn-block btn-primary" href="<%= shownotis_url(i) %>">详细</a></p>
+    </div><!--/span-->
+<% end %>

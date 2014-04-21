@@ -4,32 +4,8 @@
         /*color: #119CDD;*/
         border: none;
     }
-
-    .carousel-control.left {
-        margin-left: -45px;
-        bottom: 55%;
-        color: #119cdd;
-    }
-
-    .carousel-control.right {
-        margin-right: -45px;
-        bottom: 55%;
-        color: #119cdd;
-    }
-
-    #car_btn {
-        /*position: fixed;*/
-        top: 30%;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-
-    }
-
-
-
+    .carousel-control.left {margin-left: -45px; color: #119cdd;}
+    .carousel-control.right {margin-right: -45px; color: #119cdd;}
 </style>
 
 
@@ -41,16 +17,16 @@
 
   <ol class="carousel-indicators">
     <% is_active = true %>
-    <% cid = 1 %>
+    <% cid = 1%>
     <% issues.each do |e| %>
         <% (1..e.issue_images.count).each do %>
             <% if is_active %>
-                <% is_active = false %>
+                <% is_active = false%>
                 <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>" class="active"></li>
             <% else %>
                 <li data-target="#carousel-example-generic" data-slide-to="<%= cid %>"></li>
             <% end %>
-            <% cid + 1 %>
+            <% cid + 1%>
         <% end %>
     <% end %>
   </ol>
@@ -67,15 +43,15 @@
             <% else %>
                 <div class="item">
             <% end %>
-            <div align="center">
-              <%= image_tag i.issue_pic.url, :onload => "adapt();", :id => "imgs", :height =>"1280"%>
-            </div>
-            <div class="carousel-caption affix-top" id="car_btn">
+             <div align= "center">
+               <a href=<%= shownews_url(e) %>>
+               <%= image_tag i.issue_pic.url(:medium) %>
+                   </a>
+             </div>
+            <div class="carousel-caption">
               <h3><%= e.title %></h3>
               <% content = strip_tags((e.content)) %>
               <p><%= (truncate(sanitize(content), :length => 20)) %></p>
-
-              <p><a class="btn btn-large btn-primary btn-embossed" href=<%= shownews_url(e) %>>详细</a></p>
             </div>
             </div>
         <% end %>
@@ -90,20 +66,3 @@
     <span class="glyphicon glyphicon-chevron-right" id="next"></span>
   </a>
 </div>
-
-
-
-
-<script>
-    function adapt() {
-        var tableWidth = $("#imgTable").width();
-        var img = new Image();
-        img.src = $('#imgs').attr("src");
-        var imgWidth = img.width;
-        if (imgWidth < tableWidth) {
-            $('#imgs').attr("style", "width: auto");
-        } else {
-            $('#imgs').attr("style", "width: 100%");
-        }
-    }
-</script>
