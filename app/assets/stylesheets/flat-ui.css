@@ -2794,7 +2794,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
     content: "\e005";
 }
 .ui-datepicker {
-    width: 264px;
+    width: auto;
     background-color: #ffffff;
     display: none;
     margin: 10px 0 0 0;
