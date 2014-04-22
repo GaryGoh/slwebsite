@@ -2879,7 +2879,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .ui-datepicker table {
     font-size: 14px;
     margin: 0 0 3px;
-    width: 100%;
+    width: auto;
 }
 .ui-datepicker th {
     min-width: 34px;
