@@ -69,8 +69,12 @@
         border-style: hidden;
     }
 
-    #inemb{
+    #inemb {
         padding-top: 2%;
+    }
+
+    .tindex {
+        border-width: 0;
     }
 </style>
 
@@ -100,7 +104,7 @@
 <!--</div>-->
 
 
-<div class="col-md-12 thumbnail" id="idhead">
+<div class="thumbnail tindex" id="idhead">
   <div id="inemb">
     <%=
         render "module/nmolist", :issues => @issues_society
@@ -108,6 +112,13 @@
   </div>
 </div>
 
+<div class="thumbnail tindex" id="idhead">
+  <div id="inemb">
+    <%=
+        render "static_page/indexNews"
+    %>
+  </div>
+</div>
 <!--<div class="col-md-12 thumbnail" id="index_ns">-->
 <!--<div class="panel panel-default" id="index_frame">-->
 <!--<div class="panel-body">-->
