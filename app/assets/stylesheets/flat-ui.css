@@ -1374,6 +1374,7 @@ fieldset[disabled] .btn-link:focus {
     /* 2 */
 
 }
+
 .select.select-block:after {
     clear: both;
 }
@@ -2793,7 +2794,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
     content: "\e005";
 }
 .ui-datepicker {
-    width: 264px;
+    width: auto;
     background-color: #ffffff;
     display: none;
     margin: 10px 0 0 0;
@@ -2878,7 +2879,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .ui-datepicker table {
     font-size: 14px;
     margin: 0 0 3px;
-    width: 100%;
+    width: auto;
 }
 .ui-datepicker th {
     min-width: 34px;
@@ -5110,7 +5111,8 @@ select[multiple].navbar-form .btn {
     color: #1abc9c;
 }
 .navbar-inverse {
-    background-color: #34495e;
+    /*background-color: #34495e;*/
+    background-color: #01353a;
 }
 .navbar-inverse .navbar-brand {
     color: #ffffff;

@@ -1,8 +1,34 @@
 <style>
     #indschool {
         font-size: 14px;
+        border-bottom: solid;
+        border-bottom-color: #e1e4e7;
+        border-bottom-width: 1px;
     }
 </style>
+
+
+
+
+
+<div class="col-md-5" id="index_ns">
+  <ul class="nav nav-tabs" id="myTab">
+    <li class="active"><a href="#isociety" data-toggle="tab">社团活动</a></li>
+    <li><a href="#school" data-toggle="tab">通知公告</a></li>
+  </ul>
+  <div class="tab-content" id="notinav">
+    <div class="tab-pane fade in active" id="isociety">
+      <%=
+          render "module/indnotis", :issues => @notis_activity
+      %>
+    </div>
+    <div class="tab-pane fade" id="school">
+      <%=
+          render "module/indnotis", :issues => @notis_info
+      %>
+    </div>
+  </div>
+</div>
 
 <div class="col-md-7">
   <div class="thumbnail" id="caindex">
@@ -10,68 +36,5 @@
         render "module/indexcarousel", :issues => @issues_top
     %>
   </div>
-
 </div>
 
-
-
-<div class="col-md-5" id="index_ns">
-  <!--<div class="panel panel-default" id="index_frame">-->
-    <!--<div class="panel-body">-->
-      <ul class="nav nav-tabs" id="myTab">
-        <li class="active"><a href="#isociety" data-toggle="tab">社团活动</a></li>
-        <li><a href="#school" data-toggle="tab">通知公告</a></li>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content" id="notinav">
-        <div class="tab-pane fade in active" id="isociety">
-          <%=
-              render "module/indnotis", :issues => @notis_activity
-          %>
-        </div>
-        <div class="tab-pane fade" id="school">
-          <%=
-              render "module/indnotis", :issues => @notis_info
-          %>
-        </div>
-      </div>
-
-    <!--</div>-->
-  </div>
-<!--</div>-->
-
-
-
-<div class="panel panel-default col-md-9">
-  <div class="panel-heading">社团新闻</div>
-
-  <%=
-      render "module/indexcell/cell1", :issues => @issues_society
-  %>
-</div>
-
-<div class="panel panel-default col-md-3">
-  <div class="panel-heading">学校新闻</div>
-
-  <div class="panel-body" id="indschool">
-
-    <% token = 0 %>
-    <% @issues_society.last(7).each do |e| %>
-        <%
-           #if token < 0
-        %>
-        <%
-           #next if (e.issue_images.count == 0)
-        %>
-
-        <% token = token + 1 %>
-        <!--<div class="col-md-6">-->
-        <!--<div class="thumbnail">-->
-        <%= token %> | <%= link_to truncate(e.title, :length => 14), shownews_url(e) %>
-        <hr>
-        <!--</div>-->
-        <!--</div>-->
-    <% end %>
-  </div>
-</div>

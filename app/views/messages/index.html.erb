@@ -1,0 +1,8 @@
+<%= render "module/msg/msg", :message => @messages%>
+
+<%=
+    #link_to 'New Message', new_message_path
+    unless current_user_stu.nil?
+      render "messages/form"
+    end
+%>

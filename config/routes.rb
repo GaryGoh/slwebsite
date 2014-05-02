@@ -1,11 +1,14 @@
 Slwebsite::Application.routes.draw do
 
 
+  resources :messages
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :users do
     resources :issues
     resources :notis
+    #resources :messages
   end
   resources :sessions, only: [:new, :create, :destroy]
 
@@ -47,6 +50,8 @@ Slwebsite::Application.routes.draw do
   get "wy" => "society#wy"
   get "ty" => "society#ty"
   get "xs" => "society#xs"
+
+  get '/messages', to: 'messages#index'
 
 
   #get '/users', to: 'issues#notis'

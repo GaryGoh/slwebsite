@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 
     // Header fade out
     $(document).ready(function () {
@@ -53,4 +53,61 @@
     $("#download").popover();
     $("#faq").popover();
     $("#slmember").popover();
+
+
+    var datepickerSelector = '#datepicker';
+    $(datepickerSelector).datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dateFormat: "d MM, yy",
+        yearRange: '-1:+1'
+    }).prev('.btn').on('click', function (e) {
+                e && e.preventDefault();
+                $(datepickerSelector).focus();
+            });
+
+    // Change to false if wanna enable select
+    $(datepickerSelector).datepicker("option", "disabled", true ).css({'margin-left': -$(datepickerSelector).prev('.btn').outerWidth()});
+
+
+    $(document).ready(function(){
+        // 初始化
+        LxA.init();
+        // 初始化弹幕播放器，最多显示256条
+        LxA.initDmPlayer(256);
+        // 设置显示弹幕
+        LxA.dmplay = true;
+        // 测试
+
+    });
+    function 弹幕测试(n){
+        n = n || 1;
+        LxS.dm('弹幕测试第' + n + '条');
+        setTimeout(function(){
+            弹幕测试(n + 1);
+        }, 100);
+    }
+    function 菜单测试(){
+        var p = LxS.popup(
+                [
+                    {
+                        'text'  : '菜单项1',
+                        'click' : function(){
+                            LxS.alert('菜单项1');
+                        }
+                    },
+                    {
+                        'text'  : '菜单项2',
+                        'click' : function(){
+                            LxS.alert('菜单项2');
+                        }
+                    }
+                ]
+        );
+        p.pop();
+    }
+
+
+
+
 </script>

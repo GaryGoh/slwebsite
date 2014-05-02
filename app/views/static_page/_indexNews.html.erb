@@ -1,0 +1,32 @@
+
+<div class="panel panel-default col-md-9">
+  <div class="panel-heading">社团新闻</div>
+
+  <%=
+      render "module/indexcell/cell1", :issues => @issues_society
+  %>
+</div>
+
+<div class="panel panel-default col-md-3">
+  <div class="panel-heading">学校新闻</div>
+
+  <div class="panel-body" id="">
+
+    <% token = 0 %>
+    <% @issues_society.last(6).each do |e| %>
+        <%
+           #if token < 0
+        %>
+        <%
+           #next if (e.issue_images.count == 0)
+        %>
+
+        <% token = token + 1 %>
+        <!--<div class="col-md-6">-->
+        <!--<div class="thumbnail">-->
+        <p id="indschool"><%= token %> | <%= link_to truncate(e.title, :length => 14), shownews_url(e) %>
+          <!--</div>-->
+          <!--</div>-->
+    <% end %>
+  </div>
+</div>
