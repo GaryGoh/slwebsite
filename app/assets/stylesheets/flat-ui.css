@@ -1374,7 +1374,6 @@ fieldset[disabled] .btn-link:focus {
     /* 2 */
 
 }
-
 .select.select-block:after {
     clear: both;
 }
@@ -2794,7 +2793,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
     content: "\e005";
 }
 .ui-datepicker {
-    width: auto;
+    width: 264px;
     background-color: #ffffff;
     display: none;
     margin: 10px 0 0 0;
@@ -2879,7 +2878,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .ui-datepicker table {
     font-size: 14px;
     margin: 0 0 3px;
-    width: auto;
+    width: 100%;
 }
 .ui-datepicker th {
     min-width: 34px;

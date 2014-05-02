@@ -1,4 +1,4 @@
-<script>
+<script type="text/javascript">
 
     // Header fade out
     $(document).ready(function () {
@@ -53,19 +53,4 @@
     $("#download").popover();
     $("#faq").popover();
     $("#slmember").popover();
-
-
-    var datepickerSelector = '#datepicker';
-    $(datepickerSelector).datepicker({
-        showOtherMonths: true,
-        selectOtherMonths: true,
-        dateFormat: "d MM, yy",
-        yearRange: '-1:+1'
-    }).prev('.btn').on('click', function (e) {
-                e && e.preventDefault();
-                $(datepickerSelector).focus();
-            });
-
-    // Change to false if wanna enable select
-    $(datepickerSelector).datepicker("option", "disabled", true ).css({'margin-left': -$(datepickerSelector).prev('.btn').outerWidth()});
 </script>

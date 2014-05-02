@@ -3,7 +3,10 @@
 
 // import original bootstrap
 @import "twitter/bootstrap";
+//@import "slcss.css";
+//@import "bootstrap";
 @import "flat-ui";
+// import font-awesome
 @import "font-awesome";
 
 ::-webkit-scrollbar {
@@ -195,8 +198,6 @@ a:hover {
 
 html, body {
   background: url(nothing.txt) white fixed; /*prevent screen flash in IE6*/
-  overflow-y:scroll;
-  margin:0 auto
   //-webkit-transform: translateZ(0);
 }
 
@@ -206,7 +207,3 @@ html, body {
   border-radius: 6px;
 }
 
-.container-full{
-  margin: 0 auto;
-  width: 100%;
-}

@@ -1,9 +1,6 @@
 <style>
-    #indschool{
+    #indschool {
         font-size: 14px;
-        border-bottom: solid;
-        border-bottom-color: #e1e4e7;
-        border-bottom-width: 1px;
     }
 </style>
 
@@ -57,7 +54,7 @@
 <div class="panel panel-default col-md-3">
   <div class="panel-heading">学校新闻</div>
 
-  <div class="panel-body" id="">
+  <div class="panel-body" id="indschool">
 
     <% token = 0 %>
     <% @issues_society.last(7).each do |e| %>
@@ -71,7 +68,8 @@
         <% token = token + 1 %>
         <!--<div class="col-md-6">-->
         <!--<div class="thumbnail">-->
-        <p id="indschool"><%= token %> | <%= link_to truncate(e.title, :length => 14), shownews_url(e) %>
+        <%= token %> | <%= link_to truncate(e.title, :length => 14), shownews_url(e) %>
+        <hr>
         <!--</div>-->
         <!--</div>-->
     <% end %>
