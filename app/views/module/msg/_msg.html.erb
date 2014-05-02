@@ -146,8 +146,8 @@
 
             <h2>
 
-              <% if msg.user.name.empty? %>
-                  <%= msg.user.stuid %>
+              <% if msg.user.nil? %>
+                  <%= msg.user %>
               <% else %>
                   <%= msg.user.name %>
               <% end %>

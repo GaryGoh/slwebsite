@@ -3,7 +3,7 @@ class MessagesController < InheritedResources::Base
   before_filter :get_user
 
   layout "signinup"
-  respond_to :html
+  respond_to :html, :js
 
   # GET /notis
   # GET /notis.json
@@ -26,19 +26,12 @@ class MessagesController < InheritedResources::Base
   # POST /notis
   # POST /notis.json
   def create
-    @message = @user.messages.build(message_params)
+    @message = Message.new(message_params)
 
-    respond_to do |format|
-      if @message.save
-        format.html { redirect_to messages_url, notice: '成功发布留言.' }
-        format.json { render action: 'show', status: :created, location: @message }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @message.errors, status: :unprocessable_entity }
-      end
-    end
+    @message.save
+    respond_with @message, :location => messages_url
+
   end
-
 
 
   # DELETE /notis/1

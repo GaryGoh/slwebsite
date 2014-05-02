@@ -1,0 +1,6 @@
+<div id=<%= dom_id(message) %> class="message">
+<strong><%= message.msg_content %></strong>
+<em>on <%= message.created_at.strftime('%b %d, %Y at %I:%M %p') %></em>
+<%= link_to "Remove", message, :method => :delete, :remote => true %>
+<%= simple_format message.msg_content %>
+</div>
