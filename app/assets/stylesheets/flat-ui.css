@@ -5111,8 +5111,7 @@ select[multiple].navbar-form .btn {
     color: #1abc9c;
 }
 .navbar-inverse {
-    /*background-color: #34495e;*/
-    background-color: #01353a;
+    background-color: #34495e;
 }
 .navbar-inverse .navbar-brand {
     color: #ffffff;
