@@ -1,5 +1,23 @@
 <script>
 
+    // Header fade out
+    $(document).ready(function () {
+
+        $('#sidebar').affix({
+            offset: {
+                top: 230,
+                bottom: 100
+            }
+        });
+        $('#midCol').affix({
+            offset: {
+                top: 230,
+                bottom: 100
+            }
+        });
+
+    });
+
     // Fixed height of left & right
     window.onload = window.onresize = function () {
         if (document.getElementById("maincontent").clientHeight < document.getElementById("sidecontent").clientHeight) {

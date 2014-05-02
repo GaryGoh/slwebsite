@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140502003427) do
+ActiveRecord::Schema.define(version: 20140501195550) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -154,7 +154,7 @@ ActiveRecord::Schema.define(version: 20140502003427) do
   end
 
   create_table "messages", force: true do |t|
-    t.string   "user_id"
+    t.integer  "user_id"
     t.string   "msg_content"
     t.string   "msg_font"
     t.string   "msg_position"
