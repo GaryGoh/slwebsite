@@ -16,23 +16,15 @@
 //= require turbolinks
 //= require_tree .
 
+// Include all twitter's javascripts
+//= require twitter/bootstrap
+//= require jquery.goup.min
 
 //= require flat-ui/bootstrap-select
 //= require flat-ui/bootstrap-switch
 //= require flat-ui/flatui-fileinput
 //= require flat-ui/jquery.tagsinput
 //= require flat-ui/holder
-//= require flat-ui/jquery-ui-1.10.3.custom.min
-
-
-// Include all twitter's javascripts
-//= require twitter/bootstrap
-//= require jquery.goup.min
-//= require popup
-
-
-
-
 
 
 

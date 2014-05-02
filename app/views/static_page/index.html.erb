@@ -17,12 +17,12 @@
         /*background: #fffffe;*/
     }
 
-        /*#rightcontent {*/
-        /*border-left-style: solid;*/
-        /*border-color: #eee;*/
-        /*background: #fffffe;*/
-        /*margin: 3% 0 2% 0;*/
-        /*}*/
+    #rightcontent {
+        border-left-style: solid;
+        border-color: #eee;
+        background: #fffffe;
+        margin: 3% 0 2% 0;
+    }
 
     #rightcontent_so {
         border-left-style: solid;
@@ -64,134 +64,88 @@
     #index_frame {
         margin-top: 20px;
     }
-
-    .tab-content {
-        border-style: hidden;
-    }
-
-    #inemb {
-        padding-top: 2%;
-    }
-
-    .tindex {
-        border-width: 0;
-    }
 </style>
 
 
-
-<!--<div class="col-md-12 thumbnail" id="idhead">-->
-<%=
-    #render "module/video"
-%>
-<!--<form class="form-inline" role="form">-->
-<!--<div class="form-group">-->
-<!--<label class="sr-only" for="exampleInputEmail2">Email address</label>-->
-<!--<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">-->
-<!--</div>-->
-<!--<div class="form-group">-->
-<!--<label class="sr-only" for="exampleInputPassword2">Password</label>-->
-<!--<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">-->
-<!--</div>-->
-<!--<div class="checkbox">-->
-<!--<label>-->
-<!--<input type="checkbox"> Remember me-->
-<!--</label>-->
-<!--</div>-->
-<!--<button type="submit" class="btn btn-default">Sign in</button>-->
-<!--</form>-->
-
-<!--</div>-->
-
-
-<div class="thumbnail tindex" id="idhead">
-  <div id="inemb">
-    <%=
-        render "module/nmolist", :issues => @issues_society
-    %>
-  </div>
+<div class="col-md-12 thumbnail" id="idhead">
+  <%=
+      render "module/nmolist", :issues => @issues_society
+  %>
 </div>
 
-<div class="thumbnail tindex" id="idhead">
-  <div id="inemb">
-    <%=
-        render "static_page/indexNews"
-    %>
+<div class="col-md-12 thumbnail" id="index_ns">
+  <div class="panel panel-default" id="index_frame">
+    <div class="panel-body">
+      <div class="col-md-2" id="te">
+        <!--<div class="panel">-->
+        <h4>新闻部落</h4>
+        <!--</div>-->
+      </div>
+
+      <div class="col-md-10" id="rightcontent">
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a href="#isociety" data-toggle="tab">社团新闻</a></li>
+          <li><a href="#school" data-toggle="tab">学校新闻</a></li>
+          <li><a href="#global" data-toggle="tab">世界时事</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content" id="notinav">
+          <div class="tab-pane fade in active" id="isociety">
+            <%=
+                render "module/indexcell/cell1", :issues => @issues_society
+            %>
+          </div>
+          <div class="tab-pane fade" id="school">
+            <%=
+                render "module/indexcell/cell1", :issues => @issues_school
+            %>
+          </div>
+          <div class="tab-pane fade" id="global">
+            <%=
+                render "module/indexcell/cell1", :issues => @issues_global
+            %>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
-<!--<div class="col-md-12 thumbnail" id="index_ns">-->
-<!--<div class="panel panel-default" id="index_frame">-->
-<!--<div class="panel-body">-->
-<!--<div class="col-md-2" id="te">-->
-<!--<div class="panel">-->
-<!--<h4>新闻部落</h4>-->
-<!--</div>-->
-<!--</div>-->
-<!---->
-<!--<div class="col-md-10" id="rightcontent">-->
-<!--<ul class="nav nav-tabs" id="myTab">-->
-<!--<li class="active"><a href="#isociety" data-toggle="tab">社团新闻</a></li>-->
-<!--<li><a href="#school" data-toggle="tab">学校新闻</a></li>-->
-<!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
-<!--</ul>-->
-<!---->
-<!--Tab panes -->
-<!--<div class="tab-content" id="notinav">-->
-<!--<div class="tab-pane fade in active" id="isociety">-->
-<%=
-    #render "module/indexcell/cell1", :issues => @issues_society
-%>
-<!--</div>-->
-<!--<div class="tab-pane fade" id="school">-->
-<%=
-    #render "module/indexcell/cell1", :issues => @issues_school
-%>
-<!--</div>-->
-<!--<div class="tab-pane fade" id="global">-->
-<%=
-    #render "module/indexcell/cell1", :issues => @issues_global
-%>
-<!--</div>-->
-<!--</div>-->
-<!---->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
 
 
 <!--<div class="col-md-12 thumbnail" id="index_atvt">-->
-<!--<div class="panel panel-default" id="index_frame">-->
-<!--<div class="panel-body">-->
-<!--<div class="col-md-2" id="te">-->
-<!--<h4>活动专区</h4>-->
-<!--</div>-->
+  <!--<div class="panel panel-default" id="index_frame">-->
+    <!--<div class="panel-body">-->
+      <!--<div class="col-md-2" id="te">-->
+        <!--<h4>活动专区</h4>-->
+      <!--</div>-->
 <!---->
-<!--<div class="col-md-10" id="rightcontent">-->
-<!--<ul class="nav nav-tabs" id="myTab">-->
-<!--<li class="active"><a href="#society_activity" data-toggle="tab">社团活动</a></li>-->
-<!--<li><a href="#boutique" data-toggle="tab">精品活动</a></li>-->
-<!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
-<!--</ul>-->
+      <!--<div class="col-md-10" id="rightcontent">-->
+        <!--<ul class="nav nav-tabs" id="myTab">-->
+          <!--<li class="active"><a href="#society_activity" data-toggle="tab">社团活动</a></li>-->
+          <!--<li><a href="#boutique" data-toggle="tab">精品活动</a></li>-->
+          <!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
+        <!--</ul>-->
 <!---->
-<!-- Tab panes -->
-<!--<div class="tab-content" id="notinav">-->
-<!--<div class="tab-pane fade in active" id="society_activity">-->
-<%=
-    #render "module/indexcell/activity", :notis => @notis_activity
-%>
-<!--</div>-->
-<!--<div class="tab-pane fade" id="boutique">-->
-<%=
-    #render "module/indexcell/activity", :notis => @notis_good
-%>
-<!--</div>-->
+        <!-- Tab panes -->
+        <!--<div class="tab-content" id="notinav">-->
+          <!--<div class="tab-pane fade in active" id="society_activity">-->
+            <%=
+                #render "module/indexcell/activity", :notis => @notis_activity
+            %>
+          <!--</div>-->
+          <!--<div class="tab-pane fade" id="boutique">-->
+            <%=
+                #render "module/indexcell/activity", :notis => @notis_good
+            %>
+          <!--</div>-->
 <!---->
-<!--</div>-->
+        <!--</div>-->
 <!---->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
 <!--</div>-->
 
 
@@ -201,7 +155,7 @@
 <div class="panel-body">
 <div class="col-md-2" id="te">
   <h4>优秀社团</h4>
-  <ul class="nav nav-tabs nav-stacked" id="society">
+  <ul class="nav nav-pills nav-stacked" id="society">
     <% counter = true %>
     <% @societies.each do |s| %>
         <% if counter %>
@@ -222,7 +176,7 @@
     <% if counter %>
         <div class="tab-pane fade in active" id="<%= s.id %>">
 
-          <ul class="nav nav-tabs nav-justified" id="society">
+          <ul class="nav nav-pills nav-justified" id="society">
             <li class="active"><a href="#<%= s.id %>_pro" data-toggle="tab">社团资料</a></li>
             <li><a href="#<%= s.id %>_act" data-toggle="tab">精品活动</a></li>
             <li><a href="#<%= s.id %>_his" data-toggle="tab">社团历史</a></li>
@@ -324,7 +278,7 @@
     <% else %>
         <div class="tab-pane fade in" id="<%= s.id %>">
 
-          <ul class="nav nav-tabs nav-justified" id="society">
+          <ul class="nav nav-pills nav-justified" id="society">
             <li class="active"><a href="#<%= s.id %>_pro" data-toggle="tab">社团资料</a></li>
             <li><a href="#<%= s.id %>_act" data-toggle="tab">精品活动</a></li>
             <li><a href="#<%= s.id %>_his" data-toggle="tab">社团历史</a></li>

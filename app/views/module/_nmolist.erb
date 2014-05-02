@@ -1,34 +1,4 @@
-<style>
-    #indschool {
-        font-size: 14px;
-        border-bottom: solid;
-        border-bottom-color: #e1e4e7;
-        border-bottom-width: 1px;
-    }
-</style>
-
-
-
-
-
-<div class="col-md-5" id="index_ns">
-  <ul class="nav nav-tabs" id="myTab">
-    <li class="active"><a href="#isociety" data-toggle="tab">社团活动</a></li>
-    <li><a href="#school" data-toggle="tab">通知公告</a></li>
-  </ul>
-  <div class="tab-content" id="notinav">
-    <div class="tab-pane fade in active" id="isociety">
-      <%=
-          render "module/indnotis", :issues => @notis_activity
-      %>
-    </div>
-    <div class="tab-pane fade" id="school">
-      <%=
-          render "module/indnotis", :issues => @notis_info
-      %>
-    </div>
-  </div>
-</div>
+<style></style>
 
 <div class="col-md-7">
   <div class="thumbnail" id="caindex">
@@ -38,3 +8,22 @@
   </div>
 </div>
 
+<div class="col-md-5">
+<% token = 0 %>
+<% issues.each do |e| %>
+    <%
+       #if token < 0
+    %>
+    <%
+       #next if (e.issue_images.count == 0)
+    %>
+
+    <% token = token + 1 %>
+    <!--<div class="col-md-6">-->
+    <!--<div class="thumbnail">-->
+    <p><%= token %> | <%= link_to truncate(e.title, :length => 20), shownews_url(e) %></p>
+    <hr>
+    <!--</div>-->
+    <!--</div>-->
+<% end %>
+</div>

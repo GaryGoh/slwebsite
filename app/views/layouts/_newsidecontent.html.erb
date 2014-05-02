@@ -32,13 +32,6 @@
         /*top: 690px;*/
     }
 
-    #datepicker {
-        font-size: 1px;
-    }
-
-    .ui-datepicker {
-        font-size: 16px;
-    }
 </style>
 
 
@@ -50,31 +43,25 @@
 <!--<div class="panel-body" id="side_content">-->
 
 
-<div id="datepicker"></div>
 
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#indexnoti">
-          通知公告
-        </a>
-      </h4>
-    </div>
-    <div id="indexnoti" class="panel-collapse collapse in">
-      <div class="list-group">
-        <% @notis_info.each do |issue| %>
-            <small><%= link_to issue.title, shownotis_url(issue), :class => "list-group-item" %></small>
-        <% end %>
-      </div>
-    </div>
+<div class="panel-body">
+
+  <div class="list-group">
+    <% @notis_info.each do |issue| %>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <%= link_to issue.title, shownotis_url(issue) %>
+          </div>
+          <div class="panel-body">
+            <h7><small><%= truncate(issue.content, :length => 70){ link_to "  详情", shownotis_url(issue), :align => "right"} %></small></h7>
+          </div>
+
+        </div>
+    <% end %>
   </div>
 </div>
 
 <!--/panel-->
 <!--/end mid column-->
-<script>
-
-</script>
 
 

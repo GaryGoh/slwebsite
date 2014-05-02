@@ -11,6 +11,7 @@
         /*margin-right: 0;*/
         /*background-color: #ffffff;*/
 
+
     }
 
     #sidecontent {
@@ -23,74 +24,70 @@
         padding-top: 5%;
 
     }
+        body{
+            background-color: #f0f2f4;
+        }
 
-    body {
-        background-color: #f8fafb;
+       * {
 
-    }
+       }
 
-    * {
-
-    }
-
-    .poster {
+    #index_carousel {
         /*margin-top: 80px;*/
-        overflow: hidden;
-        min-height: 550px;
-        max-height: 550px;
-        max-width: 100%;
-        margin-bottom: 5%;
+        /*overflow: hidden;*/
+        /*min-height: 750px;*/
+        /*max-height: 750px;*/
+        /*max-width: 100%;*/
     }
 
-    #idhead {
+    #idhead{
         /*margin-right: 2%;*/
         min-height: 50%;
         overflow: hidden;
     }
-
-    #sli a i {
-        color: #188b71;
-    }
-
-    #sli a i:hover {
-        color: #139c84;
-    }
-
 </style>
 
 
 
 <!-- Begin Navbar -->
 <!--<div id="indexheader">-->
-
+  <%= render "layouts/header2" %>
 <!--</div>-->
-<div class="poster">
-  <img src="<%= asset_path "background/headdemo2.jpg"%>"  width="1500"/>
-</div>
-<div class="container container-full">
-  <%= render "layouts/headerindex" %>
 
-  <div class="container" id="wrap">
+
+
+
+
+<!-- Begin Body -->
+<!--<div class="container-fluid">-->
+
+  <div class="no-gutter row"  id="wrap">
+    <!-- left side column -->
+    <%=
+        #render "layouts/navbar"
+    %>
+    <!--/end left column-->
+
+
+
+    <div class="col-xs-12 col-md-9" id="maincontent">
 
       <%=
           yield
       %>
+      <footer>
+        <%= render 'layouts/footer2' %>
 
-    <!--<div class="col-xs-12 col-md-3" id="sidecontent">-->
+      </footer>
+    </div>
+    <div class="col-xs-12 col-md-3" id="sidecontent">
       <%=
-          #render "layouts/newsidecontent"
+          render "layouts/newsidecontent"
       %>
 
-    <!--</div>-->
+    </div>
+    <div id='goup'></div>
   </div>
-  <div id='goup'></div>
-  <button class="btn btn-primary btn-lg" onclick="弹幕测试()">
-    弹幕测试
-  </button>
-</div>
-<footer>
-  <%= render 'layouts/newFooter' %>
-</footer>
 <!--</div>-->
 <!-- End of Begin-->
 

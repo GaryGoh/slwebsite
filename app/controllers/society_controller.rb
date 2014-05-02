@@ -1,5 +1,5 @@
 class SocietyController < ApplicationController
-  layout "application", only: [:gy, :wy, :ty, :xs]
+  layout "society_index", only: [:gy, :wy, :ty, :xs]
 
   def index
 
