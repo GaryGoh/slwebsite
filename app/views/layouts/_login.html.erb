@@ -1,0 +1,31 @@
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close fui-cross" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title" id="loginLabel">登录</h4>
+      </div>
+      <div class="modal-body">
+
+        <form action="/sessions" class="form-horizontalt" role="form" method="post">
+          <div style="display:none">
+            <input name="authenticity_token" type="hidden" value="1fe4d92d89e03eec1f28adbbc94dc324ad6257e26e4c029a801a3e66cee4e2a01d32e8175f49d2b5fdd58224030f24871415ab633925d2b8bf35d8217b1cb213"/>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <input name="session[email]" type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword2">Password</label>
+            <input name="session[password]" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button name="commit" type="submit" class="btn btn-primary ">登录</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

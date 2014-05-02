@@ -1,31 +1,21 @@
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <%= stylesheet_link_tag "Win8/component.css" %>
   <%= stylesheet_link_tag "Win8/climacons.css" %>
-  <%= stylesheet_link_tag "Win8/default.css" %>
 
-
-
-</head>
 
 <style>
-    a {
-        color: #000000;
-        text-decoration: none;
+    #rb:hover {
+        opacity: 0.75;
     }
+    #rb {
+        opacity: 1.0;
 
-    a.hover {
-        color: #000000;
-
-        text-decoration: none;
     }
 </style>
 
 
-<div class="main">
+<div class="thumbnail">
 
   <ul id="rb-grid" class="rb-grid clearfix">
 
@@ -35,7 +25,7 @@
         <% if (head + tail > 4) %>
             <% head = 4 - tail %>
         <% end %>
-        <a href="<%= societyshow_url(e) %>" class="icon-clima-<%= ((e.id+Time.now.strftime("%M").to_i) % 12 + 1) %> rb-span-<%= head %>">
+        <a href="<%= societyshow_url(e) %>" id="rb" class="icon-clima-<%= ((e.id+Time.now.strftime("%M").to_i) % 12 + 1) %> rb-span-<%= head %>">
           <h3><%= e.to_s %></h3><span class="rb-temp"><%= e.num_registered_member %></span>
         </a>
         <% tail = ((e.id+Time.now.strftime("%h").to_i) % 4 + 1) %>

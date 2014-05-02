@@ -1,27 +1,20 @@
-<div class="container">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="form-signin-heading">登录</h2></div>
+<div class="thumbnail">
 
-    <div class="panel-body">
+  <div class="form-signin">
+    <%= render "static_page/notice_danger" %>
 
-      <div class="form-signin">
-        <%= render "static_page/notice_danger" %>
+    <%= form_for(:session, url: sessions_path, :class => "form-signin") do |f| %>
+        <h2 class="form-signin-heading">登录</h2>
 
-        <%= form_for(:session, url: sessions_path, :class => "form-signin") do |f| %>
-            <h2 class="form-signin-heading">登录</h2>
+        <%= f.text_field :email, :class => "form-control", :placeholder => "Email address", :autofocus => "true", :type => "email" %>
 
-            <%= f.text_field :email, :class => "form-control", :placeholder => "Email address", :autofocus => "true", :type => "email" %>
+        <%= f.password_field :password, :class => "form-control", :placeholder => "Password" %>
 
-            <%= f.password_field :password, :class => "form-control", :placeholder => "Password" %>
-
-            <%= f.submit "Sign in", class: "btn btn-lg btn-primary btn-block" %>
-        <% end %>
-        </br>
-        <p align="center">还没注册？ <%= link_to "注册", signup_url%></p>
-      </div>
-    </div>
+        <%= f.submit "Sign in", class: "btn btn-lg btn-primary btn-block" %>
+    <% end %>
+    </br>
+    <p align="center">还没注册？ <%= link_to "注册", signup_url %></p>
   </div>
 <!--<td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), root_path %></td>-->
-</div>
 
+</div>

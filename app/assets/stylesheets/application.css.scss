@@ -3,10 +3,7 @@
 
 // import original bootstrap
 @import "twitter/bootstrap";
-//@import "slcss.css";
-//@import "bootstrap";
 @import "flat-ui";
-// import font-awesome
 @import "font-awesome";
 
 ::-webkit-scrollbar {
@@ -20,7 +17,7 @@
 body {
   //padding-top: 20px;
   //overflow-y: scroll;
-  background-color: #f0f2f4;
+  background-color: #f6f8fa;
 
 }
 
@@ -198,7 +195,20 @@ a:hover {
 
 html, body {
   background: url(nothing.txt) white fixed; /*prevent screen flash in IE6*/
+  overflow-y:scroll;
+  margin:0 auto
   //-webkit-transform: translateZ(0);
+}
+
+.popover-content{
+  background: #384047;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+.container-full{
+  margin: 0 auto;
+  width: 100%;
 }
 
 
