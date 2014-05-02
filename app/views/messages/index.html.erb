@@ -1,4 +1,6 @@
-<%= render "module/msg/msg", :message => @messages%>
+<%=
+    render "module/msg/msg", :message => @messages
+%>
 
 <%=
     #link_to 'New Message', new_message_path
@@ -6,3 +8,4 @@
       render "messages/form"
     end
 %>
+
