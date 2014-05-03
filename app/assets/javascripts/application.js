@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require googleajax.jquery.js
 //= require turbolinks
-//= require_tree
 
 
 //= require flat-ui/bootstrap-select
