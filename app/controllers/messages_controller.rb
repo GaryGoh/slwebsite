@@ -9,7 +9,9 @@ class MessagesController < InheritedResources::Base
   # GET /notis.json
   def index
     @messages = Message.all
-    @message = @user.messages.build
+    unless current_user_stu.nil?
+      @message = @user.messages.build
+    end
 
   end
 
