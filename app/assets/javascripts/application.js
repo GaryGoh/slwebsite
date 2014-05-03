@@ -30,7 +30,6 @@
 
 
 // Include all twitter's javascripts
-//= require twitter/bootstrap
 //= require jquery.goup.min
 //= require popup
 
