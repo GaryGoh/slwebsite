@@ -1,15 +1,15 @@
 class CommentsController < InheritedResources::Base
   before_action :msg, only: [:destroy]
-  before_filter :get_issue
+  before_filter :get_user
 
   respond_to :html, :js
 
   # GET /notis
   # GET /notis.json
   def index
-    @comnents = Comment.all
+    @comments = Comment.all
     unless current_user_stu.nil?
-      @comnent = @user.comments.build
+      @comment = @user.comments.build
     end
 
   end
@@ -18,10 +18,10 @@ class CommentsController < InheritedResources::Base
   # POST /notis.json
   def create
     #@comnent = @user.messages.build(message_params)
-    @comnent = @issue.messages.build(message_params)
+    @comment = @issue.messages.build(message_params)
 
-    @comnent.save
-    respond_with @comnent, :location => shownews_url(@issue)
+    @comment.save
+    respond_with @comment, :location => comments_url
 
   end
 
@@ -30,10 +30,10 @@ class CommentsController < InheritedResources::Base
   # DELETE /notis/1
   # DELETE /notis/1.json
   def destroy
-    @comnent = @user.messages.find(params[:id])
-    @comnent.destroy
+    @comment = @user.messages.find(params[:id])
+    @comment.destroy
     respond_to do |format|
-      format.html { redirect_to messages_url }
+      format.html { redirect_to comments_url }
       format.json { head :no_content }
     end
   end

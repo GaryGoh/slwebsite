@@ -56,6 +56,8 @@ Slwebsite::Application.routes.draw do
   get "xs" => "society#xs"
 
   get '/messages', to: 'messages#index'
+  get '/comments', to: 'comments#index'
+
 
 
 

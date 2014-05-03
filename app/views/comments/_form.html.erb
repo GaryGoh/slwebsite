@@ -1,29 +1,35 @@
-<%= form_for(@comment) do |f| %>
-  <% if @comment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+<%= form_for([@user,@comment], :remote => true) do |f|%>
+    <% if @comment.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
 
-      <ul>
-      <% @comment.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% @comment.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+
+    <div class="container">
+      <div class="field">
+        <%= f.number_field :user_id, :class => "hidden" %>
+      </div>
+      <div class="field">
+        <%= f.number_field :issue_id, :class => "hidden", :value => @user %>
+      </div>
+      <div class="control-group">
+        <!--<h5>留言内容</h5>-->
+        <%= f.text_area :content, :class => "form-control", :id => "wysihtml5-textarea", :placeholder => "留言内容", :rows => "10" %>
+      </div>
+      <div class="actions">
+        <%= f.submit class: "btn btn-primary btn-block", value: "提交", disable_with: 'Pending...' %>
+      </div>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :issue_id %><br>
-    <%= f.number_field :issue_id %>
-  </div>
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_field :content %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
+
+
+
+
+
