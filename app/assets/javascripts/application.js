@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require googleajax.jquery.js
 //= require turbolinks
 //= require_tree .
 
@@ -31,35 +30,6 @@
 //= require jquery.goup.min
 //= require popup
 
-
-
-
-
-
-
-
-
-
-
-// To adjust the params of right side panel
-$(document).ready(function () {
-    $(".cbp-af-header").css("overflow", "hidden");
-
-    $('#sidebar').affix({
-        offset: {
-            top: 230,
-            bottom: 100
-        }
-    });
-
-    $('#midCol').affix({
-        offset: {
-            top: 800,
-            bottom: 100
-        }
-    });
-
-});
 
 
 
