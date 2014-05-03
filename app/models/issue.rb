@@ -3,7 +3,6 @@ class Issue < ActiveRecord::Base
   belongs_to :category
   belongs_to :society
 
-  has_many :comments, :dependent => :destroy
   has_many :issue_images, :dependent => :destroy
   accepts_nested_attributes_for :issue_images, allow_destroy: true
 

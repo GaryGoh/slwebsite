@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140503173161) do
+ActiveRecord::Schema.define(version: 20140501195550) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -60,34 +60,6 @@ ActiveRecord::Schema.define(version: 20140503173161) do
     t.datetime "updated_at"
   end
 
-  create_table "comments", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "holder_id"
-    t.integer  "commentable_id"
-    t.string   "commentable_type"
-    t.string   "commentable_url"
-    t.string   "commentable_title"
-    t.string   "commentable_state"
-    t.string   "anchor"
-    t.string   "title"
-    t.string   "contacts"
-    t.text     "raw_content"
-    t.text     "content"
-    t.string   "view_token"
-    t.string   "state",             default: "draft"
-    t.string   "ip",                default: "undefined"
-    t.string   "referer",           default: "undefined"
-    t.string   "user_agent",        default: "undefined"
-    t.integer  "tolerance_time"
-    t.boolean  "spam",              default: false
-    t.integer  "parent_id"
-    t.integer  "lft"
-    t.integer  "rgt"
-    t.integer  "depth",             default: 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "departments", force: true do |t|
     t.string   "dep_name"
     t.datetime "created_at"
@@ -109,9 +81,6 @@ ActiveRecord::Schema.define(version: 20140503173161) do
     t.text     "answer"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "draft_comments_count",     default: 0
-    t.integer  "published_comments_count", default: 0
-    t.integer  "deleted_comments_count",   default: 0
   end
 
   create_table "genders", force: true do |t|
@@ -156,9 +125,6 @@ ActiveRecord::Schema.define(version: 20140503173161) do
     t.integer  "issue_pic_file_size"
     t.datetime "issue_pic_updated_at"
     t.integer  "society_id"
-    t.integer  "draft_comments_count",     default: 0
-    t.integer  "published_comments_count", default: 0
-    t.integer  "deleted_comments_count",   default: 0
   end
 
   add_index "issues", ["category_id"], name: "index_issues_on_category_id"
@@ -185,13 +151,10 @@ ActiveRecord::Schema.define(version: 20140503173161) do
     t.integer  "memid"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "draft_comments_count",     default: 0
-    t.integer  "published_comments_count", default: 0
-    t.integer  "deleted_comments_count",   default: 0
   end
 
   create_table "messages", force: true do |t|
-    t.string   "user_id"
+    t.integer  "user_id"
     t.string   "msg_content"
     t.string   "msg_font"
     t.string   "msg_position"
@@ -222,9 +185,6 @@ ActiveRecord::Schema.define(version: 20140503173161) do
     t.string   "location"
     t.integer  "num_attend"
     t.integer  "num_maybe"
-    t.integer  "draft_comments_count",     default: 0
-    t.integer  "published_comments_count", default: 0
-    t.integer  "deleted_comments_count",   default: 0
   end
 
   create_table "sl_departments", force: true do |t|
@@ -293,20 +253,13 @@ ActiveRecord::Schema.define(version: 20140503173161) do
     t.datetime "updated_at"
     t.string   "remember_token"
     t.integer  "member_id"
-    t.boolean  "is_active",                   default: true, null: false
+    t.boolean  "is_active",           default: true, null: false
     t.integer  "gender_id"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.integer  "user_society_id"
-    t.integer  "my_draft_comments_count",     default: 0
-    t.integer  "my_published_comments_count", default: 0
-    t.integer  "my_comments_count",           default: 0
-    t.integer  "draft_comcoms_count",         default: 0
-    t.integer  "published_comcoms_count",     default: 0
-    t.integer  "deleted_comcoms_count",       default: 0
-    t.integer  "spam_comcoms_count",          default: 0
   end
 
   add_index "users", ["gender_id"], name: "index_users_on_gender_id"
