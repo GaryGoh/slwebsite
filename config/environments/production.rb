@@ -26,9 +26,6 @@ Slwebsite::Application.configure do
   #config.assets.js_compressor = :uglifier
   #config.assets.css_compressor = :sass
 
-  #config.serve_static_assets = false
-
-
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
 
@@ -36,7 +33,7 @@ Slwebsite::Application.configure do
   config.assets.digest = true
 
   # A alternative approach of solving ActiveAdmin js missing.
-  config.assets.debug = true
+  #config.assets.debug = true
 
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'

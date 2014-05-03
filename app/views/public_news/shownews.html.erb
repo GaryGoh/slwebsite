@@ -1,6 +1,12 @@
 <style>
-    #commentBG {
-        background-color: #ffffff;
+    #top {
+        margin-left: 980px;
+        position: fixed !important;
+        top: 350px;
+    }
+
+    #top.affix-top {
+        position: static;
 
     }
 
@@ -9,53 +15,19 @@
 
 <a href="#">
   <!--<button type="button" class="btn btn-default" id="top" data-toggle="tooltip" data-placement="top" title="回到顶部">-->
-  <!---->
-  <!--<span class="glyphicon glyphicon-circle-arrow-up"></span>-->
-  <!---->
+<!---->
+    <!--<span class="glyphicon glyphicon-circle-arrow-up"></span>-->
+<!---->
   <!--</button>-->
 </a>
-
 
 <%
    #if @issue.category_id == 1 || @issue.category_id == 2
 %>
-<%= render "module/newsshow/newsbasic", :issue => @issue %>
+    <%= render "module/newsshow/newsbasic", :issue => @issue %>
 <%
    #end
 %>
-
-
-<div class="row">
-<ul class="nav nav-tabs" id="">
-  <li class="active"><a href="#comAll" data-toggle="tab">所有评论</a></li>
-  <li><a href="#ownCom" data-toggle="tab">自己相关</a></li>
-</ul>
-
-<div class="tab-content" id="commentBG">
-  <div class="tab-pane fade in active" id="comAll">
-    <div id="comments">
-      <%= render @comments %>
-    </div>
-  </div>
-
-  <div class="tab-pane fade in" id="ownCom">
-    <% unless @comments_own.nil? %>
-          <%= render "module/commentList", :comment_own => @comments_own %>
-    <% else %>
-        <h4>游客无法评论，赶快加入桂林电子科技大学社团联合会吧~</h4>
-    <% end %>
-  </div>
-
-</div>
-
-
-
-<%=
-    unless current_user_stu.nil?
-      render :partial => 'commentForm'
-    end
-%>
-</div>
 
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), news_path %></td>
 
