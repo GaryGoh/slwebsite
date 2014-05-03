@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   has_many :user_societies, :dependent => :destroy
   has_many :societies, :through => :user_societies
   has_many :messages, :dependent => :destroy
+  has_many :comments, :dependent => :destroy
+
 
 
   has_one :timetable, :dependent => :destroy

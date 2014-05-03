@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140501195550) do
+ActiveRecord::Schema.define(version: 20140503151224) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -56,6 +56,14 @@ ActiveRecord::Schema.define(version: 20140501195550) do
 
   create_table "categories", force: true do |t|
     t.string   "category_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "issue_id"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

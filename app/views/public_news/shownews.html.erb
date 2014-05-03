@@ -15,19 +15,32 @@
 
 <a href="#">
   <!--<button type="button" class="btn btn-default" id="top" data-toggle="tooltip" data-placement="top" title="回到顶部">-->
-<!---->
-    <!--<span class="glyphicon glyphicon-circle-arrow-up"></span>-->
-<!---->
+  <!---->
+  <!--<span class="glyphicon glyphicon-circle-arrow-up"></span>-->
+  <!---->
   <!--</button>-->
 </a>
 
 <%
    #if @issue.category_id == 1 || @issue.category_id == 2
 %>
-    <%= render "module/newsshow/newsbasic", :issue => @issue %>
+<%= render "module/newsshow/newsbasic", :issue => @issue %>
 <%
    #end
 %>
+
+
+<div id="comments">
+  <%= render @comments %>
+</div>
+
+
+<%=
+    #unless current_user_stu.nil?
+      render :partial => 'commentForm'
+    #end
+%>
+
 
 <td><%= link_to raw('<button type="button" class="btn btn-primary">返回</button>'), news_path %></td>
 

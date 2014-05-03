@@ -1,12 +1,16 @@
 Slwebsite::Application.routes.draw do
 
 
+
   #resources :messages
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :users do
-    resources :issues
+    resources :issues do
+      resources :comments
+
+    end
     resources :notis
     resources :messages
   end
