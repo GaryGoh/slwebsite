@@ -10,9 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require googleajax.jquery.js
 //= require turbolinks
-//= require_tree
+//= require_tree .
+//= stub active_admin
+
 
 
 //= require flat-ui/bootstrap-select
