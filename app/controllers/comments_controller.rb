@@ -1,15 +1,15 @@
 class CommentsController < InheritedResources::Base
-  before_action :set_comment, only: [:destroy]
-  before_filter :get_user
+  before_action :msg, only: [:destroy]
+  before_filter :get_issue
 
   respond_to :html, :js
 
   # GET /notis
   # GET /notis.json
   def index
-    @comments = Comment.all
+    @comnents = Comment.all
     unless current_user_stu.nil?
-      @comment = @user.comments.build
+      @comnent = @user.comments.build
     end
 
   end
@@ -17,25 +17,30 @@ class CommentsController < InheritedResources::Base
   # POST /notis
   # POST /notis.json
   def create
-    @comment = @user.comments.build(comment_params)
+    #@comnent = @user.messages.build(message_params)
+    @comnent = @issue.messages.build(message_params)
 
-    @comment.save
-    respond_with @comment, :location => comments_url
+    @comnent.save
+    respond_with @comnent, :location => shownews_url(@issue)
 
   end
+
 
 
   # DELETE /notis/1
   # DELETE /notis/1.json
   def destroy
-    @comment = @user.comments.find(params[:id])
-    @comment.destroy
-    respond_with @comment, :location => comments_url
+    @comnent = @user.messages.find(params[:id])
+    @comnent.destroy
+    respond_to do |format|
+      format.html { redirect_to messages_url }
+      format.json { head :no_content }
+    end
   end
 
   private
   # Use callbacks to share common setup or constraints between actions.
-  def set_comment
+  def set_msg
     @comm = Comment.find(params[:id])
   end
 
@@ -56,7 +61,7 @@ class CommentsController < InheritedResources::Base
   end
 
 
-  def comment_params
+  def message_params
     params.require(:comment).permit(:user_id, :issue_id, :content)
   end
 end

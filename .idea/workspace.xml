@@ -125,28 +125,25 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/unslider.js/site/img/sunset-e893f34b3c7a18ba0abad3fbe2b829c9.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/unslider.js/site/img/wood-515cc69f47f2ba31cb6db965195c51b9.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/unslider.js/site/index-dc4c310cf48ceff3925f9b89e8f22cd5.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb" afterPath="$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/_message.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/_message.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/index.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/issue.rb" afterPath="$PROJECT_DIR$/app/models/issue.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" afterPath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399140431645" ignored="false" />
+    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399123983564" ignored="false" />
     <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399129545484" ignored="false" />
-    <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399144398038" ignored="false" />
+    <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399075550866" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1390096093089" ignored="false" />
-    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399141446362" ignored="false" />
+    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399136505363" ignored="false" />
     <file path="$USER_HOME$/students/app/models/student.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1383827692863" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384175595089" ignored="false" />
-    <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399141538136" ignored="false" />
+    <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399137190084" ignored="false" />
     <file path="/issues_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392395744563" ignored="false" />
     <file path="/edit.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388457229001" ignored="false" />
     <file path="/new.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397995295964" ignored="false" />
@@ -176,12 +173,12 @@
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384177628226" ignored="false" />
     <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398042175929" ignored="false" />
     <file path="/news.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384181868045" ignored="false" />
-    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399144694538" ignored="false" />
+    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399137247234" ignored="false" />
     <file path="/a.dummy" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398981363691" ignored="false" />
     <file path="/_footer.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392209289466" ignored="false" />
     <file path="/issue.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1395080968770" ignored="false" />
     <file path="/allnews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398045630337" ignored="false" />
-    <file path="/shownews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399144322221" ignored="false" />
+    <file path="/shownews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399136853361" ignored="false" />
     <file path="/20131214010501_add_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386983455409" ignored="false" />
     <file path="/20131214013322_del_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386984833947" ignored="false" />
     <file path="/members.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387080238539" ignored="false" />
@@ -429,7 +426,7 @@
     <file path="$USER_HOME$/Downloads/AJAXComments-master/app/models/comment.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067220824" ignored="false" />
     <file path="$USER_HOME$/Downloads/AJAXComments-master/app/controllers/users_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067453586" ignored="false" />
     <file path="$USER_HOME$/Downloads/AJAXComments-master/app/controllers/comments_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399068062812" ignored="false" />
-    <file path="/comments_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399143959091" ignored="false" />
+    <file path="/comments_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399137229016" ignored="false" />
     <file path="$USER_HOME$/Downloads/AJAXComments-master/app/views/comments/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067744191" ignored="false" />
     <file path="$USER_HOME$/Downloads/AJAXComments-master/app/views/comments/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399068495761" ignored="false" />
     <file path="$USER_HOME$/Downloads/AJAXComments-master/app/views/comments/_comment.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399068490056" ignored="false" />
@@ -440,11 +437,9 @@
     <file path="$PROJECT_DIR$/public/js/jquery.remotipart.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399125484561" ignored="false" />
     <file path="$PROJECT_DIR$/public/javascripts/jquery.remotipart.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399125484561" ignored="false" />
     <file path="/_comentForm.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399134878000" ignored="false" />
-    <file path="/_comment.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399141920471" ignored="false" />
-    <file path="/_commentForm.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399141211512" ignored="false" />
+    <file path="/_comment.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399135121695" ignored="false" />
+    <file path="/_commentForm.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399137073286" ignored="false" />
     <file path="$USER_HOME$/Downloads/ajax_rails31_demo-master/app/views/comments/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399136505777" ignored="false" />
-    <file path="/20140503151224_create_comments.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399140576690" ignored="false" />
-    <file path="/destroy.js.coffee" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399142389548" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -472,43 +467,34 @@
       <file leaf-file-name="public_news_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/public_news_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
+            <state line="39" column="39" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="73" selection-start="704" selection-end="708" vertical-scroll-proportion="-12.5">
+            <state line="11" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
+      <file leaf-file-name="create.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/public_news/create.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="119" selection-end="119" vertical-scroll-proportion="0.16506189">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comments_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="comments_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="25" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comment.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="26" selection-start="242" selection-end="357" vertical-scroll-proportion="-8.75">
+            <state line="2" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="-0.375969">
               <folding />
             </state>
           </provider>
@@ -517,7 +503,7 @@
       <file leaf-file-name="shownews.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="7" selection-start="704" selection-end="704" vertical-scroll-proportion="-21.625">
+            <state line="41" column="8" selection-start="705" selection-end="705" vertical-scroll-proportion="-23.208334">
               <folding />
             </state>
           </provider>
@@ -525,6 +511,15 @@
       </file>
       <file leaf-file-name="_commentForm.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="32" selection-start="759" selection-end="759" vertical-scroll-proportion="-14.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readmode.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/public_news/readmode.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -550,22 +545,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/active_admin.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/issue.rb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/views/issues/_comentForm.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/issues/create.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/issues/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/views/messages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header2.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140503151224_create_comments.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/_destroy.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/messages/destroy.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/messages/_message.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -606,6 +601,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -636,38 +632,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,7 +707,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
+              <option name="myItemId" value="messages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -765,33 +729,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user_admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comments" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -829,28 +767,27 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ajax_rails31_demo-master" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/messages" />
-      <recent name="$PROJECT_DIR$/app/views/comments" />
       <recent name="$PROJECT_DIR$/app/views/public_news" />
       <recent name="$PROJECT_DIR$/app/views/issues" />
       <recent name="$PROJECT_DIR$/app/assets/images/background" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/javascripts/global" />
@@ -1133,9 +1070,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46126255" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45408896" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1144,7 +1082,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30060607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1212,63 +1149,79 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/issues/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/messages/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="956" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="709" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/issues/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/issues/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/user_admin/_newsList.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="523" selection-end="627" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/destroy.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/destroy.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/messages/_message.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="491" selection-end="491" vertical-scroll-proportion="0.44117647">
+        <state line="0" column="0" selection-start="0" selection-end="387" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/public_news/_comment.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header2.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="60" selection-start="2902" selection-end="3107" vertical-scroll-proportion="0.5042017">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_headerindex.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.27310926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_newHeader.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.67507">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2764227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding>
+            <element signature="tag#style#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/readmode.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="24" selection-start="76" selection-end="76" vertical-scroll-proportion="-0.24031007">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/create.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1277,49 +1230,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="23" column="32" selection-start="759" selection-end="759" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="7" selection-start="704" selection-end="704" vertical-scroll-proportion="-21.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+        <state line="41" column="8" selection-start="705" selection-end="705" vertical-scroll-proportion="-23.208334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/public_news_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
+        <state line="39" column="39" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="242" selection-end="357" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="73" selection-start="704" selection-end="708" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="119" selection-end="119" vertical-scroll-proportion="0.16506189">
+        <state line="2" column="22" selection-start="113" selection-end="113" vertical-scroll-proportion="-0.375969">
           <folding />
         </state>
       </provider>

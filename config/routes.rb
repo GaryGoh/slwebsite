@@ -7,11 +7,12 @@ Slwebsite::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :users do
-    resources :issues
+    resources :issues do
+      resources :comments
+
+    end
     resources :notis
     resources :messages
-    resources :comments
-
   end
   resources :sessions, only: [:new, :create, :destroy]
 
@@ -55,8 +56,6 @@ Slwebsite::Application.routes.draw do
   get "xs" => "society#xs"
 
   get '/messages', to: 'messages#index'
-  get '/comments', to: 'comments#index'
-
 
 
 

@@ -1,6 +1,7 @@
 class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
-  before_filter :get_user
+  before_filter :get_issue
+
 
 
   def allnews
@@ -13,9 +14,6 @@ class PublicNewsController < ApplicationController
   def shownews
     @issue = Issue.find(params[:id])
     #@issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
-    unless current_user_stu.nil?
-    @comment = @user.comments.build
-    end
     @comments = Comment.all
   end
 
@@ -43,13 +41,5 @@ class PublicNewsController < ApplicationController
       @issue = Issue.find(params[:issue_id])
     end
   end
-
-  def get_user
-    if (current_user_stu.nil?)
-    else
-      @user = User.find(current_user_stu.id)
-    end
-  end
-
 
 end
