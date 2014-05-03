@@ -1,0 +1,180 @@
+<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    msg {
+        font-family: arial, sans-serif;
+        font-size: 100%;
+        margin: 3em;
+        background: #666;
+        color: #fff;
+
+        display: box;
+        display: -moz-box;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+    }
+
+    msg h2, p {
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    msg ul, li {
+        list-style: none;
+    }
+
+    msg ul {
+        overflow: hidden;
+        padding: 3em;
+        font-family: "Reenie Beanie", arial, sans-serif, 微软雅黑;
+
+    }
+
+
+
+    msg ul li {
+        margin: 1em;
+        float: left;
+    }
+
+    msg ul li h2 {
+        font-size: 95%;
+        font-weight: bold;
+        padding-bottom: 10px;
+
+    }
+
+    msg ul li p {
+        font-size: 80%;
+    }
+
+    msg ul li a {
+        box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        /*background:#E7E7E7;*/
+        overflow-y: auto;
+        text-decoration: none;
+        color: #000;
+        /*background: #ffc;*/
+        display: block;
+        height: 10em;
+        width: 10em;
+        padding: 1em; /* Firefox */
+        -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1); /* Safari+Chrome */
+        -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7); /* Opera */
+        box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    }
+
+    #color1 {
+        background: #e6e2c3;
+    }
+
+    #color2 {
+        background: #fbb8ac;
+    }
+
+    #color3 {
+        background: #bdf3d4;
+    }
+
+    #color4 {
+        background: #e3c887;
+    }
+
+    #color5 {
+        background: #fe6673;
+    }
+
+    #color6 {
+        background: #cbf5fb;
+    }
+
+    #color7 {
+        background: #fad8be;
+    }
+
+    #color8 {
+        background: #acf6ef;
+    }
+
+    msg ul li a {
+        -webkit-transform: rotate(-6deg);
+        -o-transform: rotate(-6deg);
+        -moz-transform: rotate(-6deg);
+    }
+
+    msg ul li:nth-child(even) a {
+        -o-transform: rotate(4deg);
+        -webkit-transform: rotate(4deg);
+        -moz-transform: rotate(4deg);
+        position: relative;
+        top: 5px;
+    }
+
+    msg ul li:nth-child(3n) a {
+        -o-transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        position: relative;
+        top: -5px;
+    }
+
+    msg ul li:nth-child(5n) a {
+        -o-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        position: relative;
+        top: -10px;
+    }
+</style>
+
+<body>
+<msg>
+  <ul>
+    <% message.each do |msg| %>
+        <li>
+          <a href="#" id="color<%= msg.id % 8 %>">
+
+            <h2>
+
+              <% if msg.user.name.empty? %>
+                  <%= msg.user.stuid %>
+              <% else %>
+                  <%= msg.user.name %>
+              <% end %>
+            </h2>
+
+            <p>
+              <%= msg.msg_content %>
+            </p>
+
+          </a>
+        </li>
+    <% end %>
+
+  </ul>
+
+</msg>
+
+<script>
+    $(function () {
+        $("li a").each(function () {
+            $(this).mousedown(function () {
+                $(this).css("cursor", "pointer");
+            });
+
+        });
+    });
+
+</script>
+
+</body>

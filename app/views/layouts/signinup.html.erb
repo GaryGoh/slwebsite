@@ -1,0 +1,88 @@
+<!-- The html head declaration-->
+<%=
+    render "layouts/head"
+%>
+
+<style>
+    #maincontent {
+        /*border-right-style: solid;*/
+        /*border-right-color: #eee;*/
+        /*border-width: 0.06cm;*/
+        margin-left: 3%;
+        padding-top: 5%;
+
+        /*margin-right: 0;*/
+        /*background-color: #ffffff;*/
+
+    }
+
+    #sidecontent {
+        /*background-color: #ffffff;*/
+        /*min-height: 740px;*/
+        /*max-height: 740px;*/
+        max-width: 18%;
+        overflow: auto;
+        margin-left: 10px;
+        padding-top: 5%;
+
+    }
+
+    body {
+        background-color: #edeff0;
+    }
+
+    * {
+
+    }
+
+    #index_carousel {
+        /*margin-top: 80px;*/
+        /*overflow: hidden;*/
+        /*min-height: 750px;*/
+        /*max-height: 750px;*/
+        /*max-width: 100%;*/
+    }
+
+    #idhead {
+        /*margin-right: 2%;*/
+        min-height: 50%;
+        overflow: hidden;
+    }
+
+    #sli a i {
+        color: #1abc9c;
+    }
+
+    #sli a i:hover {
+        color: #20ffd4;
+    }
+
+    #inhed {
+        border-radius: 10px;
+    }
+
+    .msg{
+        margin-top: 5%;
+    }
+</style>
+
+  <%= render "layouts/header2" %>
+
+<div class="container container-full msg">
+
+
+      <%=
+          yield
+      %>
+
+
+
+    <div id='goup'></div>
+  </div>
+</div>
+<footer>
+  <%= render 'layouts/newFooter' %>
+</footer>
+<%=
+    render "layouts/foot"
+%>

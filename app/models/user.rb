@@ -3,6 +3,10 @@ class User < ActiveRecord::Base
   has_many :notis, :dependent => :destroy
   has_many :user_societies, :dependent => :destroy
   has_many :societies, :through => :user_societies
+  has_many :messages, :dependent => :destroy
+  has_many :comments, :dependent => :destroy
+
+
 
   has_one :timetable, :dependent => :destroy
 
@@ -33,6 +37,14 @@ class User < ActiveRecord::Base
     delete_all "updated_at < '#{time.ago.to_s(:db)}'"
   end
 
+
+  def to_name
+    self.name
+  end
+
+  def to_stuid
+    self.sutid
+  end
 
   ## TO PROTECT vicious sign up from unknown user##
 
