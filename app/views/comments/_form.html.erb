@@ -1,3 +1,4 @@
+<%= current_user_stu.name%>
 <%= form_for([@user,@comment], :remote => true) do |f|%>
     <% if @comment.errors.any? %>
         <div id="error_explanation">
@@ -14,7 +15,7 @@
 
     <div class="container">
       <div class="field">
-        <%= f.number_field :user_id, :class => "hidden" %>
+        <%= f.number_field :user_id, :class => "hidden", :input_html => { :value => '6' } %>
       </div>
       <div class="field">
         <%= f.number_field :issue_id, :class => "hidden", :value => @user %>

@@ -21,6 +21,7 @@
   <!--</button>-->
 </a>
 
+
 <%
    #if @issue.category_id == 1 || @issue.category_id == 2
 %>
@@ -36,9 +37,9 @@
 
 
 <%=
-    #unless current_user_stu.nil?
+    unless current_user_stu.nil?
       render :partial => 'commentForm'
-    #end
+    end
 %>
 
 

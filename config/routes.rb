@@ -7,12 +7,11 @@ Slwebsite::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :users do
-    resources :issues do
-      resources :comments
-
-    end
+    resources :issues
     resources :notis
     resources :messages
+    resources :comments
+
   end
   resources :sessions, only: [:new, :create, :destroy]
 

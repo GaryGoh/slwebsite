@@ -1,5 +1,5 @@
 class MessagesController < InheritedResources::Base
-  before_action :msg, only: [:destroy]
+  before_action :set_msg, only: [:destroy]
   before_filter :get_user
 
   layout "signinup"
@@ -31,10 +31,11 @@ class MessagesController < InheritedResources::Base
   def destroy
     @message = @user.messages.find(params[:id])
     @message.destroy
-    respond_to do |format|
-      format.html { redirect_to messages_url }
-      format.json { head :no_content }
-    end
+    #respond_to do |format|
+    #  format.html { redirect_to messages_url }
+    #  format.json { head :no_content }
+    #end
+    respond_with @message, :location => comments_url
   end
 
   private
