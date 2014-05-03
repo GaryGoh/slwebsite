@@ -1,6 +1,6 @@
 class CommentsController < InheritedResources::Base
   before_action :set_comment, only: [:destroy]
-  before_filter :get_user
+  before_filter :get_user, :get_issue
 
   respond_to :html, :js
 
@@ -20,7 +20,7 @@ class CommentsController < InheritedResources::Base
     @comment = @user.comments.build(comment_params)
 
     @comment.save
-    respond_with @comment, :location => comments_url
+    respond_with @comment, :location => shownews_url(@issue)
 
   end
 
@@ -30,7 +30,7 @@ class CommentsController < InheritedResources::Base
   def destroy
     @comment = @user.comments.find(params[:id])
     @comment.destroy
-    respond_with @comment, :location => comments_url
+    respond_with @comment, :location => shownews_url(@issue)
   end
 
   private

@@ -13,10 +13,13 @@ class PublicNewsController < ApplicationController
   def shownews
     @issue = Issue.find(params[:id])
     #@issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
+    @comments = Comment.where(:issue_id => @issue)
+
     unless current_user_stu.nil?
-    @comment = @user.comments.build
+      @comment = @user.comments.build
+      @comments_own = @comments.where(:user_id => @user.id)
     end
-    @comments = Comment.all
+
   end
 
   def shownotis

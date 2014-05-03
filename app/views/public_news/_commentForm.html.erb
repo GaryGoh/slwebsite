@@ -12,12 +12,11 @@
     <% end %>
 
 
-    <div class="container">
       <div class="field">
         <%= f.number_field :user_id, :class => "hidden" %>
       </div>
       <div class="field">
-        <%= f.number_field :issue_id, :class => "hidden", :value => @user %>
+        <%= f.number_field :issue_id, :class => "hidden", :value => @issue.id %>
       </div>
       <div class="control-group">
         <!--<h5>留言内容</h5>-->
@@ -26,7 +25,6 @@
       <div class="actions">
         <%= f.submit class: "btn btn-primary btn-block", value: "提交", disable_with: 'Pending...' %>
       </div>
-    </div>
 <% end %>
 
 
