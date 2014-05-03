@@ -3,15 +3,23 @@ class MessagesController < InheritedResources::Base
   before_filter :get_user
 
   layout "signinup"
-  respond_to :html, :js
+  respond_to :html
 
   # GET /notis
   # GET /notis.json
   def index
     @messages = Message.all
-    unless current_user_stu.nil?
-      @message = @user.messages.build
-    end
+    @message = Message.new
+
+  end
+
+  # GET /notis/1
+  # GET /notis/1.json
+
+  # GET /notis/new
+  def new
+    @user = User.find(session[:user_id])
+    @message = @user.messages.build
 
   end
 
@@ -19,9 +27,16 @@ class MessagesController < InheritedResources::Base
   # POST /notis.json
   def create
     @message = @user.messages.build(message_params)
-    @message.save
-    respond_with @message, :location => messages_url
 
+    respond_to do |format|
+      if @message.save
+        format.html { redirect_to messages_url, notice: '成功发布留言.' }
+        format.json { render action: 'show', status: :created, location: @message }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @message.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
 
