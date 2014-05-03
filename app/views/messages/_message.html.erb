@@ -1,6 +1,6 @@
 <div id=<%= dom_id(message) %> class="message">
-<li id="msgli<%= (SecureRandom.random_number(16))  % 8 + 1%>">
-  <a href="#" id="color<%= message.id % 8 + 1%>">
+<li id="msgli<%= (SecureRandom.random_number(16)) % 8 + 1 %>">
+  <a href="#" id="color<%= message.id % 8 + 1 %>">
 
     <h2>
 
@@ -17,6 +17,10 @@
 
   </a>
 </li>
+
+    <!--=link_to '删除', [@user, comment], method: :delete, :remote => true, data: {confirm: 'Are you sure?'}-->
+
+
 </div>
 
 
