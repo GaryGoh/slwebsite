@@ -1,5 +1,6 @@
 class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
+  before_filter :get_user
 
 
   def allnews
@@ -12,6 +13,13 @@ class PublicNewsController < ApplicationController
   def shownews
     @issue = Issue.find(params[:id])
     #@issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
+    @comments = Comment.where(:issue_id => @issue)
+
+    unless current_user_stu.nil?
+      @comment = @user.comments.build
+      @comments_own = @comments.where(:user_id => @user.id)
+    end
+
   end
 
   def shownotis
@@ -30,4 +38,21 @@ class PublicNewsController < ApplicationController
   def indexnotic
     @noti = Noti.find(params[:id])
   end
+
+  def get_issue
+    if ((params[:issue_id]).nil?)
+      #redirect_to access_error_url  :notice => "user id is null"
+    else
+      @issue = Issue.find(params[:issue_id])
+    end
+  end
+
+  def get_user
+    if (current_user_stu.nil?)
+    else
+      @user = User.find(current_user_stu.id)
+    end
+  end
+
+
 end

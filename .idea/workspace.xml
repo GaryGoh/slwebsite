@@ -6,10 +6,19 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/2.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/3.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/config.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/DSC_0458.JPG" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/DSC_0458.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/DSC_0673.JPG" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/DSC_0677.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/signinup.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140214165703_soeicty_databas.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140217024055_addmorecolumns.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140217203112_create_timetables.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140217203128_add_table_to_timetable.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140217211624_droptable.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140217213054_create_noti_attends.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/active_admin.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/changelog.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/jquery.tinymce.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/langs/en_GB.js" afterPath="" />
@@ -100,42 +109,753 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/skins/lightgray/skin.min.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/themes/modern/theme.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/assets/javascripts/tinymce/js/tinymce/tinymce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/cbpAnimatedHeader.min-6c3343810c4833ecfe5a9f2f2c62a73d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/cbpAnimatedHeader.min-6c3343810c4833ecfe5a9f2f2c62a73d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/classie-92d7a54bca62de0e3d7206dec0bdebea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/classie-92d7a54bca62de0e3d7206dec0bdebea.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/component-89f14033da34e2b326123925449463ab.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/component-89f14033da34e2b326123925449463ab.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/modernizr.custom-64e3f740dea19cfa67ffdc9f5b5e8b4b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/AnimatedHeader/modernizr.custom-64e3f740dea19cfa67ffdc9f5b5e8b4b.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/borderMenu-bebb48affa70e737e6c43dcbafbdf0ab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/borderMenu-bebb48affa70e737e6c43dcbafbdf0ab.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/classie-1140889fb414612e050f0ef43e05bc3f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/classie-1140889fb414612e050f0ef43e05bc3f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/demo-090f01061e28128d201ae6e1b7adcbe0.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/demo-090f01061e28128d201ae6e1b7adcbe0.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/icons-e3d1747d3e3745695548498021383c7b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/icons-e3d1747d3e3745695548498021383c7b.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/modernizr.custom-33556cf78090322598d9e642f55117da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/modernizr.custom-33556cf78090322598d9e642f55117da.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/normalize-abadd8650c5e2b9381fa969c3af04c8d.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/normalize-abadd8650c5e2b9381fa969c3af04c8d.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/style5-7fad2316cc8213de25a6342b2cffaafd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/BorderMenu/style5-7fad2316cc8213de25a6342b2cffaafd.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FAQ/component-13bcd78f5720e2a5c44f57e4a7585f01.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FAQ/component-13bcd78f5720e2a5c44f57e4a7585f01.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FAQ/default-dbb2a4af93fc061509345d802c537eaf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FAQ/default-dbb2a4af93fc061509345d802c537eaf.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FAQ/jquery.cbpNTAccordion.min-d6ce3fcd6bf611483b0b6fb3645f6bb3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/FAQ/jquery.cbpNTAccordion.min-d6ce3fcd6bf611483b0b6fb3645f6bb3.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/cbpHorizontalMenu-855bbab6c42dd58fadacd0b26c1a944a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/cbpHorizontalMenu-855bbab6c42dd58fadacd0b26c1a944a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/cbpHorizontalMenu.min-8202892d00b28f146132768a7eba35b0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/cbpHorizontalMenu.min-8202892d00b28f146132768a7eba35b0.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/css/component-b09ce11706c88e33e51cda34a8ca7220.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/css/component-b09ce11706c88e33e51cda34a8ca7220.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/css/default-b97803ba60073bb57368c1643044ebb1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/css/default-b97803ba60073bb57368c1643044ebb1.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/modernizr.custom-9190960022bac4d2465f233a4c1dfbbf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Horizon/modernizr.custom-9190960022bac4d2465f233a4c1dfbbf.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/bookblock-324806eaa03e2f4d2269eea5469a27ac.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/bookblock-324806eaa03e2f4d2269eea5469a27ac.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/custom-b53cae0f5c63cf6ac8d37cd53d1ea3ef.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/custom-b53cae0f5c63cf6ac8d37cd53d1ea3ef.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.bookblock-b4ac22f2ca8442c9b6b34e47e5ef8615.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.bookblock-b4ac22f2ca8442c9b6b34e47e5ef8615.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.jscrollpane.custom-89f81247eaae0f025931d9e46226b278.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.jscrollpane.custom-89f81247eaae0f025931d9e46226b278.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.jscrollpane.min-5bfc36a51a13280dea656540d4141cf7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.jscrollpane.min-5bfc36a51a13280dea656540d4141cf7.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.mousewheel-d8308e1632df1b95b8a55ffbd178d445.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquery.mousewheel-d8308e1632df1b95b8a55ffbd178d445.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquerypp.custom-b798fcdc5409c98f41ef43e1dd3dbf6d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/jquerypp.custom-b798fcdc5409c98f41ef43e1dd3dbf6d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/modernizr.custom.79639-eab2655262cb4775ae798a7acd8adb29.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/modernizr.custom.79639-eab2655262cb4775ae798a7acd8adb29.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/page-34099a5bcc48328a17d5ede68d727a5c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ReadMode/page-34099a5bcc48328a17d5ede68d727a5c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/common-0b0399916fcbde1363a6a0843679b557.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/common-0b0399916fcbde1363a6a0843679b557.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/demo-7c58545147f6644d31851467c55bfa31.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/demo-7c58545147f6644d31851467c55bfa31.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/fonts/icons-0ba129038736461e5d7a36cce01631fb.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/fonts/icons-0ba129038736461e5d7a36cce01631fb.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/fonts/style-f403634e0e9f4b73fbba49e8a825526a.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/fonts/style-f403634e0e9f4b73fbba49e8a825526a.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/icons-034028ce2eedcb32d0049386da9ae627.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/icons-034028ce2eedcb32d0049386da9ae627.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/jquery.dropdown-66a6ded161cb6ee8d97a03955c851bb2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/jquery.dropdown-66a6ded161cb6ee8d97a03955c851bb2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/modernizr.custom.63321-458068484641ee053dac36bb44ccbb57.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/modernizr.custom.63321-458068484641ee053dac36bb44ccbb57.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style1-c3116430542bba8c6d2f30829dbc6705.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style1-c3116430542bba8c6d2f30829dbc6705.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style2-3c2566cd2250660b47d9300e825e3f66.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style2-3c2566cd2250660b47d9300e825e3f66.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style3-67b8adcb04a49b2d3cf6497faf96b703.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style3-67b8adcb04a49b2d3cf6497faf96b703.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style4-11abd7dc5a33c6f5dd64076f26745984.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style4-11abd7dc5a33c6f5dd64076f26745984.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style5-54802d49ac8316e671974f6b6c052fa8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style5-54802d49ac8316e671974f6b6c052fa8.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style6-2383422768ae172cc8a46e9e4fe73607.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/SimpleDropDown/style6-2383422768ae172cc8a46e9e4fe73607.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Timeline/component-b3cd0066b141a78e5abb1845bd69df22.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Timeline/component-b3cd0066b141a78e5abb1845bd69df22.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Timeline/default-64aa5dc26375aebcf2a8a2d5fc7c7b49.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Timeline/default-64aa5dc26375aebcf2a8a2d5fc7c7b49.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/cbpTooltipMenu-0ad31a7a06780aa8c5d6e55660c5a6dc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/cbpTooltipMenu-0ad31a7a06780aa8c5d6e55660c5a6dc.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/cbpTooltipMenu.min-ed97a45dd9bb6e0f22d5d3a39fd5d156.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/cbpTooltipMenu.min-ed97a45dd9bb6e0f22d5d3a39fd5d156.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/component-4e3c8d42836029ebcaf43d35f954925e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/component-4e3c8d42836029ebcaf43d35f954925e.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/default-9a7079f3341281b6eb800025b42362f8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/default-9a7079f3341281b6eb800025b42362f8.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/modernizr.custom-09efe3ec3dca2b66e5392315a9b162da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/TopMenu/modernizr.custom-09efe3ec3dca2b66e5392315a9b162da.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/base-a1932c984fc47c1df05e6ffbdae32408.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/base-a1932c984fc47c1df05e6ffbdae32408.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/c-c5fefb6d266ef2fcbc13dbd1b27b7359.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/c-c5fefb6d266ef2fcbc13dbd1b27b7359.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon-2cf3622cbba861b85d33ffabfa420c13.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/icomoon.dev-2cf3622cbba861b85d33ffabfa420c13.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/prefixfree.min-c289cd776cbffd5e3143e6c65e9dd323.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/prefixfree.min-c289cd776cbffd5e3143e6c65e9dd323.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/reset-8d94834ba5bdb3e88eb7d9478f83a542.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/UserAdmin/reset-8d94834ba5bdb3e88eb7d9478f83a542.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/configform-18bc981fb5feee2f87162ec8bdbc0d6a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/configform-18bc981fb5feee2f87162ec8bdbc0d6a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/configpre-0292ddc38b9ebfaa413a780b9860aa37.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/configpre-0292ddc38b9ebfaa413a780b9860aa37.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/js/configform-18bc981fb5feee2f87162ec8bdbc0d6a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/js/configform-18bc981fb5feee2f87162ec8bdbc0d6a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/js/configpre-0292ddc38b9ebfaa413a780b9860aa37.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/js/configpre-0292ddc38b9ebfaa413a780b9860aa37.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/js/logger-6f8446d56e720759be7317ff1c504528.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/js/logger-6f8446d56e720759be7317ff1c504528.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/style-89833a0e98f5c033858305b845c7505e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/doc/style-89833a0e98f5c033858305b845c7505e.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/logger-6f8446d56e720759be7317ff1c504528.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/logger-6f8446d56e720759be7317ff1c504528.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/vanillabox/jquery.vanillabox-d5614df88e6f9b52bc1647c3e99ca9af.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/vanillabox/jquery.vanillabox-d5614df88e6f9b52bc1647c3e99ca9af.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/vanillabox/jquery.vanillabox.min-9d6912d11ce49e017258bd242c3737dd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Vanillabox/vanillabox/jquery.vanillabox.min-9d6912d11ce49e017258bd242c3737dd.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/cbpViewModeSwitch-553a395b4b08875c5521b8406876e9dc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/cbpViewModeSwitch-553a395b4b08875c5521b8406876e9dc.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/cbpViewModeSwitchNotis-553a395b4b08875c5521b8406876e9dc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/cbpViewModeSwitchNotis-553a395b4b08875c5521b8406876e9dc.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/classie-1140889fb414612e050f0ef43e05bc3f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/classie-1140889fb414612e050f0ef43e05bc3f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/component-f08352567dc099677b6624b8c7395da2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/component-f08352567dc099677b6624b8c7395da2.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/componentNotis-6007ebce35347df98114b2b4e9c2ed41.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/componentNotis-6007ebce35347df98114b2b4e9c2ed41.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/default-7f570a7d0c067377b572a7df79c0f76e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/ViewModeSwitch/default-7f570a7d0c067377b572a7df79c0f76e.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/climacons-f37660edeae222e939013d50aec338c6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/climacons-f37660edeae222e939013d50aec338c6.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/component-9333bba82d40dde2dd3912bc1cb246a0.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/component-9333bba82d40dde2dd3912bc1cb246a0.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/component2-a9fc3279e2fb0e78179fa79d0adf43c6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/component2-a9fc3279e2fb0e78179fa79d0adf43c6.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/default-eeded2c4c6a213d94dd7afb9b9a89a1f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/Win8/default-eeded2c4c6a213d94dd7afb9b9a89a1f.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/admin_notes_icon-904315d5502c069d9ff577867e1d5640.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/application-0bde36f4647fe6936f1b87588da6430e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/application-0bde36f4647fe6936f1b87588da6430e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/base-0c03e3156282d6047a54767572255cbe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/base-0c03e3156282d6047a54767572255cbe.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/datepicker/datepicker-header-bg-af6c95e44f39e9d084b2136eb47db6e5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/datepicker/datepicker-input-icon-6eaf9a9946655e190ca048b7d76524df.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/datepicker/datepicker-next-link-icon-f6a2993cfa5af37dcc27cab5af8db602.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/datepicker/datepicker-nipple-98313b7bdd0f63f2bbe6250ca388b46e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/datepicker/datepicker-prev-link-icon-be562aceedf5ac8578329bb336f44711.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/ext/jquery-353a03c209d66ebd5550801f114b174f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/ext/jquery-353a03c209d66ebd5550801f114b174f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/ext/jquery-ui-ac3cbf699b85be5d2d96345297b6c32a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/ext/jquery-ui-ac3cbf699b85be5d2d96345297b6c32a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/index_list_icons/block_icon-f61994ffba954352aaba8080aaff0769.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/index_list_icons/blog_icon-eef04faa9792e9ac5fe55a59ebf8c878.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/index_list_icons/grid_icon-b41ff92ab715c486fc32775ac5f0c618.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/index_list_icons/table_icon-fbb5e9e6851b8c966272f53afd092787.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/batch_actions-38132bd089647193c54483d1843ed300.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/batch_actions-38132bd089647193c54483d1843ed300.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/checkbox-toggler-0767fd22cdb68945582d679d5b80c3b6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/checkbox-toggler-0767fd22cdb68945582d679d5b80c3b6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/dropdown-menu-ccee08cd92359f991abb899a51091096.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/dropdown-menu-ccee08cd92359f991abb899a51091096.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/has_many-702505fa9428e8ff90daaa89297af809.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/has_many-702505fa9428e8ff90daaa89297af809.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/modal_dialog-eb0b213eff4055ba7d86be173cb17fe5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/modal_dialog-eb0b213eff4055ba7d86be173cb17fe5.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/popover-be5760efda8d98d21242e3926f41d921.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/popover-be5760efda8d98d21242e3926f41d921.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/table-checkbox-toggler-6e82c8180588e38b9ff5909cbd72e7b6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/lib/table-checkbox-toggler-6e82c8180588e38b9ff5909cbd72e7b6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/loading-1313e783cc0b53b58abdddcc942cb0b8.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/nested_menu_arrow-8edc2eaf05f3d2872c2c0ddbc9bc7b2a.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/nested_menu_arrow_dark-14789cdf8863ead623c9f12f8ab3f244.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/orderable-59bb7c1531cdc3003e5500825a5ec862.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/print-cbd45958c63cfac1ff07e47138be1aba.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/active_admin/print-cbd45958c63cfac1ff07e47138be1aba.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2442c654c78f526ba2b55d0b1ba3399b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2442c654c78f526ba2b55d0b1ba3399b.js.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5e008540089fca2d20400f778ddb9c2d.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-5e008540089fca2d20400f778ddb9c2d.css.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-64069b9f57a05ea64138d45f336c2540.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-64069b9f57a05ea64138d45f336c2540.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7b7e109f34a43cdb9cfc7f1f8eca29a1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7b7e109f34a43cdb9cfc7f1f8eca29a1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7cd217f1bad7ba287988624936ee15fe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7cd217f1bad7ba287988624936ee15fe.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7d5ef9c72e82e461a682c5dedc752ca5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-7d5ef9c72e82e461a682c5dedc752ca5.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-84bf476a8ddf68afbc681c1b38c9a4b4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-84bf476a8ddf68afbc681c1b38c9a4b4.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8b6e16d18de42d07b06345e47e722931.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8b6e16d18de42d07b06345e47e722931.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8cfd4f4d55b7c3953578564963e46270.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-8cfd4f4d55b7c3953578564963e46270.css.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-baae0b5342424932154ed443eb87393f.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-baae0b5342424932154ed443eb87393f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bb6b34220e04646dd0adc216525c7a8c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-bb6b34220e04646dd0adc216525c7a8c.js.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c481469dbb9d0d064e767ff2067318f6.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c481469dbb9d0d064e767ff2067318f6.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/1-bb491b0e755f0d76246197570c39b58e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/1/1-bb491b0e755f0d76246197570c39b58e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/1/2-efa2bf0d208e5907ac74a6345fabfc35.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/1/3-ca2eaf3eeaf7322c52c6261ed4f3ba56.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/1/4-0a042bb24a10bf2a1ad984848008cf33.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/1/788774edt7659e2106c17&amp;690&amp;690 (1)-6e3652a94566b03b4bb0e9c5df396c93.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/2-efa2bf0d208e5907ac74a6345fabfc35.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/3-ca2eaf3eeaf7322c52c6261ed4f3ba56.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/background/4-0a042bb24a10bf2a1ad984848008cf33.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blue/jquery.cbpNTAccordion-c45a254808e107fd23bee014f0d7e87a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blue/jquery.cbpNTAccordion-c45a254808e107fd23bee014f0d7e87a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blue/jquery.cbpNTAccordion.min-d6ce3fcd6bf611483b0b6fb3645f6bb3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blue/jquery.cbpNTAccordion.min-d6ce3fcd6bf611483b0b6fb3645f6bb3.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-7f696aa8a87560ef85f3ab810ba15664.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-7f696aa8a87560ef85f3ab810ba15664.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-d8960fb4dc93006fac3a35a99d2af8b8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-d8960fb4dc93006fac3a35a99d2af8b8.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-fullscreen-e681a9a57bdeb438e62da2730af5cee6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-fullscreen-e681a9a57bdeb438e62da2730af5cee6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-indicator-a2a4db60bdac0b19f93de26bbc063864.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-indicator-a2a4db60bdac0b19f93de26bbc063864.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-indicator-b1344c07c2bd3ff433705662dc9c696e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-indicator-b1344c07c2bd3ff433705662dc9c696e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-video-2e20c9bfc826ac023a481b211d2ebc6e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-video-2e20c9bfc826ac023a481b211d2ebc6e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-video-ae08a602a5886aa6c11b6055a6e2f4fa.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-video-ae08a602a5886aa6c11b6055a6e2f4fa.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-vimeo-b2542129419ceec1c8fdf81569bb6861.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-vimeo-b2542129419ceec1c8fdf81569bb6861.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-youtube-e4ba3ca28fd54b3ad68bce231cd5639c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery-youtube-e4ba3ca28fd54b3ad68bce231cd5639c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery.min-8f9a0c46b5194ff98eef2a10eba7e6a7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery.min-8f9a0c46b5194ff98eef2a10eba7e6a7.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery.min-e752cfcc23807271b3251a974706b2cb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-gallery.min-e752cfcc23807271b3251a974706b2cb.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-helper-3a42b73a5c295cd65579e95758e381cb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/blueimp-helper-3a42b73a5c295cd65579e95758e381cb.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/demo-ac429e2a910a2e21651bb40b90e55d98.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/demo-ac429e2a910a2e21651bb40b90e55d98.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/demo-fbcabfb450166c4b7f52bb6f35818a64.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/demo-fbcabfb450166c4b7f52bb6f35818a64.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/jquery.blueimp-gallery-9a824af93bb78f6e3b4d129872077c26.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/jquery.blueimp-gallery-9a824af93bb78f6e3b4d129872077c26.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/jquery.blueimp-gallery.min-43513688a9d167af97d35e8e28a4ae4c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/blueimp/jquery.blueimp-gallery.min-43513688a9d167af97d35e8e28a4ae4c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/book/book2-efad73aa7d55c988dfab1f7264ead42f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/book/book2-efad73aa7d55c988dfab1f7264ead42f.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/book/modernizr.custom-33556cf78090322598d9e642f55117da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/book/modernizr.custom-33556cf78090322598d9e642f55117da.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/b3-706d0cc5a818976c25c975fe02757262.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/b3-706d0cc5a818976c25c975fe02757262.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/core-420eae124c9cc6627ef901f6e31ff9f4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/core-420eae124c9cc6627ef901f6e31ff9f4.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/core-b3-39e67e3ef85b9d2631d58f382f4c81d7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/core-b3-39e67e3ef85b9d2631d58f382f4c81d7.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ar-AR-aa60219242c0a9042c3771888cec8087.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ar-AR-aa60219242c0a9042c3771888cec8087.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/bg-BG-08f205a7a1a0689fce74b9dbba0e46b2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/bg-BG-08f205a7a1a0689fce74b9dbba0e46b2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ca-CT-b389158afe1e3ea98793eab4031d15bc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ca-CT-b389158afe1e3ea98793eab4031d15bc.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/cs-CZ-24fe172318eaea2d4061764020990ba0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/cs-CZ-24fe172318eaea2d4061764020990ba0.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/da-DK-c1b76022e74aeaec2968221c5781455a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/da-DK-c1b76022e74aeaec2968221c5781455a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/de-DE-b6375537541d84a46f6e0c776c57a7b6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/de-DE-b6375537541d84a46f6e0c776c57a7b6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/el-GR-b67d17b24108ec163a0540cfdea7ffb3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/el-GR-b67d17b24108ec163a0540cfdea7ffb3.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/es-AR-05fe32416bee11ff36c0b844f53376f1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/es-AR-05fe32416bee11ff36c0b844f53376f1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/es-ES-d640e148a341d06ef63a009943d3b29a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/es-ES-d640e148a341d06ef63a009943d3b29a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/fr-FR-884cbeec46f0710cb83c25664d89668c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/fr-FR-884cbeec46f0710cb83c25664d89668c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/fr-NL-695656164445c08a473c990c74e86704.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/fr-NL-695656164445c08a473c990c74e86704.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/hr-HR-0d5ef31895665dbe0694c88ec0ddb318.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/hr-HR-0d5ef31895665dbe0694c88ec0ddb318.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/index-2f20c27e0db2d651b4fca9e9b5da3fd6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/index-2f20c27e0db2d651b4fca9e9b5da3fd6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/it-IT-4ddd7da55c5e92f049e8ab651c4be4b3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/it-IT-4ddd7da55c5e92f049e8ab651c4be4b3.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ja-JP-b3286d470fb67747968680314529cde7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ja-JP-b3286d470fb67747968680314529cde7.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ko-KR-3874b50e5da80d1a933ce2aa468f6dce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ko-KR-3874b50e5da80d1a933ce2aa468f6dce.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/lt-LT-46d6fbe9003b12efb31d054bb7dba787.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/lt-LT-46d6fbe9003b12efb31d054bb7dba787.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/mo-MD-df82fb049d1d72ba2a95c6102557923c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/mo-MD-df82fb049d1d72ba2a95c6102557923c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/nb-NB-52a4248fdb8dcde2549ab11ee42757cd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/nb-NB-52a4248fdb8dcde2549ab11ee42757cd.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/nl-NL-f91bb84d2486291511d6d1fe7a0c1bd5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/nl-NL-f91bb84d2486291511d6d1fe7a0c1bd5.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/pl-PL-554de3657897df62635a75a7e7373ced.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/pl-PL-554de3657897df62635a75a7e7373ced.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/pt-BR-197437fa62135b477d2455b1ba9b65cb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/pt-BR-197437fa62135b477d2455b1ba9b65cb.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ru-RU-3c7f7c8267efe14ae0b4af6f1e19e6b9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ru-RU-3c7f7c8267efe14ae0b4af6f1e19e6b9.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/sk-SK-dde2e556342d05d96a927d1a0bcb3f77.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/sk-SK-dde2e556342d05d96a927d1a0bcb3f77.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/sv-SE-03e23065823bbeb097be6e4c8a2aac95.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/sv-SE-03e23065823bbeb097be6e4c8a2aac95.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/tr-TR-5a2d73a383c778db226ebe455f54cbe2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/tr-TR-5a2d73a383c778db226ebe455f54cbe2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ua-UA-3e64d7afbc5ef4476740af48649a61f4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/ua-UA-3e64d7afbc5ef4476740af48649a61f4.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/zh-CN-94cfae4689ae22dbd135942d73575a2a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/zh-CN-94cfae4689ae22dbd135942d73575a2a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/zh-TW-81a2d6e9a94bb02db817deb0182c16f8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/locales/zh-TW-81a2d6e9a94bb02db817deb0182c16f8.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysihtml5-98fba5f7262a8ad25da8eb1e880f04a1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysihtml5-98fba5f7262a8ad25da8eb1e880f04a1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysiwyg-color-ac4ff8d55437994c39af37bc0dd939e2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-wysihtml5/wysiwyg-color-ac4ff8d55437994c39af37bc0dd939e2.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/bootstrap-select-a3290f8ea5efefac06e56d731dc551e5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/bootstrap-select-a3290f8ea5efefac06e56d731dc551e5.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/bootstrap-switch-66f647bb88104bef75f3beb07b3ae364.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/bootstrap-switch-66f647bb88104bef75f3beb07b3ae364.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/flatui-fileinput-651f52c090202ce2ef9cba7942aebb10.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/flatui-fileinput-651f52c090202ce2ef9cba7942aebb10.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/holder-380940d38410b55832b810019321b037.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/holder-380940d38410b55832b810019321b037.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/jquery-ui-1.10.3.custom.min-ad5b0352158ac0c9c400f9482823eed1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/jquery-ui-1.10.3.custom.min-ad5b0352158ac0c9c400f9482823eed1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/jquery.placeholder-63d306c26dd019e44bbeaa8aacd53f9e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/jquery.placeholder-63d306c26dd019e44bbeaa8aacd53f9e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/jquery.tagsinput-3e3ec2f5024e50df0c34184190230b81.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/jquery.tagsinput-3e3ec2f5024e50df0c34184190230b81.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/typeahead-4e32e3856eac2a2defc271fd89610bbe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/flat-ui/typeahead-4e32e3856eac2a2defc271fd89610bbe.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/flat-ui-icons-regular-00377b57b9e6c5b3e7d7897d13082442.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/flat-ui-icons-regular-01c0cc3ad80d8bec5eed56ca9f2e5d98.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/flat-ui-icons-regular-94d375a4c1651a9697e8ec5650c5aa57.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/flat-ui-icons-regular-e8ebfef8537b6b5678da88260ea4fc3d.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-black-1e73895fc7e0074479df928733c5636f.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-black-bbd4027080499502cf82764b7f22e7a5.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-black-c761caa806972b25b3d2ae7b0583b986.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-black-f49dcb57324c6c0e3f2e6ade3dbb5190.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bold-28930f3c6d60ecc1b1f8fbefd21774e0.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bold-7f73924c024c5a3f702b6f5810fd8e15.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bold-b23ca9c0104190f4380b6d8d7c6673e6.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bold-d0de65815dfca0bedad60df81c0b4ae2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bolditalic-0bc5b40012b234e4c719448b58100718.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bolditalic-5c4f6e9db5aaa34da62e2d3a05aa8625.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bolditalic-7016fcdaf704b97401a428cf8c845a9d.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-bolditalic-edcf8bbe15bd38f05c0e006971ffe01d.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-italic-06423234d116c9c12edd7f95619131fc.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-italic-837e17470b5856994a8a40bdbcf25c3e.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-italic-8cdab333713f796d6c67c2b1124ea440.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-italic-d192b388852b5245c37d44ae8c5af288.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-light-0cfae96ce0351e6b8c2a7597b4dd58f6.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-light-6c2360e231dd50c4cef9fc33a6436113.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-light-779a2551409d3388ad31f3c02d4166d7.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-light-bfd82ac7ca663006428ddbedd7736216.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-regular-0f33e68f051937719fa037895b6f80d7.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-regular-3309f8eea775b281b6eece4b4627ff21.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-regular-427a643188b052e58248a9838f6ac071.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fonts/lato/lato-regular-e552b4bca63c2a35da5e04ea80eb8f89.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar-d16c88891c50263ca39dbbd25e686ff4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar-d16c88891c50263ca39dbbd25e686ff4.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar-ef399949fd5e72deb846953fa744dae9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar-ef399949fd5e72deb846953fa744dae9.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar.min-c41ef296c910f7935b90d58a15a6e1b8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar.min-c41ef296c910f7935b90d58a15a6e1b8.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar.print-bbe53f60fed9698bf71a3a670a4ac1c1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/fullcalendar.print-bbe53f60fed9698bf71a3a670a4ac1c1.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/gcal-0363d241f806b31762f7e2ef5c790477.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/gcal-0363d241f806b31762f7e2ef5c790477.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/jquery-ui.custom.min-5dd2ca386417eb5638c52efcb3a905c2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/jquery-ui.custom.min-5dd2ca386417eb5638c52efcb3a905c2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/jquery.min-6be49057a70523afea792ec845d51295.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/fullcalendar/jquery.min-6be49057a70523afea792ec845d51295.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/global/global-0c7e4198038968a77b2a7de7a76ebbf6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/global/global-0c7e4198038968a77b2a7de7a76ebbf6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/icons/goup-f35565d9420ad1a6f5d6c13c467b2260.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-2x-c16f1fe2bf4b704390fd382a9494490b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-55eac743b8051752312d2682c3b00f86.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-author-53a00afabb639d7566b5b90bb64cc7b4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-pic-1-9bffc3fa37984900332bfe881903987a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-pic-2-4d5c4be6ba1f67e673ec56e8b4222092.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-pic-3-e74bbafd6058e08936544b2e9bfb7a89.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-pic-4-9472b79b7feeff9392d4741b61efc72f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-pic-5-b67981715ed3b5a478ba17d03e0b90f9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/browser-pic-6-59672688b0080ab369b98087da5a75ba.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/html-icon-1b1575ec1fe2f4745acfaea956af5012.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/logo-mask-2x-f632719b25a7fd302229b5ca642349b0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/logo-mask-fe6d8cfb3aace95913ecbee527110723.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/demo/video-c076abfe89b5fb77f0c0c3c1a5537932.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/exaple-image-d1ab48c1d060250355d1f1ca39269f87.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/favicon-d109ecd19770d06434162e1abbf9bcfc.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/footer/logo-abcf34140a50271671ff633dad4273f3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Book-865be99b48647a9f7c2295ed6365a02d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Calendar-f8ec36cccf05ef12c70719fbe3f1054f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Chat-eb4fce612a6b4dcd4be1618436bb48cb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Clipboard-bdab0f86c898576a8d115f5c69c6c243.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Compas-aa238ce22155d691cfe6246f33aff4fa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Gift-Box-b4369650c060db44c1995618fd4b93bf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Infinity-Loop-7f0e2f977ed59f6f2b4db2a6a2445b60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Mail-505a173600eaebde5e00d167b749fb64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Map-7370d82ab1fc344a2d384dd913894ec6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Pensils-c32a1d082c2e5ff71982db2b30348f63.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Pocket-60354acd3be8ea126c2b4cb3d0ef0758.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Retina-Ready-497cfe704956b07c2817b0af0c8ed3d8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Toilet-Paper-643110cb9e0687bdafb86ac32a76faee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/png/Watches-9e17d4ea0eedf4e90570bcd44e5d222a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/book-e2c720e5979f14b481c039f58c5de603.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/calendar-06a03a0035ba30238f82d5301c29c7e7.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/chat-f6d58d134d41369db9f0d1041ea0c5e3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/clipboard-ef91f815f136687e823de67cb9af0315.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/clocks-4e1b3cb866c09bb48b916e18bb939764.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/compas-0b2c96f79dd34c0999ae6282a062c479.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/gift-box-143753a7508c8f31ea9693a56cefb8c0.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/loop-482b78c7dcdb42cba3a29e7dbd5b0c66.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/mail-2ec2568616498b78d6b3d31525454e33.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/map-27607fc340d50e3f9a2eb5ae3d35bb80.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/paper-bag-e268e803b1f8a40aa8c2ffb5d6153e51.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/pencils-ab4e066c541043e433bad653b0113071.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/retina-747bcfe590a70642f0361eb0e09b6ac5.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/icons/svg/toilet-paper-f219686605e54499c16edb7a4a5afb4a.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/login/icon-ca37f7394ef647d6db08abb2af53e5e7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/login/imac-033d33bb537ddb188f9be4195e816491.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/login/imac-2x-37f5b73c356947ed44bc76867dba437c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/switch/mask-481e4a53419ea9c5f910cda7ac9e8a51.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/switch/mask-square-1527669fb77a23c33fd437aa95b405d9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/tile/ribbon-12b71eb848b645f8c4def098479fc6ec.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/tile/ribbon-2x-99ecf9766696ba917ac3a715e3430838.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/todo/done-05f80471e5bd64aef9c7b75d011ed9e7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/todo/done-2x-e9d9bb0cd913851734d9dc01ac68661b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/todo/search-2x-a88f2248d5f9b37c316005329561d1f3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/todo/search-d4daf093bcdbc71c37c428537c2ab49a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/todo/todo-2x-2c564aa67736735405031e2b423c43c5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/todo/todo-ae36a2da2ed2c589b66829429e613c04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/fullscreen-2x-748ed850ca004db92f80c9368df8f923.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/fullscreen-ae80f09d160b78a93a240f9588234872.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/pause-2x-d7e010b29911b378884a1588be320bbb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/pause-dab3719b1b091a378bb9f632a7404be8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/play-2x-ad600e064b393a5a5e92f64b5a850853.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/play-833e579c3c234b1f4c2ab94fd05b8c50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/poster-ba5c432d1f536468e343a474914640f3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/volume-full-2ff7e2fdc7618309dd7abf672a1fc3a6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/volume-full-2x-765f5c9bdd78545c0440f92157834766.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/volume-off-2x-26a6336e2edc66f1506b2fc5ce21e0e8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/images/video/volume-off-4cf2d5c8abea7f6d42a30e749f43ce46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/component-1422d59d2a2f22b7afb5a3e519734e0e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/component-1422d59d2a2f22b7afb5a3e519734e0e.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/default-92e3282c5a9654ba190e3a540df5ec4e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/default-92e3282c5a9654ba190e3a540df5ec4e.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/modernizr.custom-33556cf78090322598d9e642f55117da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/modernizr.custom-33556cf78090322598d9e642f55117da.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/toucheffects-5ef94bc4420cd60aa6bc1eb08a06086c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/indexcell/toucheffects-5ef94bc4420cd60aa6bc1eb08a06086c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/animated-overlay-9a4683da631ff0931e6b79fe1e3b0f62.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-2caf1906ef29c8b0a0231bab3378af15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-d0d2c550e34708246dbba1f9f3159a05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_55_fbf9ee_1x400-d95a178c13be166f92d0fddd88db5c3e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-6ecb6ac2eae0121dc49bf072fd85d856.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-38d0d320907a653310f2d313ba6d9517.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-4ce93dd83037898f449c88a3f17e00bf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_glass_95_fef1ec_1x400-1f18353efdd3c901f5ddca1878c91fdd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100-c934ac5defcc98eed5b8adb52cf4426d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_222222_256x240-1a69acf2f1f4e05b77624051d7efa3c7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_2e83ff_256x240-fb696ff371365fefead5c91e34c5c7a2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_454545_256x240-03e9ed8d9e9bd4267ee7c351a3d490ef.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_888888_256x240-428cc3b69b8ea50c9524dff27ae83baa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui-icons_cd0a0a_256x240-8aa975adfe1f2d53cdbbb8f5d4013337.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest-73d2df167d62c59ad177db53caf0dec6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/navi/animate-d29cba284f1de18a283e76599d6b0011.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/navi/animate-d29cba284f1de18a283e76599d6b0011.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/navi/navi-1.9.1.min-0db363c6a7deef966c3986722d686626.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/navi/navi-1.9.1.min-0db363c6a7deef966c3986722d686626.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/slidebox/jquery-1.7.1.min-75ac2a2a5e8db16aaaebfa987fb7abdd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/slidebox/jquery-1.7.1.min-75ac2a2a5e8db16aaaebfa987fb7abdd.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/slidebox/jquery.slideBox-16164b79085ec05f7b0edda271d0098b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/slidebox/jquery.slideBox-16164b79085ec05f7b0edda271d0098b.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/slidebox/jquery.slideBox.min-f6b97deec26fda5b863d430a9d04f30b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/slidebox/jquery.slideBox.min-f6b97deec26fda5b863d430a9d04f30b.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/jquery.tinymce-863bc2e37fcc663355f003124a0eb605.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/jquery.tinymce.min-1a4b42445328be41bd07f54049f3f9bc.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/jquery.tinymce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/en_GB-05045a31df40f26a1264c9e7b7dc59b1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/en_GB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/fr_FR-5a1fe569e2d0b3b6717a643b455ae4b4.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/fr_FR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/ja-d21949d4dbb3f034e8bf918dd677141e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/ko_KR-ffea427c26ed93a5df5a77dbf058d355.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/ko_KR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/zh_CN-febd36c25e1956a4b77390f76a7360e6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/zh_CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/zh_TW-92a1001375f4fddc94fe7d08c75020a4.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/langs/zh_TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/advlist/plugin-374f557e15c213b968280e3d38744e4b.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/advlist/plugin.min-41a372b0adfc24d2c135a934facce303.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/advlist/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/anchor/plugin-4a671f131b27dd26e91926ddc589b062.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/anchor/plugin.min-4a671f131b27dd26e91926ddc589b062.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/anchor/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autolink/plugin-d999834df0eb675eab0a7f0b5804a212.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autolink/plugin.min-d953f57763f861ff0016812e42cf18af.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autolink/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autoresize/plugin-3c4ffb48cdeb10f40c92e95f372f5da0.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autoresize/plugin.min-8bccfa68e268449dd76afc2ffd3a4240.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autoresize/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autosave/plugin-498c9fae544a27f302013f528904b5c3.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autosave/plugin.min-4fd67b0663c4b0280f53671b2cb12fd6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/autosave/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/bbcode/plugin-ef349a5bcd4d20561a507459656112ed.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/bbcode/plugin.min-f81bfd668700eef56852c02a50c808c2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/bbcode/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/charmap/plugin-4069953f9e644eb059a8762fcdf98c3b.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/charmap/plugin.min-01d03c9d0156003b3a295991f1c8eb3f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/charmap/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/code/plugin-2d1c70d0eb10635f851227f160dc5187.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/code/plugin.min-2d1c70d0eb10635f851227f160dc5187.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/code/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/contextmenu/plugin-8bb0c19222a461e6bd8957c4fdefa983.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/contextmenu/plugin.min-b1c2138f28e44c5f52785fe9dc4f6581.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/contextmenu/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/directionality/plugin-320fd422e5eddd9b45677781ea49a4fb.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/directionality/plugin.min-b01e2947c17ab39a6102f9a2366d90d0.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/directionality/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/emoticons/plugin-c9b523c633c11b44c3faded1d9babbde.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/emoticons/plugin.min-4fa1b35c88b7e8dbfe66f0bb61625349.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/emoticons/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/example/plugin-5c1cf1d4ec0af18696f018d4d42fa927.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/example/plugin.min-40ff5eb0eac4b4df3024adff98e68661.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/example/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/example_dependency/plugin-33dff609c6d0d03652b879fe8aa8fbe2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/example_dependency/plugin.min-33dff609c6d0d03652b879fe8aa8fbe2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/example_dependency/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/fullpage/plugin-cb0d173d50d7973e51f9f260fd3df864.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/fullpage/plugin.min-4c43f8b1cf8dd3885393c5ae5de39505.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/fullpage/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/fullscreen/plugin-a100a587d8e5f92d6d0c2aeeb020ed46.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/fullscreen/plugin.min-a100a587d8e5f92d6d0c2aeeb020ed46.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/fullscreen/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/hr/plugin-75fef299fc3147f4c05f549c9be9aa40.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/hr/plugin.min-5ea8c4974d29eb18f48c5e552ecd24a5.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/hr/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/image/plugin-a9ca14bb33b96f117fe3a43adcf58397.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/image/plugin.min-d732f3a3afadc6734388c52fc1c0df3e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/image/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/importcss/plugin-6cc05ae3b2acfd76f5c65b697467943f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/importcss/plugin.min-70c924467ac9c1ce253656a789c8fbd7.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/importcss/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/insertdatetime/plugin-1565ca063296dd584333baed00030a14.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/insertdatetime/plugin.min-33ca7df63ead2e959065c0d37c6f6a71.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/insertdatetime/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/layer/plugin-1806042f5490a643b62dca4792cbe682.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/layer/plugin.min-6043f747ca75f69e03f2276cd74a175c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/layer/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/legacyoutput/plugin-5bfaca47e8b3da50c23e372f49a3a599.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/legacyoutput/plugin.min-e6fc158a405ac0c035d448c3bbf7ffe2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/legacyoutput/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/link/plugin-f18c2c853f27483139df5850b3901d7a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/link/plugin.min-3770593d2bb600620e2be1569644b671.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/link/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/lists/plugin-e5b86578617f76bdaaadd10ddb778ed1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/lists/plugin.min-e5b86578617f76bdaaadd10ddb778ed1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/lists/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/media/plugin-1b1cad8ecbf11befdac38a0c5847cd92.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/media/plugin.min-9363117654db81983bb9bc984a35e772.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/media/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/nonbreaking/plugin-22e7cfd5270a9a69fc03b95f3aed46e1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/nonbreaking/plugin.min-3db19f1368af959f0ed12c8dad5cf0aa.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/nonbreaking/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/noneditable/plugin-ca162ddbaa4d7375186c5ebf5aaea149.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/noneditable/plugin.min-50e337168919f101fe9dd793d05b539b.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/noneditable/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/pagebreak/plugin-baf622e88ae59dceb7f08f9d4909e2e8.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/pagebreak/plugin.min-baf622e88ae59dceb7f08f9d4909e2e8.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/pagebreak/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/paste/plugin-92d6809d39aa4b58dfd373ad94bec027.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/paste/plugin.min-7d44098d48f301aa0ccf72e208afd09b.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/paste/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/preview/plugin-ae062b9e8cdb14caedf82ebfa46c8bfc.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/preview/plugin.min-8d53220fb53578e61c63f9a103c27092.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/preview/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/print/plugin-6a7a6660b1f90041a6d73b1724c31454.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/print/plugin.min-efa647bb73c322f7afa9de736e0f0994.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/print/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/save/plugin-4f9f1a84c50a5835e0e967067faf494d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/save/plugin.min-fc5fdc1fdf1080f0a63999782becc259.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/save/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/searchreplace/plugin-250f47c46c6d23b3789df86cbfe44fa1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/searchreplace/plugin.min-250f47c46c6d23b3789df86cbfe44fa1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/searchreplace/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/spellchecker/plugin-d2fff0bc0abce32ee1917b9bc39c0048.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/spellchecker/plugin.min-709835500a9724887c93900cb317b72e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/spellchecker/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/tabfocus/plugin-f9c543302b9a187f96e4d2efecefc54c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/tabfocus/plugin.min-5300867b7393a0f76b28f7e62fb3790a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/tabfocus/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/table/plugin-a2b408113f275daac3c03663471f3384.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/table/plugin.min-52bf5f701ccd742ebd2b47c8caa8e948.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/table/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/template/plugin-7504d16c2a19d342c37800fb569b3ea1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/template/plugin.min-7504d16c2a19d342c37800fb569b3ea1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/template/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/textcolor/plugin-15e4215a5448eeaf31f83f33ea4fb3c6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/textcolor/plugin.min-30ca5e1bc90637512f9d3d9c2ceba571.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/textcolor/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/visualblocks/css/visualblocks-c0abbdf3712d978caa9c904abd3fdec3.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/visualblocks/plugin-3f9f9d761cdb8cfc353e36b7349a22e3.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/visualblocks/plugin.min-bb4a463c50583d69c2bd78bf938e667f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/visualblocks/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/visualchars/plugin-fcec24cd0b4f68f8bddbed9f971c5905.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/visualchars/plugin.min-591899fbfa88b155cc78c88e7263ba8e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/visualchars/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/wordcount/plugin-3461b6f42a085109f9ef3d9d00aa9f88.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/wordcount/plugin.min-d2552969e8862ee9e70c42cfba6479d8.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/plugins/wordcount/plugin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/preinit-387dd722ecd83065a344bf50327aa15a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/preinit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/bootstrap-theme.min-7b27dd5fac6095065ef49cba3055951d.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/bootstrap.min-688e224031e91ebc8d514044c59122d4.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/content.inline.min-5e464c1f20270beccc0b3ed5af0cf0b1.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/content.min-46b4f75bb96fee69916ac6cb82e1cadd.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/skin.ie7.min-7871a9d7fd2593db27613835f401b783.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/skins/lightgray/skin.min-7186bf7e0423157e7792d904aa3a2aae.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/themes/modern/theme-84539daaa2b927dcf1c87948d5696091.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/themes/modern/theme.min-4ba41c3ab4b78280dee130bb3d021e7e.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/themes/modern/theme.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/tinymce-2435fef11a57e98e4c945258d7801166.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/tinymce.jquery-305b64faab0fd4e8f773a86407a2154d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/tinymce.min-4f67625ca99e3a73aca7ec8f40d4bfbe.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/tinymce/tinymce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap-79247d9c90a7f22faf29261055364a04.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap-79247d9c90a7f22faf29261055364a04.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/affix-ab86099a5deb3f59b1be7d3299af0358.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/affix-ab86099a5deb3f59b1be7d3299af0358.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/alert-ded8f25bbd4ad3e977bbecc5231ec407.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/alert-ded8f25bbd4ad3e977bbecc5231ec407.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/button-89d6e95324e77e9b0b4305fc96c1aa20.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/button-89d6e95324e77e9b0b4305fc96c1aa20.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/carousel-48c03ccd1a42346f26405c5dbb6064b2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/carousel-48c03ccd1a42346f26405c5dbb6064b2.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/collapse-7c97e82feb60eff322a60a75b8d4617a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/collapse-7c97e82feb60eff322a60a75b8d4617a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/dropdown-696a49e1ccd8346bb033b3c70a544141.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/dropdown-696a49e1ccd8346bb033b3c70a544141.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/modal-99efb39d67961ef585991c353e7c618d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/modal-99efb39d67961ef585991c353e7c618d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/popover-603c9fe237f8111467222d4dd4d2ebaf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/popover-603c9fe237f8111467222d4dd4d2ebaf.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/scrollspy-168c5a809e3cfb6c03ee0690b468037c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/scrollspy-168c5a809e3cfb6c03ee0690b468037c.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/tab-e2bf2877fc1ea7c6a99d653db8fa8c1a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/tab-e2bf2877fc1ea7c6a99d653db8fa8c1a.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/tooltip-2561e3bb43377d8a487d770d9aa69569.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/tooltip-2561e3bb43377d8a487d770d9aa69569.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/transition-c3e650fa6d78b202e22c927bbc944466.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/bootstrap/transition-c3e650fa6d78b202e22c927bbc944466.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/glyphicons-halflings-regular-0f4a7be6dc74b926e8120a545f8b96ea.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/glyphicons-halflings-regular-5eefd964cf689e3315d8c9459714e4cd.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/glyphicons-halflings-regular-b8371b58529b77f0818e5d721a7a5624.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/twitter/glyphicons-halflings-regular-cf24e42fad297dbaa33853187ba876e7.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/Gruntfile-249272958533ce867bf56f903c6683f6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/Gruntfile-249272958533ce867bf56f903c6683f6.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/app-de1a00aebb9220c94e35bf2b804fe4e9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/app-de1a00aebb9220c94e35bf2b804fe4e9.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/cors/jquery.postmessage-transport-fcfd314b7139e206cb9402c9e42f9005.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/cors/jquery.postmessage-transport-fcfd314b7139e206cb9402c9e42f9005.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/cors/jquery.xdr-transport-9cbe85b2086325aeaf69ab492951a79d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/cors/jquery.xdr-transport-9cbe85b2086325aeaf69ab492951a79d.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-46553db4c54bd96078ff3e7df9aeb3b1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-46553db4c54bd96078ff3e7df9aeb3b1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-angular-8a078a545e4a013c8e2785616718ac73.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-angular-8a078a545e4a013c8e2785616718ac73.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-audio-4378533edc612676d6bc781de1598385.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-audio-4378533edc612676d6bc781de1598385.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-image-3b1fe975057f384b63ac07946d903380.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-image-3b1fe975057f384b63ac07946d903380.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-jquery-ui-692f1dbe0cac4b07109c1cbfda60732f.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-jquery-ui-692f1dbe0cac4b07109c1cbfda60732f.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-process-e652a66994c0c8ff0c8dc87e12b5b3b0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-process-e652a66994c0c8ff0c8dc87e12b5b3b0.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-ui-adb96fda0c368db30175cac1545f8999.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-ui-adb96fda0c368db30175cac1545f8999.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-validate-473472060def7be5e419be6d881fcd36.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-validate-473472060def7be5e419be6d881fcd36.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-video-840b5b6db52d149aeebe5cc0faef1498.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.fileupload-video-840b5b6db52d149aeebe5cc0faef1498.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.iframe-transport-921987177809c057baa4e9ae05b9dae1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/jquery.iframe-transport-921987177809c057baa4e9ae05b9dae1.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/main-0844313d795d7111feccda16cfcbf4ed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/main-0844313d795d7111feccda16cfcbf4ed.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/vendor/jquery.ui.widget-a0ee91630aa7348f94eabd9fec99843b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/upload/vendor/jquery.ui.widget-a0ee91630aa7348f94eabd9fec99843b.js.gz" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/active_admin-dfacfb0032ae361655205540915d13d4.js.gz" afterPath="$PROJECT_DIR$/public/assets/active_admin-dfacfb0032ae361655205540915d13d4.js.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/config.rb" afterPath="$PROJECT_DIR$/app/assets/config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header2.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header2.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_newFooter.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_newFooter.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap-select.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/bootstrap-select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/issue.rb" afterPath="$PROJECT_DIR$/app/models/issue.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" afterPath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399156117591" ignored="false" />
-    <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398987591828" ignored="false" />
-    <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398982907011" ignored="false" />
+    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399153913278" ignored="false" />
+    <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399129545484" ignored="false" />
+    <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399144398038" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1390096093089" ignored="false" />
-    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398989237221" ignored="false" />
+    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399141446362" ignored="false" />
     <file path="$USER_HOME$/students/app/models/student.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1383827692863" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384175595089" ignored="false" />
-    <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398988093247" ignored="false" />
+    <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399141538136" ignored="false" />
     <file path="/issues_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392395744563" ignored="false" />
     <file path="/edit.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388457229001" ignored="false" />
     <file path="/new.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397995295964" ignored="false" />
     <file path="/20131109161028_change_column.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384013674123" ignored="false" />
     <file path="/20131107121337_create_users.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384020576171" ignored="false" />
     <file path="/signup.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384117298299" ignored="false" />
-    <file path="/users_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397995089208" ignored="false" />
+    <file path="/users_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067293749" ignored="false" />
     <file path="/_error_messages.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1395084227180" ignored="false" />
     <file path="/sessions_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387805710900" ignored="false" />
     <file path="/_header.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387371155609" ignored="false" />
     <file path="/20131110133335_add_usrid.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384090436805" ignored="false" />
     <file path="/application_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1396899506479" ignored="false" />
     <file path="/application_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392086260278" ignored="false" />
-    <file path="/application.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398900238749" ignored="false" />
+    <file path="/application.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399150142027" ignored="false" />
     <file path="/sessions_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386938004539" ignored="false" />
     <file path="$USER_HOME$/slwebsite_bug1/app/views/layouts/_header.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384098126789" ignored="false" />
     <file path="/_access_error.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392155226025" ignored="false" />
@@ -144,19 +864,19 @@
     <file path="/_notice_danger_flash.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384110641394" ignored="false" />
     <file path="/application.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392290794450" ignored="false" />
     <file path="/sessions.css.scss" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384114073213" ignored="false" />
-    <file path="/application.css.scss" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398118037893" ignored="false" />
+    <file path="/application.css.scss" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399149903808" ignored="false" />
     <file path="$USER_HOME$/slwebsite_bug1/app/views/layouts/application.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384130960304" ignored="false" />
     <file path="$USER_HOME$/slwebsite_bug1/app/views/users/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384136528476" ignored="false" />
     <file path="/home.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387332454676" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384177628226" ignored="false" />
     <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398042175929" ignored="false" />
     <file path="/news.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384181868045" ignored="false" />
-    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392393451993" ignored="false" />
+    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399152508378" ignored="false" />
     <file path="/a.dummy" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398981363691" ignored="false" />
     <file path="/_footer.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392209289466" ignored="false" />
     <file path="/issue.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1395080968770" ignored="false" />
     <file path="/allnews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398045630337" ignored="false" />
-    <file path="/shownews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1391429471770" ignored="false" />
+    <file path="/shownews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399152771371" ignored="false" />
     <file path="/20131214010501_add_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386983455409" ignored="false" />
     <file path="/20131214013322_del_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386984833947" ignored="false" />
     <file path="/members.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387080238539" ignored="false" />
@@ -173,12 +893,12 @@
     <file path="$USER_HOME$/stutest/app/models/award.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387228219805" ignored="false" />
     <file path="$USER_HOME$/stutest/app/models/student.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387228227405" ignored="false" />
     <file path="$USER_HOME$/stutest/app/views/awards/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387228302545" ignored="false" />
-    <file path="/active_admin.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387501655083" ignored="false" />
+    <file path="/active_admin.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399124797771" ignored="false" />
     <file path="/system_mailer.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387229793512" ignored="false" />
     <file path="$USER_HOME$/students/app/mailers/award_mailer.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387231031594" ignored="false" />
     <file path="$USER_HOME$/students/app/views/award_mailer/award_email.text.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387231677184" ignored="false" />
     <file path="$USER_HOME$/students/app/controllers/awards_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387231945382" ignored="false" />
-    <file path="/production.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399038467924" ignored="false" />
+    <file path="/production.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399076405520" ignored="false" />
     <file path="/category.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388456755965" ignored="false" />
     <file path="/temp.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388110171005" ignored="false" />
     <file path="/_issues.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387673950429" ignored="false" />
@@ -201,7 +921,7 @@
     <file path="/.gitignore" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387357757936" ignored="false" />
     <file path="/signinup.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398982118485" ignored="false" />
     <file path="/_footer2.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397993312833" ignored="false" />
-    <file path="/_header2.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398453616143" ignored="false" />
+    <file path="/_header2.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399150131387" ignored="false" />
     <file path="/application.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392035699567" ignored="false" />
     <file path="/footer_pub.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387416691491" ignored="false" />
     <file path="/_ajaxnews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387667793489" ignored="false" />
@@ -212,7 +932,7 @@
     <file path="/download.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387646765997" ignored="false" />
     <file path="/_clock.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387500791491" ignored="false" />
     <file path="/active_admin.js.coffee" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387501704505" ignored="false" />
-    <file path="/Gemfile.lock" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399156249912" ignored="false" />
+    <file path="/Gemfile.lock" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387503157019" ignored="false" />
     <file path="/_news1.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389902315341" ignored="false" />
     <file path="/_news2.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387509085301" ignored="false" />
     <file path="/_news3.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387666173512" ignored="false" />
@@ -311,7 +1031,7 @@
     <file path="/_vanbox.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389651012470" ignored="false" />
     <file path="/_header3.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397861990397" ignored="false" />
     <file path="/cbpAnimatedHeader.min.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389664246334" ignored="false" />
-    <file path="/application.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389664921457" ignored="false" />
+    <file path="/application.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399125321412" ignored="false" />
     <file path="/_drop1.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389665333362" ignored="false" />
     <file path="/20140114025308_change_page_url.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389668037458" ignored="false" />
     <file path="/20140114025538_rename_table.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389668209516" ignored="false" />
@@ -384,15 +1104,42 @@
     <file path="/_newFooter.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398980946672" ignored="false" />
     <file path="/message_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398973076147" ignored="false" />
     <file path="/message.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398973744515" ignored="false" />
-    <file path="/_message.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398972203040" ignored="false" />
+    <file path="/_message.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399071201579" ignored="false" />
     <file path="/create.js.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398973357627" ignored="false" />
     <file path="/20140501195550_create_messages.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398974192056" ignored="false" />
-    <file path="/messages_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398987966001" ignored="false" />
+    <file path="/messages_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399118752989" ignored="false" />
     <file path="/messages.js.coffee" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398974943551" ignored="false" />
     <file path="/_list.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398979627572" ignored="false" />
     <file path="/message.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398982142079" ignored="false" />
     <file path="/signinup.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398982508793" ignored="false" />
-    <file path="/_msg.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398989075119" ignored="false" />
+    <file path="/_msg.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399041999128" ignored="false" />
+    <file path="/_msg2.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399041618718" ignored="false" />
+    <file path="/20140502213608_addcolumn.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399066630576" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/db/migrate/20140502213608_addcolumn.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399066720306" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/db/schema.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399076336996" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/Gemfile" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399066932594" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/assets/javascripts/comments.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067120332" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/models/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067205588" ignored="false" />
+    <file path="/comment.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399129973915" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/models/comment.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067220824" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/controllers/users_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067453586" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/controllers/comments_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399068062812" ignored="false" />
+    <file path="/comments_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399145728123" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/views/comments/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399067744191" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/views/comments/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399068495761" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/app/views/comments/_comment.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399068490056" ignored="false" />
+    <file path="/create.js.coffee" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399134940197" ignored="false" />
+    <file path="/messages_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399070224757" ignored="false" />
+    <file path="$USER_HOME$/Downloads/ajax_rails31_demo-master/Gemfile.lock" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399074991664" ignored="false" />
+    <file path="$USER_HOME$/Downloads/AJAXComments-master/config/environments/production.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399076406438" ignored="false" />
+    <file path="$PROJECT_DIR$/public/javascripts/jquery.remotipart.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399125484561" ignored="false" />
+    <file path="/_comentForm.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399134878000" ignored="false" />
+    <file path="/_comment.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399152270345" ignored="false" />
+    <file path="/_commentForm.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399145608653" ignored="false" />
+    <file path="$USER_HOME$/Downloads/ajax_rails31_demo-master/app/views/comments/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399136505777" ignored="false" />
+    <file path="/20140503151224_create_comments.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399140576690" ignored="false" />
+    <file path="/destroy.js.coffee" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399142389548" ignored="false" />
+    <file path="/_commentList.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399152583526" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,44 +1164,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="public_news_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/public_news_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <file leaf-file-name="_comment.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="28" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0">
+            <state line="2" column="16" selection-start="0" selection-end="996" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140502134917_add_table.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140502134917_add_table.rb">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="5" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="32" column="29" selection-start="1019" selection-end="1049" vertical-scroll-proportion="0.6504065">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile.lock" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="14" selection-start="4093" selection-end="4093" vertical-scroll-proportion="0.37299466">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/config.rb">
+      <file leaf-file-name="jquery-1.7.2.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/assets/javascripts/jquery-1.7.2.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -462,8 +1202,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noti_attend.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/noti_attend.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -471,37 +1211,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
+      <file leaf-file-name="comments_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+            <state line="2" column="37" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/messages/show.html.erb">
+      <file leaf-file-name="shownews.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="38" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_commentForm.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_commentList.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/module/_commentList.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/comments/create.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noti.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/noti.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="32" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -525,22 +1274,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/messages.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/module/msg/_test.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/comments/_destroy.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/messages/destroy.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/messages/_message.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/module/msg/_msg.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/messages/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer2.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header2.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/_commentList.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140502134917_add_table.rb" />
-        <option value="$PROJECT_DIR$/app/assets/config.rb" />
-        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -624,7 +1373,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,25 +1387,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,11 +1405,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -695,8 +1426,52 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user_admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -732,6 +1507,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -742,7 +1539,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/ajaxtest" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ajax_rails31_demo-master" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -751,18 +1548,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/images/background" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/app/views/layouts" />
       <recent name="$PROJECT_DIR$/lib/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
+      <recent name="$PROJECT_DIR$/app/views/messages" />
+      <recent name="$PROJECT_DIR$/app/views/comments" />
+      <recent name="$PROJECT_DIR$/app/views/public_news" />
+      <recent name="$PROJECT_DIR$/app/views/issues" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/global" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts/flat-ui" />
       <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/lib/assets/javascripts/FAQ" />
-      <recent name="$PROJECT_DIR$/vendor/assets/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: slwebsite">
@@ -1040,7 +1837,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42037302" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47560975" sideWeight="0.67151517" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1117,107 +1914,107 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" />
+        <state line="0" column="72" selection-start="72" selection-end="72" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/msg/_msg.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="62" selection-start="326" selection-end="326" vertical-scroll-proportion="0.3551532" />
+        <state line="36" column="33" selection-start="671" selection-end="671" vertical-scroll-proportion="-15.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="31" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-13.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/readmode.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/contentbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="37" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/public_news_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/create.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="38" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="0" selection-end="996" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_commentList.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/assets/javascripts/jquery-1.7.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/notis/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="34" selection-start="759" selection-end="870" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="28" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140502134917_add_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/noti_attend.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/noti.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="32" selection-end="51" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="14" selection-start="4093" selection-end="4093" vertical-scroll-proportion="0.37299466">
-          <folding />
+        <state line="32" column="29" selection-start="1019" selection-end="1049" vertical-scroll-proportion="0.6504065">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

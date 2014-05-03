@@ -1,3 +1,6 @@
+<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+
+
 <style>
     * {
         margin: 0;
@@ -5,7 +8,12 @@
     }
 
     msg {
-        /*height: 100%;*/
+        font-family: arial, sans-serif;
+        font-size: 100%;
+        margin: 3em;
+        background: #666;
+        color: #fff;
+
         display: box;
         display: -moz-box;
         display: -webkit-box;
@@ -15,30 +23,22 @@
     }
 
     msg h2, p {
-        font-size: 50%;
+        font-size: 100%;
         font-weight: normal;
     }
 
     msg ul, li {
         list-style: none;
-        -webkit-box-flex: 1;
-
     }
 
     msg ul {
         overflow: hidden;
         padding: 3em;
+        font-family: "Reenie Beanie", arial, sans-serif, 微软雅黑;
+
     }
 
-    msg ul li a {
-        text-decoration: none;
-        color: #000;
-        background: #ffc;
-        display: block;
-        height: 10em;
-        width: 10em;
-        padding: 1em;
-    }
+
 
     msg ul li {
         margin: 1em;
@@ -46,17 +46,14 @@
     }
 
     msg ul li h2 {
-        font-size: 90%;
+        font-size: 95%;
         font-weight: bold;
-        -webkit-box-flex: 1;
+        padding-bottom: 10px;
 
-        /*padding-bottom: 10px;*/
     }
 
     msg ul li p {
-        font-family: "Reenie Beanie", arial, sans-serif, 微 软 雅 黑;
         font-size: 80%;
-
     }
 
     msg ul li a {
@@ -65,17 +62,48 @@
         -webkit-box-flex: 1;
         /*background:#E7E7E7;*/
         overflow-y: auto;
-
         text-decoration: none;
         color: #000;
-        background: #ffc;
-        /*display: block;*/
+        /*background: #ffc;*/
+        display: block;
         height: 10em;
         width: 10em;
         padding: 1em; /* Firefox */
         -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1); /* Safari+Chrome */
         -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7); /* Opera */
         box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    }
+
+    #color1 {
+        background: #e6e2c3;
+    }
+
+    #color2 {
+        background: #fbb8ac;
+    }
+
+    #color3 {
+        background: #bdf3d4;
+    }
+
+    #color4 {
+        background: #e3c887;
+    }
+
+    #color5 {
+        background: #fe6673;
+    }
+
+    #color6 {
+        background: #cbf5fb;
+    }
+
+    #color7 {
+        background: #fad8be;
+    }
+
+    #color8 {
+        background: #acf6ef;
     }
 
     msg ul li a {
@@ -114,7 +142,7 @@
   <ul>
     <% message.each do |msg| %>
         <li>
-          <a href="#">
+          <a href="#" id="color<%= msg.id % 8 %>">
 
             <h2>
 

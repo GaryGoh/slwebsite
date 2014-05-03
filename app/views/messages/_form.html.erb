@@ -1,4 +1,4 @@
-<%= form_for(@message, :html => {:multipart => true}) do |f| %>
+<%= form_for([@user,@message], :remote => true) do |f|%>
     <% if @message.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
@@ -21,7 +21,7 @@
         <%= f.text_area :msg_content, :class => "form-control", :id => "wysihtml5-textarea", :placeholder => "留言内容", :rows => "10" %>
       </div>
       <div class="actions">
-        <%= f.submit class: "btn btn-primary btn-block", "data-loading-text" => "Loading...", value: "提交" %>
+        <%= f.submit class: "btn btn-primary btn-block", "data-loading-text" => "Loading...", value: "提交", disable_with: 'Pending...' %>
       </div>
     </div>
 <% end %>
