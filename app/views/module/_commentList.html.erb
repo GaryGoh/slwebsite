@@ -3,10 +3,10 @@
       <div class="col-xs-6 col-md-3">
         <!-- User Icon-->
         <div>
-          <% unless comment.user.name.nil? %>
-              <%= link_to comment.user.name, profile_url(comment.user) %>
+          <% unless comment.user.name.empty? %>
+              <%= link_to comment.user.name, publicShow_url(comment.user.stuid) %>
           <% else %>
-              学号: <%= link_to comment.user.stuid, profile_url(comment.user) %>
+              学号: <%= link_to comment.user.stuid, publicShow_url(comment.user.stuid) %>
           <% end %>
         </div>
         <div>
@@ -45,7 +45,6 @@
     </div>
     <hr>
 <% end %>
-
 
 
 
