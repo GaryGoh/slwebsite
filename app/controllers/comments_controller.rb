@@ -41,9 +41,9 @@ class CommentsController < InheritedResources::Base
 
   # To get a user
   def get_user
-    if (current_user_stu.nil?)
+    if (session[:user_id].nil?)
     else
-      @user = User.find(current_user_stu.id)
+      @user = User.find(session[:user_id])
     end
   end
 

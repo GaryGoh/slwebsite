@@ -1,35 +1,46 @@
 <div id=<%= dom_id(comment) %> class="comment">
 
-<div class="container">
+<div class="panel-body">
   <div class="col-xs-6 col-md-3">
     <!-- User Icon-->
-    <% if comment.user.avatar_file_name.nil? %>
-    <% else %>
-        <%= image_tag comment.user.avatar.url(:thumb), class: "img-rounded" %>
-    <% end %>
-
+    <div>
+      <% unless comment.user.name.nil? %>
+          <%= link_to comment.user.name, profile_url(comment.user) %>
+      <% else %>
+          学号: <%= link_to comment.user.stuid, profile_url(comment.user) %>
+      <% end %>
+    </div>
+    <div>
+      <% if comment.user.avatar_file_name.nil? %>
+      <% else %>
+          <%= image_tag comment.user.avatar.url(:thumb), class: "img-rounded" %>
+      <% end %>
+    </div>
   </div>
 
   <div class="col-xs-6 col-md-9">
     <!-- User Comments-->
 
-    <p>
-      <% unless comment.user.name.nil? %>
-          <%= comment.user.name %>
-      <% else %>
-          学号: <%= comment.user.stuid %>
-      <% end %>
-      <small><%= comment.created_at.strftime("%Y年%m月%D日 %I:%M%p") %></small>
+    <div>
+      <small style="font-size: 12; color: #b7b7b7; text-align: right"><%= comment.created_at.strftime("%Y年%m月%d日 %I:%M%p") %></small>
       </a>
 
-      <% if comment.user == current_user_stu %>
-        <small align="center"><%= link_to '<span class="glyphicon glyphicon-remove-sign"></span> '.html_safe, [@user, comment], :class => "fui-cross-inverted",  method: :delete, :remote => true, data: {confirm: 'Are you sure?'} %></small>
-    <% end %>
-    </p>
-    <h6>
-      <%= comment.content %>
-    </h6>
+      <div style="text-align: right">
+        <% if comment.user == current_user_stu %>
+            <span><%= link_to '<span class="glyphicon glyphicon-remove-sign"></span> '.html_safe, [@user, comment], :class => "fui-cross-inverted", method: :delete, :remote => true, data: {confirm: 'Are you sure?'} %></span>
+        <% end %>
+      </div>
+    </div>
+    <div>
+      <h6>
+        <%= comment.content %>
+      </h6>
+    </div>
 
+    <div style="text-align: right; font-size: 13">
+      <a href="#">赞</a> |
+      <a href="#">评论</a>
+    </div>
   </div>
 
 </div>

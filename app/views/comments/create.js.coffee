@@ -1,6 +1,8 @@
 $('<%= escape_javascript(render(:partial => @comment))%>')
-.appendTo('#comments')
+.prependTo('#comments')
+.after()
 .hide()
 .fadeIn()
+
 
 $('#new_comment')[0].reset()

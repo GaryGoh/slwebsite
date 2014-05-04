@@ -20,44 +20,44 @@
       <tr>
 
         <td><strong>学号: </strong></td>
-        <td><%= @user.stuid %></td>
+        <td><%= user.stuid %></td>
       </tr>
       <tr>
         <td><strong>Email:</strong></td>
-        <td><%= @user.email %></td>
+        <td><%= user.email %></td>
       </tr>
       <tr>
         <td><strong>姓名: </strong></td>
-        <td><%= @user.name %></td>
+        <td><%= user.name %></td>
       </tr>
       <tr>
         <td><strong>性别: </strong></td>
-        <td><%= @user.gender.to_s %></td>
+        <td><%= user.gender.to_s %></td>
       </tr>
       <tr>
         <td><strong>联系方式: </strong></td>
-        <td><%= @user.contact %></td>
+        <td><%= user.contact %></td>
       </tr>
       <tr>
         <td><strong>加入社团数: </strong></td>
-        <td><%= @user.user_societies.count %></td>
+        <td><%= user.user_societies.count %></td>
       </tr>
 
       <tr>
         <td><strong>照片: </strong></td>
-        <% if @user.avatar_file_name.nil? %>
+        <% if user.avatar_file_name.nil? %>
             <td>
               <div class="text-danger">暂无照片</div>
             </td>
         <% else %>
-            <td><%= image_tag @user.avatar.url(:thumb) %></td>
+            <td><%= image_tag user.avatar.url(:thumb) %></td>
         <% end %>
       </tr>
 
       <tr>
         <td><strong>个人简介:</strong></td>
         <td>
-          <input name="tagsinput" class="tagsinput tagsinput-primary" value=<%= @user.proverb%>  readonly /></td>
+          <input name="tagsinput" class="tagsinput tagsinput-primary" value=<%= user.proverb%>  readonly /></td>
       </tr>
       </tbody>
     </table>
@@ -69,7 +69,7 @@
       所属社团
     </h4>
   </div>
-  <% if (@user.user_societies) && (@user.user_societies.count > 0) %>
+  <% if (user.user_societies) && (user.user_societies.count > 0) %>
       <div class="panel-body">
         <table class="table">
           <th>
@@ -83,7 +83,7 @@
           </th>
 
           <tbody>
-          <% @user.user_societies.reverse.each do |s| %>
+          <% user.user_societies.reverse.each do |s| %>
               <tr>
                 <td>
                   <!--# need to update link when finished society views-->
