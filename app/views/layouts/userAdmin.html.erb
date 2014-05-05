@@ -1,0 +1,66 @@
+<head>
+
+  <meta charset="utf-8">
+
+  <%= stylesheet_link_tag "newAdmin/css/bootstrap.min.css" %>
+  <%= stylesheet_link_tag "newAdmin/font-awesome/css/font-awesome.css" %>
+  <%= stylesheet_link_tag "newAdmin/css/sb-admin.css" %>
+
+
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+
+
+</head>
+<style>
+
+    body {
+        background-color: #f8fafb;
+
+    }
+
+    * {
+
+    }
+
+        #page-wrapper{
+            margin-top: 4%;
+        }
+
+</style>
+
+<div class="container-full">
+
+  <div id="inhed">
+    <%= render "layouts/header2" %>
+  </div>
+  <div id="wrapper">
+
+    <%=
+        render "layouts/usrAdNav"
+    %>
+    <div id="page-wrapper">
+
+      <%=
+          yield
+      %>
+    </div>
+
+
+  </div>
+</div>
+<footer>
+  <%= render 'layouts/newFooter' %>
+</footer>
+<div id='goup'></div>
+
+<!--</div>-->
+<!-- End of Begin-->
+<%= javascript_include_tag "newAdmin/js/jquery-1.10.2.js" %>
+<%= javascript_include_tag "newAdmin/js/bootstrap.min.js" %>
+<%= javascript_include_tag "newAdmin/js/plugins/metisMenu/jquery.metisMenu.js" %>
+<%= javascript_include_tag "newAdmin/js/sb-admin.js" %>
+
+
+
+
+
