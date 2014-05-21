@@ -2,6 +2,8 @@ Slwebsite::Application.routes.draw do
 
 
 
+  resources :timetables
+
   #resources :messages
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -11,6 +13,8 @@ Slwebsite::Application.routes.draw do
     resources :notis
     resources :messages
     resources :comments
+    resources :timetables
+
 
   end
   resources :sessions, only: [:new, :create, :destroy]

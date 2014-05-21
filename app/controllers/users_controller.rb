@@ -21,6 +21,8 @@ class UsersController < ApplicationController
   def new
     @members = Member.all
     @user = User.new
+    @timetable = @user.build_timetable
+
   end
 
 
@@ -33,10 +35,11 @@ class UsersController < ApplicationController
   def create
     #$login = true
     @user = User.new(user_params)
-    #@timetable = Timetable.new(timetable_params)
+    @timetable = @user.timetables.build
 
     respond_to do |format|
-      if @user.save
+      if ( @user.save && @timetable.save )
+      #if @user.save
         format.html { redirect_to signin_url, notice: '成功创建新用户.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -50,6 +53,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     #$login = false
+    #@timetable = @user.timetable
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: '更新成功' }
@@ -81,9 +85,16 @@ class UsersController < ApplicationController
     end
   end
 
+  def timetable_params
+    #params.require(:noti).permit(:title, :content, :user_id, :category_id, :society_id, :in, :in_members, :location, :start_time, :end_time)
+    #params.require(@user.timetable).permit!
+  end
+
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
-    params.require(:user).permit(:stuid, :email, :password, :password_confirmation, :name, :gender_id, :contact, :society_id, :proverb, :avatar)
+    #params.require(:user).permit(:stuid, :email, :password, :password_confirmation, :name, :gender_id, :contact, :society_id, :proverb, :avatar)
+    params.require(:user).permit!
+
   end
 
 

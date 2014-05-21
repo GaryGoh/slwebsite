@@ -4,7 +4,8 @@ class Noti < ActiveRecord::Base
   belongs_to :society
   belongs_to :timetable
 
-  #has_one :noti_attend, :dependent => :destroy
+  has_one :noti_attend, :dependent => :destroy
+  has_many :timetable, :dependent => :destroy
 
   validates :title, presence: {:message => "通知标题不能为空"}
   validates :content, presence: {:message => "通知内容不能为空"}

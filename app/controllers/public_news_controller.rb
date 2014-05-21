@@ -24,6 +24,9 @@ class PublicNewsController < ApplicationController
 
   def shownotis
     @noti = Noti.find(params[:id])
+    #@user = current_user_stu
+    @timetable = Timetable.find_by_user_id(@user.id)
+
   end
 
   def readmode
