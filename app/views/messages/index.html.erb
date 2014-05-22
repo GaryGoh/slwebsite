@@ -1,4 +1,3 @@
-
 <link href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
 
 <style>
@@ -167,22 +166,26 @@
     }
 </style>
 
-
-<msg>
-  <ul>
-    <div id="messages">
-      <%= render @messages %>
-    </div>
-  </ul>
-</msg>
+<% if !current_user_stu.nil? && session[:user_id] == current_user_stu.id %>
 
 
-<%=
-    unless current_user_stu.nil?
-      render :partial => 'form'
-    end
-%>
+    <msg>
+      <ul>
+        <div id="messages">
+          <%= render @messages %>
+        </div>
+      </ul>
+    </msg>
 
+
+    <%=
+        unless current_user_stu.nil?
+          render :partial => 'form'
+        end
+    %>
+<% else %>
+      <h2 style="text-align: center; padding-top: 50px; padding-bottom: 300px">暂时不对外开放</h2>
+<% end %>
 
 <script>
     $(function () {

@@ -1,0 +1,21 @@
+<% if current_user_stu.timetable.noti_id = noti.id %>
+    <div align="right">
+      <%= form_for current_user_stu.timetable.build(:user_id => current_stu_user.id), :remote => true do |f| %>
+          <%= f.hidden_field :noti_id, :value => noti.id %>
+          <%= f.hidden_field :noti_name, :value => noti.title %>
+          <%= f.hidden_field :noti_location, :value => noti.location %>
+          <%= f.hidden_field :start_time, :value => noti.start_time %>
+          <%= f.hidden_field :end_time, :value => noti.end_time %>
+
+          <%= f.submit "参加", :class => "btn btn-primary"%>
+      <% end %>
+    </div>
+<% else %>
+    <div align="right">
+
+      <%= form_for like, :html => {:method => :delete},
+                   :remote => true do |f| %>
+          <%= f.submit "取消参加", :class => "btn btn-primary" %>
+      <% end %>
+    </div>
+<% end %>

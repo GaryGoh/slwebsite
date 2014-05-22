@@ -1,0 +1,52 @@
+<div id=<%= dom_id(timetable) %> class="timetable">
+
+<div class="panel-body">
+  <div class="col-xs-6 col-md-3">
+    <!-- User Icon-->
+    <div>
+      <% unless comment.user.name.empty? %>
+          <%= link_to comment.user.name, publicShow_url(comment.user.stuid) %>
+      <% else %>
+          学号: <%= link_to comment.user.stuid, publicShow_url(comment.user.stuid) %>
+      <% end %>
+    </div>
+    <div>
+      <% if comment.user.avatar_file_name.nil? %>
+      <% else %>
+          <%= image_tag comment.user.avatar.url(:thumb), class: "img-rounded" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="col-xs-6 col-md-9">
+    <!-- User Comments-->
+
+    <div>
+      <small style="font-size: 12; color: #b7b7b7; text-align: right"><%= comment.created_at.strftime("%Y年%m月%d日 %I:%M%p") %></small>
+      </a>
+
+      <div style="text-align: right">
+        <% if comment.user == current_user_stu %>
+            <span><%= link_to '<span class="glyphicon glyphicon-remove-sign"></span> '.html_safe, [@user, comment], :class => "fui-cross-inverted", method: :delete, :remote => true, data: {confirm: 'Are you sure?'} %></span>
+        <% end %>
+      </div>
+    </div>
+    <div>
+      <h6>
+        <%= comment.content %>
+      </h6>
+    </div>
+
+    <div style="text-align: right; font-size: 13">
+      <a href="#">赞</a> |
+      <a href="#">评论</a>
+    </div>
+  </div>
+
+</div>
+<hr>
+</div>
+
+
+
+

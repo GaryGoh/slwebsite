@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140501195550) do
+ActiveRecord::Schema.define(version: 20140521173749) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -56,6 +56,14 @@ ActiveRecord::Schema.define(version: 20140501195550) do
 
   create_table "categories", force: true do |t|
     t.string   "category_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "issue_id"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -168,6 +176,8 @@ ActiveRecord::Schema.define(version: 20140501195550) do
     t.integer  "stuid"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "stu_society"
+    t.string   "stu_contact"
   end
 
   create_table "notis", force: true do |t|
@@ -229,6 +239,10 @@ ActiveRecord::Schema.define(version: 20140501195550) do
     t.string   "end_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "noti_name"
+    t.string   "noti_location"
+    t.boolean  "remind"
+    t.integer  "noti_id"
   end
 
   create_table "user_societies", force: true do |t|
