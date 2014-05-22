@@ -1,0 +1,14 @@
+<% if (session[:user_id] == @user.id) || @user.id == nil %>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">个人资料</h3>
+      </div>
+      <div class="panel-body">
+        <%= render 'form' %>
+      </div>
+    </div>
+
+<% else %>
+    <%= render "static_page/access_error" %>
+<% end %>

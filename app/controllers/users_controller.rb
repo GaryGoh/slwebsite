@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_filter :check_login, only: [:index, :show, :edit, :update, :destroy]
-  layout "userAdmin", only: [:show, :edit]
+  layout "userAdmin", only: [:show]
 
   # GET /users
   # GET /users.json

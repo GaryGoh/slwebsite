@@ -8,9 +8,14 @@
 
 
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <%= csrf_meta_tags %>
+  <title>桂林电子科技大学 - 学生社团联合会</title>
 
 
 </head>
+
 <style>
 
     body {
@@ -53,9 +58,11 @@
 </footer>
 <div id='goup'></div>
 
+<%= render "layouts/foot" %>
+
+
 <!--</div>-->
 <!-- End of Begin-->
-<%= javascript_include_tag "newAdmin/js/jquery-1.10.2.js" %>
 <%= javascript_include_tag "newAdmin/js/bootstrap.min.js" %>
 <%= javascript_include_tag "newAdmin/js/plugins/metisMenu/jquery.metisMenu.js" %>
 <%= javascript_include_tag "newAdmin/js/sb-admin.js" %>
