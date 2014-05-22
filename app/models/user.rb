@@ -8,8 +8,8 @@ class User < ActiveRecord::Base
 
 
 
-  has_many :timetable, :dependent => :destroy
-  accepts_nested_attributes_for :timetable
+  has_many :timetables, :dependent => :destroy
+  #accepts_nested_attributes_for :timetable
 
 
   #has_many :user_notis, :dependent => :destroy

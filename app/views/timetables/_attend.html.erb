@@ -1,8 +1,9 @@
-<%= form_for(@noti, :html => {:multipart => true}, :url => {:action => "create", :controller=>"timetables"}) do |f| %>
+<%= form_for [@user, @user.timetables.build], :remote => true do |f|%>
 
     <div><%= f.hidden_field :user_id, :value => @user.id %></div>
     <div><%= f.hidden_field :start_time, :value => @noti.start_time %></div>
     <div><%= f.hidden_field :end_time, :value => @noti.end_time %></div>
+    <div><%= f.hidden_field :noti_id, :value => @noti.id %></div>
     <div><%= f.hidden_field :noti_name, :value => @noti.title %></div>
     <div><%= f.hidden_field :noti_location, :value => @noti.location %></div>
 

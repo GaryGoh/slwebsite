@@ -2,7 +2,7 @@ Slwebsite::Application.routes.draw do
 
 
 
-  resources :timetables
+  #resources :timetables
 
   #resources :messages
 

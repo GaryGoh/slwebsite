@@ -17,15 +17,17 @@
     <div>发表于： <%= noti.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会： <%= noti.society.to_s %> </div>
 
     <!-- To determine if attend or not or if a member exist-->
-    <% unless current_user_stu.nil? %>
-        <div id="noti_attend">
-          <% if Timetable.find_by(user_id: current_user_stu.id).noti_id == noti.id %>
-              <%= render 'timetables/cancel' %>
-          <% else %>
-              <%= render 'timetables/attend' %>
-          <% end %>
-        </div>
-    <% end %>
+    <div id="notiAttend" style="text-align: right">
+      <% unless current_user_stu.nil? %>
+          <div id="noti_attend">
+            <% if current_user_stu.timetables.count > 0 && @user.timetables.exists?(:noti_id => noti.id) %>
+                <%= render 'timetables/cancel' %>
+            <% else %>
+                <%= render 'timetables/attend' %>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
 
   </div>
   <div class="panel-body">
