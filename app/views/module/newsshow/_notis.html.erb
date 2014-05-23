@@ -16,6 +16,7 @@
   <div class="panel-heading">
     <div>发表于: <%= noti.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会: <%= noti.society.to_s %> | 浏览次数: <%=noti.impressionist_count%></div>
 
+    <!--Attend or not-->
     <!-- To determine if attend or not or if a member exist-->
     <div id="notiAttend" style="text-align: right">
       <% unless current_user_stu.nil? %>
@@ -28,6 +29,17 @@
           </div>
       <% end %>
     </div>
+
+
+    <!--Attending list-->
+    <!--<div id="" style="text-align: right">-->
+      <!--<a class="btn btn-primary" data-toggle="modal" data-target="#attendList">-->
+        <!--出席会员-->
+      <!--</a>-->
+    <!--</div>-->
+
+
+
 
   </div>
   <div class="panel-body">
