@@ -44,8 +44,10 @@ class TimetablesController < InheritedResources::Base
 
     @timetable = @user.timetables.build(timetable_params)
 
+    @attend_list = @user.noti_attends.build(attendList_params)
+
     respond_to do |format|
-      if @timetable.save
+      if @timetable.save && @attend_list.save
         format.html { redirect_to shownotis_url(@noti) }
         format.js
         format.json { render action: 'show', status: :created, location: @timetable }
@@ -89,6 +91,10 @@ class TimetablesController < InheritedResources::Base
 
   def timetable_params
     params.require(:timetable).permit!
+  end
+
+  def attendList_params
+    params.require(:noti_attend).permit!
   end
 
 end

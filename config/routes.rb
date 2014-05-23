@@ -1,7 +1,6 @@
 Slwebsite::Application.routes.draw do
 
 
-
   #resources :timetables
 
   #resources :messages
@@ -14,9 +13,11 @@ Slwebsite::Application.routes.draw do
     resources :messages
     resources :comments
     resources :timetables
-
+    resources :noti_attends
 
   end
+
+
   resources :sessions, only: [:new, :create, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -46,7 +47,6 @@ Slwebsite::Application.routes.draw do
   get 'indexnotic/:id', to: 'public_news#indexnotic', as: :indexnotic
 
 
-
   get '/download', to: 'material#download'
 
   get '/slmember', to: 'slmember#list'
@@ -61,9 +61,6 @@ Slwebsite::Application.routes.draw do
   get '/messages', to: 'messages#index'
   get '/comments', to: 'comments#index'
   get '/profile/:stuid', to: 'users#publicShow', as: :publicShow
-
-
-
 
 
 

@@ -14,7 +14,7 @@
   </div>
 
   <div class="panel-heading">
-    <div>发表于： <%= noti.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会： <%= noti.society.to_s %> </div>
+    <div>发表于: <%= noti.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会: <%= noti.society.to_s %> | 浏览次数: <%=noti.impressionist_count%></div>
 
     <!-- To determine if attend or not or if a member exist-->
     <div id="notiAttend" style="text-align: right">

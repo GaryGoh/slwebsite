@@ -12,6 +12,7 @@ class Noti < ActiveRecord::Base
   validates :society_id, presence: {:message => "请先加入社团，再发布活动通知"}
   validate :activity_time
 
+  is_impressionable :counter_cache => true, :column_name => :noti_catch_counter, :unique => :request_hash
   private
   def activity_time
     if ((start_time).to_time.to_i >= (end_time).to_time.to_i)

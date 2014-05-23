@@ -15,7 +15,7 @@
   </div>
 
   <div class="panel-heading">
-    <div>发表于： <%= issue.created_at.strftime("%m-%e-%Y  %H:%M") %> | 作者： <%= issue.author %> </div>
+    <div>发表于: <%= issue.created_at.strftime("%m-%e-%Y  %H:%M") %> | 作者: <%= issue.author %> | 浏览次数: <%=issue.impressionist_count%></div>
   </div>
 
   <% if issue.issue_images.count > 0 %>

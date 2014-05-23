@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   has_many :societies, :through => :user_societies
   has_many :messages, :dependent => :destroy
   has_many :comments, :dependent => :destroy
+  has_many :noti_attends, :dependent => :destroy
+
 
 
 

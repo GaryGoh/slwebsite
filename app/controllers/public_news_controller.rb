@@ -2,6 +2,9 @@ class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
   before_filter :get_user
 
+  impressionist :actions=>[:shownews, :shonotis]
+
+
 
   def allnews
     @issues = Issue.search(params[:search])
@@ -20,6 +23,9 @@ class PublicNewsController < ApplicationController
       @comments_own = @comments.where(:user_id => @user.id)
     end
 
+    #@widget = Widget.find
+    impressionist(@issue) # 2nd argument is optional
+
   end
 
   def shownotis
@@ -27,7 +33,9 @@ class PublicNewsController < ApplicationController
     $noti_attend = @noti
     #@user = current_user_stu
     @timetable = Timetable.find_by_user_id(@user.id)
+    @attend_list = @noti.build_noti_attend
 
+    impressionist(@noti) # 2nd argument is optional
   end
 
   def readmode

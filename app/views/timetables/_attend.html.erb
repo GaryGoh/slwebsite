@@ -1,4 +1,4 @@
-<%= form_for [@user, @user.timetables.build], :remote => true do |f|%>
+<%= form_for [@user, @user.timetables.build], :remote => true do |f| %>
 
     <div><%= f.hidden_field :user_id, :value => @user.id %></div>
     <div><%= f.hidden_field :start_time, :value => @noti.start_time %></div>
@@ -7,7 +7,16 @@
     <div><%= f.hidden_field :noti_name, :value => @noti.title %></div>
     <div><%= f.hidden_field :noti_location, :value => @noti.location %></div>
 
+    <%= form_for [@user, @user.noti_attends.build], :remote => true do |ff| %>
+        <div><%= ff.hidden_field :noti_id, :value => @noti.id %></div>
+        <div><%= ff.hidden_field :user_id, :value => @user.id %></div>
+        <div><%= ff.hidden_field :username, :value => @user.name %></div>
+        <div><%= ff.hidden_field :email, :value => @user.email %></div>
+        <div><%= ff.hidden_field :stuid, :value => @user.stuid %></div>
+        <div><%= ff.hidden_field :stu_contact, :value => @user.contact %></div>
+        <%= f.submit "参加", class: "btn btn-primary" %>
 
-    <%= f.submit "参加", class: "btn btn-primary" %>
+    <% end %>
 <% end %>
+
 

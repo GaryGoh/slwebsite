@@ -37,6 +37,8 @@ def home
     @notis_activity = Noti.where(:category_id => 11).last(7).reverse
     @notis_info = Noti.where(:category_id => 12).last(7).reverse
     @notis_good = Noti.where(:category_id => 13).last(6).reverse
+
+
   end
 
 

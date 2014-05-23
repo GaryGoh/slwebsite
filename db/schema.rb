@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140521173749) do
+ActiveRecord::Schema.define(version: 20140523005330) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -107,6 +107,31 @@ ActiveRecord::Schema.define(version: 20140521173749) do
     t.datetime "ava_pic_updated_at"
   end
 
+  create_table "impressions", force: true do |t|
+    t.string   "impressionable_type"
+    t.integer  "impressionable_id"
+    t.integer  "user_id"
+    t.string   "controller_name"
+    t.string   "action_name"
+    t.string   "view_name"
+    t.string   "request_hash"
+    t.string   "ip_address"
+    t.string   "session_hash"
+    t.text     "message"
+    t.text     "referrer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "impressions", ["controller_name", "action_name", "ip_address"], name: "controlleraction_ip_index"
+  add_index "impressions", ["controller_name", "action_name", "request_hash"], name: "controlleraction_request_index"
+  add_index "impressions", ["controller_name", "action_name", "session_hash"], name: "controlleraction_session_index"
+  add_index "impressions", ["impressionable_type", "impressionable_id", "ip_address"], name: "poly_ip_index"
+  add_index "impressions", ["impressionable_type", "impressionable_id", "request_hash"], name: "poly_request_index"
+  add_index "impressions", ["impressionable_type", "impressionable_id", "session_hash"], name: "poly_session_index"
+  add_index "impressions", ["impressionable_type", "message", "impressionable_id"], name: "impressionable_type_message_index"
+  add_index "impressions", ["user_id"], name: "index_impressions_on_user_id"
+
   create_table "issue_images", force: true do |t|
     t.integer  "issue_id"
     t.string   "description"
@@ -133,6 +158,7 @@ ActiveRecord::Schema.define(version: 20140521173749) do
     t.integer  "issue_pic_file_size"
     t.datetime "issue_pic_updated_at"
     t.integer  "society_id"
+    t.integer  "issue_catch_counter"
   end
 
   add_index "issues", ["category_id"], name: "index_issues_on_category_id"
@@ -178,6 +204,8 @@ ActiveRecord::Schema.define(version: 20140521173749) do
     t.datetime "updated_at"
     t.string   "stu_society"
     t.string   "stu_contact"
+    t.integer  "noti_id"
+    t.integer  "user_id"
   end
 
   create_table "notis", force: true do |t|
@@ -195,6 +223,7 @@ ActiveRecord::Schema.define(version: 20140521173749) do
     t.string   "location"
     t.integer  "num_attend"
     t.integer  "num_maybe"
+    t.integer  "noti_catch_counter"
   end
 
   create_table "sl_departments", force: true do |t|

@@ -61,6 +61,9 @@ gem 'font-awesome-sass'
 gem 'galleria-rails', github: 'albandiguer/galleria-rails'
 gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 
+# A lightweight plugin that logs impressions per action or manually per model
+gem 'impressionist'
+
 #gem 'remotipart', '~> 1.2'
 
 # Export UML diagrams from database

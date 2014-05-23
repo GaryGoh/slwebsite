@@ -2,123 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140521171001_refine_timetable.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140521173749_refine_relationship.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/_attend.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newsshow/_attend.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/_cancel.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/_editAdmin.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newsshow/_notiAttend.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_spinning.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_usrAdHead.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/blank.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/create.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/demo/dashboard-demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/demo/dashboard-demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/css/plugins/dataTables/dataTables.bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/dataTables/dataTables.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/dataTables/dataTables.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/destroy.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/flot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/flot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/demo/flot-demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/demo/flot-demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/flot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/forms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/grid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/index.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/dataTables/jquery.dataTables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/dataTables/jquery.dataTables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/flot/jquery.flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/flot/jquery.flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/flot/jquery.flot.pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/flot/jquery.flot.pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/flot/jquery.flot.resize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/flot/jquery.flot.resize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/flot/jquery.flot.tooltip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/flot/jquery.flot.tooltip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/metisMenu/jquery.metisMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/metisMenu/jquery.metisMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/css/plugins/morris/morris-0.4.3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/demo/morris-demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/demo/morris-demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/morris.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/morris/morris.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/morris/morris.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/notifications.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/panels-wells.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/plugins/morris/raphael-2.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/plugins/morris/raphael-2.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/css/sb-admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/js/sb-admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/javascripts/newAdmin/js/sb-admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timetables/show.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/css/plugins/social-buttons/social-buttons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/spinning.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/css/plugins/timeline/timeline.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/timetable.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/timetable.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/timetable_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/timetable_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/timetable_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/timetables.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/timetables.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/timetables_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/timetables_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/timetables_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/timetables_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/module/newAdmin/typography.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/userAdmin.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/assets/stylesheets/newAdmin/font-awesome/less/variables.less" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/1.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/2.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/3.png" afterPath="" />
@@ -232,32 +115,34 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-baae0b5342424932154ed443eb87393f.js.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c481469dbb9d0d064e767ff2067318f6.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c481469dbb9d0d064e767ff2067318f6.css.gz" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140502134917_add_table.rb" afterPath="$PROJECT_DIR$/db/migrate/20140502134917_add_table.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/timetables/_attend.html.erb" afterPath="$PROJECT_DIR$/app/views/timetables/_attend.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" afterPath="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" afterPath="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/user_admin/_timetable.html.erb" afterPath="$PROJECT_DIR$/app/views/module/user_admin/_timetable.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb" afterPath="$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_page/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/issue.rb" afterPath="$PROJECT_DIR$/app/models/issue.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/noti.rb" afterPath="$PROJECT_DIR$/app/models/noti.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/noti_attend.rb" afterPath="$PROJECT_DIR$/app/models/noti_attend.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" afterPath="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/timetable.rb" afterPath="$PROJECT_DIR$/app/models/timetable.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_page_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/timetables_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/timetables_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400764540578" ignored="false" />
-    <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400746445332" ignored="false" />
+    <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400806484843" ignored="false" />
     <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400705191344" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399315904391" ignored="false" />
-    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400774011467" ignored="false" />
+    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400805523601" ignored="false" />
     <file path="$USER_HOME$/students/app/models/student.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1383827692863" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384175595089" ignored="false" />
-    <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400709441510" ignored="false" />
+    <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400808486065" ignored="false" />
     <file path="/issues_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392395744563" ignored="false" />
     <file path="/edit.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388457229001" ignored="false" />
     <file path="/new.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397995295964" ignored="false" />
@@ -285,12 +170,12 @@
     <file path="$USER_HOME$/slwebsite_bug1/app/views/users/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384136528476" ignored="false" />
     <file path="/home.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387332454676" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384177628226" ignored="false" />
-    <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398042175929" ignored="false" />
+    <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400805044707" ignored="false" />
     <file path="/news.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384181868045" ignored="false" />
-    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400759779474" ignored="false" />
+    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400806326777" ignored="false" />
     <file path="/a.dummy" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398981363691" ignored="false" />
     <file path="/_footer.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392209289466" ignored="false" />
-    <file path="/issue.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1395080968770" ignored="false" />
+    <file path="/issue.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400805415337" ignored="false" />
     <file path="/allnews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398045630337" ignored="false" />
     <file path="/shownews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400773775392" ignored="false" />
     <file path="/20131214010501_add_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386983455409" ignored="false" />
@@ -417,14 +302,14 @@
     <file path="/devise.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388369477816" ignored="false" />
     <file path="/20131230031018_add_fk_users_user_societies.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388373390258" ignored="false" />
     <file path="/20131230032003_del_users_fk.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388373627286" ignored="false" />
-    <file path="/_notis.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400765408285" ignored="false" />
+    <file path="/_notis.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400804236591" ignored="false" />
     <file path="/_calender.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388446072545" ignored="false" />
     <file path="/calender.css.scss" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388443343968" ignored="false" />
     <file path="/system_mailer_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388445700978" ignored="false" />
     <file path="/test.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388445836873" ignored="false" />
     <file path="/20131231005033_add_column_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388451576694" ignored="false" />
     <file path="/20131231022010_more_nots.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388456435193" ignored="false" />
-    <file path="/noti.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400694007491" ignored="false" />
+    <file path="/noti.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400805405208" ignored="false" />
     <file path="/20131231022757_add_column_notis.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388456938480" ignored="false" />
     <file path="/notis_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392606049338" ignored="false" />
     <file path="/_swtchnotis.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1388465416628" ignored="false" />
@@ -442,7 +327,7 @@
     <file path="$USER_HOME$/blog/app/views/posts/create.js.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389355595111" ignored="false" />
     <file path="$USER_HOME$/blog/app/views/posts/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389355651104" ignored="false" />
     <file path="$USER_HOME$/blog/app/assets/javascripts/application.js" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389355686870" ignored="false" />
-    <file path="/_newsbasic.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398986617468" ignored="false" />
+    <file path="/_newsbasic.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400804228682" ignored="false" />
     <file path="/shownotis.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389451835524" ignored="false" />
     <file path="/_vanbox.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1389651012470" ignored="false" />
     <file path="/_header3.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397861990397" ignored="false" />
@@ -488,7 +373,7 @@
     <file path="/20140217024055_addmorecolumns.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392604948315" ignored="false" />
     <file path="/20140217203128_add_table_to_timetable.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392671285085" ignored="false" />
     <file path="/timetable.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400694415058" ignored="false" />
-    <file path="/noti_attend.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392672851928" ignored="false" />
+    <file path="/noti_attend.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400806460675" ignored="false" />
     <file path="/20140217211624_droptable.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392671796640" ignored="false" />
     <file path="/20140217211844_droptable2.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392671967431" ignored="false" />
     <file path="/_activity.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1397921341864" ignored="false" />
@@ -542,10 +427,16 @@
     <file path="/20140521173749_refine_relationship.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400694453763" ignored="false" />
     <file path="/_attend.js.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400700449644" ignored="false" />
     <file path="/timetable_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400708593256" ignored="false" />
-    <file path="/_attend.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400759907164" ignored="false" />
+    <file path="/_attend.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400809645413" ignored="false" />
     <file path="/_cancel.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400760610205" ignored="false" />
     <file path="/destroy.js.coffee" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400762606384" ignored="false" />
-    <file path="/timetables_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400760158387" ignored="false" />
+    <file path="/timetables_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400809450969" ignored="false" />
+    <file path="/20140522160501_create_tabs.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400774711845" ignored="false" />
+    <file path="/20140522161130_create_noti_attens.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400775101181" ignored="false" />
+    <file path="/20140523003248_add_counter.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400805303956" ignored="false" />
+    <file path="/20140523004958_add_foreignid.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400806222640" ignored="false" />
+    <file path="/20140523005330_add_foreignid2.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400806469367" ignored="false" />
+    <file path="/noti_attends_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400808016728" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -570,58 +461,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="userAdmin.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/userAdmin.html.erb">
+      <file leaf-file-name="public_news_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/public_news_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="-22.166666">
+            <state line="35" column="16" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_editAdmin.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_editAdmin.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140521173749_refine_relationship.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140521173749_refine_relationship.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_usrAdNav.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="33" selection-start="1917" selection-end="1917" vertical-scroll-proportion="-11.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_timetable.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/module/user_admin/_timetable.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="8" selection-start="114" selection-end="114" vertical-scroll-proportion="0.082530946">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_usrAdHead.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_usrAdHead.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -629,36 +473,79 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timetables_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/timetables_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="38" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notis_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/notis_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
+      <file leaf-file-name="_attend.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/timetables/_attend.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="37" selection-start="3552" selection-end="3552" vertical-scroll-proportion="-3.5696204">
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/messages/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="9" column="0" selection-start="505" selection-end="1023" vertical-scroll-proportion="0.18">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contentbar.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/contentbar.html.erb">
+      <file leaf-file-name="static_page_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="20" selection-start="0" selection-end="51" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="society_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/society_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slmember_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/slmember_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="24" selection-start="321" selection-end="333" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -682,22 +569,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/timetables/_attend.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/timetables/create.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/timetables/destroy.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/timetables/destroy.js.coffee" />
-        <option value="$PROJECT_DIR$/app/controllers/timetables_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/timetables/_cancel.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/_edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/_editAdmin.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/public_news/shownews.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/messages/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/userAdmin.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/module/user_admin/_timetable.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140523003248_add_counter.rb" />
+        <option value="$PROJECT_DIR$/app/models/noti.rb" />
+        <option value="$PROJECT_DIR$/app/models/issue.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140523004958_add_foreignid.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/noti_attend.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140523005330_add_foreignid2.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/noti_attends_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/timetables_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/timetables/_attend.html.erb" />
       </list>
     </option>
   </component>
@@ -840,15 +727,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -867,6 +750,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1002,29 +907,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comments" />
+              <option name="myItemId" value="newsshow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1519,118 +1406,107 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_headerindex.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140523004958_add_foreignid.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="17.416666">
+        <state line="2" column="43" selection-start="58" selection-end="107" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_newHeader.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/noti.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="103.75">
+        <state line="14" column="71" selection-start="420" selection-end="526" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_notis.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/noti_attend.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="18" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-0.625">
+        <state line="2" column="18" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="116" selection-end="147" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header2.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="65" selection-start="2359" selection-end="2376" vertical-scroll-proportion="-8.208333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="22" selection-start="466" selection-end="542" vertical-scroll-proportion="-13.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/timetables/_cancel.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/contentbar.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140523005330_add_foreignid2.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="35" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="20" selection-start="0" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/society_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/slmember_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/notis_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/public_news_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="16" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="24" selection-start="321" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/timetables_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="38" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/timetables/_attend.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="37" selection-start="3552" selection-end="3552" vertical-scroll-proportion="-3.5696204">
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/userAdmin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="-22.166666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_editAdmin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140521173749_refine_relationship.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_usrAdHead.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="33" selection-start="1917" selection-end="1917" vertical-scroll-proportion="-11.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/user_admin/_timetable.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="114" selection-end="114" vertical-scroll-proportion="0.082530946">
+        <state line="9" column="0" selection-start="505" selection-end="1023" vertical-scroll-proportion="0.18">
           <folding />
         </state>
       </provider>

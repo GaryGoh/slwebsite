@@ -201,7 +201,7 @@
 <div class="panel-body">
 <div class="col-md-2" id="te">
   <h4>优秀社团</h4>
-  <ul class="nav nav-tabs nav-stacked" id="society">
+  <ul class="nav nav-stacked" id="society">
     <% counter = true %>
     <% @societies.each do |s| %>
         <% if counter %>
@@ -310,7 +310,7 @@
                       <%=
                           #link_to sn.in_members, shownews_url(sn)
                       %>
-                      coming up later
+                      <%= sn.issue_catch_counter%>
                     </td>
                     </td>
                   </tr>
@@ -407,7 +407,7 @@
                       <%=
                           #link_to sn.in_members, shownews_url(sn)
                       %>
-                      coming up later
+                      <%= sn.issue_catch_counter%>
                     </td>
                     </td>
                   </tr>
