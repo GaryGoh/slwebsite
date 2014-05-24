@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/albandiguer/galleria-rails.git
-  revision: 0ce52dbe0dd5730d24c39bbb35a86d796114e1c3
-  specs:
-    galleria-rails (1.2.9)
-      railties (>= 3.2.0)
-
-GIT
   remote: git://github.com/anjlab/bootstrap-rails.git
   revision: 54b165183fdccc4feb451416d1a46ecae496d6be
   specs:
@@ -74,8 +67,6 @@ GEM
     atomic (1.1.14)
     bcrypt (3.1.7)
     bcrypt-ruby (3.0.1)
-    bootstrap-wysihtml5-rails (0.3.1.23)
-      railties (>= 3.0)
     bourbon (3.2.1)
       sass (~> 3.2)
       thor
@@ -225,12 +216,10 @@ DEPENDENCIES
   activeadmin!
   anjlab-bootstrap-rails!
   bcrypt-ruby (~> 3.0.0)
-  bootstrap-wysihtml5-rails (~> 0.3.1.23)
   cancan
   coffee-rails (~> 4.0.0)
   font-awesome-rails
   font-awesome-sass
-  galleria-rails!
   impressionist
   jbuilder (~> 1.2)
   jquery-rails

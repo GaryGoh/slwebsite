@@ -59,8 +59,8 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "font-awesome-rails"
 gem 'font-awesome-sass'
 
-gem 'galleria-rails', github: 'albandiguer/galleria-rails'
-gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
+#gem 'galleria-rails', github: 'albandiguer/galleria-rails'
+#gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 
 # A lightweight plugin that logs impressions per action or manually per model
 gem 'impressionist'
