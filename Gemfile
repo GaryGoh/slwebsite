@@ -9,7 +9,8 @@ gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
+gem "less-rails"
+#gem 'therubyracer'
 
 
 # Use Uglifier as compressor for JavaScript assets
@@ -21,7 +22,7 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
     :github => 'anjlab/bootstrap-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,6 +47,9 @@ gem 'tinymce-rails'
 
 # Back-end
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'devise'
+gem 'jquery-ui-rails'
+
 
 #authorisation
 gem "cancan"
@@ -65,6 +69,9 @@ gem 'font-awesome-sass'
 # A lightweight plugin that logs impressions per action or manually per model
 gem 'impressionist'
 
+
+
+gem 'rack-cache'
 #gem 'remotipart', '~> 1.2'
 
 # Export UML diagrams from database

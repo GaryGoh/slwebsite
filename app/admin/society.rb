@@ -19,7 +19,7 @@ ActiveAdmin.register Society do
     end
     column :home_url
     column :created_at
-    default_actions
+    actions
   end
 
   # The form is to create society info

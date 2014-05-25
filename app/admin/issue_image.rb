@@ -17,7 +17,7 @@ ActiveAdmin.register IssueImage do
       link_to(image_tag(image.issue_pic.url(:thumb), :height => '100'), image.issue_pic.url(:medium))
     end
     column :created_at
-    default_actions
+    actions
   end
 
   form do |f|

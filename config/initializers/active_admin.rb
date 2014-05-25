@@ -160,7 +160,13 @@ ActiveAdmin.setup do |config|
   #   config.register_stylesheet 'my_print_stylesheet.css', :media => :print
   #
   # To load a javascript file:
-  #   config.register_javascript 'admin.js'
+  #config.register_javascript 'application.js'
+
+  #To load application js
+  #current_javascripts = config.javascripts.clone
+  #config.clear_javascripts!
+  #config.register_javascript 'application.js'
+  #current_javascripts.reverse_update!.each{|j| config.register_javascript j}
 
 
   # == CSV options

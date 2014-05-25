@@ -13,7 +13,7 @@ ActiveAdmin.register HomeBackground do
       link_to(image_tag(image.ava_pic.url(:thumb), :height => '100'), image.ava_pic.url(:medium))
     end
     column :created_at
-    default_actions
+    actions
   end
 
   #form :html => { :enctype => "multipart/form-data" } do |f|

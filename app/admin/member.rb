@@ -10,7 +10,7 @@ ActiveAdmin.register Member do
     selectable_column
     column :memid
     column :created_at
-    default_actions
+    actions
   end
 
   filter :memid

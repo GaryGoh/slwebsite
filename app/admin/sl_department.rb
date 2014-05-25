@@ -12,7 +12,7 @@ ActiveAdmin.register SlDepartment do
     selectable_column
     column :sl_dep_name
     column :created_at
-    default_actions
+    actions
   end
 
   # The form is to create society info

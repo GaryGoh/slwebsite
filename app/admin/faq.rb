@@ -10,7 +10,7 @@ ActiveAdmin.register Faq do
     selectable_column
     column :query
     column :created_at
-    default_actions
+    actions
   end
 
   # The form is to create society info

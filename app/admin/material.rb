@@ -11,7 +11,7 @@ ActiveAdmin.register Material do
     column :description
     column :document_file_name
     column :created_at
-    default_actions
+    actions
   end
 
   #form :html => { :enctype => "multipart/form-data" } do |f|

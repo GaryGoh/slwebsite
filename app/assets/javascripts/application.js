@@ -10,19 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
 //= require googleajax.jquery.js
 //= require turbolinks
 //= require_tree .
 
-//= require flat-ui/bootstrap-select
-//= require flat-ui/bootstrap-switch
-//= require flat-ui/flatui-fileinput
-//= require flat-ui/jquery.tagsinput
-//= require flat-ui/holder
+
 //= require flat-ui/jquery-ui-1.10.3.custom.min
-//= require flat-ui/bootstrap.min
 
 
 // Include all twitter's javascripts
@@ -30,34 +23,6 @@
 //= require popup
 
 
-
-
-
-
-
-
-
-
-
-// To adjust the params of right side panel
-$(document).ready(function () {
-    $(".cbp-af-header").css("overflow", "hidden");
-
-    $('#sidebar').affix({
-        offset: {
-            top: 230,
-            bottom: 100
-        }
-    });
-
-    $('#midCol').affix({
-        offset: {
-            top: 800,
-            bottom: 100
-        }
-    });
-
-});
 
 
 

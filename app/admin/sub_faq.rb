@@ -12,7 +12,7 @@ ActiveAdmin.register SubFaq do
     column :query, :label => "子问题"
     column :faq, :label => "主问题"
     column :created_at
-    default_actions
+    actions
   end
 
   # The form is to create society info

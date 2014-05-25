@@ -120,7 +120,7 @@ ActiveAdmin.register User do
     column :name
     column :gender
     column :contact
-    default_actions
+    actions
   end
 
 
