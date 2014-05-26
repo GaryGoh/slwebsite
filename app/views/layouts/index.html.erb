@@ -13,16 +13,11 @@
 
     }
 
-    .a #maincontent{
-
-        font-size: 13px;
-    }
-
     #sidecontent {
         /*background-color: #ffffff;*/
         /*min-height: 740px;*/
         /*max-height: 740px;*/
-        max-width: 21%;
+        max-width: 18%;
         overflow: auto;
         margin-left: 10px;
         padding-top: 5%;
@@ -70,31 +65,28 @@
 <!--<div id="indexheader">-->
 
 <!--</div>-->
-<!--<div class="poster">-->
-  <!--<img src="<%= asset_path "background/headdemo2.jpg" %>"  width="1500"/>-->
-<!--</div>-->
+<div class="poster">
+  <img src="<%= asset_path "background/headdemo2.jpg"%>"  width="1500"/>
+</div>
 <div class="container container-full">
   <%= render "layouts/headerindex" %>
 
-  <div class="" id="wrap">
-
-    <div class="col-xs-12 col-md-9" id="maincontent">
+  <div class="container" id="wrap">
 
       <%=
           yield
       %>
-    </div>
 
-    <div class="col-xs-6 col-md-3" id="sidecontent">
+    <!--<div class="col-xs-12 col-md-3" id="sidecontent">-->
       <%=
-          render "layouts/newsidecontent"
+          #render "layouts/newsidecontent"
       %>
 
-    </div>
+    <!--</div>-->
   </div>
   <div id='goup'></div>
   <!--<button class="btn btn-primary btn-lg" onclick="弹幕测试()">-->
-  <!--弹幕测试-->
+    <!--弹幕测试-->
   <!--</button>-->
 </div>
 <footer>

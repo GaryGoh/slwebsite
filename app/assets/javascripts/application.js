@@ -10,17 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
 //= require googleajax.jquery.js
 //= require turbolinks
 //= require_tree .
 
 
-//= require flat-ui/typeahead
-//= require flat-ui/holder
-//= require flat-ui/flatui-fileinput
-//= require flat-ui/bootstrap.min
 //= require flat-ui/jquery-ui-1.10.3.custom.min
 
 
