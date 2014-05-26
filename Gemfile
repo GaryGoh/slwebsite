@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'puma'
+#gem 'puma'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -9,7 +9,7 @@ gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-gem "less-rails"
+#gem "less-rails"
 #gem 'therubyracer'
 
 
@@ -48,7 +48,7 @@ gem 'tinymce-rails'
 # Back-end
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
-gem 'jquery-ui-rails'
+#gem 'jquery-ui-rails'
 
 
 #authorisation
@@ -64,7 +64,7 @@ gem "font-awesome-rails"
 gem 'font-awesome-sass'
 
 #gem 'galleria-rails', github: 'albandiguer/galleria-rails'
-#gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
+gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 
 # A lightweight plugin that logs impressions per action or manually per model
 gem 'impressionist'

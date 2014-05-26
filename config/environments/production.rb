@@ -62,7 +62,7 @@ Slwebsite::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css.scss, and all non-JS/CSS in app/assets folder are already added.
-  #config.assets.precompile += ['active_admin.js']
+  #config.assets.precompile += ['flat-ui.css']
   #config.assets.precompile << Proc.new do |path|
   #  if path =~ /\.(css|js)\z/
   #    full_path = Rails.application.assets.resolve(path).to_path
