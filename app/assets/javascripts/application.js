@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require googleajax.jquery.js
-//= require turbolinks
 //= require_tree .
 
 
