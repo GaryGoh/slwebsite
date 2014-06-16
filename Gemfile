@@ -78,6 +78,9 @@ gem 'rack-cache'
 #gem 'rails-erd'
 
 
+#paginate
+gem 'will_paginate'
+
 #charts
 #gem "just-datetime-picker"
 

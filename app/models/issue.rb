@@ -24,4 +24,6 @@ class Issue < ActiveRecord::Base
     end
   end
 
+
+
 end

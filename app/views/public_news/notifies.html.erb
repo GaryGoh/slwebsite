@@ -18,7 +18,7 @@
 
       <tbody>
 
-      <%= render 'module/notifies/swtchnotis',:issues => @notifies  %>
+      <%= render 'module/notifies/swtchnotis',:issues => @notifiesP  %>
 
       </tbody>
     </table>
@@ -30,5 +30,17 @@
 
 
 
+<div class="pagination">
 
+
+  <%= will_paginate @notifiesP,
+                    :inner_window => 1,
+                    :outer_window => 1,
+                    :previous_label => '
+      <span class="fui-arrow-left"></span>
+    ',
+                    :next_label => '<span class="fui-arrow-right"></span>
+'
+  %>
+</div>
 

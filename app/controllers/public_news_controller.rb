@@ -11,6 +11,10 @@ class PublicNewsController < ApplicationController
     @issues_top = Issue.where('category_id = 1').search(params[:search])
     @issues_society = Issue.where('category_id = 2').search(params[:search])
     @issues_school = Issue.where('category_id = 3').search(params[:search])
+
+    @issuesP = Issue.paginate(:page => params[:page], :per_page => 5).search(params[:search])
+
+
   end
 
   def shownews
@@ -44,6 +48,8 @@ class PublicNewsController < ApplicationController
 
   def notifies
     @notifies = Noti.search(params[:search]).reverse
+
+    @notifiesP = Noti.order('created_at DESC').page(params[:page]).per_page(10).search(params[:search])
 
   end
 
