@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   def new
     @members = Member.all
     @user = User.new
-    @timetable = @user.build_timetable
+    #@timetable = @user.build_timetable
 
   end
 

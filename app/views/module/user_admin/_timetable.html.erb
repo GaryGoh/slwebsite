@@ -51,6 +51,7 @@
                     events: [
 
                         <% user.timetables.each do |t|%>
+                        <%unless t.start_time.nil? && t.end_time.nil? %>
                         {
                             title: "<%= t.noti_name%>",
                             start: new Date(<%= t.start_time.to_datetime.to_i * 1000%>),
@@ -58,7 +59,7 @@
                             url: "<%= shownotis_url(t.noti_id)%>",
                             allDay: false
                         },
-
+                        <%end%>
                         <%end %>
 
                     ],

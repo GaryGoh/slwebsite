@@ -15,7 +15,7 @@
 
       <!--style 1-->
       <%=
-          render 'module/flatnelist', :issues => @issuesP
+          render 'module/flatnelist', :issues => @issues
       %>
 
       <!--style 2, to use, just comment above and comment out below-->
@@ -29,16 +29,4 @@
 </div>
 
 
-<div class="pagination">
 
-
-  <%= will_paginate @issuesP,
-                    :inner_window => 1,
-                    :outer_window => 1,
-                    :previous_label => '
-      <span class="fui-arrow-left"></span>
-    ',
-                    :next_label => '<span class="fui-arrow-right"></span>
-'
-  %>
-</div>
