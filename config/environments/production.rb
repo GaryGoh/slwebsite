@@ -23,8 +23,8 @@ Slwebsite::Application.configure do
   config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
-  #config.assets.js_compressor = :uglifier
-  #config.assets.css_compressor = :sass
+  config.assets.js_compressor = :uglifier
+  config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
@@ -63,21 +63,31 @@ Slwebsite::Application.configure do
   # Precompile additional assets.
   # application.js, application.css.scss, and all non-JS/CSS in app/assets folder are already added.
   #config.assets.precompile += ['active_admin.js']
-  #config.assets.precompile << Proc.new do |path|
-  #  if path =~ /\.(css|js)\z/
-  #    full_path = Rails.application.assets.resolve(path).to_path
-  #    app_assets_path = Rails.root.join('app', 'assets').to_path
-  #    if full_path.starts_with? app_assets_path
-  #      puts "including asset: " + full_path
-  #      true
-  #    else
-  #      puts "excluding asset: " + full_path
-  #      false
-  #    end
-  #  else
-  #    false
-  #  end
-  #end
+
+  config.assets.precompile << Proc.new do |path|
+    if path =~ /\.(css|js|scss|png|jpg|gif|json)\z/
+      full_path = Rails.application.assets.resolve(path).to_path
+      app_assets_path1 = Rails.root.join('app', 'assets').to_path
+      app_assets_path2 = Rails.root.join('lib', 'assets').to_path
+      app_assets_path3 = Rails.root.join('vendor', 'assets').to_path
+
+
+      if full_path.starts_with? app_assets_path1
+        true
+      else
+        if full_path.starts_with? app_assets_path2
+          true
+        else
+          if full_path.starts_with? app_assets_path3
+            true
+          else
+            false
+          end
+        end
+      end
+    end
+  end
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
