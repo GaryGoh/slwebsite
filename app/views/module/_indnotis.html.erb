@@ -1,25 +1,44 @@
 <style>
-    #indn{
+    #indn {
         border-bottom: solid;
         border-bottom-color: #e1e4e7;
         border-bottom-width: 1px;
     }
+
+    #index_list{
+        min-height: 70px;
+        /*padding-top: ;*/
+    }
 </style>
 
-<% token = 0 %>
-<% issues.each do |e| %>
-    <%
-       #if token < 0
-    %>
-    <%
-       #next if (e.issue_images.count == 0)
-    %>
+<div class="list-group">
+  <% issues.each do |e| %>
 
-    <% token = token + 1 %>
-    <!--<div class="col-md-6">-->
-    <!--<div class="thumbnail">-->
-    <p id="indn"><%= token %> | <%= link_to truncate(e.title, :length => 20), shownotis_url(e) %></p>
-    <!--<hr>-->
-    <!--</div>-->
-    <!--</div>-->
-<% end %>
+      <div class="list-group-item row" style="background-color: #ffffff" id="index_list">
+
+        <div class="col-md-2">
+          <% unless e.user.avatar_file_name.nil? %>
+              <%= image_tag e.user.avatar.url(:mini)%>
+          <% end %>
+        </div>
+
+        <div class="col-md-7">
+          <h4 class="list-group-item-heading" style="font-size: 12px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 15), shownotis_url(e) %></h4>
+
+          <p class="list-group-item-text" style="font-size: 12px; background-color: #ffffff;"><%= link_to truncate(e.content, :length => 28), shownotis_url(e), :style => "color: #000000" %></p>
+        </div>
+
+        <div class="col-md-3">
+          <p class="list-group-item-text small" style="font-size: 10px; padding-top: 30%; text-align: right; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40)%></p>
+        </div>
+
+      </div>
+  <% end %>
+
+</div>
+
+
+
+
+
+

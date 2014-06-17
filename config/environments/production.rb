@@ -69,7 +69,6 @@ Slwebsite::Application.configure do
       full_path = Rails.application.assets.resolve(path).to_path
       app_assets_path1 = Rails.root.join('app', 'assets').to_path
       app_assets_path2 = Rails.root.join('lib', 'assets').to_path
-      app_assets_path3 = Rails.root.join('vendor', 'assets').to_path
 
 
       if full_path.starts_with? app_assets_path1
@@ -78,15 +77,11 @@ Slwebsite::Application.configure do
         if full_path.starts_with? app_assets_path2
           true
         else
-          if full_path.starts_with? app_assets_path3
-            true
-          else
             false
           end
         end
       end
     end
-  end
 
 
   # Ignore bad email addresses and do not raise email delivery errors.

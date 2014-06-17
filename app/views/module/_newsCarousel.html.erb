@@ -1,0 +1,50 @@
+<div id="newsCarousel" class="carousel slide">
+  <!-- Indicators -->
+
+
+  <ol class="carousel-indicators">
+
+    <% is_active = true %>
+    <% cid = 1 %>
+    <% (1..issue.issue_images.count).each do %>
+        <% if is_active %>
+            <% is_active = false %>
+            <li data-target="#newsCarousel" data-slide-to="<%= cid %>" class="active"></li>
+        <% else %>
+            <li data-target="#newsCarousel" data-slide-to="<%= cid %>"></li>
+        <% end %>
+        <% cid + 1 %>
+    <% end %>
+  </ol>
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    <% is_active = true %>
+    <% issue.issue_images.each do |i| %>
+        <% if is_active %>
+            <div class="active item">
+              <% is_active = false %>
+        <% else %>
+            <div class="item">
+        <% end %>
+        <div align="center">
+          <a href=<%= shownews_url(issue) %>>
+            <%= image_tag i.issue_pic.url(:ind) %>
+          </a>
+        </div>
+
+
+        </div>
+    <% end %>
+    <!-- Controls -->
+
+    </div>
+    <a class="carousel-control left" href="#newsCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#newsCarousel" data-slide="next">&rsaquo;</a>
+  </div>
+
+  <h3 style="font-size: 15px"><%= issue.title %></h3>
+  <% content = strip_tags((issue.content)) %>
+  <p style="font-size: 13px"><%= (truncate(sanitize(content), :length => 70)) %> <%= link_to '详情直戳 ->', shownews_url(issue)%></p>

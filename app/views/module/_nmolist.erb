@@ -1,4 +1,13 @@
+<div class="col-md-7">
+  <div class="thumbnail" id="caindex">
+    <%=
+        render "module/indexcarousel", :issues => @issues_top
+    %>
+  </div>
+</div>
+
 <div class="col-md-5" id="index_ns">
+
   <ul class="nav nav-tabs" id="myTab">
     <li class="active"><a href="#isociety" data-toggle="tab">社团活动</a></li>
     <li><a href="#school" data-toggle="tab">通知公告</a></li>
@@ -17,11 +26,4 @@
   </div>
 </div>
 
-<div class="col-md-7">
-  <div class="thumbnail" id="caindex">
-    <%=
-        render "module/indexcarousel", :issues => @issues_top
-    %>
-  </div>
-</div>
 

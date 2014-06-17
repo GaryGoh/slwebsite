@@ -1,32 +1,67 @@
+<div class="panel panel-default col-md-3">
 
-<div class="panel panel-default col-md-9">
+
+  <div class="panel-heading">最新发布</div>
+
+  <div class="panel-body" id="">
+    <%= render "module/lastNews", :issues => @issues.last(5) %>
+  </div>
+</div>
+
+
+<div class="panel panel-default col-md-6">
   <div class="panel-heading">社团新闻</div>
 
-  <%=
-      render "module/indexcell/cell1", :issues => @issues_society
-  %>
+  <% @issues_society.each do |e| %>
+      <% if e.issue_images.count > 0 %>
+          <%=
+              render "module/newsCarousel", :issue => e
+          %>
+      <% end %>
+  <% end %>
 </div>
+
+
+
 
 <div class="panel panel-default col-md-3">
   <div class="panel-heading">学校新闻</div>
 
-  <div class="panel-body" id="">
+  <div class="panel-body">
 
     <% token = 0 %>
-    <% @issues_society.last(6).each do |e| %>
-        <%
-           #if token < 0
-        %>
-        <%
-           #next if (e.issue_images.count == 0)
-        %>
+    <% @issues_society.last(8).each do |e| %>
 
         <% token = token + 1 %>
-        <!--<div class="col-md-6">-->
-        <!--<div class="thumbnail">-->
-        <p id="indschool"><%= token %> | <%= link_to truncate(e.title, :length => 14), shownews_url(e) %>
-          <!--</div>-->
-          <!--</div>-->
+
+        <p id="indschool" style="font-size: 14px"><%= token %>
+          | <%= link_to truncate(e.title, :length => 14), shownews_url(e) %>
+
     <% end %>
   </div>
+
+  <div class="panel-heading">资料下载
+  </div>
+    <table class="table table-striped">
+      <thead>
+      <tr style="font-size: 12px">
+
+        <!--<th>发布人</th>-->
+        <th>文件名</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @materials.last(6).each do |m| %>
+          <tr style="font-size: 12px">
+
+            <td><%= link_to truncate(m.document_file_name, :length => 28), m.document.url %>
+            </td>
+          </tr>
+      <% end %>
+         <td> <%= link_to "更多...", download_url, :style => "font-size: 14px"%></td>
+      <tbody>
+      </table>
+
+
 </div>

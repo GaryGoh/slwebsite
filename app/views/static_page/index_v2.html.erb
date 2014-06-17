@@ -1,0 +1,429 @@
+<style>
+    #main_content {
+        /*background: #f6f7fb*/
+
+    }
+
+    #side_content {
+        /*background: #f6f7fb*/
+        margin-left: 0;
+    }
+
+    #te {
+        /*background: firebrick;*/
+        /*border-right-style: solid;*/
+        /*border-color: #dcdcdc;*/
+        /*height: 400px;*/
+        /*background: #fffffe;*/
+    }
+
+        /*#rightcontent {*/
+        /*border-left-style: solid;*/
+        /*border-color: #eee;*/
+        /*background: #fffffe;*/
+        /*margin: 3% 0 2% 0;*/
+        /*}*/
+
+    #rightcontent_so {
+        border-left-style: solid;
+        border-color: #eee;
+        background: #fffffe;
+        margin: 3% 0 2% 0;
+        min-height: 470px;
+        max-height: 470px;
+        /*overflow: auto;*/
+        /*overflow-y: visible;*/
+    }
+
+    #society {
+        text-align: center;
+    }
+
+    #index_scet {
+        /*min-height: 480px;*/
+        /*max-height: 480px;*/
+        margin-bottom: 90px;
+    }
+
+    #right_constant {
+        min-height: 430px;
+        max-height: 430px;
+        overflow: auto;
+    }
+
+    #left_dynamic {
+        /*min-height: 430px;*/
+        max-height: 430px;
+        overflow: auto;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    #index_frame {
+        margin-top: 20px;
+    }
+
+    .tab-content {
+        border-style: hidden;
+    }
+
+    #inemb {
+        padding-top: 2%;
+    }
+
+    .tindex {
+        border-width: 0;
+    }
+</style>
+
+
+
+<!--<div class="col-md-12 thumbnail" id="idhead">-->
+<%=
+    #render "module/video"
+%>
+<!--<form class="form-inline" role="form">-->
+<!--<div class="form-group">-->
+<!--<label class="sr-only" for="exampleInputEmail2">Email address</label>-->
+<!--<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label class="sr-only" for="exampleInputPassword2">Password</label>-->
+<!--<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">-->
+<!--</div>-->
+<!--<div class="checkbox">-->
+<!--<label>-->
+<!--<input type="checkbox"> Remember me-->
+<!--</label>-->
+<!--</div>-->
+<!--<button type="submit" class="btn btn-default">Sign in</button>-->
+<!--</form>-->
+
+<!--</div>-->
+
+
+<div class="thumbnail tindex" id="idhead">
+  <div id="inemb">
+    <%=
+        render "module/nmolist", :issues => @issues_society
+    %>
+  </div>
+</div>
+
+<div class="thumbnail tindex" id="idhead">
+  <div id="inemb">
+    <%=
+        render "static_page/indexNews"
+    %>
+  </div>
+</div>
+<!--<div class="col-md-12 thumbnail" id="index_ns">-->
+<!--<div class="panel panel-default" id="index_frame">-->
+<!--<div class="panel-body">-->
+<!--<div class="col-md-2" id="te">-->
+<!--<div class="panel">-->
+<!--<h4>新闻部落</h4>-->
+<!--</div>-->
+<!--</div>-->
+<!---->
+<!--<div class="col-md-10" id="rightcontent">-->
+<!--<ul class="nav nav-tabs" id="myTab">-->
+<!--<li class="active"><a href="#isociety" data-toggle="tab">社团新闻</a></li>-->
+<!--<li><a href="#school" data-toggle="tab">学校新闻</a></li>-->
+<!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
+<!--</ul>-->
+<!---->
+<!--Tab panes -->
+<!--<div class="tab-content" id="notinav">-->
+<!--<div class="tab-pane fade in active" id="isociety">-->
+<%=
+    #render "module/indexcell/cell1", :issues => @issues_society
+%>
+<!--</div>-->
+<!--<div class="tab-pane fade" id="school">-->
+<%=
+    #render "module/indexcell/cell1", :issues => @issues_school
+%>
+<!--</div>-->
+<!--<div class="tab-pane fade" id="global">-->
+<%=
+    #render "module/indexcell/cell1", :issues => @issues_global
+%>
+<!--</div>-->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--<div class="col-md-12 thumbnail" id="index_atvt">-->
+<!--<div class="panel panel-default" id="index_frame">-->
+<!--<div class="panel-body">-->
+<!--<div class="col-md-2" id="te">-->
+<!--<h4>活动专区</h4>-->
+<!--</div>-->
+<!---->
+<!--<div class="col-md-10" id="rightcontent">-->
+<!--<ul class="nav nav-tabs" id="myTab">-->
+<!--<li class="active"><a href="#society_activity" data-toggle="tab">社团活动</a></li>-->
+<!--<li><a href="#boutique" data-toggle="tab">精品活动</a></li>-->
+<!--<li><a href="#global" data-toggle="tab">世界时事</a></li>-->
+<!--</ul>-->
+<!---->
+<!-- Tab panes -->
+<!--<div class="tab-content" id="notinav">-->
+<!--<div class="tab-pane fade in active" id="society_activity">-->
+<%=
+    #render "module/indexcell/activity", :notis => @notis_activity
+%>
+<!--</div>-->
+<!--<div class="tab-pane fade" id="boutique">-->
+<%=
+    #render "module/indexcell/activity", :notis => @notis_good
+%>
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!---->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+
+<div class="col-md-12 thumbnail" id="index_scet">
+<div class="panel panel-default" id="index_frame">
+<div class="panel-body">
+<div class="col-md-2" id="te">
+  <h4>优秀社团</h4>
+  <ul class="nav nav-stacked" id="society">
+    <% counter = true %>
+    <% @societies.each do |s| %>
+        <% if counter %>
+            <li class="active"><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
+            <% counter = false %>
+        <% else %>
+            <li><a href="#<%= s.id %>" data-toggle="tab"><%= s.society_name %></a></li>
+        <% end %>
+    <% end %>
+  </ul>
+</div>
+<!-- Tab panes -->
+<div class="col-md-10" id="rightcontent_so">
+<div class="tab-content" id="notinav">
+
+<% counter = true %>
+<% @societies.each do |s| %>
+    <% if counter %>
+        <div class="tab-pane fade in active" id="<%= s.id %>">
+
+          <ul class="nav nav-tabs nav-justified" id="society">
+            <li class="active"><a href="#<%= s.id %>_pro" data-toggle="tab">社团资料</a></li>
+            <li><a href="#<%= s.id %>_act" data-toggle="tab">精品活动</a></li>
+            <li><a href="#<%= s.id %>_his" data-toggle="tab">社团历史</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="col-md-6" id="left_dynamic">
+            <div class="tab-content" id="">
+              <div class="tab-pane fade in active" id="<%= s.id %>_pro">
+
+                <h4>社团LOGO</h4>
+
+                <h5>社团介绍: </h5><%= s.profile %>
+
+                <h5>社团主席: </h5><%= s.president %>
+
+                <h5>社团主页: </h5><%= link_to societyshow_url(s), societyshow_url(s) %>
+
+              </div>
+              <div class="tab-pane fade" id="<%= s.id %>_act">
+
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>活动主题</th>
+                    <th>开始时间</th>
+                    <th>活动人数</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  <% s.notis.reverse.each do |sn| %>
+                      <tr>
+                        <td>
+                          <%= link_to truncate(sn.title, :length => 14), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%= link_to sn.start_time.strftime("%F"), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%=
+                              #link_to sn.in_members, shownotis_url(sn)
+                          %>
+                          100
+                        </td>
+                        </td>
+                      </tr>
+                  <% end %>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="tab-pane fade" id="<%= s.id %>_his">
+                <h5>社团历史: </h5><%= s.history %>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" id="right_constant">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>新闻标题</th>
+                <th>发布时间</th>
+                <th>浏览次数</th>
+                <th></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <%
+                 #s.issues_good.reverse.each do |sn|
+              %>
+              <% s.issues.reverse.each do |sn| %>
+                  <tr>
+                    <td>
+                      <%= link_to truncate(sn.title, :length => 11), shownews_url(sn) %>
+                    </td>
+                    <td>
+                      <%= link_to sn.created_at.strftime("%F"), shownews_url(sn) %>
+                    </td>
+                    <td>
+                      <%=
+                          #link_to sn.in_members, shownews_url(sn)
+                      %>
+                      <%= sn.issue_catch_counter%>
+                    </td>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <% counter = false %>
+    <% else %>
+        <div class="tab-pane fade in" id="<%= s.id %>">
+
+          <ul class="nav nav-tabs nav-justified" id="society">
+            <li class="active"><a href="#<%= s.id %>_pro" data-toggle="tab">社团资料</a></li>
+            <li><a href="#<%= s.id %>_act" data-toggle="tab">精品活动</a></li>
+            <li><a href="#<%= s.id %>_his" data-toggle="tab">社团历史</a></li>
+          </ul>
+
+          <div class="col-md-6" id="left_dynamic">
+            <div class="tab-content" id="">
+              <div class="tab-pane fade in active" id="<%= s.id %>_pro">
+
+                <h4>社团LOGO</h4>
+
+                <h5>社团介绍: </h5><%= s.profile %>
+
+                <h5>社团主席: </h5><%= s.president %>
+
+                <h5>社团主页: </h5><%= link_to societyshow_url(s), societyshow_url(s) %>
+              </div>
+              <div class="tab-pane fade" id="<%= s.id %>_act">
+
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>活动主题</th>
+                    <th>开始时间</th>
+                    <th>活动人数</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  <% s.notis.reverse.each do |sn| %>
+                      <tr>
+                        <td>
+                          <%= link_to truncate(sn.title, :length => 14), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%= link_to sn.start_time.strftime("%F"), shownotis_url(sn) %>
+                        </td>
+                        <td>
+                          <%=
+                              #link_to sn.in_members, shownotis_url(sn)
+                          %>
+                          100
+                        </td>
+                        </td>
+                      </tr>
+                  <% end %>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="tab-pane fade" id="<%= s.id %>_his">
+                <h4>社团历史: </h4><%= s.history %>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6" id="right_constant">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>新闻标题</th>
+                <th>发布时间</th>
+                <th>浏览次数</th>
+                <th></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% s.issues.reverse.each do |sn| %>
+                  <tr>
+                    <td>
+                      <%= link_to truncate(sn.title, :length => 14), shownews_url(sn) %>
+                    </td>
+                    <td>
+                      <%= link_to sn.created_at.strftime("%F"), shownews_url(sn) %>
+                    </td>
+                    <td>
+                      <%=
+                          #link_to sn.in_members, shownews_url(sn)
+                      %>
+                      <%= sn.issue_catch_counter%>
+                    </td>
+                    </td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    <% end %>
+<% end %>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
