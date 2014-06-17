@@ -1,4 +1,4 @@
-<div id="newsCarousel" class="carousel slide">
+<div id="newsCarousel<%= issue.id%>" class="carousel slide">
   <!-- Indicators -->
 
 
@@ -9,9 +9,9 @@
     <% (1..issue.issue_images.count).each do %>
         <% if is_active %>
             <% is_active = false %>
-            <li data-target="#newsCarousel" data-slide-to="<%= cid %>" class="active"></li>
+            <li data-target="#newsCarousel<%= issue.id%>" data-slide-to="<%= cid %>" class="active"></li>
         <% else %>
-            <li data-target="#newsCarousel" data-slide-to="<%= cid %>"></li>
+            <li data-target="#newsCarousel<%= issue.id%>" data-slide-to="<%= cid %>"></li>
         <% end %>
         <% cid + 1 %>
     <% end %>
@@ -41,8 +41,8 @@
     <!-- Controls -->
 
     </div>
-    <a class="carousel-control left" href="#newsCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#newsCarousel" data-slide="next">&rsaquo;</a>
+    <a class="carousel-control left" href="#newsCarousel<%= issue.id%>" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#newsCarousel<%= issue.id%>" data-slide="next">&rsaquo;</a>
   </div>
 
   <h3 style="font-size: 15px"><%= issue.title %></h3>
