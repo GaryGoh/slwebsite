@@ -25,6 +25,7 @@ class ApplicationController < ActionController::Base
 
   def set_gloable
     @notis_info = Noti.where(:category_id => 12).reverse
+    @last_news = Issue.all.reverse
 
     # It caused ActiveAdmin paginate scope bug.
     #@societies = Society.where(:is_outstanding => true)

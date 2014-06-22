@@ -20,16 +20,16 @@ def home
 
     # Index societies, solved ActiveAdmin paginate scope bug
     @societies = Society.where(:is_outstanding => true)
-    @societies_gy = @societies.where(:department_id => 1)
-    @societies_wy = @societies.where(:department_id => 2)
-    @societies_xs = @societies.where(:department_id => 3)
-    @societies_ty = @societies.where(:department_id => 4)
+    @societies1 = @societies.where(:department_id => 1)
+    @societies2 = @societies.where(:department_id => 2)
+    @societies3 = @societies.where(:department_id => 3)
+    @societies4 = @societies.where(:department_id => 4)
 
     # Index issues
     @issues = Issue.search(params[:search])
     @issues_top = Issue.joins(:category).where(:categories => {:category_name => "顶置新闻"}).last(6).reverse
     @issues_society = Issue.joins(:category).where(:categories => {:category_name => "社团新闻"}).last(4).reverse
-    @issues_school = Issue.joins(:category).where(:categories => {:category_name => "学校新闻"}).last(10).reverse
+    @issues_school = Issue.joins(:category).where(:categories => {:category_name => "学校新闻"}).reverse
     @issues_global = Issue.joins(:category).where(:categories => {:category_name => "世界时事"}).last(6).reverse
 
     # Index notis

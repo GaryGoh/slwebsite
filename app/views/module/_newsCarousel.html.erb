@@ -48,3 +48,4 @@
   <h3 style="font-size: 15px"><%= issue.title %></h3>
   <% content = strip_tags((issue.content)) %>
   <p style="font-size: 13px"><%= (truncate(sanitize(content), :length => 70)) %> <%= link_to '详情直戳 ->', shownews_url(issue)%></p>
+<!--</div>-->

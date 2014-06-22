@@ -39,6 +39,11 @@
     .ui-datepicker {
         font-size: 16px;
     }
+        #side_list{
+            max-height: 60px;
+            border-top: 0;
+            border: 0;
+        }
 </style>
 
 
@@ -49,32 +54,36 @@
 <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
 <!--<div class="panel-body" id="side_content">-->
 
+<div class="list-group">
+  <div class="list-group-item" id="side_list">通知公告</div>
 
-<div id="datepicker" style="font-size: 10px"></div>
+  <% @notis_info.last(6).each do |e| %>
 
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#indexnoti">
-          通知公告
-        </a>
-      </h4>
-    </div>
-    <div id="indexnoti" class="panel-collapse collapse in">
-      <div class="list-group">
-        <% @notis_info.each do |issue| %>
-            <small><%= link_to issue.title, shownotis_url(issue), :class => "list-group-item" %></small>
-        <% end %>
+      <div class="list-group-item" style="background-color: #ffffff" id="side_list">
+
+        <p class="list-group-item-heading" style="font-size: 14px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 15), shownotis_url(e) %></p>
+        <p class="list-group-item-text small" style="font-size: 10px; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
+        </hr>
       </div>
-    </div>
-  </div>
+  <% end %>
+
 </div>
 
-<!--/panel-->
-<!--/end mid column-->
-<script>
 
-</script>
+<div class="list-group">
+  <div class="list-group-item" id="side_list">最新发布</div>
+
+  <% @last_news.last(5).each do |e| %>
+
+      <div class="list-group-item" style="background-color: #ffffff" id="side_list">
+
+        <p class="list-group-item-heading" style="font-size: 14px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 15), shownotis_url(e) %></p>
+        <p class="list-group-item-text small" style="font-size: 10px; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
+        </hr>
+      </div>
+  <% end %>
+
+</div>
+
 
 

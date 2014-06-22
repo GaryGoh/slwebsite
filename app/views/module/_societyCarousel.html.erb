@@ -1,0 +1,64 @@
+<div id="goodSociety" class="carousel slide">
+  <!-- Indicators -->
+
+
+  <ol class="carousel-indicators">
+
+    <% is_active = true %>
+    <% cid = 1 %>
+    <% for i in (1..societies.count - 3) %>
+        <% if is_active %>
+            <% is_active = false %>
+            <li data-target="#goodSociety" data-slide-to="<%= cid %>" class="active"></li>
+        <% else %>
+            <li data-target="#goodSociety" data-slide-to="<%= cid %>"></li>
+        <% end %>
+        <% cid + 1 %>
+    <% end %>
+  </ol>
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <% is_active = true %>
+    <% for i in 1..4 do %>
+        <% unless societies.where(:department_id => i).count <= 0 %>
+            <% if is_active %>
+                <div class="active item">
+                  <% is_active = false %>
+            <% else %>
+                <div class="item">
+            <% end %>
+            <div align="center">
+              <% societies.where(:department_id => i).collect do |s| %>
+
+                  <div class="col-md-3">
+                    <div class="thumbnail">
+                      <!--<div class="thumbnail">-->
+                      <!--<img data-src="holder.js/300x200" alt="...">-->
+                      <div class="caption">
+                        <h5><%= link_to s.society_name, societyshow_url(s) %></h5>
+
+                        <p><%= s.profile %></p>
+
+                        <a href="<%= societyshow_url(s) %>" class="btn btn-primary" role="button">Go!</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--</div>-->
+
+
+              <% end %>
+            </div>
+            </div>
+        <% end %>
+
+    <% end %>
+    <!-- Controls -->
+
+    </div>
+    <a class="carousel-control left" href="#goodSociety" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#goodSociety" data-slide="next">&rsaquo;</a>
+  </div>
+  <!--</div>-->
+
