@@ -1,0 +1,24 @@
+
+<div class="panel-heading">资料下载
+</div>
+
+<table class="table table-striped">
+  <thead>
+  <tr style="font-size: 12px">
+
+    <!--<th>发布人</th>-->
+    <th>文件名</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @materials.last(6).each do |m| %>
+      <tr style="font-size: 12px">
+
+        <td><%= link_to truncate(m.document_file_name, :length => 28), m.document.url %>
+        </td>
+      </tr>
+  <% end %>
+  <td> <%= link_to "更多...", download_url, :style => "font-size: 14px"%></td>
+  <tbody>
+</table>

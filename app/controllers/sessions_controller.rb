@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       sign_in_stu user
       $user_login = true
-      redirect_to user, :notice => "成功登录"
+      redirect_to root_url, :notice => "成功登录"
     else
       redirect_to signin_url, :notice => "email或password不正确 / 该账号已被注销,详细请联系社团联合会"
     end

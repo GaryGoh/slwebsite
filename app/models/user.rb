@@ -47,7 +47,7 @@ class User < ActiveRecord::Base
   end
 
   def to_stuid
-    self.sutid
+    self.stuid
   end
 
   ## TO PROTECT vicious sign up from unknown user##

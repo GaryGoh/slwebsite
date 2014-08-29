@@ -1,0 +1,98 @@
+<style>
+    #usrPrf {
+        /*padding-right: 20px;*/
+        position: relative;
+        /*border-width: 1px 1px 0;*/
+        /*border-style: solid;*/
+        /*border-color: #EBEBEB;*/
+        /*border-radius: 4px 4px 0 0;*/
+        background-color: #FFF;
+    }
+
+    #user_extra {
+        clear: both;
+        overflow: hidden;
+        /*height: 45px;*/
+        padding: 15px 5px 10px;
+        /*border-width: 0 1px;*/
+        /*border-style: solid;*/
+        /*border-color: #EBEBEB;*/
+        background: #FFF;
+    }
+
+    #user_extra ul {
+        overflow: hidden;
+        border: 1px solid #DBDBDB;
+        border-radius: 3px;
+        background-color: #FCFCFC;
+
+    }
+
+    #user_extra ul li {
+        float: left;
+        width: 33%;
+        margin: 6px 0;
+        border-left: 1px solid #DBDBDB;
+        text-align: center;
+        font-size: 13px;
+
+    }
+
+    #user_extra ul li.first {
+        border-left: none;
+    }
+
+    #user_extra ul li em {
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        color: #666;
+    }
+
+    #userLast {
+        /*min-height: 70px;*/
+        border: 0px;
+        border-bottom: solid;
+        border-bottom-color: #e1e4e7;
+        border-bottom-width: 1px;
+        /*padding-top: 20px;*/
+        border-bottom: none;
+    }
+
+</style>
+
+<div class="list-group-item" style="background-color: #ffffff" id="userLast">
+
+  <div id="usrPrf">
+    <div class="col-md-2">
+      <% unless user.avatar_file_name.nil? %>
+          <%= image_tag user.avatar.url(:mini) %>
+      <% end %>
+    </div>
+
+    <div class="col-md-7">
+      <p class="list-group-item-text" style="font-size: 14px; background-color: #ffffff;">名字： <%= link_to user.name, users_url(user), :style => "color: #f60" %></p>
+
+      <p class="list-group-item-text" style="font-size: 14px; background-color: #ffffff;">学号： <%= link_to user.stuid, users_url(user), :style => "color: #f60" %></p>
+
+    </div>
+
+    <div class="usrProfile">
+      <%= link_to raw('<button type="button" class="btn btn-primary btn-sm">个人资料</button>'), user_url(user) %>
+    </div>
+  </div>
+
+  <div id="user_extra">
+    <ul>
+      <li class="first"><a href="#"><em><%= user.issues.count %></em>发表新闻</a></li>
+      <li><a href="#"><em><%= user.notis.count %></em>发布活动</a></li>
+      <li><a href="#"><em>262</em>活跃度</a></li>
+    </ul>
+  </div>
+
+  <div id="state">
+    <%=
+        render "iniUserLastest", :issues => @notis_activity
+    %>
+  </div>
+</div>

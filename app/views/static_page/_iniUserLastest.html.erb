@@ -1,0 +1,81 @@
+<style>
+    #indn {
+        border-bottom: solid;
+        border-bottom-color: #e1e4e7;
+        border-bottom-width: 1px;
+        /*border: 0px;*/
+    }
+
+    #index_list {
+        /*min-height: 70px;*/
+        border: 0px;
+        border-bottom: solid;
+        border-bottom-color: #e1e4e7;
+        border-bottom-width: 2px;
+        /*padding-top: 20px;*/
+    }
+
+    #index_list:hover {
+        background-color: #efefef;
+    }
+
+    #issuesLast {
+        /*min-height: 70px;*/
+        border: 0px;
+        border-bottom: solid;
+        border-bottom-color: #e1e4e7;
+        border-bottom-width: 1px;
+        /*padding-top: 20px;*/
+        /*border-bottom: none;*/
+    }
+
+    #iniLastestIcon {
+        padding-top: 12px;
+    }
+</style>
+
+<div class="list-group">
+  <% issues.each do |e| %>
+
+      <% unless e == issues.last %>
+          <a href="<%= shownotis_url(e) %>" class="list-group-item" id="index_list">
+      <% else %>
+          <a href="<%= shownotis_url(e) %>" class="list-group-item" id="issuesLast">
+      <% end %>
+      <div class="row">
+        <div class="col-md-2" id="iniLastestIcon">
+          <% unless e.user.avatar_file_name.nil? %>
+              <%= image_tag e.user.avatar.url(:mini) %>
+          <% end %>
+        </div>
+        <div class="col-md-7">
+          <h4 class="" style="font-size: 12px;"><%= truncate(e.title, :length => 12) %></h4>
+
+          <div class="" style="font-size: 12px; color: #aaaaaa"><%= truncate(e.content, :length => 12) %></div>
+        </div>
+        <div class="col-md-3">
+          <%
+
+             def interval(intervalDays)
+               case
+                 when intervalDays > 31 && intervalDays < 365
+                   intervalDays = intervalDays.to_i / 30
+                   return intervalDays.to_s + "个月前"
+                 when intervalDays >= 365
+                   intervalDays = intervalDays.to_i / 365
+                   return intervalDays.to_s + "年前"
+
+                 else
+                   return intervalDays.to_s + "天前"
+
+               end
+             end
+          %>
+          <div class="small" style="font-size: 10px; padding-top: 30%; text-align: right; color: #959595"><%= interval((Time.now() - e.created_at)/(60*60*24)) %></div>
+
+        </div>
+      </div>
+      </a>
+  <% end %>
+</div>
+

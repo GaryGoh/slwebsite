@@ -3,42 +3,57 @@
         border-bottom: solid;
         border-bottom-color: #e1e4e7;
         border-bottom-width: 1px;
+        /*border: 0px;*/
     }
 
-    #index_list{
-        min-height: 70px;
-        /*padding-top: ;*/
+    #ininotis #index_list {
+        /*min-height: 70px;*/
+        border: 0px;
+        border-bottom: solid;
+        border-bottom-color: #e1e4e7;
+        border-bottom-width: 2px;
+        /*padding-top: 20px;*/
+    }
+
+    #ininotis #index_list:hover {
+        background-color: #efefef;
+    }
+
+    #ininotis #issuesLast {
+        /*min-height: 70px;*/
+        border: 0px;
+        border-bottom: solid;
+        border-bottom-color: #e1e4e7;
+        border-bottom-width: 1px;
+        /*padding-top: 20px;*/
+        /*border-bottom: none;*/
     }
 </style>
 
-<div class="list-group">
+<div class="list-group" id="ininotis">
   <% issues.each do |e| %>
 
-      <div class="list-group-item row" style="background-color: #ffffff" id="index_list">
-
+      <% unless e == issues.last %>
+          <a href="<%= shownotis_url(e)%>" class="list-group-item" id="index_list">
+      <% else %>
+          <a href="<%= shownotis_url(e)%>" class="list-group-item" id="issuesLast">
+      <% end %>
+      <div class="row">
         <div class="col-md-2">
           <% unless e.user.avatar_file_name.nil? %>
-              <%= image_tag e.user.avatar.url(:mini)%>
+              <%= image_tag e.user.avatar.url(:mini) %>
           <% end %>
         </div>
-
         <div class="col-md-7">
-          <h4 class="list-group-item-heading" style="font-size: 12px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 15), shownotis_url(e) %></h4>
+          <h4 class="" style="font-size: 12px;"><%= truncate(e.title, :length => 15) %></h4>
 
-          <p class="list-group-item-text" style="font-size: 12px; background-color: #ffffff;"><%= link_to truncate(e.content, :length => 28), shownotis_url(e), :style => "color: #000000" %></p>
+          <div class="" style="font-size: 12px; color: #aaaaaa"><%= truncate(e.content, :length => 28) %></div>
         </div>
-
         <div class="col-md-3">
-          <p class="list-group-item-text small" style="font-size: 10px; padding-top: 30%; text-align: right; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40)%></p>
+          <div class="small" style="font-size: 8px; padding-top: 30%; text-align: right; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></div>
         </div>
-
       </div>
+      </a>
   <% end %>
-
 </div>
-
-
-
-
-
 

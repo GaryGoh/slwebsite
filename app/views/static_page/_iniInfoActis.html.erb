@@ -1,0 +1,20 @@
+<div class="list-group">
+
+  <ul class="nav nav-indexTabs nav-tabs" id="myTab">
+    <li class="active"><a href="#iniInfo" data-toggle="tab">通知公告</a></li>
+    <li><a href="#inisociety" data-toggle="tab">社团活动</a></li>
+  </ul>
+
+  <div class="tab-content" id="notinav">
+    <div class="tab-pane fade in active" id="iniInfo">
+      <%=
+          render "module/indnotis", :issues => @notis_activity
+      %>
+    </div>
+    <div class="tab-pane fade" id="inisociety">
+      <%=
+          render "module/indnotis", :issues => @notis_info
+      %>
+    </div>
+  </div>
+</div>

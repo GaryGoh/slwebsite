@@ -1,3 +1,10 @@
+<style>
+
+  .slide{
+      padding-bottom: 30px;
+  }
+  </style>
+
 <div id="myCarousel" class="carousel slide">
   <!-- Indicators -->
 
@@ -35,7 +42,7 @@
             <% end %>
             <div align="center">
               <a href=<%= shownews_url(e) %>>
-                <%= image_tag i.issue_pic.url(:medium), :height => "640" %>
+                <%= image_tag i.issue_pic.url(:carousel), :height => "480" %>
               </a>
             </div>
             <div class="carousel-caption">
@@ -47,11 +54,12 @@
             </div>
         <% end %>
     <% end %>
+
     <!-- Controls -->
 
     </div>
     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
     <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
   </div>
-<!--</div>-->
+  <!--</div>-->
 

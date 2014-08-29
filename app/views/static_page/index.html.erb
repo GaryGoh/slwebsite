@@ -23,6 +23,25 @@
     .indexTop {
         background-color: #000000;
     }
+
+    .nav-indexTabs {
+        background-color: #ECF0F1;
+        line-height: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        border-width: 0px;
+    }
+
+    .nav-indexTabs li {
+        width: 50%;
+    }
+
+    .iniCarousel {
+        border-bottom: 1px solid #ECF0F1;
+        margin-bottom: 20px;
+    }
 </style>
 
 
@@ -32,39 +51,73 @@
 %>
 
 
-<div class="thumbnail">
+<div id="indexTopFrame">
+  <div class="col-xs-12 col-md-8" id="leftContent">
+    <div id="SocNews">
+      <div class="thumbnail panel" id="HitNews">
+        <div class="iniCarousel">
+          <%=
+              render "module/indexcarousel", :issues => @issues_top
+          %>
+        </div>
+        <!-- End of carousel-->
 
-  <div id="indexTop">
+        <div id="iniNews">
+          <%=
+              render "iniNews"
+          %>
+        </div>
+        <!-- End of news-->
 
-    <div class="thumbnail tindex panel" id="idhead">
-      <div id="inemb">
-        <%=
-            render "module/nmolist", :issues => @issues_society
-        %>
       </div>
     </div>
 
-    <div class="thumbnail tindex panel" id="idhead">
-      <div id="inemb">
-        <%=
-            render "static_page/indexNews"
-        %>
-      </div>
-    </div>
-  </div>
+    <div class="thumbnail panel" id="leftContent">
+      <div id="iniGoodSociety">
 
-  <div class="thumbnail tindex" id="idhead">
-    <div class="panel panel-default">
-      <div class="panel-heading">优秀社团</div>
-      <div id="inemb" class="row">
-        <%=
-            render "module/societyCarousel", :societies => @societies
-        %>
       </div>
     </div>
   </div>
+  <!-- End of leftContent-->
+
+  <div class="col-xs-6 col-md-4" id="rightContent">
+
+
+    <div class="thumbnail panel" id="LoginorReg">
+      <%=
+          render "iniRegLogin"
+      %>
+    </div>
+
+    <!-- End of Login/Reg Panel-->
+
+    <div class="thumbnail panel" id="rightActivities">
+      <%=
+          render "iniInfoActis"
+      %>
+    </div>
+    <!-- End of Activities' Panel-->
+
+    <div class="thumbnail panel" id="indexDownload">
+      <%=
+          render "iniDownload"
+      %>
+    </div>
+    <!-- End of Download' Panel-->
+
+  </div>
+  <!-- End of rightContent-->
 
 </div>
+
+<div id="indexBottomFrame">
+
+</div>
+
+
+
+
+
 
 
 
