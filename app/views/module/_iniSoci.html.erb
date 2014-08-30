@@ -1,0 +1,92 @@
+<style>
+
+    #iniSocieties #socName {
+
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #iniSocieties #socMember {
+        font-size: 13px;
+        text-align: center;
+        color: #959595;
+        padding-top: 10px;
+
+    }
+
+    #iniSocieties #socMember #socName {
+        text-align: center;
+        padding-top: 10px;
+
+    }
+
+    #iniSocieties #socProfile {
+        font-size: 12px;
+        padding-top: 10px;
+
+    }
+
+    #iniSocieties #socButton {
+        text-align: center;
+        padding-top: 10px;
+
+    }
+
+    #iniSocieties #blank {
+        text-align: center;
+        border: solid;
+        border-color: #959595;
+        border-width: 1px;
+        background-color: #e1e4e7;
+        padding: 10px 20px 0 20px;
+
+    }
+
+</style>
+<div class="row" id="iniSocieties">
+  <% societies.each do |s| %>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <% unless s.logo_file_name.nil? %>
+              <%= image_tag s.logo.url(:medium) %>
+          <% else %>
+              <div id="blank"> 暂无Logo</div>
+          <% end %>
+          <div class="caption">
+            <div id="socName">
+              <%= s.society_name %>
+              <div id="socIsGood">
+                <% if s.is_outstanding? %>
+                    <span class="label label-success">优秀社团</span>
+                <% end %>
+              </div>
+            </div>
+            <div id="socMember">
+
+              社团人数:
+              <% unless s.num_member.nil? || s.num_member < 0 %>
+                  <%= s.num_member %>
+              <% else %>
+                  0
+              <% end %>
+              | 注册人数: <%= s.users.count %>
+            </div>
+
+
+            <p id="socProfile">
+              <% unless s.profile.nil? %>
+                  <%= truncate(s.profile, :length => 40) %>
+              <% else %>
+                  暂无简介
+              <% end %>
+            </p>
+
+            <div id="socButton">
+              <a href="<%= societyshow_url(s) %>" class="btn btn-primary" role="button">进入社团</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>
+

@@ -2,7 +2,7 @@ class StaticPageController < ApplicationController
   layout "index", only: [:index]
 
 
-def home
+  def home
     @issues_school = Issue.where('category_id = 1').last(5).reverse
     @issues_sl = Issue.where('category_id = 2').last(5).reverse
     @issues_notice = Issue.where('category_id = 3').last(5).reverse
@@ -42,8 +42,14 @@ def home
     # Index Download
     @materials = Material.all.reverse
 
-  end
 
+    # Index societies
+    @gy = Society.where('department_id = 1').order("RANDOM()")
+    @wy = Society.where('department_id = 2').order("RANDOM()")
+    @ty = Society.where('department_id = 3').order("RANDOM()")
+    @xs = Society.where('department_id = 4').order("RANDOM()")
+
+  end
 
 
   def about

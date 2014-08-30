@@ -1,0 +1,47 @@
+<div class="">
+  <h2 class="iniTitle">
+    <div class="thumbnail panel">
+
+      <strong>我们的社团</strong><a href="/" id="iniA">/更多</a>
+
+      <div class="iniLeftNav">
+        <ul class="" id="myTab">
+          <li class="active"><a href="#socGY" data-toggle="tab">公益实践中心</a></li>
+          <li> |</li>
+          <li><a href="#socWY" data-toggle="tab">文娱兴趣中心</a></li>
+          <li> |</li>
+          <li><a href="#socXS" data-toggle="tab">学术科技中心</a></li>
+          <li> |</li>
+          <li><a href="#socTY" data-toggle="tab">体育竞技中心</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </h2>
+  <div class="tab-content" id="notinav">
+    <div class="tab-pane fade in active" id="socGY">
+      <%=
+          render "module/iniSoci", :societies => @gy
+      %>
+    </div>
+
+    <div class="tab-pane fade" id="socWY">
+      <%=
+          render "module/iniSoci", :societies => @wy
+      %>
+    </div>
+
+    <div class="tab-pane fade" id="socXS">
+      <%=
+          render "module/iniSoci", :societies => @xs
+      %>
+    </div>
+
+    <div class="tab-pane fade" id="socTY">
+      <%=
+          render "module/iniSoci", :societies => @ty
+      %>
+    </div>
+
+  </div>
+</div>

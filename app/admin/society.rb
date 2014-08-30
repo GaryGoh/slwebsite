@@ -1,5 +1,5 @@
 ActiveAdmin.register Society do
-  permit_params :society_name, :department_id, :num_member, :home_url, :is_outstanding,
+  permit_params :society_name, :department_id, :num_member, :logo, :home_url, :is_outstanding,
                 user_societies: [:user_id, :society_id]
   actions :all
   menu :label => "社团",
@@ -29,6 +29,11 @@ ActiveAdmin.register Society do
       f.input :society_name, :label => "社团名字"
       f.input :department, :label => "所属中心"
       f.input :num_member, :label => "社团会员数"
+      if f.object.logo.nil?
+        f.input :logo, :as => :file, :label => "社团LOGO"
+      else
+        f.input :logo, :as => :file, :hint => f.template.image_tag(f.object.logo.url(:logo)), :label => "个人头像"
+      end
       f.input :home_url
       if current_admin_user.admin_permission.to_s != "社团主席"
       f.input :is_outstanding, :label => "是否属于优秀社团"

@@ -27,4 +27,6 @@ class SocietyController < ApplicationController
     @society = Society.find_by_id(params[:id])
     @issues = @society.issues
   end
+
+
 end
