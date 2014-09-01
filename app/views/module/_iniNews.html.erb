@@ -50,18 +50,24 @@
       <% unless e == issues.last %>
           <a href="<%= shownews_url(e) %>" class="list-group-item" id="index_list" name="iniNews<%= e.id %>" onmouseover="newsDetails(this)" onmouseout="newsBrief(this)">
       <% else %>
-          <a href="<%= shownews_url(e) %>" class="list-group-item" id="issuesLast">
+          <a href="<%= shownews_url(e) %>" class="list-group-item" id="issuesLast" name="iniNews<%= e.id %>" onmouseover="newsDetails(this)" onmouseout="newsBrief(this)">
       <% end %>
       <div class="row">
         <div class="col-md-3">
-          <p style="font-size: 12px;"><%= e.society.to_s %></p>
-
+          <% unless e.society.is_outstanding? %>
+              <p style="font-size: 12px;" class="label label-inverse"><%= e.society.to_s %></p>
+          <% else %>
+              <p style="font-size: 12px;" class="label label-success"><%= e.society.to_s %></p>
+        <% end %>
         </div>
         <div class="col-md-6">
           <h4 id="brief_h4_iniNews<%= e.id %>" style="display:inherit; font-size: 12px;"><%= truncate(e.title, :length => 33) %></h4>
+
           <div id="hiddenDetails_h4_iniNews<%= e.id %>" style="display:none; font-size: 14px; padding-top: 20px;">
             <p style="font-size: 12px;"><%= truncate(e.title, :length => 40) %></p>
-            <p style="font-size: 13px;color: #959595"><%= truncate(sanitize(strip_tags((e.content))), :length => 85) %><p>
+
+            <p style="font-size: 13px;color: #959595"><%= truncate(sanitize(strip_tags((e.content))), :length => 85) %>
+            <p>
           </div>
 
         </div>
@@ -69,7 +75,7 @@
           <div id="brief_time_iniNews<%= e.id %>" style="font-size: 8px;  text-align: right; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></div>
           <div id="hiddenDetails_content_iniNews<%= e.id %>" style="display:none; font-size: 13px; color: #959595; padding-top: 160px">
             发布时期：<%= truncate(e.created_at.strftime("%F"), :length => 40) %>
-            浏览次数：<%= e.issue_catch_counter%>
+            浏览次数：<%= e.issue_catch_counter %>
 
           </div>
 

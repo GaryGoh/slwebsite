@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140830064943) do
+ActiveRecord::Schema.define(version: 20140901173255) do
 
   create_table "admin_permissions", force: true do |t|
     t.string   "permission_name"
@@ -276,6 +276,16 @@ ActiveRecord::Schema.define(version: 20140830064943) do
     t.string   "noti_location"
     t.boolean  "remind"
     t.integer  "noti_id"
+  end
+
+  create_table "user_behaviors", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "issue_id"
+    t.integer  "noti_id"
+    t.integer  "material_id"
+    t.integer  "impression_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "user_societies", force: true do |t|

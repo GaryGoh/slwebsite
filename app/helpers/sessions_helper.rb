@@ -22,7 +22,8 @@ module SessionsHelper
   end
 
   def current_user_stu=(user)
-    @current_user_stu = user
+    @current_user = user
+    #@current_user_stu = @current_user
   end
 
   def current_user_in_issue=(user)
@@ -31,6 +32,8 @@ module SessionsHelper
 
   def current_user_stu
     remember_token = User.encrypt(cookies[:remember_token])
-    @current_user_stu ||= User.find_by(remember_token: remember_token)
+    #@current_user_stu ||= User.find_by(remember_token: remember_token)
+    @current_user ||= User.find_by(remember_token: remember_token)
+
   end
 end

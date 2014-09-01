@@ -1,8 +1,10 @@
 class IssuesController < ApplicationController
+  #impressionist
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
   before_filter :get_user
 
   respond_to :html
+
 
   # GET /issues
   # GET /issues.json
@@ -26,14 +28,14 @@ class IssuesController < ApplicationController
   def new
     @user = User.find(params[:user_id])
     @issue = @user.issues.build
-    3.times {@issue.issue_images.build}
+    3.times { @issue.issue_images.build }
 
   end
 
   # GET /issues/1/edit
   def edit
     @issue = @user.issues.find(params[:id])
-    3.times {@issue.issue_images.build}
+    3.times { @issue.issue_images.build }
 
   end
 
@@ -94,7 +96,7 @@ class IssuesController < ApplicationController
   # To get a user
   def get_user
     if ((params[:user_id]).nil?)
-      redirect_to access_error_url  :notice => "user id is null"
+      redirect_to access_error_url :notice => "user id is null"
     else
       @user = User.find(params[:user_id])
     end

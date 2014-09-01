@@ -49,6 +49,10 @@ class StaticPageController < ApplicationController
     @ty = Society.where('department_id = 3').order("RANDOM()")
     @xs = Society.where('department_id = 4').order("RANDOM()")
 
+    # Index User's track
+    @last_current_user_id = Impression.where(:user_id => current_user_stu.id).last(6).reverse
+    #@lastest_news = Issue.find(:id => 16)
+
   end
 
 

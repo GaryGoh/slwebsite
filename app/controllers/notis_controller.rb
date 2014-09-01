@@ -1,4 +1,5 @@
 class NotisController < InheritedResources::Base
+  #impressionist
   before_action :set_noti, only: [:show, :edit, :update, :destroy]
   before_filter :get_user
 
@@ -95,7 +96,7 @@ class NotisController < InheritedResources::Base
   # To get a user
   def get_user
     if ((params[:user_id]).nil?)
-      redirect_to access_error_url  :notice => "user id is null"
+      redirect_to access_error_url :notice => "user id is null"
     else
       @user = User.find(params[:user_id])
     end

@@ -2,7 +2,7 @@ class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
   before_filter :get_user
 
-  impressionist :actions=>[:shownews, :shonotis]
+  #impressionist :actions=>[:shownews, :shonotis]
 
 
 

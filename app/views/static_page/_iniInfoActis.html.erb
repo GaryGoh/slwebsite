@@ -8,12 +8,12 @@
   <div class="tab-content" id="notinav">
     <div class="tab-pane fade in active" id="iniInfo">
       <%=
-          render "module/indnotis", :issues => @notis_activity
+          render "module/iniNormalList", :issues => @notis_info
       %>
     </div>
     <div class="tab-pane fade" id="inisociety">
       <%=
-          render "module/indnotis", :issues => @notis_info
+          render "module/indnotis", :issues => @notis_activity
       %>
     </div>
   </div>
