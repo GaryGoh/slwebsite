@@ -2,8 +2,7 @@ class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
   before_filter :get_user
 
-  #impressionist :actions=>[:shownews, :shonotis]
-
+  #impressionist :actions => [:shownews, :shownotis]
 
 
   def allnews
@@ -19,10 +18,11 @@ class PublicNewsController < ApplicationController
 
   def shownews
     @issue = Issue.find(params[:id])
+
     #@issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
     @comments = Comment.where(:issue_id => @issue)
 
-    unless current_user_stu.nil?
+    unless current_user_stu.nil? || session[:user_id].nil?
       @comment = @user.comments.build
       @comments_own = @comments.where(:user_id => @user.id)
     end
@@ -34,12 +34,15 @@ class PublicNewsController < ApplicationController
 
   def shownotis
     @noti = Noti.find(params[:id])
+
     $noti_attend = @noti
-    #@user = current_user_stu
+
+    @user = current_user_stu
     @timetable = Timetable.find_by_user_id(@user.id)
     @attend_list = @noti.build_noti_attend
 
     impressionist(@noti) # 2nd argument is optional
+
   end
 
   def readmode
