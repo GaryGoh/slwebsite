@@ -86,7 +86,7 @@
     <ul>
       <li class="first"><a href="#"><em><%= user.issues.count %></em>发表新闻</a></li>
       <li><a href="#"><em><%= user.notis.count %></em>发布活动</a></li>
-      <li><a href="#"><em>262</em>活跃度</a></li>
+      <li><a href="#"><em><%= user.notis.count * 5 + user.issues.count * 5 + @last_current_user_id.count%></em>活跃度</a></li>
     </ul>
   </div>
 
