@@ -6,12 +6,17 @@ class PublicNewsController < ApplicationController
 
 
   def allnews
-    @issues = Issue.search(params[:search])
+    #@issues = Issue.search(params[:search]).page params[:page]
     @issues_top = Issue.where('category_id = 1').search(params[:search])
     @issues_society = Issue.where('category_id = 2').search(params[:search])
     @issues_school = Issue.where('category_id = 3').search(params[:search])
 
-    #@issuesP = Issue.paginate(:page => params[:page], :per_page => 5).search(params[:search])
+    #@issues = Issue.order(:title).page params[:page]
+
+    #@issues = Issue.paginate(:page => params[:page], :per_page => 5).search(params[:search])
+    @issues = Issue.order('created_at DESC').paginate(:page => params[:page], :per_page => 8).search(params[:search])
+    @issues_news = @issues.reverse
+
 
 
   end
@@ -50,10 +55,11 @@ class PublicNewsController < ApplicationController
   end
 
   def notifies
-    @notifies = Noti.search(params[:search]).reverse
+    #@notifies = Noti.search(params[:search]).reverse
 
-    #@notifiesP = Noti.order('created_at DESC').page(params[:page]).per_page(10).search(params[:search])
+    #@issues = Issue.paginate(:page => params[:page], :per_page => 5).order('created_at DESC').search(params[:search])
 
+    @notifies = Noti.order('created_at DESC').page(params[:page]).per_page(8).search(params[:search])
   end
 
   def indexnotic
