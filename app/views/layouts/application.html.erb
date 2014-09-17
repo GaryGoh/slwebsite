@@ -15,10 +15,10 @@
     }
 
     #sidecontent {
-        /*background-color: #ffffff;*/
+        background-color: #ffffff;
         /*min-height: 740px;*/
         /*max-height: 740px;*/
-        max-width: 18%;
+        /*max-width: 18%;*/
         overflow: auto;
         margin-left: 10px;
         padding-top: 5%;
@@ -47,18 +47,18 @@
 
 </style>
 
-<div class="container container-full" id="foo">
+<div class="container" id="foo">
 
 
   <!-- Begin Body -->
 
-  <div class="no-gutter" id="wrap">
+  <div class="row" id="wrap">
 
     <!-- The Header of website-->
     <div id="inhed">
       <%= render "layouts/header2" %>
     </div>
-    <div class="col-xs-12 col-md-9" id="maincontent">
+    <div class="col-md-8" id="maincontent">
       <!--<button class="btn btn-primary btn-lg" onclick="弹幕测试()">-->
         <!--弹幕测试-->
       <!--</button>-->
@@ -68,10 +68,11 @@
       %>
 
     </div>
-    <div class="col-xs-12 col-md-3" id="sidecontent">
+    <div class="col-md-3 thumbmail panel" id="sidecontent">
       <%=
-          render "layouts/newsidecontent"
+          #render "layouts/newsidecontent"
       %>
+                adsf
 
     </div>
     <div id='goup'></div>
