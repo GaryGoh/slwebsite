@@ -51,6 +51,7 @@ class StaticPageController < ApplicationController
 
     # Index User's track
 <<<<<<< HEAD
+<<<<<<< HEAD
     unless current_user_stu.nil? && !session[:user_id].nil?
       @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
     end
@@ -90,6 +91,17 @@ class StaticPageController < ApplicationController
 >>>>>>> parent of 6612f12... kaminari
 
 
+=======
+    #@lastest_news = Issue.find(:id => 16)
+
+    unless current_user_stu.nil? && session[:user_id].nil?
+      @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
+    end
+
+  end
+
+
+>>>>>>> parent of 6612f12... kaminari
 
 
   def about
