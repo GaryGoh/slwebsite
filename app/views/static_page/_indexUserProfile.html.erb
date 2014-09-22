@@ -91,7 +91,7 @@
   </div>
 
   <div id="state">
-    <% unless current_user_stu.nil? %>
+    <% unless current_user_stu.nil? && session[:user_id].nil?%>
 
         <%=
             render "iniUserLastest", :issues => @lastest_news

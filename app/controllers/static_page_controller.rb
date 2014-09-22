@@ -50,9 +50,7 @@ class StaticPageController < ApplicationController
     @xs = Society.where('department_id = 4').order("RANDOM()")
 
     # Index User's track
-<<<<<<< HEAD
-<<<<<<< HEAD
-    unless current_user_stu.nil? && !session[:user_id].nil?
+    unless current_user_stu.nil? && session[:user_id].nil?
       @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
     end
 
@@ -80,28 +78,10 @@ class StaticPageController < ApplicationController
       @w2.push(Impression.where("created_at BETWEEN ? AND ?",
                                 Date.today.to_time - (14 - i).day, Date.today.to_time - (14 - i - 1).day).reverse)
     end
-=======
     #@lastest_news = Issue.find(:id => 16)
-
-    unless current_user_stu.nil? && session[:user_id].nil?
-      @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
-    end
-
-  end
->>>>>>> parent of 6612f12... kaminari
-
-
-=======
-    #@lastest_news = Issue.find(:id => 16)
-
-    unless current_user_stu.nil? && session[:user_id].nil?
-      @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
-    end
 
   end
 
-
->>>>>>> parent of 6612f12... kaminari
 
 
   def about
