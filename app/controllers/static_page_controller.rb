@@ -50,15 +50,50 @@ class StaticPageController < ApplicationController
     @xs = Society.where('department_id = 4').order("RANDOM()")
 
     # Index User's track
-    #@lastest_news = Issue.find(:id => 16)
-
     unless current_user_stu.nil? && session[:user_id].nil?
       @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
     end
 
+    # Index Statistics
+    def intervalWeeks(now, weeks)
+      return now - weeks
+    end
+
+
+    @week4 = Impression.where("created_at BETWEEN ? AND ?",
+                              Date.today.to_time - 28.day, Date.today.to_time - 21.day).reverse
+    @w4 = Array.new()
+    for i in 0..7
+      @w4.push(Impression.where("created_at BETWEEN ? AND ?",
+                                Date.today.to_time - (28 - i).day, Date.today.to_time - (28 - i - 1).day).reverse)
+    end
+
+    @week3 = Impression.where("created_at BETWEEN ? AND ?",
+                              Date.today.to_time - 21.day, Date.today.to_time - 14.day).reverse
+
+    @w3 = Array.new()
+    for i in 0..7
+      @w3.push(Impression.where("created_at BETWEEN ? AND ?",
+                                Date.today.to_time - (21 - i).day, Date.today.to_time - (21 - i - 1).day).reverse)
+    end
+
+    @week2 = Impression.where("created_at BETWEEN ? AND ?",
+                              Date.today.to_time - 14.day, Date.today.to_time - 7.day).reverse
+    @w2 = Array.new()
+    for i in 0..7
+      @w2.push(Impression.where("created_at BETWEEN ? AND ?",
+                                Date.today.to_time - (14 - i).day, Date.today.to_time - (14 - i - 1).day).reverse)
+    end
+
+    @week1 = Impression.where("created_at BETWEEN ? AND ?",
+                              Date.today.to_time - 7.day, Date.today.to_time).reverse
+    @w1 = Array.new()
+    for i in 0..7
+      @w1.push(Impression.where("created_at BETWEEN ? AND ?",
+                                Date.today.to_time - (7 - i).day, Date.today.to_time - (7 - i - 1).day).reverse)
+    end
+
   end
-
-
 
 
   def about
