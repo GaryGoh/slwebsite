@@ -48,7 +48,6 @@
 
 <%=
     #render "module/video"
-    session[:user_id]
 %>
 
 
@@ -70,13 +69,12 @@
         </div>
         <!-- End of news-->
 
-        <div id="iniCharts">
-          <%=
-              render "iniCharts"
-          %>
-        </div>
-        <!-- End of iniCharts-->
 
+      </div>
+      <div id="iniCharts">
+        <%=
+            render "iniCharts"
+        %>
       </div>
     </div>
   </div>

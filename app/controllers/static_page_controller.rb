@@ -50,15 +50,9 @@ class StaticPageController < ApplicationController
     @xs = Society.where('department_id = 4').order("RANDOM()")
 
     # Index User's track
-    unless current_user_stu.nil?
+    unless current_user_stu.nil? && !session[:user_id].nil?
       @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
     end
-
-    # Index Statistics
-    def intervalWeeks(now, weeks)
-      return now - weeks
-    end
-
 
     @week4 = Impression.where("created_at BETWEEN ? AND ?",
                               Date.today.to_time - 28.day, Date.today.to_time - 21.day).reverse
@@ -92,7 +86,6 @@ class StaticPageController < ApplicationController
       @w1.push(Impression.where("created_at BETWEEN ? AND ?",
                                 Date.today.to_time - (7 - i).day, Date.today.to_time - (7 - i - 1).day).reverse)
     end
-    #@lastest_news = Issue.find(:id => 16)
 
   end
 
