@@ -54,6 +54,12 @@ class StaticPageController < ApplicationController
       @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
     end
 
+    # Index Statistics
+    def intervalWeeks(now, weeks)
+      return now - weeks
+    end
+
+
     @week4 = Impression.where("created_at BETWEEN ? AND ?",
                               Date.today.to_time - 28.day, Date.today.to_time - 21.day).reverse
     @w4 = Array.new()
