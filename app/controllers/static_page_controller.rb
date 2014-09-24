@@ -50,7 +50,7 @@ class StaticPageController < ApplicationController
     @xs = Society.where('department_id = 4').order("RANDOM()")
 
     # Index User's track
-    unless current_user_stu.nil? && session[:user_id].nil?
+    unless current_user_stu.nil?
       @last_current_user_id = Impression.where(:user_id => current_user_stu.id).reverse
     end
 
