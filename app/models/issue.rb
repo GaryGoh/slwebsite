@@ -1,6 +1,4 @@
 class Issue < ActiveRecord::Base
-  paginates_per 6
-
   belongs_to :user
   belongs_to :category
   belongs_to :society

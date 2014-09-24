@@ -69,9 +69,7 @@ gem 'font-awesome-sass'
 # A lightweight plugin that logs impressions per action or manually per model
 gem 'impressionist'
 
-#gem 'kaminari'
 
-gem 'will_paginate'
 
 gem 'rack-cache'
 #gem 'remotipart', '~> 1.2'

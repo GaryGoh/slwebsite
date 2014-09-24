@@ -2,32 +2,27 @@ class PublicNewsController < ApplicationController
   layout false, only: [:readmode]
   before_filter :get_user
 
-  #impressionist :actions => [:shownews, :shownotis]
+  #impressionist :actions=>[:shownews, :shonotis]
+
 
 
   def allnews
-    #@issues = Issue.search(params[:search]).page params[:page]
+    @issues = Issue.search(params[:search])
     @issues_top = Issue.where('category_id = 1').search(params[:search])
     @issues_society = Issue.where('category_id = 2').search(params[:search])
     @issues_school = Issue.where('category_id = 3').search(params[:search])
 
-    #@issues = Issue.order(:title).page params[:page]
-
-    #@issues = Issue.paginate(:page => params[:page], :per_page => 5).search(params[:search])
-    @issues = Issue.order('created_at DESC').paginate(:page => params[:page], :per_page => 8).search(params[:search])
-    @issues_news = @issues.reverse
-
+    #@issuesP = Issue.paginate(:page => params[:page], :per_page => 5).search(params[:search])
 
 
   end
 
   def shownews
     @issue = Issue.find(params[:id])
-
     #@issues = Issue.where('category_id = 1' || 'category_id = 2').reverse
     @comments = Comment.where(:issue_id => @issue)
 
-    unless current_user_stu.nil? || session[:user_id].nil?
+    unless current_user_stu.nil?
       @comment = @user.comments.build
       @comments_own = @comments.where(:user_id => @user.id)
     end
@@ -39,15 +34,12 @@ class PublicNewsController < ApplicationController
 
   def shownotis
     @noti = Noti.find(params[:id])
-
     $noti_attend = @noti
-
-    @user = current_user_stu
+    #@user = current_user_stu
     @timetable = Timetable.find_by_user_id(@user.id)
     @attend_list = @noti.build_noti_attend
 
     impressionist(@noti) # 2nd argument is optional
-
   end
 
   def readmode
@@ -55,11 +47,10 @@ class PublicNewsController < ApplicationController
   end
 
   def notifies
-    #@notifies = Noti.search(params[:search]).reverse
+    @notifies = Noti.search(params[:search]).reverse
 
-    #@issues = Issue.paginate(:page => params[:page], :per_page => 5).order('created_at DESC').search(params[:search])
+    #@notifiesP = Noti.order('created_at DESC').page(params[:page]).per_page(10).search(params[:search])
 
-    @notifies = Noti.order('created_at DESC').page(params[:page]).per_page(8).search(params[:search])
   end
 
   def indexnotic

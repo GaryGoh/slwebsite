@@ -34,56 +34,18 @@
     }
 </style>
 
-<%
-   def find_next(a, e)
-     a.join('-') =~ /#{e}-([^-]*)/ ? $1 : e
-   end
-
-   def get_url(url, obj)
-     if url.to_s == "shownews"
-       return shownews_url(obj)
-     else
-       if url.to_s == "shownotis"
-         return shownotis_url(obj)
-       else
-         return
-       end
-     end
-   end
-
-   def get_type(obj, array)
-     if obj == "Issue"
-       return Issue.find_by_id(array.last.last)
-     else
-       if obj == "Noti"
-         return Noti.find_by_id(array.last.last)
-       else
-         return
-       end
-     end
-   end
-
-%>
-
 <div class="list-group">
-  <%
-     tempArray = Array.new()
-  %>
-
   <% @last_current_user_id.each do |l| %>
-      <% if tempArray.include?([l.impressionable_type, l.impressionable_id]) %>
-          <% next %>
-      <% else %>
-          <% tempArray.push([l.impressionable_type, l.impressionable_id]) %>
-          <% e = get_type(l.impressionable_type, tempArray) %>
+
+      <% e = Issue.find_by(l.impressionable_id)%>
           <% unless l == @last_current_user_id.last %>
-              <a href="<%= get_url(l.action_name, e) %>" class="list-group-item" id="index_list">
+              <a href="<%= shownotis_url(e) %>" class="list-group-item" id="index_list">
           <% else %>
-              <a href="<%= get_url(l.action_name, e) %>" class="list-group-item" id="issuesLast">
+              <a href="<%= shownotis_url(e) %>" class="list-group-item" id="issuesLast">
           <% end %>
           <div class="row">
             <div class="col-md-2" id="iniLastestIcon">
-              <% unless e.user.nil? || e.user.avatar_file_name.nil? %>
+              <% unless e.user.avatar_file_name.nil? %>
                   <%= image_tag e.user.avatar.url(:mini) %>
               <% end %>
             </div>
@@ -93,16 +55,35 @@
               <div class="" style="font-size: 12px; padding: 0 0 0 0; color: #aaaaaa"><%= truncate(sanitize(strip_tags((e.content))), :length => 28) %></div>
             </div>
             <div class="col-md-3">
-              <div class="small" style="font-size: 8px; padding-top: 30%; text-align: right; color: #959595"><%= time_ago_in_words(l.created_at)  %>
-                前浏览
-              </div>
+              <%
+
+                 def interval(intervalDays)
+                   case
+                     when intervalDays > 31 && intervalDays < 365
+                       intervalDays = intervalDays.to_i / 30
+                       return intervalDays.to_s + "个月前"
+                     when intervalDays >= 365
+                       intervalDays = intervalDays.to_i / 365
+                       return intervalDays.to_s + "年前"
+                     when intervalDays >2 && intervalDays <= 31
+                       intervalDays = intervalDays.to_i / 1
+                       return intervalDays.to_s + "天前"
+                     when intervalDays < 1
+                       return "今天"
+                     when intervalDays >=1 && intervalDays <= 2
+                       return "昨天"
+                     else
+                       return
+
+                   end
+                 end
+              %>
+              <div class="small" style="font-size: 10px; padding-top: 30%; text-align: right; color: #959595"><%= interval((Time.now() - e.created_at)/(60*60*24)) %></div>
+
             </div>
           </div>
           </a>
-      <% end %>
   <% end %>
-  <a href="/news">
-    <button class="btn btn-primary btn-block" disable_with='提交中...'>更多动态</button>
-  </a>
+  <a href="/news"><button class="btn btn-primary btn-block" disable_with='提交中...'>更多动态</button></a>
 </div>
 

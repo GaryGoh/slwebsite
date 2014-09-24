@@ -30,10 +30,6 @@ module SessionsHelper
     @current_user_in_issue = @issue.user
   end
 
-  def current_user_in_noti=(user)
-    @current_user_in_noti = @noti.user
-  end
-
   def current_user_stu
     remember_token = User.encrypt(cookies[:remember_token])
     #@current_user_stu ||= User.find_by(remember_token: remember_token)
