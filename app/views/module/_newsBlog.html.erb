@@ -1,0 +1,68 @@
+<style>
+    .newsHead {
+        display: block !important;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 23px;
+    }
+
+    .newsBody {
+        display: block !important;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .newsBody .pics {
+        padding-left: 50px;
+    }
+
+    .newsBody .content {
+        font-size: 14px;
+        text-align: left;
+        color: #959595
+    }
+
+    .newsFoot {
+        display: block !important;
+        float: right;
+        padding-right: 30px;
+    }
+
+    .newsFoot i {
+        padding-right: 10px;
+    }
+</style>
+
+<% issues.reverse.each do |issue| %>
+
+    <div class="thumbnail row">
+      <div class="newsHead"><%= link_to issue.title, shownews_url(issue) %></div>
+      <hr>
+      <div class="newsBody row">
+        <div class="pics col-md-5">
+          <% pic = issue.issue_images.order("RANDOM()").first %>
+          <% if !(pic.nil?) %>
+
+              <%= image_tag pic.issue_pic.url(:thumb) %>
+          <% else %>
+
+              <!--< "images/home/bg.jpg">-->
+          <% end %>
+        </div>
+
+        <div class="col-md-7">
+          <div class="content">
+            <% content = strip_tags((issue.content)) %>
+            <%= (truncate(sanitize(content), :length => 220)) %>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="newsFoot">
+        <i class="fa fa-eye"> <%= issue.impressionist_count %></i>
+        <i class="fa fa-comment"> <%= issue.comments.count %></i>
+        <i class="fa fa-calendar"> <%= issue.created_at.strftime("%Y-%m-%e") %></i>
+      </div>
+    </div>
+
+<% end %>

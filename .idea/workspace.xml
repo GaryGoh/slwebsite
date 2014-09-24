@@ -117,16 +117,20 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-c481469dbb9d0d064e767ff2067318f6.css.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ea2c78465cf8de539a6c9295d97dd4f7.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-ea2c78465cf8de539a6c9295d97dd4f7.js.gz" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb" afterPath="$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_page_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/module/_flatnelist.html.erb" afterPath="$PROJECT_DIR$/app/views/module/_flatnelist.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/public_news/allnews.html.erb" afterPath="$PROJECT_DIR$/app/views/public_news/allnews.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/issue_image.rb" afterPath="$PROJECT_DIR$/app/models/issue_image.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1411552678106" ignored="false" />
+    <file path="/Dummy.txt" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410355577988" ignored="false" />
     <file path="/user.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409592947798" ignored="false" />
     <file path="/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400705191344" ignored="false" />
     <file path="/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1403771538976" ignored="false" />
-    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409367044609" ignored="false" />
+    <file path="/index.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410471640180" ignored="false" />
     <file path="$USER_HOME$/students/app/models/student.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1383827692863" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384175595089" ignored="false" />
     <file path="/routes.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400808486065" ignored="false" />
@@ -144,7 +148,7 @@
     <file path="/application_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1403193696672" ignored="false" />
     <file path="/application_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392086260278" ignored="false" />
     <file path="/application.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1403189548675" ignored="false" />
-    <file path="/sessions_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409587205803" ignored="false" />
+    <file path="/sessions_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410169959894" ignored="false" />
     <file path="$USER_HOME$/slwebsite_bug1/app/views/layouts/_header.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384098126789" ignored="false" />
     <file path="/_access_error.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392155226025" ignored="false" />
     <file path="/_notice.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384108115471" ignored="false" />
@@ -157,13 +161,13 @@
     <file path="$USER_HOME$/slwebsite_bug1/app/views/users/show.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384136528476" ignored="false" />
     <file path="/home.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1387332454676" ignored="false" />
     <file path="$USER_HOME$/students/app/views/awards/_form.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384177628226" ignored="false" />
-    <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1411552735926" ignored="false" />
+    <file path="/static_page_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410469540607" ignored="false" />
     <file path="/news.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1384181868045" ignored="false" />
-    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409586107612" ignored="false" />
+    <file path="/public_news_controller.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410469367863" ignored="false" />
     <file path="/a.dummy" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1398981363691" ignored="false" />
     <file path="/_footer.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1392209289466" ignored="false" />
     <file path="/issue.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409592995829" ignored="false" />
-    <file path="/allnews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1402908583966" ignored="false" />
+    <file path="/allnews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410475799370" ignored="false" />
     <file path="/shownews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1403193769373" ignored="false" />
     <file path="/20131214010501_add_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386983455409" ignored="false" />
     <file path="/20131214013322_del_columns_issues.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1386984833947" ignored="false" />
@@ -407,9 +411,9 @@
     <file path="/_commentList.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399198786331" ignored="false" />
     <file path="/_usrProf.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399194242419" ignored="false" />
     <file path="/comment.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399196034695" ignored="false" />
-    <file path="/userAdmin.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1402845050222" ignored="false" />
+    <file path="/userAdmin.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410479187254" ignored="false" />
     <file path="/_usrAdHead.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1399317776369" ignored="false" />
-    <file path="/_usrAdNav.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1402844991757" ignored="false" />
+    <file path="/_usrAdNav.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410479248942" ignored="false" />
     <file path="/20140521171001_refine_timetable.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400692761984" ignored="false" />
     <file path="/20140521173749_refine_relationship.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400694453763" ignored="false" />
     <file path="/_attend.js.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1400700449644" ignored="false" />
@@ -434,9 +438,9 @@
     <file path="/_newsCarousel.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1403431031151" ignored="false" />
     <file path="/_lastNews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1403023642423" ignored="false" />
     <file path="/_societyCarousel.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1403446520096" ignored="false" />
-    <file path="/_indexUserProfile.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409593527496" ignored="false" />
+    <file path="/_indexUserProfile.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410470503690" ignored="false" />
     <file path="/_iniNews.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409595130445" ignored="false" />
-    <file path="/_iniUserLastest.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409595016724" ignored="false" />
+    <file path="/_iniUserLastest.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410172662851" ignored="false" />
     <file path="/_iniRegLogin.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409130368746" ignored="false" />
     <file path="/_iniSociety.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409383743253" ignored="false" />
     <file path="/_iniSoci.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409368891963" ignored="false" />
@@ -447,6 +451,8 @@
     <file path="/user_behavior.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409592880164" ignored="false" />
     <file path="/20140901173255_create_user_behaviors.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409592829891" ignored="false" />
     <file path="/_commentForm.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1409594947229" ignored="false" />
+    <file path="/static_page_helper.rb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410172644227" ignored="false" />
+    <file path="/_newsBlog.html.erb" changelist="e87504d0-f185-4d2e-a09a-3b5ebc3e074c" time="1410479813122" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -471,91 +477,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+      <file leaf-file-name="_newsBlog.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/module/_newsBlog.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="55" column="58" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.6239554">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_iniSociety.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniSociety.html.erb">
+      <file leaf-file-name="_newsCarousel.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/module/_newsCarousel.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.2916665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_iniRegLogin.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniRegLogin.html.erb">
+      <file leaf-file-name="issue_image.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/issue_image.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_iniNews.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniNews.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="60" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_iniInfoActis.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniInfoActis.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="47" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_iniDownload.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniDownload.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_indexUserProfile.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/_indexUserProfile.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="24" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_indexNews.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/_indexNews.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="static_page_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="7" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_version1admin.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="41" selection-start="83" selection-end="83" vertical-scroll-proportion="0.042613637">
+            <state line="4" column="126" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -579,22 +522,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20140901173255_create_user_behaviors.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/noti.rb" />
-        <option value="$PROJECT_DIR$/app/models/material.rb" />
-        <option value="$PROJECT_DIR$/app/models/issue.rb" />
-        <option value="$PROJECT_DIR$/app/models/user_behavior.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/_indexUserProfile.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/public_news/_commentForm.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/notis/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/issues/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/_iniUserLastest.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/_iniNews.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/_iniInfoActis.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/public_news_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/_iniUserLastest.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_newHeader.html.erb" />
         <option value="$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/_indexUserProfile.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/_flatnelist.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/notifies/_swtchnotis.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/public_news/allnews.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/issue_image.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/userAdmin.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/module/_newsBlog.html.erb" />
       </list>
     </option>
   </component>
@@ -636,6 +579,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -843,72 +787,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static_page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="society" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -950,81 +828,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="notis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user_admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notifies" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1089,12 +893,22 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="slwebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slwebsite" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="issues" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1112,81 +926,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1500,11 +1249,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: timetables" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Production: slwebsite" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Development: slwebsite" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: slwebsite" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: slwebsite" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: timetables" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -1608,85 +1357,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/notis/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="133" selection-start="2841" selection-end="2841" vertical-scroll-proportion="-17.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="92" selection-start="3503" selection-end="3503" vertical-scroll-proportion="-21.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="96" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-16.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_iniNormalList.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="29" selection-start="618" selection-end="618" vertical-scroll-proportion="-15.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/_iniNews.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="115" selection-start="2281" selection-end="2338" vertical-scroll-proportion="-11.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniUserLastest.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="73" selection-start="2930" selection-end="2930" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniSociety.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniRegLogin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniNews.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="60" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniInfoActis.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_iniDownload.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_indexUserProfile.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="24" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_indexNews.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1695,21 +1366,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="94" column="53" selection-start="1652" selection-end="1652" vertical-scroll-proportion="0.32">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/module/_newsCarousel.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="7" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.2916665">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/module/user_admin/_version1admin.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/issue_image.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="41" selection-start="83" selection-end="83" vertical-scroll-proportion="0.042613637">
+        <state line="4" column="126" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="42" selection-start="855" selection-end="855" vertical-scroll-proportion="0.25722146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="44" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.26822558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_usrAdNav.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="389" selection-end="389" vertical-scroll-proportion="0.27310926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/userAdmin.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="30" selection-start="775" selection-end="775" vertical-scroll-proportion="0.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_newHeader.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.5386703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header2.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7734057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/newsshow/_newsbasic.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="128" selection-start="427" selection-end="446" vertical-scroll-proportion="0.34599727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/shownews.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18046133">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/public_news/allnews.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="627" selection-end="700" vertical-scroll-proportion="0.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_flatnelist.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="79" selection-start="1784" selection-end="1809" vertical-scroll-proportion="0.31842107">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_iniNews.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="107" selection-start="2480" selection-end="2530" vertical-scroll-proportion="0.35526314">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#a#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/module/_newsBlog.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="58" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.6239554">
           <folding />
         </state>
       </provider>

@@ -1,6 +1,6 @@
 <%= render "static_page/notice_flash" %>
 
-<% if current_user_stu.id == @user.id || current_user_stu.admin %>
+<% if @current_user.id == @user.id || @current_user_stu.admin %>
 
 
       <!-- Default panel contents -->

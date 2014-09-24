@@ -34,18 +34,56 @@
     }
 </style>
 
-<div class="list-group">
-  <% @last_current_user_id.each do |l| %>
+<%
+   def find_next(a, e)
+     a.join('-') =~ /#{e}-([^-]*)/ ? $1 : e
+   end
 
-      <% e = Issue.find_by(l.impressionable_id)%>
+   def get_url(url, obj)
+     if url.to_s == "shownews"
+       return shownews_url(obj)
+     else
+       if url.to_s == "shownotis"
+         return shownotis_url(obj)
+       else
+         return
+       end
+     end
+   end
+
+   def get_type(obj, array)
+     if obj == "Issue"
+       return Issue.find_by_id(array.last.last)
+     else
+       if obj == "Noti"
+         return Noti.find_by_id(array.last.last)
+       else
+         return
+       end
+     end
+   end
+
+%>
+
+<div class="list-group">
+  <%
+     tempArray = Array.new()
+  %>
+
+  <% @last_current_user_id.each do |l| %>
+      <% if tempArray.include?([l.impressionable_type, l.impressionable_id]) %>
+          <% next %>
+      <% else %>
+          <% tempArray.push([l.impressionable_type, l.impressionable_id]) %>
+          <% e = get_type(l.impressionable_type, tempArray) %>
           <% unless l == @last_current_user_id.last %>
-              <a href="<%= shownotis_url(e) %>" class="list-group-item" id="index_list">
+              <a href="<%= get_url(l.action_name, e) %>" class="list-group-item" id="index_list">
           <% else %>
-              <a href="<%= shownotis_url(e) %>" class="list-group-item" id="issuesLast">
+              <a href="<%= get_url(l.action_name, e) %>" class="list-group-item" id="issuesLast">
           <% end %>
           <div class="row">
             <div class="col-md-2" id="iniLastestIcon">
-              <% unless e.user.avatar_file_name.nil? %>
+              <% unless e.user.nil? || e.user.avatar_file_name.nil? %>
                   <%= image_tag e.user.avatar.url(:mini) %>
               <% end %>
             </div>
@@ -78,12 +116,16 @@
                    end
                  end
               %>
-              <div class="small" style="font-size: 10px; padding-top: 30%; text-align: right; color: #959595"><%= interval((Time.now() - e.created_at)/(60*60*24)) %></div>
-
+              <div class="small" style="font-size: 9px; padding-top: 30%; text-align: right; color: #959595"><%= interval((Time.now() - l.created_at)/(60*60*24)) %>
+                浏览
+              </div>
             </div>
           </div>
           </a>
+      <% end %>
   <% end %>
-  <a href="/news"><button class="btn btn-primary btn-block" disable_with='提交中...'>更多动态</button></a>
+  <a href="/news">
+    <button class="btn btn-primary btn-block" disable_with='提交中...'>更多动态</button>
+  </a>
 </div>
 
