@@ -50,7 +50,9 @@ class StaticPageController < ApplicationController
     @xs = Society.where('department_id = 4').order("RANDOM()")
 
     # Index User's track
-    @last_current_user_id = Impression.where(:user_id => current_user_stu.id).last(6).reverse
+    unless current_user_stu.nil?
+      @last_current_user_id = Impression.where(:user_id => current_user_stu.id).last(6).reverse
+    end
     #@lastest_news = Issue.find(:id => 16)
 
   end
