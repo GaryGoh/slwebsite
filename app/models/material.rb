@@ -9,12 +9,7 @@ class Material < ActiveRecord::Base
                        :size => {:in => 1..10000.kilobytes}
 
   validates_attachment_content_type :document,
-                                    :content_type => ['application/pdf', 'application/msword',
-                                                      ' application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-                                                      'application/msexcel', 'application/vnd.ms-excel',
-                                                      'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                                                      'application/mspowerpoint', 'application/vnd.ms-powerpoint',
-                                                      'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'text/plain'],
+                                    :content_type => [],
                                     :message => ' 只支持 "pdf, doc, docx, xls, xlsx, ppt, pptx, txt" 文件'
   #validates_format_of :document, :with => /\.(?:doc|pdf)$/i, :multiline => true
 

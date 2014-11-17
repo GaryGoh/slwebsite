@@ -66,3 +66,7 @@
     </div>
 
 <% end %>
+
+<div class="paginate">
+  <%= will_paginate issues, :previous_label => t("前一页"), :next_label => t("后一页"), :renderer => 'BootstrapPaginationHelper::LinkRenderer' %>
+</div>

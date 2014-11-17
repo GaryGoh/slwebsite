@@ -7,9 +7,9 @@ class PublicNewsController < ApplicationController
 
   def allnews
     #@issues = Issue.search(params[:search]).page params[:page]
-    @issues_top = Issue.where('category_id = 1').search(params[:search])
-    @issues_society = Issue.where('category_id = 2').search(params[:search])
-    @issues_school = Issue.where('category_id = 3').search(params[:search])
+    @issues_global = Issue.where('category_id = 4').paginate(:page => params[:page], :per_page => 8).search(params[:search])
+    @issues_society = Issue.where('category_id = 2').paginate(:page => params[:page], :per_page => 8).search(params[:search])
+    @issues_school = Issue.where('category_id = 3').paginate(:page => params[:page], :per_page => 8).search(params[:search])
 
     #@issues = Issue.order(:title).page params[:page]
 
@@ -18,6 +18,9 @@ class PublicNewsController < ApplicationController
     @issues_news = @issues.reverse
 
 
+    #@issues_global = @issues.find('category_id = 4')
+    #@issues_society = @issues.find('category_id = 2')
+    #@issues_society = @issues.find('category_id = 2')
 
   end
 

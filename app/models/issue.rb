@@ -26,6 +26,14 @@ class Issue < ActiveRecord::Base
     end
   end
 
+  def self.tags(tags)
+    if tags
+      find(:all, :conditions => ['category_id LIKE ?', "%#{tags}%"])
+    else
+      find(:all)
+    end
+  end
+
 
 
 end

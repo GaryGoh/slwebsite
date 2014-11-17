@@ -2,11 +2,11 @@
 <%= render "layouts/head" %>
 
 <style>
-    #maincontent {
+    #mainApp {
         /*border-right-style: solid;*/
         /*border-right-color: #eee;*/
         /*border-width: 0.06cm;*/
-        margin-left: 3%;
+        /*margin-left: 3%;*/
         padding-top: 5%;
 
         /*margin-right: 0;*/
@@ -14,13 +14,13 @@
 
     }
 
-    #sidecontent {
+    #sideApp {
         /*background-color: #ffffff;*/
         /*min-height: 740px;*/
         /*max-height: 740px;*/
         /*max-width: 18%;*/
-        overflow: auto;
-        margin-left: 10px;
+        /*overflow: auto;*/
+        /*margin-left: 10px;*/
         padding-top: 5%;
 
     }
@@ -47,18 +47,16 @@
 
 </style>
 
-<div class="container" id="foo">
+<div class="container" id="">
 
 
   <!-- Begin Body -->
-
-  <div class="no-gutter" id="wrap">
 
     <!-- The Header of website-->
     <div id="inhed">
       <%= render "layouts/header2" %>
     </div>
-    <div class="col-xs-12 col-md-8" id="maincontent">
+    <div class="col-xs-12 col-md-8" id="mainApp">
       <!--<button class="btn btn-primary btn-lg" onclick="弹幕测试()">-->
         <!--弹幕测试-->
       <!--</button>-->
@@ -68,14 +66,13 @@
       %>
 
     </div>
-    <div class="col-xs-12 col-md-3" id="sidecontent">
+    <div class="col-xs-12 col-md-4" id="sideApp">
       <%=
           render "layouts/newsidecontent"
       %>
 
     </div>
     <div id='goup'></div>
-  </div>
 </div>
 <footer>
   <%= render 'layouts/newFooter' %>

@@ -30,4 +30,12 @@ class Noti < ActiveRecord::Base
     end
   end
 
+  def self.tags(search)
+    if search
+      find(:all, :conditions => ['category_id LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
 end
