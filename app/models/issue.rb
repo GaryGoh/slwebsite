@@ -18,13 +18,13 @@ class Issue < ActiveRecord::Base
 
   is_impressionable :counter_cache => true, :column_name => :issue_catch_counter, :unique => :request_hash
 
-  def self.search(search)
-    if search
-      find(:all, :conditions => ['content LIKE ? OR title LIKE ?', "%#{search}%", "%#{search}%"])
-    else
-      find(:all)
-    end
-  end
+  #def self.search(search)
+  #  if search
+  #    find(:all, :conditions => ['content LIKE ? OR title = ?', "%#{search}%", "%#{search}%"])
+  #  else
+  #    find(:all)
+  #  end
+  #end
 
   def self.tags(tags)
     if tags

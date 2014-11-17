@@ -1,3 +1,84 @@
+<style>
+
+
+    .iniTitle {
+        clear: both;
+        position: relative;
+        margin-top: 20px;
+        padding: 0 15px;
+
+    }
+
+    .iniTitle h2 {
+        height: 54px;
+        line-height: 54px;
+
+    }
+
+    .iniTitle #iniA {
+        font-size: 12px;
+        margin: 0 10px 0 10px;
+        color: #f60;
+
+    }
+
+    .iniTitle strong {
+        font-size: 24px;
+    }
+
+    .iniLeftNavNews {
+        float: right;
+        overflow: hidden;
+    }
+
+    .iniLeftNavNews ul {
+        overflow: hidden;
+        padding-right: 20px;
+        border-bottom: 1px solid #ECF0F1;
+
+    }
+
+    .iniLeftNavNews li {
+        list-style-type: none;
+        margin: 0 0 15px 30px;
+        text-align: right;
+        position: relative;
+        float: left;
+        font-size: 14px;
+    }
+
+    .iniLeftNavNews li a:hover {
+        border-bottom: 2px solid #3A3935;
+        text-decoration: none;
+    }
+
+    .iniLeftNavNews li.active {
+        /*font-size: 18px;*/
+        /*border-bottom: 2px solid #3A3935;*/
+
+    }
+</style>
+<h2 class="iniTitle">
+  <div class="thumbnail">
+
+    <strong>活动通知</strong>
+
+    <div class="iniLeftNavNews">
+      <ul class="" id="myTab">
+        <li class="active"><a href="#allNews" data-toggle="tab"><%= link_to "所有活动", notis_path() %>
+        </a></li>
+        <li> |</li>
+        <li><a href="#socNews" data-toggle="tab"><%= link_to "活动通知", notis_path(tags: "11") %>
+        </a></li>
+        <li> |</li>
+        <li><a href="#schNews" data-toggle="tab"><%= link_to "公告通知", notis_path(tags: "12") %></a></li>
+        <li> |</li>
+        <li><a href="#glbNews" data-toggle="tab"><%= link_to "精品活动", notis_path(tags: "13") %></a></li>
+      </ul>
+    </div>
+  </div>
+</h2>
+
 <div class="panel panel-default">
   <!-- Default panel contents -->
 
@@ -18,7 +99,7 @@
 
       <tbody>
 
-      <%= render 'module/notifies/swtchnotis',:issues => @notifies  %>
+      <%= render 'module/notifies/swtchnotis', :issues => @notifies %>
 
       </tbody>
     </table>
@@ -26,7 +107,7 @@
 </div>
 
 
-<div class="paginate" >
+<div class="paginate">
   <%= will_paginate @notifies, :previous_label => t("前一页"), :next_label => t("后一页"), :renderer => 'BootstrapPaginationHelper::LinkRenderer' %>
 </div>
 

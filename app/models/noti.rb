@@ -22,13 +22,13 @@ class Noti < ActiveRecord::Base
     end
   end
 
-  def self.search(search)
-    if search
-      find(:all, :conditions => ['content LIKE ? OR title LIKE ?', "%#{search}%", "%#{search}%"])
-    else
-      find(:all)
-    end
-  end
+  #def self.search(search)
+  #  if search
+  #    find(:all, :conditions => ['content LIKE ? OR title LIKE ?', "%#{search}%", "%#{search}%"])
+  #  else
+  #    find(:all)
+  #  end
+  #end
 
   def self.tags(search)
     if search

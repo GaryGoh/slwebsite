@@ -39,11 +39,20 @@
     .ui-datepicker {
         font-size: 16px;
     }
-        #side_list{
-            max-height: 60px;
-            border-top: 0;
-            border: 0;
-        }
+
+    #side_list {
+        max-height: 60px;
+        border-top: 0;
+        border: 0;
+    }
+    #sideCtitle {
+        max-height: 60px;
+        border-top: 0;
+        border: 0;
+        border-bottom: solid;
+        border-bottom-color: #bdc3c7;
+        border-bottom-width: 3px;
+    }
 </style>
 
 
@@ -54,36 +63,40 @@
 <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
 <!--<div class="panel-body" id="side_content">-->
 
-<div class="list-group">
-  <div class="list-group-item" id="side_list">通知公告</div>
+<div class="thumbnail">
+  <div class="list-group">
+    <div class="list-group-item" id="sideCtitle" align="center">通知公告</div>
 
-  <% @notis_info.last(6).each do |e| %>
+    <% @notis_info.last(6).each do |e| %>
 
-      <div class="list-group-item" style="background-color: #ffffff" id="side_list">
+        <div class="list-group-item" style="background-color: #ffffff" id="side_list">
 
-        <p class="list-group-item-heading" style="font-size: 14px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 15), shownotis_url(e) %></p>
-        <p class="list-group-item-text small" style="font-size: 10px; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
-        </hr>
-      </div>
-  <% end %>
+          <p class="list-group-item-heading" style="font-size: 15px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 18), shownotis_url(e) %></p>
 
+          <p class="list-group-item-text small" style="font-size: 10px; color: #959595" align="right"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
+          </hr>
+        </div>
+    <% end %>
+
+  </div>
 </div>
 
+<div class="thumbnail">
+  <div class="list-group">
+    <div class="list-group-item" id="sideCtitle" align="center">最新发布</div>
 
-<div class="list-group">
-  <div class="list-group-item" id="side_list">最新发布</div>
+    <% @last_news.last(5).each do |e| %>
 
-  <% @last_news.last(5).each do |e| %>
+        <div class="list-group-item" style="background-color: #ffffff" id="side_list">
 
-      <div class="list-group-item" style="background-color: #ffffff" id="side_list">
+          <p class="list-group-item-heading" style="font-size: 15px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 18), shownotis_url(e) %></p>
 
-        <p class="list-group-item-heading" style="font-size: 14px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 15), shownotis_url(e) %></p>
-        <p class="list-group-item-text small" style="font-size: 10px; color: #959595"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
-        </hr>
-      </div>
-  <% end %>
+          <p class="list-group-item-text small" style="font-size: 10px; color: #959595" align="right"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
+          </hr>
+        </div>
+    <% end %>
 
+  </div>
 </div>
-
 
 

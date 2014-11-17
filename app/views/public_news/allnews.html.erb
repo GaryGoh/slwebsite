@@ -43,19 +43,19 @@
         font-size: 24px;
     }
 
-    .iniLeftNav {
+    .iniLeftNavNews {
         float: right;
         overflow: hidden;
     }
 
-    .iniLeftNav ul {
+    .iniLeftNavNews ul {
         overflow: hidden;
         padding-right: 20px;
         border-bottom: 1px solid #ECF0F1;
 
     }
 
-    .iniLeftNav li {
+    .iniLeftNavNews li {
         list-style-type: none;
         margin: 0 0 15px 30px;
         text-align: right;
@@ -64,14 +64,14 @@
         font-size: 14px;
     }
 
-    .iniLeftNav li a:hover {
+    .iniLeftNavNews li a:hover {
         border-bottom: 2px solid #3A3935;
         text-decoration: none;
     }
 
-    .iniLeftNav li.active {
-        font-size: 18px;
-        border-bottom: 2px solid #3A3935;
+    .iniLeftNavNews li.active {
+        /*font-size: 18px;*/
+        /*border-bottom: 2px solid #3A3935;*/
 
     }
 </style>
@@ -80,48 +80,34 @@
 <%=
     #render 'public_news/flow', :issues => @issues
 %>
+
+
 <div class="indexBottomFrame">
   <h2 class="iniTitle">
-    <div class="thumbnail panel">
+    <div class="thumbnail">
 
-      <strong>我们的社团</strong>
+      <strong>新闻部落</strong>
 
-      <div class="iniLeftNav">
+      <div class="iniLeftNavNews">
         <ul class="" id="myTab">
-          <li class="active"><a href="#allNews" data-toggle="tab">所有新闻</a></li>
+          <li class="active"><a href="#allNews" data-toggle="tab"><%= link_to "所有新闻", news_path() %>
+          </a></li>
           <li> |</li>
-          <li><a href="#socNews" data-toggle="tab">社团新闻</a></li>
+          <li><a href="#socNews" data-toggle="tab"><%= link_to "社团新闻", news_path(tags: "2") %>
+          </a></li>
           <li> |</li>
-          <li><a href="#schNews" data-toggle="tab">学校新闻</a></li>
+          <li><a href="#schNews" data-toggle="tab"><%= link_to "学校新闻", news_path(tags: "3") %></a></li>
           <li> |</li>
-          <li><a href="#glbNews" data-toggle="tab">世界时事</a></li>
+          <li><a href="#glbNews" data-toggle="tab"><%= link_to "世界新闻", news_path(tags: "4") %></a></li>
         </ul>
       </div>
     </div>
-
   </h2>
-  <div class="tab-content" id="notinav">
-    <div class="tab-pane fade in active" id="allNews">
+
+  <div class="tab" id="notinav">
+    <div class="tab-panel fade in active" id="allNews">
       <%=
           render 'module/newsBlog', :issues => @issues
-      %>
-    </div>
-
-    <div class="tab-pane fade" id="socNews">
-      <%=
-          render 'module/newsBlog', :issues => @issues_society
-      %>
-    </div>
-
-    <div class="tab-pane fade" id="schNews">
-      <%=
-          render 'module/newsBlog', :issues => @issues_school
-      %>
-    </div>
-
-    <div class="tab-pane fade" id="glbNews">
-      <%=
-          render 'module/newsBlog', :issues => @issues_global
       %>
     </div>
 

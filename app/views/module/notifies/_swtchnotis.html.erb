@@ -7,19 +7,20 @@
 
     <div class="cbp-vm-options">
       <a href="#" class="cbp-vm-icon cbp-vm-list cbp-vm-selected" data-view="cbp-vm-view-list">List View</a>
+      <a href="#" class="cbp-vm-icon cbp-vm-grid cbp-vm-selected" data-view="cbp-vm-view-grid">Grid View</a>
     </div>
     <ul>
 
       <% issues.each do |issue| %>
           <li>
 
-            <h3 class="cbp-vm-title"><%= issue.title %></h3>
+            <p class="cbp-vm-title" style="font-size: 12px;"><%= truncate(issue.title, :length => 20) %></p>
 
-            <div class="cbp-vm-price"><%= issue.created_at.strftime("%m-%e-%Y") %></div>
-            <div class="cbp-vm-details">
-              <%= truncate(issue.content, :length => 100) %>
+            <div class="cbp-vm-price" style="font-size: 12px;"><%= issue.created_at.strftime("%m-%e-%Y") %></div>
+            <div class="cbp-vm-details" style="font-size: 12px;">
+              <%= truncate(issue.content, :length => 20) %>
             </div>
-            <a class="cbp-vm-icon cbp-vm-add" href="<%= shownotis_url(issue) %>">详细</a>
+            <a class="cbp-vm-icon cbp-vm-add" href="<%= shownotis_url(issue) %>" style="font-size: 12px; margin-right: 0">详细</a>
           </li>
       <% end %>
 

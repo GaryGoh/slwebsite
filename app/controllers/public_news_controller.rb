@@ -7,14 +7,14 @@ class PublicNewsController < ApplicationController
 
   def allnews
     #@issues = Issue.search(params[:search]).page params[:page]
-    @issues_global = Issue.where('category_id = 4').paginate(:page => params[:page], :per_page => 8).search(params[:search])
-    @issues_society = Issue.where('category_id = 2').paginate(:page => params[:page], :per_page => 8).search(params[:search])
-    @issues_school = Issue.where('category_id = 3').paginate(:page => params[:page], :per_page => 8).search(params[:search])
+    @issues_global = Issue.where('category_id = 4').paginate(:page => params[:page], :per_page => 8).tags(params[:tags])
+    @issues_society = Issue.where('category_id = 2').paginate(:page => params[:page], :per_page => 8).tags(params[:tags])
+    @issues_school = Issue.where('category_id = 3').paginate(:page => params[:page], :per_page => 8).tags(params[:tags])
 
     #@issues = Issue.order(:title).page params[:page]
 
     #@issues = Issue.paginate(:page => params[:page], :per_page => 5).search(params[:search])
-    @issues = Issue.order('created_at DESC').paginate(:page => params[:page], :per_page => 8).search(params[:search])
+    @issues = Issue.order('created_at DESC').paginate(:page => params[:page], :per_page => 8).tags(params[:tags])
     @issues_news = @issues.reverse
 
 
@@ -62,7 +62,7 @@ class PublicNewsController < ApplicationController
 
     #@issues = Issue.paginate(:page => params[:page], :per_page => 5).order('created_at DESC').search(params[:search])
 
-    @notifies = Noti.order('created_at DESC').page(params[:page]).per_page(8).search(params[:search])
+    @notifies = Noti.order('created_at DESC').page(params[:page]).per_page(8).tags(params[:tags])
   end
 
   def indexnotic
