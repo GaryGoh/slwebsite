@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="thumbnail panel-default">
   <div class="panel-body">
     <table class="table table-striped">
       <thead>
@@ -18,7 +18,7 @@
 
             <td><%= m.document_file_name %></td>
             <td><%= m.description %></td>
-            <td><%= m.created_at.strftime("%d %B %y, %A") %></td>
+            <td><%= m.created_at.strftime("%F") %></td>
             <td><%= link_to "下载", m.document.url %>
             </td>
           </tr>

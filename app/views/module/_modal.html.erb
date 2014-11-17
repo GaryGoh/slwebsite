@@ -1,0 +1,89 @@
+<div class="modal fade" id="myModal<%= slmember.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">委员介绍</h4>
+      </div>
+      <div class="modal-body">
+        <!--用户资料-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              用户资料
+            </h4>
+          </div>
+          <div class="panel-body">
+            <!-- Table -->
+            <table class="table">
+              <thead>
+              <tr>
+                <th></th>
+                <th></th>
+
+              </tr>
+              </thead>
+
+              <tbody>
+              <tr>
+
+                <td><strong>学号: </strong></td>
+                <td><%= slmember.stuid %></td>
+              </tr>
+              <tr>
+                <td><strong>Email:</strong></td>
+                <td><%= slmember.email %></td>
+              </tr>
+              <tr>
+                <td><strong>姓名: </strong></td>
+                <td><%= slmember.name %></td>
+              </tr>
+              <tr>
+                <td><strong>性别: </strong></td>
+                <td><%= slmember.gender.to_s %></td>
+              </tr>
+              <tr>
+                <td><strong>联系方式: </strong></td>
+                <td><%= slmember.contact %></td>
+              </tr>
+
+              <tr>
+                <td><strong>照片: </strong></td>
+                <% if slmember.admin_pic_file_name.nil? %>
+                    <td>
+                      <div class="text-danger">暂无照片</div>
+                    </td>
+                <% else %>
+                    <td><%= image_tag slmember.admin_pic.url(:thumb) %></td>
+                <% end %>
+              </tr>
+
+              <tr>
+                <td><strong>个人简介:</strong></td>
+                <td>
+                  <% if slmember.proverb.nil? %>
+                      暂无简介
+                  <% else %>
+                      <%= slmember.proverb %>
+                  <% end %>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <script>
+              // Select dropdown
+              $(".tagsinput").tagsInput({});
+          </script>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
