@@ -1,6 +1,4 @@
 class Noti < ActiveRecord::Base
-  paginates_per 6
-
   belongs_to :user
   belongs_to :category
   belongs_to :society
@@ -14,9 +12,7 @@ class Noti < ActiveRecord::Base
   validates :society_id, presence: {:message => "请先加入社团，再发布活动通知"}
   validate :activity_time
 
-  is_impressionable :counter_cache => true, :column_name => :noti_catch_counter, :unique => :session_hash
-  #impressionist :unique => [:impressionable_type, :impressionable_id, :session_hash]
-
+  is_impressionable :counter_cache => true, :column_name => :noti_catch_counter, :unique => :request_hash
 
 
   private

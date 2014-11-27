@@ -3,12 +3,6 @@ class UsersController < ApplicationController
   before_filter :check_login, only: [:index, :show, :edit, :update, :destroy]
   layout "userAdmin", only: [:show]
 
-  def allLastest
-    if session[:user_id] && current_user_stu
-      @last_recs = Impression.order('created_at DESC').where(:user_id => current_user_stu.id).paginate(:page => params[:page], :per_page => 20)
-    end
-  end
-
   # GET /users
   # GET /users.json
   def index
@@ -18,7 +12,6 @@ class UsersController < ApplicationController
   def publicShow
     @user = User.find_by(stuid: params[:stuid])
   end
-
   # GET /users/1
   # GET /users/1.json
   def show
@@ -45,8 +38,8 @@ class UsersController < ApplicationController
     @timetable = @user.timetables.build
 
     respond_to do |format|
-      if (@user.save && @timetable.save)
-        #if @user.save
+      if ( @user.save && @timetable.save )
+      #if @user.save
         format.html { redirect_to signin_url, notice: '成功创建新用户.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
