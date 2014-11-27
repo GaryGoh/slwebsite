@@ -1,0 +1,45 @@
+<% if session[:user_id] && current_user_stu %>
+    <div class="thumbnail">
+
+      <%
+         tempArray = Array.new()
+      %>
+      <table class="table table-striped">
+        <thead>
+        <tr style="font-size: 12px">
+
+          <!--<th>发布人</th>-->
+          <th>标题</th>
+          <th>类型</th>
+          <th>时间</th>
+          <th>IP</th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @last_recs.each do |m| %>
+            <% tempArray.push([m.impressionable_type, m.impressionable_id]) %>
+            <% e = get_type(m.impressionable_type, tempArray) %>
+            <tr style="font-size: 14px">
+
+              <td><%= link_to truncate(e.title, :length => 20), get_url(m.action_name, e) %>
+              </td>
+              <td><%= e.category.category_name %>
+              </td>
+              <td><%= m.created_at.strftime("%F %T") %>
+              </td>
+              <td><%= m.ip_address %>
+              </td>
+            </tr>
+            </a>
+        <% end %>
+        <tbody>
+        </table>
+    </div>
+    <div class="paginate">
+      <%= will_paginate @last_recs, :previous_label => t("前一页"), :next_label => t("后一页"), :renderer => 'BootstrapPaginationHelper::LinkRenderer' %>
+    </div>
+
+<% end %>
+

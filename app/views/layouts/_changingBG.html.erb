@@ -1,0 +1,10 @@
+<%
+   rankPics = (Time.now.strftime("%M").to_i) % 4 + 1
+%>
+
+<script>
+
+    window.onload =  function myFunction() {
+        document.body.style.backgroundImage = "url(<%= asset_path "background/#{rankPics}.png" %>)";
+    }
+</script>

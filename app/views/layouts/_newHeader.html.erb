@@ -1,0 +1,217 @@
+<style>
+    body {
+        background-color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: block;
+        width: 100%;
+        height:auto;
+        text-align:center;
+        font-size: 24px;
+        background:#FFFFFF;
+    }
+
+    header:before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: #CCCCCC;
+    }
+
+    header:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: #BBBBBB;
+    }
+
+    header nav {
+        display: inline-block;
+        text-align:center;
+        padding-bottom:10px;
+        margin:-5px;
+    }
+
+    header nav ul {
+        display: inline-block;
+        padding-left:0;
+        margin-top:0;
+        vertical-align:text-top;
+    }
+
+    header nav ul li{
+        list-style:none;
+        display:inline-block;
+        width:auto;
+        padding-left:5px;
+        padding-right:5px;
+        vertical-align: middle;
+    }
+    header nav ul .button{
+        /*单个按钮项*/
+        width:auto;
+        height:35px;
+        vertical-align: middle;
+    }
+    header nav ul .button a{
+        text-decoration: none;
+        color:#333333;
+    }
+    header nav ul .button:before{
+        content:"";
+        height:3px;
+        width:0;
+        background-color:#60b524;
+        transition:ease .3s;
+        display:block;
+    }
+    header nav ul .button:hover a{
+        color:#2d399f;
+    }
+    header nav ul .button:hover:before{
+        width: 100%;
+    }
+
+    header nav ul>.droplist{
+        /*下拉列表项*/
+        color:#333333;
+        cursor: default;
+        height:35px;
+    }
+    header nav ul>.droplist:after{
+        content:"";
+        display:inline-block;
+        vertical-align: middle;
+        border:solid 5px #333333;
+        border-color:#333333 transparent transparent transparent;
+    }
+    header nav ul>.droplist ul{
+        display:none;
+    }
+    header nav ul .droplist:hover ul{
+        display:block;
+        position: absolute;
+        text-align:left;
+        font-size:20px;
+        border-left:solid 5px #2D399F;
+    }
+    header nav ul .droplist:hover ul li{
+        display:block;
+        transition:ease .2s;
+        margin-top:7px;
+        height:20px;
+    }
+    header nav ul .droplist:hover ul li:before{
+        content:"";
+        width: 0;
+        height:20px;
+        vertical-align:middle;
+        background-color:#f30b57;
+        display:inline-block;
+        transition:ease .3s;
+    }
+    header nav ul .droplist:hover ul li a{
+        color:#333333;
+    }
+    header nav ul .droplist:hover ul li:hover{
+        padding-left:10px;
+    }
+    header nav ul .droplist:hover ul li:hover:before{
+        width:20px;
+        border-radius:50px;
+    }
+    header nav ul .droplist:hover ul li:hover a{
+        color:#2d399f;
+    }
+
+        /*LOGO block*/
+    header nav #logo {
+        height: 120px;
+        width:160px;
+        display: inline-block;
+        vertical-align:middle;
+        background:url(<%= asset_path "background/logo.png" %>);
+        background-position:center;
+        background-size:contain;
+        background-repeat:no-repeat;
+    }
+</style>
+<body>
+<header>
+  <nav>
+    <div id="logo"> </div>
+    <ul>
+      <li>
+        <div class="button">
+          <a href="/">首页</a>
+        </div>
+      </li>
+      <li>
+        <div class="button">
+          <a href="news">新闻中心</a>
+        </div>
+      </li>
+      <li>
+        <div class="button">
+          <a href="/notis">活动通知</a>
+        </div>
+      </li>
+      <li class="droplist button">
+        社团中心
+        <ul>
+          <li><a href="#">公益实践中心</a></li>
+          <li><a href="#">文娱兴趣中心</a></li>
+          <li><a href="#">体育竞技中心</a></li>
+          <li><a href="#">学术科技中心</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav pull-right navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+        <ul class="dropdown-menu" style="padding:12px;">
+          <form class="navbar-form navbar-left">
+            <button type="submit" class="btn pull-right"><i class="glyphicon glyphicon-search"></i>
+            </button>
+            <%= text_field_tag :search, params[:search], class: "form-control pull-left", placeholder: "Search" %>
+          </form>
+        </ul>
+      </li>
+      <li class="dropdown" id="headDrop2">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>
+          <i class="glyphicon glyphicon-chevron-down"></i></a>
+        <ul class="dropdown-menu" id="hul2">
+          <% if current_user_stu %>
+              <li><%= link_to current_user_stu.email, user_url(session[:user_id]) %></li>
+              <li class="divider"></li>
+              <li><%= link_to raw('发布新闻'), new_user_issue_path(current_user_stu, @issue) %></li>
+              <li><%= link_to raw('发布活动通知'), new_user_noti_path(current_user_stu, @noti) %></li>
+              <li class="divider"></li>
+              <li><%= link_to '登出', signout_path, method: "delete" %></li>
+          <% else %>
+              <li>
+                <a class="" data-toggle="modal" data-target="#signup">
+                  注册
+                </a>
+              </li>
+              <li>
+                <a class="" data-toggle="modal" data-target="#login">
+                  登录
+                </a>
+              </li>
+          <% end %>
+        </ul>
+      </li>
+    </ul>
+
+  </nav>
+</header>
+<footer>
+
+</footer>
+</body>

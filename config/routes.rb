@@ -61,6 +61,8 @@ Slwebsite::Application.routes.draw do
   get '/messages', to: 'messages#index'
   get '/comments', to: 'comments#index'
   get '/profile/:stuid', to: 'users#publicShow', as: :publicShow
+  get '/recs/:stuid', to: 'users#allLastest', as: :rec
+
 
 
 
