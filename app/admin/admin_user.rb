@@ -6,7 +6,6 @@ ActiveAdmin.register AdminUser do
   #controller.authorize_resource
 
 
-
   #controller do
   #  def permitted_params
   #    params.permit!
@@ -39,7 +38,9 @@ ActiveAdmin.register AdminUser do
         if f.object.admin_permission.to_s != "社团主席"
           f.input :sl_department, :label => "社联部门"
         else
-          f.input :society, :label => "所属社团"
+          if current_admin_user.admin_permission.to_s != "社团主席"
+            f.input :society, :label => "所属社团"
+          end
         end
         f.input :contact, :label => "联系方式"
         if f.object.admin_pic_file_name.nil?
@@ -51,11 +52,11 @@ ActiveAdmin.register AdminUser do
       end
     end
 
-      if current_admin_user.admin_permission.to_s == "超级管理员"
-        f.inputs "权限级别" do
-          f.input :admin_permission
-        end
+    if current_admin_user.admin_permission.to_s == "超级管理员"
+      f.inputs "权限级别" do
+        f.input :admin_permission
       end
+    end
 
 
     f.actions
