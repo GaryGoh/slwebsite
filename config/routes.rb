@@ -24,6 +24,7 @@ Slwebsite::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 
+  get "home" => "static_page#home"
   get "faq" => "faq#faq"
   get "about" => "static_page#about"
   get "society" => "society#index"
@@ -60,8 +61,6 @@ Slwebsite::Application.routes.draw do
   get '/messages', to: 'messages#index'
   get '/comments', to: 'comments#index'
   get '/profile/:stuid', to: 'users#publicShow', as: :publicShow
-  get '/recs/:stuid', to: 'users#allLastest', as: :rec
-
 
 
 

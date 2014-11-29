@@ -1,11 +1,11 @@
 /* Iconfont made with icomoon.com */
 @font-face {
 	font-family: 'cbp-tmicons';
-	src:url('tmicons/cbp-tmicons.eot');
-	src:url('tmicons/cbp-tmicons.eot?#iefix') format('embedded-opentype'),
-		url('tmicons/cbp-tmicons.woff') format('woff'),
-		url('tmicons/cbp-tmicons.ttf') format('truetype'),
-		url('tmicons/cbp-tmicons.svg#cbp-tmicons') format('svg');
+	src:url('../../fonts/TopMenu/tmicons/cbp-tmicons.eot');
+	src:url('../../fonts/TopMenu/tmicons/cbp-tmicons.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/TopMenu/tmicons/cbp-tmicons.woff') format('woff'),
+		url('../../fonts/TopMenu/tmicons/cbp-tmicons.ttf') format('truetype'),
+		url('../../fonts/TopMenu/tmicons/cbp-tmicons.svg#cbp-tmicons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

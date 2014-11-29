@@ -51,17 +51,17 @@ class Ability
         can :manage, AdminUser, :id => user.id
         cannot :destroy, AdminUser, :id => user.id
 
-        can :manage, Member
-        cannot :destroy, Member
+        can :manage, Member, :id => user.id
+        cannot :destroy, Member, :id => user.id
 
         can :manage, Society, :id => user.society_id
         cannot :destroy, Society
 
         can :manage, Issue, :society_id => user.society_id
-        cannot :destroy, Issue
+        #cannot :destroy, Issue
 
         can :manage, Noti, :society_id => user.society_id
-        cannot :destroy, Noti
+        #cannot :destroy, Noti
 
         can :manage, IssueImage, :society_id => user.society_id
 
