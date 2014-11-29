@@ -1,5 +1,5 @@
 class FaqController < ApplicationController
-  layout "index"
+  layout "faq"
 
   def faq
     @faqs = Faq.all

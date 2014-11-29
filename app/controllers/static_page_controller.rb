@@ -14,7 +14,7 @@ class StaticPageController < ApplicationController
 
   def index
     # Index top news
-    #@issues_index = Issue.limit(8).find(:all, :order => "created_at DESC")
+    @issues_index = Issue.limit(8).find(:all, :order => "created_at DESC")
     @topnews = Issue.where('category_id = 1').last(6).reverse
     @normnews = Issue.where('category_id = 1').first(6).reverse
 
@@ -26,11 +26,11 @@ class StaticPageController < ApplicationController
     @societies4 = @societies.where(:department_id => 4)
 
     # Index issues
-    @issues_index = Issue.limit(8).find(:all, :order => "created_at DESC")
+    @issues = Issue.search(params[:search])
     @issues_top = Issue.joins(:category).where(:categories => {:category_name => "顶置新闻"}).last(6).reverse
-    @issues_society = Issue.joins(:category).where(:categories => {:category_name => "社团新闻"}).last(8).reverse
-    @issues_school = Issue.joins(:category).where(:categories => {:category_name => "学校新闻"}).last(8).reverse
-    @issues_global = Issue.joins(:category).where(:categories => {:category_name => "世界时事"}).last(8).reverse
+    @issues_society = Issue.joins(:category).where(:categories => {:category_name => "社团新闻"}).last(4).reverse
+    @issues_school = Issue.joins(:category).where(:categories => {:category_name => "学校新闻"}).reverse
+    @issues_global = Issue.joins(:category).where(:categories => {:category_name => "世界时事"}).last(6).reverse
 
     # Index notis
     @notis = Noti.search(params[:search])

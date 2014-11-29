@@ -51,9 +51,6 @@ class Ability
         can :manage, AdminUser, :id => user.id
         cannot :destroy, AdminUser, :id => user.id
 
-        can :manage, Member, :id => user.id
-        cannot :destroy, Member, :id => user.id
-
         can :manage, Society, :id => user.society_id
         cannot :destroy, Society
 
@@ -74,16 +71,16 @@ class Ability
         can :manage, SubFaq
         cannot :destroy, SubFaq
 
-        can :manage, User, :id => user.society_id
-        #cannot :update, User
-        #cannot :destroy, User
+        can :manage, User
+        cannot :update, User
+        cannot :destroy, User
 
         can :manage, Department
         cannot :update, Department
         cannot :destroy, Department
 
 
-        cannot :manage, [Category, SlDepartment, HomeBackground]
+        cannot :manage, [Category, Member, SlDepartment, HomeBackground]
 
       #
       #when "社联委员" && (user.sl_department.to_s == "公益实践中心" || user.sl_department.to_s == "文娱兴趣中心" || user.sl_department.to_s == "体育竞技中心"|| user.sl_department.to_s == "学术科技中心")

@@ -1,3 +1,3 @@
 
 
-<%= render "module/faqCollaspse", :faqs => @faqs %>
+<%= render partial: "module/faq", :locals => { :faqs => @faqs, :sub_faqs => @sub_faqs }%>
