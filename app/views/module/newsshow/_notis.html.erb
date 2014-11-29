@@ -10,11 +10,11 @@
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h6 align="center"><%= noti.title %></h6>
+    <h2 align="center"><%= noti.title %></h2>
   </div>
 
-  <div class="panel-heading" style="font-size: 14px" align="center">
-    <div>发表于: <%= noti.created_at.strftime("%Y-%m-%e  %H:%M") %>  | 所属协会: <%= noti.society.to_s %> | 浏览次数: <%=noti.impressionist_count%></div>
+  <div class="panel-heading">
+    <div>发表于: <%= noti.created_at.strftime("%m-%e-%Y  %H:%M") %>  | 所属协会: <%= noti.society.to_s %> | 浏览次数: <%=noti.impressionist_count%></div>
 
     <!--Attend or not-->
     <!-- To determine if attend or not or if a member exist-->
@@ -42,7 +42,6 @@
 
 
   </div>
-
   <div class="panel-body">
     <ul class="nav nav-tabs nav-justified" id="myTab">
       <li class="active"><a href="#content" data-toggle="tab">通知内容</a></li>
@@ -52,12 +51,12 @@
 
     <!-- Tab panes -->
     <div class="tab-content" id="notinav">
-      <div class="tab-pane fade in active" id="content"><h4 id="newsP"><%= noti.content %></h4></div>
+      <div class="tab-pane fade in active" id="content"><h3 id="newsP"><%= noti.content %></h3></div>
       <div class="tab-pane fade" id="time"></br>
-        <div class="container" id='calendar'></div>
+        <div id='calendar'></div>
       </div>
       <div class="tab-pane fade" id="location">
-        <div class="alert alert-success"><h4><%= noti.location %></h4></div>
+        <div class="alert alert-success"><h2><%= noti.location %></h2></div>
         <div class="alert alert-warning">谷歌地图地理位置显示，开发中，不久的将来会开放</div>
       </div>
     </div>
@@ -132,8 +131,15 @@
 <!-- calendar css-->
 <style>
 
+    body {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    }
+
     #calendar {
-        width: auto;
+        width: 900px;
         margin: 0 auto;
     }
 

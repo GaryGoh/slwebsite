@@ -1,104 +1,62 @@
-<style>
-
-    #iniSocieties #socName {
-
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    #iniSocieties #socMember {
-        font-size: 13px;
-        text-align: center;
-        color: #959595;
-        padding-top: 10px;
-
-    }
-
-    #iniSocieties #socMember #socName {
-        text-align: center;
-        padding-top: 10px;
-
-    }
-
-    #iniSocieties #socProfile {
-        font-size: 12px;
-        padding-top: 10px;
-
-    }
-
-    #iniSocieties #socButton {
-        text-align: center;
-        padding-top: 10px;
-
-    }
-
-    #iniSocieties #blank {
-        text-align: center;
-        border: solid;
-        border-color: #959595;
-        border-width: 1px;
-        background-color: #e1e4e7;
-        padding: 10px 20px 0 20px;
-        display: block;
-
-    }
-
-</style>
+<head>
 
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="http://player.youku.com/player.php/sid/XNzc5NjE3NTAw/v.swf" width="640" height="480" align="center"></iframe>
+</head>
 
+
+<!-- Top Navigation -->
+<!--<div class="codrops-top clearfix">-->
+  <!--<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/PseudoElementsImageCaptions/"><span>上一届委员</span></a>-->
+  <!--<span class="right"></span><span>第七届委员</span></a></span>-->
+  <!--<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=15806"><span>下一届委员</span></a></span>-->
+<!--</div>-->
+<div class="component">
+
+  <ul class="align">
+
+    <% slmembers.each do |sl| %>
+        <li>
+          <figure class='book'>
+
+            <!-- Front -->
+
+            <ul class='paperback_front'>
+              <li>
+                <!--<span class="ribbon">Nº1</span>-->
+                <%= image_tag sl.admin_pic.url(:thumb), :width => "100%", :height => "100%" %>
+              </li>
+              <li></li>
+            </ul>
+
+            <!-- Pages -->
+
+            <ul class='ruled_paper'>
+              <li></li>
+              <li>
+                <a class="btn" href=<%= show_url(sl) %>>详细资料</a>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+
+            <!-- Back -->
+
+            <ul class='paperback_back'>
+              <li>
+                <!--<img src="img/bg.jpg" alt="" width="100%" height="100%">-->
+              </li>
+              <li></li>
+            </ul>
+            <figcaption>
+              <h1><%= sl.name %></h1>
+              <span><%= sl.sl_department.to_s %></span>
+
+              <p><%= sl.proverb %></p>
+            </figcaption>
+          </figure>
+        </li>
+    <% end %>
+
+  </ul>
 </div>
-</br>
-
-<!-- members' brief -->
-<div class="row" id="iniSocieties">
-  <% slmembers.each do |s| %>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <% unless s.admin_pic_file_name.nil? %>
-              <%= image_tag s.admin_pic.url(:thumb), :width => "100%", :height => "100%" %>
-          <% else %>
-              <div id="blank"> 暂无头像</div>
-          <% end %>
-          <div class="caption">
-            <div id="socName">
-              <%= s.name %>
-            </div>
-            <div id="socMember">
-              所属部门: <%= s.sl_department.to_s %>
-            </div>
-
-
-            <p id="socProfile">
-              <% unless s.proverb.nil? %>
-                  <%= truncate(s.proverb, :length => 40) %>
-              <% else %>
-                  暂无简介
-              <% end %>
-            </p>
-
-            <div id="socButton">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal<%= s.id%>">
-                详细资料
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <%=
-            render "module/modal", :slmember => s
-        %>
-      </div>
-  <% end %>
-</div>
-
-<!-- members' details-->
-
-
-<script type="text/javascript" language="javascript">
-    $('.iframe').css('height', $(window).height() + 'px');
-</script>
