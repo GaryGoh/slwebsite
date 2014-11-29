@@ -16,7 +16,7 @@
 
             <p class="cbp-vm-title" style="font-size: 12px;"><%= truncate(issue.title, :length => 20) %></p>
 
-            <div class="cbp-vm-price" style="font-size: 12px;"><%= issue.created_at.strftime("%m-%e-%Y") %></div>
+            <div class="cbp-vm-price" style="font-size: 12px;"><%= issue.created_at.strftime("%F") %></div>
             <div class="cbp-vm-details" style="font-size: 12px;">
               <%= truncate(issue.content, :length => 20) %>
             </div>

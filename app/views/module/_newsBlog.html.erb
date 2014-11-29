@@ -33,7 +33,7 @@
     }
 </style>
 
-<% issues.reverse.each do |issue| %>
+<% issues.each do |issue| %>
 
     <div class="thumbnail row">
       <div class="newsHead"><%= link_to issue.title, shownews_url(issue) %></div>

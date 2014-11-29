@@ -15,7 +15,7 @@ class PublicNewsController < ApplicationController
 
     #@issues = Issue.paginate(:page => params[:page], :per_page => 5).search(params[:search])
     @issues = Issue.order('created_at DESC').paginate(:page => params[:page], :per_page => 8).tags(params[:tags])
-    @issues_news = @issues.reverse
+    #@issues_news = @issues.reverse
 
 
     #@issues_global = @issues.find('category_id = 4')
@@ -46,8 +46,10 @@ class PublicNewsController < ApplicationController
     $noti_attend = @noti
 
     @user = current_user_stu
-    @timetable = Timetable.find_by_user_id(@user.id)
-    @attend_list = @noti.build_noti_attend
+    if session[:user_id] && current_user_stu
+      @timetable = Timetable.find_by_user_id(@user.id)
+      @attend_list = @noti.build_noti_attend
+    end
 
     impressionist(@noti) # 2nd argument is optional
 

@@ -1,3 +1,6 @@
+<%= javascript_include_tag "Chart.js" %>
+
+
 <canvas id="canvas" height="450" width="600"></canvas>
 
 <% issues = Issue.all %>
@@ -37,6 +40,7 @@ days = [        (now - 6.day),
                     <% end %>]
             }
         ]
+
 
     }
 

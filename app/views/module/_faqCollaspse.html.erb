@@ -1,17 +1,16 @@
 <% faqs.each do |f| %>
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#<%= f.id%>">
-              <h4><span class="label label-success"> <%= f.query %> </span></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#<%= f.id %>"  aria-expanded="true" aria-controls="collapseOne">
+              <h4><%= f.query %></h4>
             </a>
           </h4>
         </div>
-        <div id="<%= f.id%>" class="panel-collapse collapse">
+        <div id="<%= f.id %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-
-            <pre id="user_pre"><%= f.answer %></pre>
+            <%= f.answer %>
           </div>
         </div>
       </div>

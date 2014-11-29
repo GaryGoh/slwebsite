@@ -86,7 +86,8 @@
     <ul>
       <li class="first"><a href="#"><em><%= user.issues.count %></em>发表新闻</a></li>
       <li><a href="#"><em><%= user.notis.count %></em>发布活动</a></li>
-      <li><a href="#"><em><%= user.notis.count * 5 + user.issues.count * 5 + @last_current_user_id.count%></em>活跃度</a></li>
+      <!-- Give a log(y) = b1 * X1 + b2 * X2 + b0 to calculate that -->
+      <li><a href="#"><em><%= Math.log(user.notis.count * 5 + user.issues.count * 5 + @last_current_user_id.count, 2).round(2)%></em>活跃度</a></li>
     </ul>
   </div>
 

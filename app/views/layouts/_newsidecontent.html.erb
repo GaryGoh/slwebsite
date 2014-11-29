@@ -45,6 +45,7 @@
         border-top: 0;
         border: 0;
     }
+
     #sideCtitle {
         max-height: 60px;
         border-top: 0;
@@ -81,10 +82,10 @@
   </div>
 </div>
 
+
 <div class="thumbnail">
   <div class="list-group">
     <div class="list-group-item" id="sideCtitle" align="center">最新发布</div>
-
     <% @last_news.last(5).each do |e| %>
 
         <div class="list-group-item" style="background-color: #ffffff" id="side_list">
