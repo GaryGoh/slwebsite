@@ -83,14 +83,18 @@
 </div>
 
 
+
+<%
+   tempArray = Array.new()
+%>
+
 <div class="thumbnail">
   <div class="list-group">
     <div class="list-group-item" id="sideCtitle" align="center">最新发布</div>
-    <% @last_news.last(5).each do |e| %>
-
+    <% @issues.each do |e| %>
         <div class="list-group-item" style="background-color: #ffffff" id="side_list">
 
-          <p class="list-group-item-heading" style="font-size: 15px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 18), shownotis_url(e) %></p>
+          <p class="list-group-item-heading" style="font-size: 15px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 18), shownews_url(e) %></p>
 
           <p class="list-group-item-text small" style="font-size: 10px; color: #959595" align="right"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
           </hr>
@@ -99,5 +103,4 @@
 
   </div>
 </div>
-
 
