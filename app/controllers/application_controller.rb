@@ -38,10 +38,10 @@ class ApplicationController < ActionController::Base
     #@last_news = Issue.order("created_at DESC").find(:all,
     #                                                 :joins => "LEFT OUTER JOIN notis ON notis.created_at = issues.created_at")
     #@notis = Noti.all.order("created_at DESC")
-    @issues = Issue.all.order("created_at ASC")
-    @notis = Noti.all.order("created_at DESC")
-
-    @last_news = @notis + @issues
+    #@issues = Issue.all.order("created_at ASC")
+    #@notis = Noti.all.order("created_at DESC")
+    #
+    #@last_news = @notis + @issues
 
 
     #@last_news.each do |l|
