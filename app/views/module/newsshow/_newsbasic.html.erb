@@ -11,11 +11,11 @@
 
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h2 align="center"><%= issue.title %></h2>
+    <h6 align="center"><%= issue.title %></h6>
   </div>
 
-  <div class="panel-heading">
-    <div>发表于: <%= issue.created_at.strftime("%m-%e-%Y  %H:%M") %> | 作者: <%= issue.author %> | 浏览次数: <%=issue.impressionist_count%></div>
+  <div class="panel-heading" style="font-size: 14px" align="center">
+    <div>发表于: <%= issue.created_at.strftime("%Y-%m-%e  %H:%M") %> | 作者: <%= issue.author %> | 浏览次数: <%=issue.impressionist_count%></div>
   </div>
 
   <% if issue.issue_images.count > 0 %>
