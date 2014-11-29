@@ -58,10 +58,10 @@ class Ability
         cannot :destroy, Society
 
         can :manage, Issue, :society_id => user.society_id
-        #cannot :destroy, Issue
+        cannot :destroy, Issue
 
         can :manage, Noti, :society_id => user.society_id
-        #cannot :destroy, Noti
+        cannot :destroy, Noti
 
         can :manage, IssueImage, :society_id => user.society_id
 

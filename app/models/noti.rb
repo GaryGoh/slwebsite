@@ -1,5 +1,4 @@
 class Noti < ActiveRecord::Base
-  paginates_per 6
 
   belongs_to :user
   belongs_to :category
@@ -15,7 +14,6 @@ class Noti < ActiveRecord::Base
   validate :activity_time
 
   is_impressionable :counter_cache => true, :column_name => :noti_catch_counter, :unique => :session_hash
-  #impressionist :unique => [:impressionable_type, :impressionable_id, :session_hash]
 
 
 

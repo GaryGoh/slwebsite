@@ -24,7 +24,6 @@ Slwebsite::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 
-  get "home" => "static_page#home"
   get "faq" => "faq#faq"
   get "about" => "static_page#about"
   get "society" => "society#index"

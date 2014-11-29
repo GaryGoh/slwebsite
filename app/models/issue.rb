@@ -1,5 +1,4 @@
 class Issue < ActiveRecord::Base
-  paginates_per 6
 
   belongs_to :user
   belongs_to :category
@@ -17,7 +16,6 @@ class Issue < ActiveRecord::Base
   validates :society_id, presence: {:message => "请先加入社团，再发布新闻"}
 
   is_impressionable :counter_cache => true, :column_name => :issue_catch_counter, :unique => :session_hash
-  #impressionist :unique => [:impressionable_type, :impressionable_id, :session_hash]
 
 
   #def self.search(search)
@@ -27,11 +25,11 @@ class Issue < ActiveRecord::Base
   #    find(:all)
   #  end
   #end
-
-  def self.search(search, page)
-    paginate :per_page => 8, :page => page,
-             :conditions => ['content LIKE ? OR title LIKE ?', "%#{search}%", "%#{search}%"], :order => 'created_at'
-  end
+  #
+  #def self.search(search, page)
+  #  paginate :per_page => 8, :page => page,
+  #           :conditions => ['content LIKE ? OR title LIKE ?', "%#{search}%", "%#{search}%"], :order => 'created_at'
+  #end
 
   def self.tags(tags)
     if tags

@@ -74,6 +74,8 @@ gem 'impressionist'
 gem 'will_paginate'
 
 gem 'rack-cache'
+
+#gem 'activerecord-jdbc-adapter'
 #gem 'remotipart', '~> 1.2'
 
 # Export UML diagrams from database
