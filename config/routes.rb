@@ -1,7 +1,6 @@
 Slwebsite::Application.routes.draw do
 
 
-  devise_for :active_admin_comments, ActiveAdmin::Devise.config
   #resources :timetables
 
   #resources :messages
