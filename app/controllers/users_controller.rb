@@ -2,10 +2,14 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_filter :check_login, only: [:index, :show, :edit, :update, :destroy]
   layout "userAdmin", only: [:show]
+  #layout "index", only: [:allLastest]
+
 
   def allLastest
     if session[:user_id] && current_user_stu
       @last_recs = Impression.order('created_at DESC').where(:user_id => current_user_stu.id).paginate(:page => params[:page], :per_page => 20)
+      @last_recs_chart = Impression.order('created_at DESC').where(:user_id => current_user_stu.id)
+
     end
   end
 

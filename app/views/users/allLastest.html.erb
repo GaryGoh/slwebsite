@@ -1,4 +1,15 @@
 <% if session[:user_id] && current_user_stu %>
+
+    <%= javascript_include_tag "Chart.js" %>
+
+    <!-- Line chart-->
+    <div class="thumbnail">
+      <div align = "center">最近一周浏览状况</div>
+      <canvas id="canvas" height="450" width="600"></canvas>
+    </div>
+
+
+    <!-- Records tables-->
     <div class="thumbnail">
 
       <%
@@ -47,3 +58,47 @@
 
 <% end %>
 
+
+
+<script>
+    <%
+now = Time.now
+days = [        (now - 6.day),
+                (now - 5.day),
+                (now - 4.day),
+                (now - 3.day),
+                (now - 2.day),
+                (now - 1.day),
+                now        ]
+%>
+    var lineChartData = {
+        labels: [
+            <% days.each do |d| %>
+            "<%= d.strftime("%A") %>"
+            <% if d != days.last %>
+            ,
+            <% end %>
+            <% end %>],
+        datasets: [
+
+            {
+                fillColor: "rgba(151,187,205,0.5)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                data: [
+                    <% days.each do |d| %>
+                    <%= @last_recs_chart.find_all{|e| e.created_at.wday == d.wday}.count %>
+                    <% if d != days.last %>
+                    ,
+                    <% end %>
+                    <% end %>]
+            }
+        ]
+
+
+    }
+
+    var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
+
+</script>
