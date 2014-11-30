@@ -124,7 +124,7 @@ ActiveAdmin.setup do |config|
   config.show_comments_in_menu = true
   #
   # You can change the name under which comments are registered:
-  config.comments_registration_name = '所有评论'
+  config.comments_registration_name = 'AdminComment'
 
 
   # == Batch Actions
