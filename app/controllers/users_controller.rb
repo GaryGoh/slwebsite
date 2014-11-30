@@ -85,8 +85,8 @@ class UsersController < ApplicationController
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_user
-    if (:id.nil?)
-      redirect_to access_error_url :notice => "user id is null"
+    if (User.find_by_id(params[:id]).nil?)
+      redirect_to access_error_url, :notice => "Sessions过期或用户错误，请重新登录"
     else
       @user = User.find(params[:id])
     end

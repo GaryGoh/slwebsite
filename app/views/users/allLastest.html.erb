@@ -41,5 +41,8 @@
       <%= will_paginate @last_recs, :previous_label => t("前一页"), :next_label => t("后一页"), :renderer => 'BootstrapPaginationHelper::LinkRenderer' %>
     </div>
 
+<% else %>
+    <%= render "static_page/access_error", :notice => "Sessions过期或用户错误，请重新#{link_to('登录', signin_url)}".html_safe %>
+
 <% end %>
 

@@ -91,7 +91,7 @@
 <div class="thumbnail">
   <div class="list-group">
     <div class="list-group-item" id="sideCtitle" align="center">最新发布</div>
-    <% @issues.each do |e| %>
+    <% @issues_sidecontent.each do |e| %>
         <div class="list-group-item" style="background-color: #ffffff" id="side_list">
 
           <p class="list-group-item-heading" style="font-size: 15px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 18), shownews_url(e) %></p>
