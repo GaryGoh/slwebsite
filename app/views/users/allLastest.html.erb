@@ -19,19 +19,20 @@
 
         <tbody>
         <% @last_recs.each do |m| %>
-            <% tempArray.push([m.impressionable_type, m.impressionable_id]) %>
-            <% e = get_type(m.impressionable_type, tempArray) %>
-            <tr style="font-size: 14px">
+            <a>
+              <% tempArray.push([m.impressionable_type, m.impressionable_id]) %>
+              <% e = get_type(m.impressionable_type, tempArray) %>
+              <tr style="font-size: 14px">
 
-              <td><%= link_to truncate(e.title, :length => 20), get_url(m.action_name, e) %>
-              </td>
-              <td><%= e.category.category_name %>
-              </td>
-              <td><%= m.created_at.strftime("%F %T") %>
-              </td>
-              <td><%= m.ip_address %>
-              </td>
-            </tr>
+                <td><%= link_to truncate(e.title, :length => 20), get_url(m.action_name, e) %>
+                </td>
+                <td><%= e.category.category_name %>
+                </td>
+                <td><%= m.created_at.strftime("%F %T") %>
+                </td>
+                <td><%= m.ip_address %>
+                </td>
+              </tr>
             </a>
         <% end %>
         <tbody>
