@@ -24,6 +24,7 @@ class Ability
                   #can :manage, :all
         can :read, ActiveAdmin::Page, :name => "Dashboard"
 
+
         can :manage, AdminUser, :id => user.id
         cannot :destroy, AdminUser
 
@@ -44,9 +45,15 @@ class Ability
         can :manage, Faq
         can :manage, SubFaq
         can :manage, IssueImage
+        can :manage, ActiveAdmin::Comment
+
 
       when "社团主席" #Teacher
         can :read, ActiveAdmin::Page, :name => "Dashboard"
+
+
+        can :manage, Comment
+
 
         can :manage, AdminUser, :id => user.id
         cannot :destroy, AdminUser, :id => user.id
@@ -55,18 +62,24 @@ class Ability
         cannot :destroy, Member
 
         can :manage, Society, :id => user.society_id
+        can :update, Society
         cannot :destroy, Society
 
         can :manage, Issue, :society_id => user.society_id
+        can :create, Issue
         #cannot :destroy, Issue
 
         can :manage, Noti, :society_id => user.society_id
+        can :create, Noti
+
         #cannot :destroy, Noti
 
         can :manage, IssueImage, :society_id => user.society_id
+        can :create, IssueImage
+
 
         can :manage, Material
-        cannot :destroy, Society
+        cannot :destroy, Material
 
         can :manage, Faq
         cannot :destroy, Faq
@@ -75,6 +88,7 @@ class Ability
         cannot :destroy, SubFaq
 
         can :manage, User, :id => user.society_id
+        can :create, User
         #cannot :update, User
         #cannot :destroy, User
 
