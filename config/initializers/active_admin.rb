@@ -5,7 +5,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "社联后台"
+  config.site_title = "Slwebsite"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -34,7 +34,7 @@ ActiveAdmin.setup do |config|
   #   config.default_namespace = false
   #
   # Default:
-  #config.default_namespace = :current_admin_user
+  # config.default_namespace = :admin
   #
   # You can customize the settings for each namespace by using
   # a namespace block. For example, to change the site title
@@ -54,8 +54,8 @@ ActiveAdmin.setup do |config|
   # ensure that there is a currently logged in admin user.
   #
   # This setting changes the method which Active Admin calls
-  # within the controller.
-  config.authentication_method = :authenticate_admin_user!
+  # within the application controller.
+  config.authentication_method = :authenticate_active_admin_comment!
 
   # == User Authorization
   #
@@ -63,17 +63,17 @@ ActiveAdmin.setup do |config|
   # method in a before filter of all controller actions to
   # ensure that there is a user with proper rights. You can use
   # CanCanAdapter or make your own. Please refer to documentation.
-  config.authorization_adapter = ActiveAdmin::CanCanAdapter
+  # config.authorization_adapter = ActiveAdmin::CanCanAdapter
 
   # You can customize your CanCan Ability class name here.
-  #config.cancan_ability_class = "Ability"
+  # config.cancan_ability_class = "Ability"
 
   # You can specify a method to be called on unauthorized access.
   # This is necessary in order to prevent a redirect loop which happens
   # because, by default, user gets redirected to Dashboard. If user
   # doesn't have access to Dashboard, he'll end up in a redirect loop.
   # Method provided here should be defined in application_controller.rb.
-  #config.on_unauthorized_access = :access_denied
+  # config.on_unauthorized_access = :access_denied
 
   # == Current User
   #
@@ -81,8 +81,8 @@ ActiveAdmin.setup do |config|
   # user performing them.
   #
   # This setting changes the method which Active Admin calls
-  # to return the currently logged in user.
-  config.current_user_method = :current_admin_user
+  # (within the application controller) to return the currently logged in user.
+  config.current_user_method = :current_active_admin_comment
 
 
   # == Logging Out
@@ -95,7 +95,7 @@ ActiveAdmin.setup do |config|
   # will call the method to return the path.
   #
   # Default:
-  config.logout_link_path = :destroy_admin_user_session_path
+  config.logout_link_path = :destroy_active_admin_comment_session_path
 
   # This setting changes the http method used when rendering the
   # link. For example :get, :delete, :put, etc..
@@ -110,7 +110,7 @@ ActiveAdmin.setup do |config|
   # roots for each namespace.
   #
   # Default:
-  #config.root_to = 'dashboard#index'
+  # config.root_to = 'dashboard#index'
 
 
   # == Admin Comments
@@ -118,10 +118,10 @@ ActiveAdmin.setup do |config|
   # This allows your users to comment on any resource registered with Active Admin.
   #
   # You can completely disable comments:
-  config.allow_comments = false
+  # config.allow_comments = false
   #
   # You can disable the menu item for the comments index page:
-  config.show_comments_in_menu = false
+  # config.show_comments_in_menu = false
   #
   # You can change the name under which comments are registered:
   # config.comments_registration_name = 'AdminComment'
@@ -147,6 +147,14 @@ ActiveAdmin.setup do |config|
   # config.favicon = '/assets/favicon.ico'
 
 
+  # == Removing Breadcrumbs
+  #
+  # Breadcrumbs are enabled by default. You can customize them for individual
+  # resources or you can disable them globally from here.
+  #
+  # config.breadcrumb = false
+
+
   # == Register Stylesheets & Javascripts
   #
   # We recommend using the built in Active Admin layout and loading
@@ -160,13 +168,7 @@ ActiveAdmin.setup do |config|
   #   config.register_stylesheet 'my_print_stylesheet.css', :media => :print
   #
   # To load a javascript file:
-  #config.register_javascript 'application.js'
-
-  #To load application js
-  #current_javascripts = config.javascripts.clone
-  #config.clear_javascripts!
-  #config.register_javascript 'application.js'
-  #current_javascripts.reverse_update!.each{|j| config.register_javascript j}
+  #   config.register_javascript 'my_javascript.js'
 
 
   # == CSV options
@@ -184,20 +186,12 @@ ActiveAdmin.setup do |config|
   #
   # To change the default utility navigation to show a link to your website & a logout btn
   #
-  config.namespace :admin do |admin|
-    admin.build_menu :utility_navigation do |menu|
-      menu.add label: :current_admin_user
-      admin.add_logout_button_to_menu menu
-    end
-  end
-
-  def main_app
-    Rails.application.class.routes.url_helpers
-  end
-
-  #def get_url
-  #  admin_admin_user_path(:current_admin_user)
-  #end
+  #   config.namespace :admin do |admin|
+  #     admin.build_menu :utility_navigation do |menu|
+  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
+  #       admin.add_logout_button_to_menu menu
+  #     end
+  #   end
   #
   # If you wanted to add a static menu item to the default menu provided:
   #
@@ -235,7 +229,7 @@ ActiveAdmin.setup do |config|
   # Pagination is enabled by default for all resources.
   # You can control the default per page count for all resources here.
   #
-  config.default_per_page = 20
+  # config.default_per_page = 30
 
 
   # == Filters
@@ -245,22 +239,5 @@ ActiveAdmin.setup do |config|
   # You can enable or disable them for all resources here.
   #
   # config.filters = true
-  #Formtastic::FormBuilder.escape_html_entities_in_hints_and_labels = false
-
-  module ActiveAdmin
-    module Views
-      module Pages
-        class Base < Arbre::HTML::Document
-
-          def build_footer
-            div :id => "footer" do
-              para "Copyright &copy; #{Date.today.year.to_s} #{link_to('桂林电子科技大学 学生社团联合会', root_url)}. Powered by #{link_to('Gary Goh', 'http://weibo.com/u/1634556843')}".html_safe
-            end
-          end
-
-        end
-      end
-    end
-  end
 
 end
