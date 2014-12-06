@@ -28,11 +28,11 @@ ActiveAdmin.register Noti do
   form do |f|
     f.semantic_errors *f.object.errors.keys
 
-
     f.inputs "活动信息" do
       f.input :title, :label => "活动主题"
       f.input :content, :label => "活动内容内容"
       f.input :society, :label => "发起组织"
+      f.input :category, :label => "活动类别"
       f.input :start_time, :label => "开始时间"
       f.input :end_time, :label => "结束时间"
       f.input :location, :label => "地点"

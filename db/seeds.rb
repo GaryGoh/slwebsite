@@ -451,7 +451,7 @@ Department.create([
                           :id => 4
                       },
                       {
-                          :dep_name => "科技实践中心",
+                          :dep_name => "学术科技中心",
                           :id => 2
                       },
                       {

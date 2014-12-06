@@ -9,15 +9,16 @@
 
 </style>
 
-<div class="panel panel-info">
+<div class="panel">
   <div class="panel-heading">
-    <h6 align="center"><%= issue.title %></h6>
+    <h6 align="center" style="font-size: 25px;"><%= issue.title %></h6>
   </div>
 
   <div class="panel-heading" style="font-size: 14px" align="center">
-    <div>发表于: <%= issue.created_at.strftime("%Y-%m-%e  %H:%M") %> | 作者: <%= issue.author %> | 浏览次数: <%=issue.impressionist_count%></div>
+    <div>发表于: <%= issue.created_at.strftime("%Y-%m-%e  %H:%M") %> | 作者: <%= link_to issue.user.name, publicShow_url(issue.user.stuid) %> | 浏览次数: <%=issue.impressionist_count%></div>
   </div>
 
+  <hr style="border-width: 1px;">
   <% if issue.issue_images.count > 0 %>
       <div class="panel-body" id="gal">
         <%= render "module/gallary", :issue => issue %>

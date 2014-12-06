@@ -12,17 +12,23 @@ class Noti < ActiveRecord::Base
   validates :title, presence: {:message => "通知标题不能为空"}
   validates :content, presence: {:message => "通知内容不能为空"}
   validates :society_id, presence: {:message => "请先加入社团，再发布活动通知"}
-  validate :activity_time
+  validates :category_id, presence: {:message => "请选择发布的类型"}
+  validates :start_time, presence: {:message => "活动开始时间不能为空"}
+  validates :end_time, presence: {:message => "活动结束时间不能为空"}
+
+
+  validate :activity_time, presence: {:message => "活动开始时间不能晚于活动结束时间"}
 
   is_impressionable :counter_cache => true, :column_name => :noti_catch_counter, :unique => :session_hash
   #impressionist :unique => [:impressionable_type, :impressionable_id, :session_hash]
 
 
-
   private
   def activity_time
-    if ((start_time).to_time.to_i >= (end_time).to_time.to_i)
-      errors.add(:start_time, "活动开始时间不能晚于活动结束时间")
+    unless start_time.nil? or end_time.nil?
+      if ((start_time).to_time.to_i >= (end_time).to_time.to_i)
+        errors.add(:start_time, "活动开始时间不能晚于活动结束时间")
+      end
     end
   end
 

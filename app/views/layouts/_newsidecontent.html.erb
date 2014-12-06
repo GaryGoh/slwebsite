@@ -64,7 +64,7 @@
 <!--<div class="panel-heading" style="background-color:#555;color:#eee;">活动通知</div>-->
 <!--<div class="panel-body" id="side_content">-->
 
-<div class="thumbnail">
+<div class="thumbnail panel">
   <div class="list-group">
     <div class="list-group-item" id="sideCtitle" align="center">通知公告</div>
 
@@ -88,16 +88,16 @@
    tempArray = Array.new()
 %>
 
-<div class="thumbnail">
+<div class="thumbnail panel">
   <div class="list-group">
     <div class="list-group-item" id="sideCtitle" align="center">最新发布</div>
     <% @issues_sidecontent.each do |e| %>
         <div class="list-group-item" style="background-color: #ffffff" id="side_list">
+            <p class="list-group-item-heading" style="font-size: 15px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 18), shownews_url(e) %></p>
 
-          <p class="list-group-item-heading" style="font-size: 15px; background-color: #ffffff"><%= link_to truncate(e.title, :length => 18), shownews_url(e) %></p>
+            <p class="list-group-item-text small" style="font-size: 10px; color: #959595" align="right"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
 
-          <p class="list-group-item-text small" style="font-size: 10px; color: #959595" align="right"><%= truncate(e.created_at.strftime("%F"), :length => 40) %></p>
-          </hr>
+            </hr>
         </div>
     <% end %>
 

@@ -6,15 +6,21 @@
         padding: 20px 2%;
         text-align: justify;
     }
+
+    #calendar .fc-header h2 {
+        font-size: 20px;
+        padding: 5px 0;
+    }
 </style>
 
-<div class="panel panel-info">
+<div class="panel">
   <div class="panel-heading">
-    <h6 align="center"><%= noti.title %></h6>
+    <h5 align="center" style="font-size: 25px;"><%= noti.title %></h5>
   </div>
 
   <div class="panel-heading" style="font-size: 14px" align="center">
-    <div>发表于: <%= noti.created_at.strftime("%Y-%m-%e  %H:%M") %>  | 所属协会: <%= noti.society.to_s %> | 浏览次数: <%=noti.impressionist_count%></div>
+    <div>发表于: <%= noti.created_at.strftime("%Y-%m-%e  %H:%M") %>  | 所属协会: <%= link_to noti.society.to_s, societyshow_url(noti.society) %> |
+      浏览次数: <%= noti.impressionist_count %></div>
 
     <!--Attend or not-->
     <!-- To determine if attend or not or if a member exist-->
@@ -30,15 +36,13 @@
       <% end %>
     </div>
 
-
+    <hr style="border-width: 1px;">
     <!--Attending list-->
     <!--<div id="" style="text-align: right">-->
-      <!--<a class="btn btn-primary" data-toggle="modal" data-target="#attendList">-->
-        <!--出席会员-->
-      <!--</a>-->
+    <!--<a class="btn btn-primary" data-toggle="modal" data-target="#attendList">-->
+    <!--出席会员-->
+    <!--</a>-->
     <!--</div>-->
-
-
 
 
   </div>
@@ -54,7 +58,7 @@
     <div class="tab-content" id="notinav">
       <div class="tab-pane fade in active" id="content"><h4 id="newsP"><%= noti.content %></h4></div>
       <div class="tab-pane fade" id="time"></br>
-        <div class="container" id='calendar'></div>
+        <div class="container" id='calendar' style="font-size: 13px;"></div>
       </div>
       <div class="tab-pane fade" id="location">
         <div class="alert alert-success"><h4><%= noti.location %></h4></div>
